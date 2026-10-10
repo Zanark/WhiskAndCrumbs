@@ -22,12 +22,12 @@
 }
 .cream-etching { position: absolute; inset: 0; pointer-events: none; opacity: .08; background: var(--cream-etching-image) repeat; background-size: 640px 480px; }
 @supports (backdrop-filter: blur(1px)) {
-  .cream-glass { backdrop-filter: blur(8px) saturate(1.025); }
+  .cream-glass { backdrop-filter: blur(clamp(2px, .55vw, 8px)) saturate(1.025); }
 }
 #cream-cursor { position: fixed; z-index: 70; pointer-events: none; filter: blur(.8px); }
 body.has-cream-effects { isolation: isolate; padding-bottom: 0; }
 body.has-cream-effects :is(#home, #story, #cakes, #order, .site-footer) { position: relative; isolation: auto; }
-body.has-cream-effects :is(#story, #order) { --cream-glass-color: var(--green); --cream-glass-opacity: 88%; }
+body.has-cream-effects :is(#story, #order) { --cream-glass-color: var(--green); --cream-glass-opacity: 84%; }
 body.has-cream-effects :is(.story-copy, .order-layout) p,
 body.has-cream-effects :is(.hero-description, .section-heading > p) { color: inherit; }
 body.has-cream-effects .cream-glass { display: block; }

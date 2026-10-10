@@ -14,6 +14,7 @@ uniform vec4 trail[${TRAIL_PROFILE.links}];
 uniform int trailCount;
 uniform float headRadius;
 uniform float cursorTint;
+uniform vec4 cursorShape;
 out vec4 color;
 
 float merge(float a,float b,float k){
@@ -35,13 +36,24 @@ vec2 tailSurface(vec2 p){
   }
   return nearest;
 }
+vec2 cursorWarp(vec2 delta,float radius){
+  float c=cos(cursorShape.x),s=sin(cursorShape.x);
+  vec2 q=vec2(c*delta.x+s*delta.y,-s*delta.x+c*delta.y);
+  q*=vec2(1./cursorShape.y,cursorShape.y);
+  if(dot(q,q)<.000001)return q;
+  float theta=atan(q.y,q.x),phase=cursorShape.z,energy=cursorShape.w;
+  float wave=(sin(2.*theta+phase)*(.035+.012*energy)+
+    cos(3.*theta-2.*phase)*(.024+.008*energy))*smoothstep(0.,radius*.4,length(q));
+  return q/(1.+wave);
+}
 float surface(vec2 p){
   float d=100000.;
   float blend=min(viewSize.x,viewSize.y)*.040;
   for(int i=0;i<${MAX_PRIMITIVES};i++){
     if(i>=scoopCount)break;
     vec4 s=scoops[i];
-    d=merge(d,length(p-s.xy)-s.z,blend);
+    if(cursorTint>.5&&i==scoopCount-1)d=merge(d,length(cursorWarp(p-s.xy,s.z))-s.z,blend);
+    else d=merge(d,length(p-s.xy)-s.z,blend);
   }
   return merge(d,tailSurface(p).x,min(blend*.4,headRadius*.4));
 }
@@ -52,6 +64,7 @@ float creamHeight(vec2 p,float distance,float scale){
     if(i>=scoopCount)break;
     vec4 s=scoops[i];
     vec2 q=(p-s.xy)/s.z;
+    if(cursorTint>.5&&i==scoopCount-1)q=cursorWarp(p-s.xy,s.z)/s.z;
     float q2=dot(q,q);
     if(q2>9.)continue;
     float weight=exp(-q2*${CREAM_PROFILE.weightFalloff.toFixed(3)});
@@ -93,7 +106,7 @@ void main(){
   float broad=pow(max(0.,dot(normal,halfway)),8.);
   vec3 ivory=vec3(255.,250.,238.)/255.;
   if(cursorTint>.5){
-    float follower=min(length(p-scoops[scoopCount-1].xy)-headRadius,tailSurface(p).x);
+    float follower=d;
     float strawberry=1.-smoothstep(-aa,aa,follower);
     ivory=mix(ivory,vec3(255.,224.,234.)/255.,strawberry);
   }

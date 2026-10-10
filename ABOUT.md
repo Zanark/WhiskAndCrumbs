@@ -169,6 +169,8 @@ background panels; the real notebook covers and recipe-note illustration retain
 their own paper surfaces.
 On supported mouse devices, a pale strawberry-cream shape and trail replace the
 normal pointer while the effect is active. They never intercept clicks.
+The strawberry shape gently changes even at rest, becoming a soft oval or
+organic blob and stretching smoothly in the direction of movement.
 Use **Pause cream motion** in the footer to freeze the decoration and restore the normal pointer.
 With cream enabled, the mobile **How to order** shortcut also stays in the footer
 rather than floating over reading text.

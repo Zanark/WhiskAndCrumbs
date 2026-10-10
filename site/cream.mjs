@@ -1,6 +1,62 @@
 export const CREAM_FRAME_INTERVAL = 1000 / 30;
 export const CREAM_PIXEL_BUDGET = 2_000_000;
 export const CREAM_MOTION_MULTIPLIER = 2;
+export const CURSOR_SHAPE_PROFILE = Object.freeze({ minStretch: 1.08, maxStretch: 1.38, maxExtent: 1.51 });
+
+const TAU = Math.PI * 2;
+const wrapPhase = angle => ((angle % TAU) + TAU) % TAU;
+
+export function createCursorShape() {
+  return { angle: 0, stretch: 1.13, phase: 0, energy: 0, velocityX: 0, velocityY: 0 };
+}
+
+function validateCursorShape(shape) {
+  if (!shape || !['angle', 'stretch', 'phase', 'energy', 'velocityX', 'velocityY'].every(key => Number.isFinite(shape[key])) ||
+      shape.stretch < CURSOR_SHAPE_PROFILE.minStretch || shape.stretch > CURSOR_SHAPE_PROFILE.maxStretch ||
+      shape.energy < 0 || shape.energy > 1 || shape.phase < 0 || shape.phase >= TAU) {
+    throw new RangeError('A finite, bounded cursor shape is required.');
+  }
+}
+
+export function updateCursorShape(shape, displacement, elapsed, radius) {
+  validateCursorShape(shape);
+  if (!displacement || ![displacement.x, displacement.y, elapsed, radius].every(Number.isFinite) ||
+      elapsed < 0 || radius <= 0) throw new RangeError('Finite head movement, positive radius and nonnegative elapsed time required.');
+  if (elapsed === 0) return { ...shape };
+  const dt = Math.min(elapsed, 50), seconds = dt / 1000, velocityWeight = 1 - Math.exp(-dt / 100);
+  const velocityX = shape.velocityX + (displacement.x / seconds - shape.velocityX) * velocityWeight;
+  const velocityY = shape.velocityY + (displacement.y / seconds - shape.velocityY) * velocityWeight;
+  const speed = Math.hypot(velocityX, velocityY) / radius;
+  const targetEnergy = Math.min(1, speed / 24);
+  const energy = shape.energy + (targetEnergy - shape.energy) * (1 - Math.exp(-dt / (targetEnergy > shape.energy ? 150 : 400)));
+  const phase = wrapPhase(shape.phase + seconds * (.78 + .32 * energy));
+  const targetAngle = speed > .3 ? Math.atan2(velocityY, velocityX) : shape.angle + seconds * (.12 + .04 * Math.cos(phase));
+  const turn = Math.atan2(Math.sin(targetAngle - shape.angle), Math.cos(targetAngle - shape.angle));
+  const angle = wrapPhase(shape.angle + (speed > .3 ? turn * (1 - Math.exp(-dt / 220)) : turn));
+  const desiredStretch = Math.max(CURSOR_SHAPE_PROFILE.minStretch,
+    Math.min(CURSOR_SHAPE_PROFILE.maxStretch, 1.13 + .045 * Math.sin(phase) + .19 * energy));
+  const stretch = shape.stretch + (desiredStretch - shape.stretch) * (1 - Math.exp(-dt / 140));
+  return { angle, stretch, phase, energy, velocityX, velocityY };
+}
+
+export function resizeCursorShape(shape, scaleX, scaleY) {
+  validateCursorShape(shape);
+  if (![scaleX, scaleY].every(value => Number.isFinite(value) && value > 0)) throw new RangeError('Positive cursor resize scales required.');
+  return { ...shape, velocityX: shape.velocityX * scaleX, velocityY: shape.velocityY * scaleY,
+    angle: wrapPhase(Math.atan2(Math.sin(shape.angle) * scaleY, Math.cos(shape.angle) * scaleX)) };
+}
+
+export function cursorShapePoint(x, y, shape) {
+  validateCursorShape(shape);
+  if (![x, y].every(Number.isFinite)) throw new RangeError('Finite normalized cursor coordinates required.');
+  const cosine = Math.cos(shape.angle), sine = Math.sin(shape.angle);
+  const localX = (cosine * x + sine * y) / shape.stretch;
+  const localY = (-sine * x + cosine * y) * shape.stretch;
+  const theta = Math.atan2(localY, localX), t = Math.min(1, Math.hypot(localX, localY) / .4);
+  const wave = (Math.sin(2 * theta + shape.phase) * (.035 + .012 * shape.energy) +
+    Math.cos(3 * theta - 2 * shape.phase) * (.024 + .008 * shape.energy)) * t * t * (3 - 2 * t);
+  return { x: localX / (1 + wave), y: localY / (1 + wave) };
+}
 
 export function creamSampleTime(seconds) {
   if (!Number.isFinite(seconds) || seconds < 0) throw new RangeError('Nonnegative finite cream motion time required.');
@@ -97,7 +153,7 @@ function createRenderer(canvas, pointerCanvas, model, sources) {
     gl.enableVertexAttribArray(position);
     gl.vertexAttribPointer(position, 2, gl.FLOAT, false, 0, 0);
     uniforms = Object.fromEntries(['resolution', 'pixelRatio', 'viewSize', 'scoopCount', 'scoops',
-      'trail', 'trailCount', 'headRadius', 'cursorTint'].map(name =>
+      'trail', 'trailCount', 'headRadius', 'cursorTint', 'cursorShape'].map(name =>
       [name, gl.getUniformLocation(program, ['scoops', 'trail'].includes(name) ? `${name}[0]` : name)]));
     if (Object.values(uniforms).some(value => value === null)) throw new Error('Cream material uniforms are unavailable.');
     gl.disable(gl.DEPTH_TEST);
@@ -116,7 +172,7 @@ function createRenderer(canvas, pointerCanvas, model, sources) {
   return {
     dispose,
     outputSize(width, height, ratio) { return creamOutputSize(width, height, ratio, limit, viewport); },
-    draw({ width, height, output, primitives, cursor, trail, pointerActive }) {
+    draw({ width, height, output, primitives, cursor, shape, trail, pointerActive }) {
       if (gl.isContextLost()) throw new Error('Cream graphics context was lost during rendering.');
       gl.viewport(0, 0, canvas.width, canvas.height);
       gl.useProgram(program);
@@ -133,7 +189,7 @@ function createRenderer(canvas, pointerCanvas, model, sources) {
       gl.uniform4fv(uniforms.trail, trailData);
       gl.uniform1f(uniforms.headRadius, radius);
       if (pointerActive && pointerContext && !pointerContext.isContextLost?.()) {
-        const margin = radius + 14 + Math.min(width, height) * .04, points = [cursor, ...path];
+        const margin = radius * CURSOR_SHAPE_PROFILE.maxExtent + 14 + Math.min(width, height) * .04, points = [cursor, ...path];
         const left = Math.max(0, Math.floor((Math.min(...points.map(point => point.x)) - margin) * output.ratio));
         const top = Math.max(0, Math.floor((Math.min(...points.map(point => point.y)) - margin) * output.ratio));
         const right = Math.min(canvas.width, Math.ceil((Math.max(...points.map(point => point.x)) + margin) * output.ratio));
@@ -150,6 +206,7 @@ function createRenderer(canvas, pointerCanvas, model, sources) {
           gl.uniform4fv(uniforms.scoops, pointerData);
           gl.uniform1i(uniforms.trailCount, trail.length);
           gl.uniform1f(uniforms.cursorTint, 1);
+          gl.uniform4f(uniforms.cursorShape, shape.angle, shape.stretch, shape.phase, shape.energy);
           // The small transparent cursor pass is copied above content; the full canvas stays ivory-only.
           gl.enable(gl.SCISSOR_TEST);
           gl.scissor(left, canvas.height - bottom, cropWidth, cropHeight);
@@ -171,6 +228,7 @@ function createRenderer(canvas, pointerCanvas, model, sources) {
       gl.uniform4fv(uniforms.scoops, data);
       gl.uniform1i(uniforms.trailCount, 0);
       gl.uniform1f(uniforms.cursorTint, 0);
+      gl.uniform4f(uniforms.cursorShape, 0, 1, 0, 0);
       gl.disable(gl.SCISSOR_TEST);
       gl.drawArrays(gl.TRIANGLES, 0, 3);
       if (gl.getError() !== gl.NO_ERROR) throw new Error('Cream material rendering failed.');
@@ -204,6 +262,7 @@ async function initialize(layer, model) {
   let paused = false, lost = false, failed = false, disposed = false, pageHidden = false, printEvent = false;
   let blurred = !document.hasFocus(), pointerPresent = false, dirty = true, refreshing = false;
   let cursor = { x: 0, y: 0 }, target = { ...cursor }, trail;
+  let cursorShape = createCursorShape();
   const events = new AbortController();
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   const forced = matchMedia('(forced-colors: active)');
@@ -276,6 +335,7 @@ async function initialize(layer, model) {
       cursor = { x: cursor.x * sx, y: cursor.y * sy };
       target = { x: target.x * sx, y: target.y * sy };
       trail = trail.map(point => ({ x: point.x * sx, y: point.y * sy }));
+      cursorShape = resizeCursorShape(cursorShape, sx, sy);
     } else {
       cursor = { x: nextWidth * .48, y: nextHeight * .27 };
       target = { ...cursor };
@@ -292,7 +352,7 @@ async function initialize(layer, model) {
   const render = animate => {
     const sampleTime = creamSampleTime(motionTime);
     const primitives = model.expandScoops(model.sampleScoops(scoops, sampleTime, width, height));
-    const painted = renderer.draw({ width, height, output, primitives, cursor, trail,
+    const painted = renderer.draw({ width, height, output, primitives, cursor, shape: cursorShape, trail,
       pointerActive: animate && pointerFocused() && pointerPresent });
     // Never hide the native cursor before both GPU passes and the overlay copy succeed.
     pointerCanvas.hidden = !painted.pointerPainted;
@@ -301,7 +361,10 @@ async function initialize(layer, model) {
     lastPaintTime = performance.now();
     setData({ paintCount: ++paintCount, motionTime: motionTime.toFixed(4), sampleTime: sampleTime.toFixed(6),
       lastPaintTime: lastPaintTime.toFixed(2), clampedTime: clampedTime.toFixed(4), primitiveCount: primitives.length,
-      cursorRadius: painted.radius.toFixed(3), trailSegments: painted.segments, pointerActive: painted.pointerPainted });
+      cursorRadius: painted.radius.toFixed(3), cursorX: cursor.x.toFixed(4), cursorY: cursor.y.toFixed(4),
+      cursorAngle: cursorShape.angle.toFixed(6), cursorStretch: cursorShape.stretch.toFixed(6),
+      cursorPhase: cursorShape.phase.toFixed(6), cursorEnergy: cursorShape.energy.toFixed(6),
+      trailSegments: painted.segments, pointerActive: painted.pointerPainted });
     dirty = false;
   };
   const schedule = () => {
@@ -329,7 +392,10 @@ async function initialize(layer, model) {
       if (lastTime) clampedTime += Math.max(0, time - lastTime - elapsed) / 1000;
       motionTime += elapsed / 1000;
       if (!pointerFocused()) pointerPresent = false;
+      const previousCursor = cursor;
       if (pointerPresent) cursor = model.followPointer(cursor, target, elapsed);
+      cursorShape = updateCursorShape(cursorShape, { x: cursor.x - previousCursor.x, y: cursor.y - previousCursor.y },
+        elapsed, model.cursorRadius(width, height));
       trail = model.followTrail(trail, cursor, elapsed, model.cursorRadius(width, height));
       lastTime = time;
       render(true);
