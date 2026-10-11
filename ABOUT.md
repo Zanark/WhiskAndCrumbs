@@ -26,8 +26,9 @@ The display cabinet reaches the floor; its cakes, shelves and shadows share one
 perspective. The default viewpoint now looks straight ahead from eye level and
 sits farther back, rather than looking down over the counter. Mouse movement gives a strong look around the room while the
 outer storefront stays steady. Phones start with a centered view.
-On supported phones, tap **Phone tilt**, allow motion access if asked, and hold the
-phone comfortably while it calibrates. Gentle tilting then controls the same
+On supported phones, tilt starts automatically when the browser permits motion
+access without a prompt. If permission is required, tap **Phone tilt** to approve it.
+Hold the phone comfortably while it calibrates. Gentle tilting then controls the same
 look-around; tap **Tilt on** to turn it off. Motion stops when you enter, skip,
 leave the page or enable reduced motion. The website uses motion readings locally
 and does not save or upload them. Browser support and permission policies vary;

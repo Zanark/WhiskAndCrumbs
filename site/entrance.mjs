@@ -13,6 +13,10 @@ export function phoneTiltLook(beta, gamma, reference, screenAngle = 0) {
   };
 }
 
+export function canAutoStartPhoneTilt({ available, waiting, attempted, requiresPermission }) {
+  return Boolean(available && waiting && !attempted && !requiresPermission);
+}
+
 export function initBakeryEntrance({ tryRingBell } = {}) {
   const entrance = document.getElementById('bakery-entrance');
   const enter = document.getElementById('entrance-enter');
@@ -50,6 +54,7 @@ export function initBakeryEntrance({ tryRingBell } = {}) {
   let fallbackTimer;
   let enteredFromControl = false;
   let tiltEvents, tiltTimer, tiltRequest = 0, tiltActive = false, tiltPending = false;
+  let tiltAutoAttempted = false;
   let controlsObserver;
   const events = new AbortController();
   entrance.dataset.state = 'waiting';
@@ -165,84 +170,96 @@ export function initBakeryEntrance({ tryRingBell } = {}) {
   const tiltAvailable = () => !!tiltButton && !!tiltStatus && isSecureContext &&
     coarsePointer.matches && typeof window.DeviceOrientationEvent === 'function' &&
     getComputedStyle(entrance).position === 'fixed';
+  const startTilt = async requestPermission => {
+    if (finished || entrance.dataset.state !== 'waiting' || tiltPending || tiltActive) return;
+    if (!tiltAvailable()) {
+      stopTilt(true, 'Phone tilt is unavailable in this browser.', 'Tilt unavailable');
+      return;
+    }
+    const Orientation = window.DeviceOrientationEvent;
+    if (!requestPermission && typeof Orientation.requestPermission === 'function') return;
+    const request = ++tiltRequest;
+    tiltPending = true;
+    tiltButton.setAttribute('aria-busy', 'true');
+    try {
+      if (requestPermission && typeof Orientation.requestPermission === 'function' &&
+          await Orientation.requestPermission() !== 'granted') {
+        if (request === tiltRequest && !finished) {
+          stopTilt(true, 'Motion permission was not granted. Tap or use Skip entrance instead.', 'Tilt not allowed');
+        }
+        return;
+      }
+    } catch (error) {
+      if (request === tiltRequest && !finished) {
+        console.warn('Optional phone tilt permission is unavailable; tap and Skip still work.', error);
+        stopTilt(true, 'Phone tilt could not be enabled. Tap or use Skip entrance instead.', 'Tilt unavailable');
+      }
+      return;
+    }
+    if (request !== tiltRequest || finished || entrance.dataset.state !== 'waiting') return;
+    tiltEvents = new AbortController();
+    tiltActive = true;
+    tiltPending = false;
+    tiltButton.removeAttribute('aria-busy');
+    tiltButton.textContent = 'Starting tilt';
+    tiltStatus.textContent = 'Hold the phone comfortably while tilt starts.';
+    let neutral, angle = orientationAngle(), last = -Infinity, look = { x: 0, y: 0 };
+    setLook(0, 0);
+    const noSamples = () => {
+      tiltTimer = setTimeout(() => {
+        console.info('Optional phone tilt supplied no usable orientation samples; tap and Skip remain available.');
+        stopTilt(true, 'No motion data is available. Tap or use Skip entrance instead.', 'Tilt unavailable');
+      }, 2500);
+    };
+    noSamples();
+    window.addEventListener('deviceorientation', sample => {
+      if (finished || entrance.dataset.state !== 'waiting' || !tiltActive ||
+          !Number.isFinite(sample.beta) || !Number.isFinite(sample.gamma)) return;
+      const nextAngle = orientationAngle();
+      if (!neutral || nextAngle !== angle) {
+        neutral = { beta: sample.beta, gamma: sample.gamma };
+        angle = nextAngle;
+        look = { x: 0, y: 0 };
+        last = -Infinity;
+        clearTimeout(tiltTimer);
+        entrance.dataset.tiltView = 'on';
+        setLook(0, 0);
+        tiltButton.setAttribute('aria-pressed', 'true');
+        tiltButton.textContent = 'Tilt on';
+        tiltStatus.textContent = 'Phone tilt is on. Tilt gently to look around; tap Tilt on to turn it off.';
+        return;
+      }
+      const now = performance.now();
+      if (now - last < 32) return;
+      last = now;
+      const target = phoneTiltLook(sample.beta, sample.gamma, neutral, angle);
+      look = { x: look.x + (target.x - look.x) * .3, y: look.y + (target.y - look.y) * .3 };
+      setLook(look.x, look.y);
+    }, { passive: true, signal: tiltEvents.signal });
+  };
   const updateTiltAvailability = () => {
     if (!tiltButton || finished) return;
-    if (!tiltAvailable()) stopTilt();
-    tiltButton.hidden = !tiltAvailable();
+    const available = tiltAvailable();
+    if (!available) stopTilt();
+    tiltButton.hidden = !available;
     reserveTools();
+    if (canAutoStartPhoneTilt({ available, waiting: !finished && entrance.dataset.state === 'waiting',
+      attempted: tiltAutoAttempted, requiresPermission: typeof window.DeviceOrientationEvent?.requestPermission === 'function' })) {
+      tiltAutoAttempted = true;
+      void startTilt(false);
+    }
   };
   if (tiltButton && tiltStatus) {
     tiltButton.addEventListener('click', async event => {
       event.preventDefault();
       event.stopPropagation();
       if (finished || entrance.dataset.state !== 'waiting' || tiltPending) return;
+      tiltAutoAttempted = true;
       if (tiltActive) {
         stopTilt(true, 'Phone tilt is off. You can still tap to enter.');
         return;
       }
-      if (!tiltAvailable()) {
-        stopTilt(true, 'Phone tilt is unavailable in this browser.', 'Tilt unavailable');
-        return;
-      }
-      const request = ++tiltRequest;
-      tiltPending = true;
-      tiltButton.setAttribute('aria-busy', 'true');
-      const Orientation = window.DeviceOrientationEvent;
-      try {
-        if (typeof Orientation.requestPermission === 'function' &&
-            await Orientation.requestPermission() !== 'granted') {
-          if (request === tiltRequest && !finished) {
-            stopTilt(true, 'Motion permission was not granted. Tap or use Skip entrance instead.', 'Tilt not allowed');
-          }
-          return;
-        }
-      } catch (error) {
-        if (request === tiltRequest && !finished) {
-          console.warn('Optional phone tilt permission is unavailable; tap and Skip still work.', error);
-          stopTilt(true, 'Phone tilt could not be enabled. Tap or use Skip entrance instead.', 'Tilt unavailable');
-        }
-        return;
-      }
-      if (request !== tiltRequest || finished || entrance.dataset.state !== 'waiting') return;
-      tiltEvents = new AbortController();
-      tiltActive = true;
-      tiltPending = false;
-      tiltButton.removeAttribute('aria-busy');
-      tiltButton.textContent = 'Starting tilt';
-      tiltStatus.textContent = 'Hold the phone comfortably while tilt starts.';
-      let neutral, angle = orientationAngle(), last = -Infinity, look = { x: 0, y: 0 };
-      setLook(0, 0);
-      const noSamples = () => {
-        tiltTimer = setTimeout(() => {
-          console.info('Optional phone tilt supplied no usable orientation samples; tap and Skip remain available.');
-          stopTilt(true, 'No motion data is available. Tap or use Skip entrance instead.', 'Tilt unavailable');
-        }, 2500);
-      };
-      noSamples();
-      window.addEventListener('deviceorientation', sample => {
-        if (finished || entrance.dataset.state !== 'waiting' || !tiltActive ||
-            !Number.isFinite(sample.beta) || !Number.isFinite(sample.gamma)) return;
-        const nextAngle = orientationAngle();
-        if (!neutral || nextAngle !== angle) {
-          neutral = { beta: sample.beta, gamma: sample.gamma };
-          angle = nextAngle;
-          look = { x: 0, y: 0 };
-          last = -Infinity;
-          clearTimeout(tiltTimer);
-          entrance.dataset.tiltView = 'on';
-          setLook(0, 0);
-          tiltButton.setAttribute('aria-pressed', 'true');
-          tiltButton.textContent = 'Tilt on';
-          tiltStatus.textContent = 'Phone tilt is on. Tilt gently to look around; tap Tilt on to turn it off.';
-          return;
-        }
-        const now = performance.now();
-        if (now - last < 32) return;
-        last = now;
-        const target = phoneTiltLook(sample.beta, sample.gamma, neutral, angle);
-        look = { x: look.x + (target.x - look.x) * .3, y: look.y + (target.y - look.y) * .3 };
-        setLook(look.x, look.y);
-      }, { passive: true, signal: tiltEvents.signal });
+      await startTilt(true);
     }, { signal: events.signal });
     coarsePointer.addEventListener('change', updateTiltAvailability, { signal: events.signal });
     updateTiltAvailability();
