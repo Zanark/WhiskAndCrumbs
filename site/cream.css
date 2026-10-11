@@ -20,7 +20,8 @@
   background-color: color-mix(in srgb, var(--cream-glass-color, var(--cream)) var(--cream-glass-opacity, 30%), transparent);
   overflow: clip;
 }
-.cream-etching { position: absolute; inset: 0; pointer-events: none; opacity: .08; background: var(--cream-etching-image) repeat; background-size: 640px 480px; }
+.cream-etching { position: absolute; inset: 0; pointer-events: none; background: var(--cream-etching-image) repeat; background-size: 640px 480px; }
+body.has-cream-effects :is(#story, #order) .cream-etching { filter: brightness(.4); }
 @supports (backdrop-filter: blur(1px)) {
   .cream-glass { backdrop-filter: blur(clamp(2px, .55vw, 8px)) saturate(1.025); }
 }

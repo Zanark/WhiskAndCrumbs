@@ -178,6 +178,9 @@ groups. Their members gently pull apart and drift back together on independent,
 varied cycles.
 Individual background blobs and the cursor head keep their sizes.
 The largest groups remain near the outer edges rather than across the reading column.
+The automatic background has fewer blobs, without pointed cream peaks. More of
+the remaining shapes drift together into temporary groups and separate again.
+Original bakery outlines are visibly etched into the themed glass.
 Click or tap the page to leave a smaller strawberry blob, with a different soft
 shape on each click. The newest eight stay;
 another click replaces the oldest, and reloading starts a fresh scene.

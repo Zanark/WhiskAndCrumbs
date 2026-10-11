@@ -5,6 +5,8 @@ export const CREAM_GEOMETRY_MULTIPLIER = 2;
 export const GROUP_GEOMETRY_MULTIPLIER = CREAM_GEOMETRY_MULTIPLIER / 1.5;
 export const LARGE_GROUP_GEOMETRY_MULTIPLIER = GROUP_GEOMETRY_MULTIPLIER / 2;
 export const GROUP_MOTION_PROFILE = Object.freeze({ cycles: 8, gapFraction: .042, maxGapFraction: .044 });
+export const BACKGROUND_POPULATION_SCALE = .5;
+export const COHORT_MOTION_PROFILE = Object.freeze({ cycles: 8, minimumPeriod: 36, maximumPeriod: 52, gapFraction: .006 });
 export const CREAM_MAX_GROUPS = 9;
 export const CREAM_MAX_DROPLETS = 8;
 export const CREAM_MAX_SPAWNS = 8;
@@ -21,6 +23,8 @@ export const CURSOR_SHAPE_PROFILE = Object.freeze({ minStretch: 1.08, maxStretch
 
 const TAU = Math.PI * 2;
 const wrapPhase = angle => ((angle % TAU) + TAU) % TAU;
+const easeQuintic = value => value * value * value * (10 + value * (-15 + value * 6));
+const backgroundLayouts = new WeakMap();
 
 function compactGroupOffsets(lobes, centre, gap, turn) {
   const count = lobes.length, masses = lobes.map(lobe => lobe[2] ** 2);
@@ -133,6 +137,102 @@ export function sampleGroupMotion(motion, seconds) {
   return { cycle: index, phase, amount, stage, lobeState };
 }
 
+function backgroundRandom(seed) {
+  let state = (seed ^ 0xa511e9b3) >>> 0;
+  return () => {
+    state = (state + 0x6d2b79f5) >>> 0;
+    let value = Math.imul(state ^ state >>> 15, state | 1);
+    value ^= value + Math.imul(value ^ value >>> 7, value | 61);
+    return ((value ^ value >>> 14) >>> 0) / 4294967296;
+  };
+}
+
+function selectBackground(model, clumps, seed) {
+  const cost = group => group.kind === 'group' ? model.CLUMP_PROFILES[group.clump].length : 1;
+  const edge = [], ordinary = [], droplets = [];
+  clumps.forEach((group, parent) => {
+    (group.kind !== 'group' ? droplets : group.radius >= CREAM_EDGE_PROFILE.largeFraction ? edge : ordinary).push(parent);
+  });
+  const previous = clumps.reduce((sum, group) => sum + cost(group), 0);
+  const target = Math.ceil(previous * BACKGROUND_POPULATION_SCALE);
+  const fixed = edge.reduce((sum, parent) => sum + cost(clumps[parent]), 0);
+  const random = backgroundRandom(seed), rank = clumps.map(() => random());
+  let best;
+  for (let mask = 1; mask < 2 ** ordinary.length; mask++) {
+    const groups = ordinary.filter((_, index) => mask & 1 << index);
+    const singles = target - fixed - groups.reduce((sum, parent) => sum + cost(clumps[parent]), 0);
+    if (singles < 2 || singles > droplets.length) continue;
+    const score = Math.abs(edge.length + groups.length - (edge.length + ordinary.length) / 2) * 4 +
+      Math.abs(singles - droplets.length / 2) + groups.reduce((sum, parent) => sum + rank[parent], 0) * .001;
+    if (!best || score < best.score) best = { groups, singles, score };
+  }
+  if (!best) throw new RangeError('A whole-group half-population with both edge roles and free partners is required.');
+  const singles = [...droplets].sort((a, b) => rank[a] - rank[b]).slice(0, best.singles);
+  return { previous, target, parents: Object.freeze([...edge, ...best.groups, ...singles].sort((a, b) => a - b)) };
+}
+
+function createCohortMotion(clumps, edges, seed) {
+  const eligible = clumps.flatMap((_, parent) => edges.some(entry => entry.parent === parent) ? [] : [parent]);
+  const random = backgroundRandom(seed ^ 0x5bd1e995), used = new Map();
+  const pairKey = (a, b) => [a, b].sort((x, y) => x - y).join(':');
+  let duration = 0;
+  const cycles = Array.from({ length: COHORT_MOTION_PROFILE.cycles }, (_, index) => {
+    const period = COHORT_MOTION_PROFILE.minimumPeriod +
+      random() * (COHORT_MOTION_PROFILE.maximumPeriod - COHORT_MOTION_PROFILE.minimumPeriod);
+    const rank = clumps.map(() => random());
+    const remaining = [...eligible].sort((a, b) => rank[a] - rank[b]), cohorts = [];
+    if (remaining.length === 3 && index % 2) {
+      const idle = eligible[Math.floor(index / 2) % eligible.length];
+      remaining.splice(remaining.indexOf(idle), 1);
+    }
+    while (remaining.length) {
+      const groupIndex = remaining.findIndex(parent => clumps[parent].kind === 'group');
+      const first = remaining.splice(Math.max(0, groupIndex), 1)[0], parents = [first];
+      const size = remaining.length % 2 === 0 ? 3 : 2;
+      while (parents.length < size) {
+        const score = parent => parents.reduce((sum, other) => sum +
+          Math.hypot(clumps[parent].x - clumps[other].x, clumps[parent].y - clumps[other].y) +
+          (used.get(pairKey(parent, other)) || 0) * .16 +
+          (clumps[parent].kind === clumps[other].kind ? .15 : 0), 0) + rank[parent] * .12;
+        remaining.sort((a, b) => score(a) - score(b));
+        parents.push(remaining.shift());
+      }
+      for (let a = 0; a < parents.length; a++) for (let b = a + 1; b < parents.length; b++) {
+        const key = pairKey(parents[a], parents[b]);
+        used.set(key, (used.get(key) || 0) + 1);
+      }
+      cohorts.push(Object.freeze({ parents: Object.freeze(parents), start: .06 + random() * .10 + cohorts.length * .025,
+        end: .88 + random() * .08 - cohorts.length * .015, hold: .13 + random() * .08, turn: random() * TAU }));
+    }
+    const cycle = Object.freeze({ start: duration, period, cohorts: Object.freeze(cohorts) });
+    duration += period;
+    return cycle;
+  });
+  return Object.freeze({ eligible: Object.freeze(eligible), duration, cycles: Object.freeze(cycles) });
+}
+
+export function sampleCohortMotion(motion, seconds) {
+  if (!motion || !Array.isArray(motion.cycles) || !Number.isFinite(seconds) || seconds < 0) {
+    throw new RangeError('A cohort motion recipe and nonnegative finite time are required.');
+  }
+  const time = seconds % motion.duration;
+  const index = motion.cycles.findIndex(cycle => time < cycle.start + cycle.period);
+  const cycle = motion.cycles[index], phase = (time - cycle.start) / cycle.period;
+  const cohorts = cycle.cohorts.map((cohort, ordinal) => {
+    const ramp = (cohort.end - cohort.start - cohort.hold) / 2;
+    let fraction = 0, stage = 'separated';
+    if (phase > cohort.start && phase < cohort.start + ramp) {
+      fraction = (phase - cohort.start) / ramp; stage = 'attracting';
+    } else if (phase >= cohort.start + ramp && phase <= cohort.end - ramp) {
+      fraction = 1; stage = 'joined';
+    } else if (phase > cohort.end - ramp && phase < cohort.end) {
+      fraction = (cohort.end - phase) / ramp; stage = 'repelling';
+    }
+    return { index: ordinal, parents: cohort.parents, turn: cohort.turn, amount: easeQuintic(fraction), stage };
+  });
+  return { cycle: index, phase, cohorts };
+}
+
 export function createProductionRecipe(model, seed) {
   const base = model.createSceneRecipe(seed);
   if (model.CLUMP_PROFILES.some(profile => profile.length > 3)) throw new RangeError('Production groups support at most three lobes.');
@@ -144,16 +244,114 @@ export function createProductionRecipe(model, seed) {
       y: .13 + ((original.y + .37 * (index + 1)) % .74) }));
   }
   // Append, rather than insert, so every original group's and droplet's motion index is unchanged.
-  const clumps = Object.freeze([...base.clumps, ...extras]), edgeGroups = [];
+  const sourceClumps = Object.freeze([...base.clumps, ...extras]);
+  const selection = selectBackground(model, sourceClumps, seed);
+  const clumps = Object.freeze(selection.parents.map(sourceParent => Object.freeze({ ...sourceClumps[sourceParent], sourceParent })));
+  const edgeGroups = [];
   clumps.forEach((group, parent) => {
     if (group.kind === 'group' && group.radius >= CREAM_EDGE_PROFILE.largeFraction) {
       edgeGroups.push(Object.freeze({ parent, side: edgeGroups.length % 2 ? 'right' : 'left' }));
     }
   });
   const groupMotions = Object.freeze(clumps.map((group, parent) =>
-    group.kind === 'group' ? createGroupMotion(model, seed, group, parent) : null));
-  return Object.freeze({ ...base, baseGroupCount: base.groupCount, groupCount, clumps, groupMotions,
-    edgeGroups: Object.freeze(edgeGroups) });
+    group.kind === 'group' ? createGroupMotion(model, seed, group, selection.parents[parent]) : null));
+  return Object.freeze({ ...base, baseGroupCount: base.groupCount, sourceGroupCount: groupCount,
+    sourceDropletCount: base.dropletCount, sourceClumps, sourceParents: selection.parents,
+    sourceAutomaticPrimitiveCount: selection.previous, automaticPrimitiveCount: selection.target,
+    groupCount: clumps.filter(group => group.kind === 'group').length,
+    dropletCount: clumps.filter(group => group.kind === 'droplet').length, clumps, groupMotions,
+    edgeGroups: Object.freeze(edgeGroups), cohortMotion: createCohortMotion(clumps, edgeGroups, seed) });
+}
+
+export function sampleProductionScoops(model, recipe, width, height, seconds) {
+  const source = model.sampleScoops(model.seedScoops(width, height, { clumps: recipe.sourceClumps }), seconds, width, height);
+  return recipe.sourceParents.map(sourceParent => ({ ...source[sourceParent], sourceParent }));
+}
+
+export function productionBackgroundLayout(recipe, width, height) {
+  if (![width, height].every(value => Number.isFinite(value) && value > 0)) throw new RangeError('Positive background dimensions are required.');
+  const cached = backgroundLayouts.get(recipe);
+  if (cached?.width === width && cached.height === height) return cached.layout;
+  const unit = Math.min(width, height), gap = unit * .046, margin = unit * .012;
+  const areaWidth = Math.min(width, unit * 1.45), areaHeight = Math.min(height, unit * 1.45);
+  const left = (width - areaWidth) / 2, top = (height - areaHeight) / 2;
+  const entries = recipe.cohortMotion.eligible.map(parent => {
+    const seed = recipe.clumps[parent], motion = recipe.groupMotions[parent];
+    const breath = 1 + .025 * (1 - Math.sin(seed.sourceParent * 2.399963));
+    let extent = 1;
+    if (motion) {
+      extent = Math.max(...motion.lobes.map(([x, y, r]) => Math.hypot(x, y) + r),
+        ...motion.cycles.flatMap(cycle => motion.lobes.map(([x, y, r], i) =>
+          Math.hypot(x + cycle.offsets[i][0], y + cycle.offsets[i][1]) + r)));
+    }
+    const radius = seed.radius * (motion?.geometryMultiplier || CREAM_GEOMETRY_MULTIPLIER) * breath;
+    return { parent, radius: (extent * radius + Math.hypot(...seed.orbit)) * unit };
+  }).sort((a, b) => b.radius - a.radius);
+  let placed;
+  for (let attempt = 0; attempt < 8; attempt++) {
+    const current = [];
+    for (const entry of entries) {
+      const seed = recipe.clumps[entry.parent], radius = entry.radius;
+      const desired = { x: left + areaWidth * (attempt % 2 ? 1 - seed.x : seed.x),
+        y: top + areaHeight * (attempt % 3 ? 1 - seed.y : seed.y) };
+      let best, distance = Infinity;
+      for (let row = 0; row <= 32; row++) for (let column = 0; column <= 32; column++) {
+        const x = left + radius + margin + (areaWidth - 2 * (radius + margin)) * column / 32;
+        const y = top + radius + margin + (areaHeight - 2 * (radius + margin)) * row / 32;
+        if (current.some(other => Math.hypot(x - other.x, y - other.y) < radius + other.radius + gap)) continue;
+        const score = Math.hypot(x - desired.x, y - desired.y);
+        if (score < distance) { best = { ...entry, x, y }; distance = score; }
+      }
+      if (!best) break;
+      current.push(best);
+    }
+    if (current.length === entries.length) { placed = current; break; }
+  }
+  if (!placed) throw new RangeError('The selected background motion envelopes cannot fit without changing piece sizes.');
+  const layout = Object.freeze(placed.sort((a, b) => a.parent - b.parent).map(entry => Object.freeze(entry)));
+  backgroundLayouts.set(recipe, { width, height, layout });
+  return layout;
+}
+
+function cohortTranslations(recipe, sampled, state, width, height) {
+  const unit = Math.min(width, height), layout = productionBackgroundLayout(recipe, width, height);
+  const resting = new Map(layout.map(entry => {
+    const seed = recipe.clumps[entry.parent], sample = sampled[entry.parent];
+    return [entry.parent, { x: entry.x + sample.x - seed.x * width, y: entry.y + sample.y - seed.y * height }];
+  }));
+  const result = new Map(layout.map(entry => [entry.parent, { x: entry.x - recipe.clumps[entry.parent].x * width,
+    y: entry.y - recipe.clumps[entry.parent].y * height, amount: 0 }]));
+  for (const cohort of state.cohorts) {
+    const radii = cohort.parents.map(parent => sampled[parent].radius *
+      (recipe.groupMotions[parent] ? recipe.groupMotions[parent].geometryMultiplier * recipe.groupMotions[parent].lobes[0][2] : CREAM_GEOMETRY_MULTIPLIER));
+    const distance = (a, b) => radii[a] + radii[b] + unit * COHORT_MOTION_PROFILE.gapFraction;
+    const first = distance(0, 1), points = [[0, 0], [first, 0]];
+    if (radii.length === 3) {
+      const a = distance(0, 2), b = distance(1, 2), x = (first * first + a * a - b * b) / (2 * first);
+      points.push([x, Math.sqrt(Math.max(0, a * a - x * x))]);
+    }
+    const c = Math.cos(cohort.turn), s = Math.sin(cohort.turn);
+    const rotated = points.map(([x, y]) => [c * x - s * y, s * x + c * y]);
+    const mean = [0, 1].map(axis => rotated.reduce((sum, point) => sum + point[axis], 0) / rotated.length);
+    const offsets = rotated.map(point => point.map((value, axis) => value - mean[axis]));
+    const hub = ['x', 'y'].map(axis => cohort.parents.reduce((sum, parent) => sum + resting.get(parent)[axis], 0) / cohort.parents.length);
+    for (let axis = 0; axis < 2; axis++) {
+      const bounds = cohort.parents.map((parent, index) => {
+        const motion = recipe.groupMotions[parent], radius = sampled[parent].radius * (motion?.geometryMultiplier || CREAM_GEOMETRY_MULTIPLIER);
+        const lobes = motion?.lobes || [[0, 0, 1]];
+        return [Math.min(...lobes.map(lobe => (lobe[axis] - lobe[2]) * radius)) + offsets[index][axis],
+          Math.max(...lobes.map(lobe => (lobe[axis] + lobe[2]) * radius)) + offsets[index][axis]];
+      });
+      hub[axis] = Math.max(unit * .012 - Math.min(...bounds.map(b => b[0])),
+        Math.min((axis ? height : width) - unit * .012 - Math.max(...bounds.map(b => b[1])), hub[axis]));
+    }
+    cohort.parents.forEach((parent, index) => {
+      const rest = resting.get(parent), base = sampled[parent], amount = cohort.amount;
+      result.set(parent, { x: rest.x + (hub[0] + offsets[index][0] - rest.x) * amount - base.x,
+        y: rest.y + (hub[1] + offsets[index][1] - rest.y) * amount - base.y, amount });
+    });
+  }
+  return result;
 }
 
 export function productionEdgeLayout(model, recipe, width, height) {
@@ -177,7 +375,7 @@ export function productionEdgeLayout(model, recipe, width, height) {
       return { min: Math.min(...values), max: Math.max(...values) };
     });
     // Every seeded cycle interpolates between these exact endpoints; piece radii never shrink.
-    const phase = Math.sin(parent * 2.399963), breathMax = 1 + .025 * (1 - phase);
+    const phase = Math.sin(seed.sourceParent * 2.399963), breathMax = 1 + .025 * (1 - phase);
     const breathMin = 1 - .025 * (1 + phase), radius = seed.radius * unit * motion.geometryMultiplier;
     const leftOffsets = edges.map(edge => edge.min * radius * (edge.min < 0 ? breathMax : breathMin));
     const rightOffsets = edges.map(edge => edge.max * radius * (edge.max > 0 ? breathMax : breathMin));
@@ -202,17 +400,27 @@ export function productionEdgeLayout(model, recipe, width, height) {
 
 export function sampleProductionScene(model, recipe, width, height, seconds, spawns = []) {
   if (!Array.isArray(spawns) || spawns.length > CREAM_MAX_SPAWNS) throw new RangeError('At most eight strawberry spawns are supported.');
-  const sampled = model.sampleScoops(model.seedScoops(width, height, recipe), seconds, width, height);
+  const sampled = sampleProductionScoops(model, recipe, width, height, seconds);
   const edgeLayout = productionEdgeLayout(model, recipe, width, height);
   const translations = new Map(edgeLayout.groups.map(group => [group.parent, group.translationX]));
+  const cohorts = sampleCohortMotion(recipe.cohortMotion, seconds);
+  const free = cohortTranslations(recipe, sampled, cohorts, width, height);
   const main = [], attached = [];
   sampled.forEach((scoop, parent) => {
     const group = scoop.kind === 'group';
-    const lobeState = group ? sampleGroupMotion(recipe.groupMotions[parent], seconds).lobeState : scoop.lobeState;
+    const movement = free.get(parent);
+    let lobeState = group ? sampleGroupMotion(recipe.groupMotions[parent], seconds).lobeState : scoop.lobeState;
+    if (group && movement?.amount) {
+      const canonical = recipe.groupMotions[parent].lobes;
+      lobeState = lobeState.map(([x, y, radius], lobe) => [x + (canonical[lobe][0] - x) * movement.amount,
+        y + (canonical[lobe][1] - y) * movement.amount, radius]);
+    }
     // Expand one validated group at a time: the immutable study's aggregate capacity is deliberately smaller.
-    for (const primitive of model.expandScoops([{ ...scoop, x: scoop.x + (translations.get(parent) || 0),
+    for (const primitive of model.expandScoops([{ ...scoop, peak: 0,
+      x: scoop.x + (translations.get(parent) || movement?.x || 0), y: scoop.y + (movement?.y || 0),
       lobeState, radius: scoop.radius * (group ? recipe.groupMotions[parent].geometryMultiplier : CREAM_GEOMETRY_MULTIPLIER) }])) {
-      (primitive.lobe === 0 ? main : attached).push({ ...primitive, parent });
+      (primitive.lobe === 0 ? main : attached).push({ ...primitive, parent, sourceParent: scoop.sourceParent,
+        pieceId: `${scoop.sourceParent}:${primitive.lobe}` });
     }
   });
   const primitives = [...main, ...attached], ambientCount = primitives.length;
@@ -225,11 +433,11 @@ export function sampleProductionScene(model, recipe, width, height, seconds, spa
     primitives.push({ x: Math.max(0, Math.min(width, x)), y: Math.max(0, Math.min(height, y)),
       radius: unit * CREAM_SPAWN_BASE_RADIUS * SPAWN_GEOMETRY_MULTIPLIER *
         (1 + .022 * (Math.sin(phase + age * model.MOTION_PROFILE.breathRate) - Math.sin(phase))),
-      peak: 0, parent: sampled.length + index, lobe: 0, spawnId: spawn.id,
+      peak: 0, parent: recipe.sourceClumps.length + index, lobe: 0, spawnId: spawn.id,
       spawnShape: spawn.shape ?? createSpawnShape(recipe.seed, spawn.id) });
   });
   if (primitives.length > CREAM_MAX_PRIMITIVES) throw new RangeError('Production cream primitive capacity exceeded.');
-  return { primitives, ambientCount, strawberryStart: spawns.length ? ambientCount : -1 };
+  return { primitives, ambientCount, strawberryStart: spawns.length ? ambientCount : -1, cohorts };
 }
 
 export function createSpawnShape(seed, id) {
@@ -819,6 +1027,9 @@ async function initialize(layer, model) {
       scenePrimitiveCount: scene.primitives.length, contactActive: painted.contact.active,
       contactHead: painted.contact.head, contactTrail: painted.contact.tail, pointerCropMargin: painted.margin.toFixed(4),
       ambientPrimitiveCount: scene.ambientCount, strawberryStart: scene.strawberryStart,
+      automaticPeakMax: Math.max(...scene.primitives.slice(0, scene.ambientCount).map(p => p.peak)),
+      backgroundPieceIds: JSON.stringify(scene.primitives.slice(0, scene.ambientCount).map(p => p.pieceId)),
+      cohortState: JSON.stringify(scene.cohorts),
       spawnCount: spawns.length, spawnRecords: JSON.stringify(spawns), scoopCount: recipe.clumps.length + spawns.length,
       cursorRadius: painted.radius.toFixed(3), cursorX: cursor.x.toFixed(4), cursorY: cursor.y.toFixed(4),
       pointerPose: JSON.stringify({ x: cursor.x, y: cursor.y, shape: cursorShape }),
@@ -932,6 +1143,11 @@ async function initialize(layer, model) {
       logicalCapacity: CREAM_MAX_GROUPS + CREAM_MAX_DROPLETS + CREAM_MAX_SPAWNS,
       geometryMultiplier: CREAM_GEOMETRY_MULTIPLIER, groupGeometryMultiplier: GROUP_GEOMETRY_MULTIPLIER,
       largeGroupGeometryMultiplier: LARGE_GROUP_GEOMETRY_MULTIPLIER,
+      sourceGroupCount: recipe.sourceGroupCount, sourceDropletCount: recipe.sourceDropletCount,
+      sourceAutomaticPrimitiveCount: recipe.sourceAutomaticPrimitiveCount,
+      automaticPrimitiveCount: recipe.automaticPrimitiveCount, populationRounding: 'ceil',
+      backgroundSourceParents: JSON.stringify(recipe.sourceParents), backgroundPopulationScale: BACKGROUND_POPULATION_SCALE,
+      cohortEligibleParents: JSON.stringify(recipe.cohortMotion.eligible), cohortMotionCycles: COHORT_MOTION_PROFILE.cycles,
       groupMotionMode: 'repel-attract', groupMotionCycles: GROUP_MOTION_PROFILE.cycles, trailLengthScale: CREAM_TRAIL_LENGTH,
       spawnCapacity: CREAM_MAX_SPAWNS, spawnBaseRadiusFraction: CREAM_SPAWN_BASE_RADIUS,
       spawnGeometryMultiplier: SPAWN_GEOMETRY_MULTIPLIER, spawnShapeExtent: SPAWN_SHAPE_PROFILE.extent });
