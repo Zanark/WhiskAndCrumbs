@@ -1,0 +1,31 @@
+# Increase all local blob movement another1.5X
+
+Status: DONE LOCAL
+Milestone: M72 Faster drift, breathing and split/rejoin
+Dependencies: 76_SOFTER_STRAWBERRY_LONGER_TRAIL.todo
+
+## Tasks
+
+- [x] Multiply current orbit and breathing rates by1.5.
+- [x] Apply the same multiplier to relative-lobe split/rejoin motion.
+- [x] Preserve recipes, positions, sizes, cursor lag and the new.66trail scale.
+- [x] Compare every sampled primitive with the prior model at1.5t.
+- [x] Confirm the automatically versioned running preview uses the new rates.
+
+## Acceptance criteria
+
+- Current orbit.6328125, breathing.0871875 and relative-lobe rate1.5.
+- Same shapes and paths at1.5Xspeed; no geometry, density or material changes.
+- Half-strength strawberry pink and1.5Xlonger cursor trail remain.
+- Local-only; no published bakery or artwork changes.
+
+## Completion evidence
+
+- .local\cream-faster-all-20261010\timing.json:15,120primitive values match
+  previous1.5twithin3.41e-12; recipes and trail profile unchanged.
+-28model tests pass. live-preview.json confirms revision36940be35c06 and every rate.
+
+## Completion log
+
+- 2026-10-10 - Applied the owner's additional1.5Xrequest to all autonomous motion,
+  including the peeling satellites. Effective split/rejoin period is12-17.33seconds.

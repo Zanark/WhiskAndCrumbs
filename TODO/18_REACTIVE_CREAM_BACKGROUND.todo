@@ -1,0 +1,100 @@
+# Pointer-Reactive Cream Background
+
+Status: DEFERRED
+Milestone: M13 Rejected effect removed; implementation parked for an explicitly requested future revisit
+Dependencies: 17_REPOSITORY_RENAME_AND_VISUAL_README.todo; preserved entrance/notebook accessibility
+
+## Purpose
+
+The owner rejected the appearance and requested removing the feature, parking it
+for a future revisit. Restore the static background; do not continue refining or
+reenable either rejected prototype without a new request.
+
+Parked source and runbook: docs\parked-cream-effect.md and
+.local\parked\cream-surface-20261008\preservation.json.
+
+## Tasks
+
+- [x] Preserve exact implementation/tests/review/integration files and historical evidence.
+- [x] Remove active imports, CSS, build entry, source module and default test-runner wiring.
+- [x] Publish the removal and verify no canvas, module request or pointer painting remains.
+- [ ] Revisit only if explicitly requested in the future.
+
+### Historical prototype implementation (rejected)
+
+- [x] Apply owner correction: smooth native-resolution folds and peaks, no dissolution.
+- [x] Retain marks across idle, scroll, resize, dialogs, blur, print/accessibility
+  restoration and page lifecycle without continual drawing.
+- [x] Preserve existing marks under a bounded tiled backing budget.
+- [x] Review three explicitly authorized sequential sheets; final ivory/tapered
+  revision selected, earlier rigid/yellow version rejected.
+- [x] Publish the replacement and verify live persistence.
+
+### Earlier implementation (superseded appearance)
+
+- [x] Add independent cream.mjs enhancement and its versioned build copy.
+- [x] Implement a bounded damped height field with pale highlight/shadow rendering.
+- [x] Mask text, controls, photographs, notebooks, headers/footers and green sections.
+- [x] Stop after settling; no idle paint loop.
+- [x] Disable for reduced motion, forced colours, print, touch-only and save-data.
+- [x] Pause/clear for entrance, modals, hidden pages, scroll/resize and blur.
+- [x] Cover missing module/styles/canvas and restored-page lifecycle.
+- [x] Review two sequential15-tile cream sheets within the authorized3-sheet total.
+- [x] Complete final website/notebook regressions and publish with workstream17.
+- [x] Verify the live optional effect and original static fallback.
+
+## Acceptance criteria
+
+- Active website has only the original static cream background and subtle outlines.
+- Cream code is absent from runtime loading, styling and the public allowlist.
+- Exact archived prototype/evidence remains available privately for a future redesign.
+- Pink covers, shared weight note, README images, media, notebook and entrance behavior remain.
+
+## Completion evidence
+
+- Removal release3b9d6e49ca5370c632605e3d57ebba39c5372ebe / Pages37688949889,
+  versionf7af8892c51b.155public files; no canvas/import/module, oldURL404 and
+  unchanged screenshot bytes under mouse movement.72Node and local/public
+  site/entrance checks pass. Parked eleven file hashes verified, all media retained.
+- Removal receipt:.local\parked\cream-surface-20261008\removal-publication.json.
+
+### Rejected prototype history
+
+- Rejected historical releasec3abec2 / Pages37686201710, version2214c072826b. Changed live
+  bytes match.75Node,152notebook/285photo local states and full local/public
+  site/entrance/cream checks pass; exact retained pixels across lifecycle tests.
+- Historical receipt:.local\whipped-cream-20261008\publication.json.
+- New correction evidence: .local\whipped-cream-20261008\release-candidate\review.json.
+- Three additional views authorized and consumed; lifetime115attempts/114successful.
+- No user-reference photograph pixels are copied. Production source is original
+  procedural curve/shading code; continuous-motion/owner acceptance stays separate.
+
+### Earlier dissolving implementation (rejected)
+
+- Published55480844c7ae17a38efe3c87b66067f9c65be1fb, successfulPages37674894908.
+- Public runtime/fallback report: .local\readme-showcase-20261007\public-cream\review.json.
+- Release receipt: .local\readme-showcase-20261007\publication.json.
+
+- Source: web\cream.mjs; static CSS gate: --cream-ready.
+- Unit tests: tests\cream.test.mjs.
+- Browser/lifecycle evidence: .local\readme-showcase-20261007\cream-polished\review.json.
+- Review sheet: cream-polished\cream-review-15.jpg.
+- Three total newly authorized image views are consumed; lifetime112attempts.
+
+## Completion log
+
+- 2026-10-08 - Owner rejects the retained effect's appearance and requests removing/
+  parking it. Preserved eleven exact source/integration/test files with hashes,
+  removed active feature wiring and added static-background regression checks.
+  No new image views or reference uploads. Removed live as3b9d6e4 / Pages37688949889;
+  static-background runtime and retired-module404checks pass. Feature stays deferred.
+
+- 2026-10-08 - Rejected fading ripple replaced and published. Persistent ivory
+  folds/peaks use native curves and document tiles, no idle decay. Three authorized
+  sheets consumed, final style selected; protected content/reference-photo pixels
+  unchanged. Publishedc3abec2 / Pages37686201710, all relevant live checks pass.
+
+- 2026-10-07 - User requested gooey cream feel following mouse movement. Implemented
+  optional30fpsbounded surface and protected-content masking. Initial shadow was
+  too muddy at sheet scale; paler cream revision selected on the final allowed
+  sheet. Runtime/lifecycle fixtures pass; publication pending.

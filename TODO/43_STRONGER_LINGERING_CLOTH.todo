@@ -1,0 +1,52 @@
+# Stronger, Wider and Lingering Cloth Waves
+
+Status: DONE
+Milestone: M38 A visibly stronger mouse response with a longer natural decay
+Dependencies: 41_LONGER_RED_STRIPED_SUPPORTED_AWNING.todo
+
+## Purpose
+
+The owner wants the cloth much more sensitive to the mouse, with waves spreading
+farther and lingering after input stops. This changes page-cloth interaction only.
+
+## Tasks
+
+- [x] Preserve the prior model and renderer for controlled comparison.
+- [x] Increase mouse forcing/compliance and broaden the influence patch.
+- [x] Strengthen neighbour coupling and reduce damping while retaining finite bounds.
+- [x] Preserve exact rail/edge pins, rigid supports, static restoration and idle stopping.
+- [x] Compare displacement, propagation width and decay against the actual prior model.
+- [x] Check the actual uploaded browser mesh and full interaction safeguards.
+- [x] Publish the scoped motion-only modules/cache HTML and update documentation.
+
+## Acceptance criteria
+
+- Clearly stronger initial response and wider wave propagation, not only faster timing.
+- A visible lingering tail, followed by exact idle rather than permanent animation.
+- Fixed metal/rails, 20px draw gutter, approximately2Mpixel budget and all safe fallbacks.
+- Static artwork, dimensions, canopy colour, phone tilt and all other UI remain unchanged.
+- No new image views, questions or invented aesthetic approval.
+
+## Completion evidence
+
+- Baseline:a7325203eaffef402caf5fe3b594b555098a69f4.
+- Snapshot/comparison:.local\responsive-lingering-awning-20261009\.
+- Canonical1440x324model: initial peak about3x, affected width2.07-2.21x,
+  exact release rest4.725s versus2.067s; quarter-pixel visible tail2.675s versus0.883s.
+- Sixteen targeted model tests pass; full cloth/support browser checks pass.
+- Only two motion modules change; all static media may remain byte-identical.
+- Published712238543f2db707604f581b54fdf1758aec6b80 / Pages37858472274,
+  version26dede947f25.175livefiles/README/ABOUTmatch;only4publicpaths.
+-130Node,localfullsite/entry andlocal/live response/fabric/support reviews pass.
+- Liveuploadedmesh:19.5pxpeak,900pxaffectedwidth,1.25pxtailaround2s,
+  exactrest4.7105s and0idleuploads; allstaticart/phone tilt/othercode unchanged.
+
+## Completion log
+
+- 2026-10-09 - Published and confirmed live. Initial scroll-settling waits use
+  the existing10second bound for the intentionally longer tail; response/locality
+  thresholds remain strict. No images were changed or visually inspected.
+
+- 2026-10-09 04:15 IST - Owner requests stronger, wider, lingering waves.
+  Increased pointer zone72->112px, displacement cap14->26px, forcing/coupling
+  and influence radius; lowered damping. Model comparison and existing safeguards pass.

@@ -1,0 +1,52 @@
+# Moving, Softened, Peaked Cream Study
+
+Status: DONE
+Milestone: M22 Local material refinement
+Dependencies: 19_LIGHTER_PINK_TABS_AND_MATERIAL_STUDY.todo
+
+## Purpose
+
+The owner likes the local4174cream study and requests continuous blob movement,
+a slight blur and whipped peaks on some forms instead of flat cut tops.
+This remains local-only: no production cream integration or Pages change.
+
+## Tasks
+
+- [x] Preserve the liked experiment sources and current context.
+- [x] Add deterministic continuous drift/breathing without changing retained anchors.
+- [x] Keep Pause and reduced-motion modes static; freeze clock while hidden/inactive.
+- [x] Apply a0.8pxblur to the cream canvas only, leaving text/controls sharp.
+- [x] Replace the clipped-height plateau with curved domes and selected soft peaks.
+- [x] Preserve peak attributes through resize and context restoration.
+- [x] Add pure model/profile checks using the existing Node runner.
+- [x] Verify actual GPU motion, blur, peak contribution and complete lifecycle behavior.
+- [x] Update local guide/context; confirm production files remain untouched.
+
+## Acceptance criteria
+
+- Blobs keep moving without pointer activity and retain all placed scoop records.
+- Only some forms have tapered peaks; rounded forms remain in the composition.
+- No hard inner height clamp creating broad flat tops.
+- Pause freezes all motion/paint; hidden/inactive/forced-colour/print stops rendering.
+- Active visible motion has a30fps ceiling; no catch-up jump after inactivity.
+- Existing resolution budget,18stored-scoop limit and static fallback remain.
+- No new image-tool views; owner liking the old study does not approve this new
+  revision or authorize production integration.
+
+## Completion evidence
+
+- Source:.local\moving-cream-study-20261008\before\experiment\ preserves old study.
+- Current implementation:experiments\cream-metaballs\ only.
+-11pure model/profile tests and browser/GPU/lifecycle checks pass.
+  Continuousmotion19->42paints without input, peakuniformshaderprobechanges/
+  restoresframe, blur0.413%pixels with unchangedbuttoninteriors. Pause/limits/
+  metadataresize/contextrecovery/nativeDPR2/touch/fallback coverage pass.
+- Receipt:.local\moving-cream-study-20261008\completion.json.
+- Production4043eafandtrackedworktree unchanged; no public build or deployment.
+
+## Completion log
+
+- 2026-10-08 - Completed locally; current4174server serves updated sources.
+  No new image views; new revision's visual acceptance remains unrecorded.
+- 2026-10-08 - Owner says "i like it" about4174study, then asks for ongoing motion,
+  slight blur and some peaks. Kept the scope isolated and the liked visual basis.

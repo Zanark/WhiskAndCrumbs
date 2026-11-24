@@ -1,0 +1,48 @@
+# Extra-Pale Pink Notebook Covers
+
+Status: DONE
+Milestone: M29 Lighter cover-only blush
+Dependencies: 16_CATEGORY_NOTEBOOKS.todo; 33_TALLER_AWNING_AND_DEEP_VALANCE.todo
+
+## Purpose
+
+The owner asks for even lighter pink covers. Blend the existing#f7dbe4with50%white
+to#fbedf2, preserving the rest of the palette and all notebook interactions.
+
+## Tasks
+
+- [x] Preserve current CSS, tests, public docs and context.
+- [x] Apply#fbedf2to the six closed-cover faces only.
+- [x] Keep the weight note's previous pink using a dedicated semantic accent token.
+- [x] Preserve all tab colours, green text, cream interiors/body and real cake images.
+- [x] Update existing colour/palette checks and verify local site/entrance behavior.
+- [x] Refresh affected current campaign images and portrait variants.
+- [x] Publish the narrowly scoped colour change and verify live bytes.
+
+## Acceptance criteria
+
+- Cover RGB251,237,242; originalgreen labels/backing unchanged and readable.
+- Only `.notebook-cover.notebook-page` consumes the cover-face colour.
+- Weight note remainsRGB247,219,228, no roof/header/other palette changes.
+- No new image-tool views, product details, size choices or behaviour changes.
+
+## Completion evidence
+
+- Published9778fc8e4f31ddcfab7fa4e439d91bee71451895 / Pages37813590487,
+  version351a2a9f2186.169livefiles/README/ABOUTmatch;6public paths.
+-110Node/9asset andfull local/publicsite+entrychecks pass. Greenlabelcontrast8.67:1,
+  actualsixcovercoloursandpreservedweight-noteaccentverified.
+- Updated04/05campaignpair;localnewkitexports\website-launch-20261008-paler-covers\.
+- Receipt:.local\paler-pink-covers-20261008\publication.json;noimageviews/posting.
+-110Node tests and full local site/entrance checks pass.
+- Snapshot/evidence:.local\paler-pink-covers-20261008\.
+- A first test rejected the generic --blushname reserved by the old rejected
+  palette guard; the retained weight accent now uses --weight-note-accent.
+  The guard was preserved, not relaxed.
+
+## Completion log
+
+- 2026-10-08 - Complete and live; only cover faces recoloured, existing media and
+  behavior preserved. No remaining implementation or publication work.
+- 2026-10-08 - Lightened the covers again and decoupled the weight-note accent
+  so the requested cover change cannot recolour other surfaces.

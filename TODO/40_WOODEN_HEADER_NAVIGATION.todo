@@ -1,0 +1,50 @@
+# Wooden Header Navigation
+
+Status: DONE
+Milestone: M35 Continuous wooden signboard above the cloth canopy
+Dependencies: 25_WOODEN_BACKLIT_SHOP_SIGN.todo; 32_CONTINUOUS_WOOD_AND_RAISED_SIGN.todo
+
+## Purpose
+
+The owner rejects the cream navigation strip between the wooden identity and
+cloth canopy. The navigation should sit on the wooden board, with light lettering
+like the descriptor and a raised wooden How to order button.
+
+## Tasks
+
+- [x] Preserve the current header template, styles and reviewer.
+- [x] Place navigation inside the existing continuous wooden signboard.
+- [x] Match the descriptor's cream lettering and shadow with readable 18px links.
+- [x] Add a textured, bevelled wooden ordering button without changing its action.
+- [x] Preserve responsive wrapping, 48px targets, visible focus and forced-colour/print modes.
+- [x] Check all header widths at 100%/200% text and actual wooden-row pixels.
+- [x] Refresh current launch artwork and documentation with the architectural facade release.
+- [x] Publish only scoped generated changes and confirm the live site.
+
+## Acceptance criteria
+
+- No cream navigation band interrupts the wood between the name and canopy.
+- Original wood, branding, Courgette/DM Sans and navigation destinations remain.
+- Links match the descriptor's light treatment; How to order looks like a wood button.
+- No text shrinking, hidden mobile navigation, clipped targets or low-contrast focus.
+- Facade, interior, notebook, audio and cloth behavior are not accidentally changed.
+
+## Completion evidence
+
+- Before: .local\wooden-navigation-20261009\before\.
+- Combined evidence: .local\architectural-facade-20261009\.
+- Source tests: tests\site.test.mjs.
+- Width/text, contrast and keyboard coverage: scripts\review_site.py.
+-16width/text cases pass locally/publicly; actual cream-band pixel fraction0.
+- Wood RGB variation6.57/5.97/4.38; descriptor-colour18pxlinks/lightfocus/woodbutton.
+- Release3d86ad16057016b2e0f5590c87ac5463064105a0 / Pages37841392015.
+-174live files/README/ABOUT match; versionf5adedeeb7c7.
+
+## Completion log
+
+- 2026-10-09 - Gap-free wooden navigation/button published and confirmed live.
+  Full site, entry, architecture and cloth suites pass. Current artwork/docs
+  agree with the release; no questions or image-tool views.
+- 2026-10-09 01:49 IST - Owner identified the cream gap. Navigation now shares
+  the sign's wood background; cream text and a wood-textured ordering button are
+  implemented. Combined build contains 174 files and 120 Node cases pass.

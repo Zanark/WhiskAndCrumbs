@@ -1,0 +1,44 @@
+# Smaller randomly shaped click-spawned blobs
+
+Status: DONE PUBLIC
+Milestone: M80 Half-size click blobs with a new soft shape per click
+Dependencies: 84_SMALLER_SEPARATING_GROUPS.todo
+
+## Purpose
+
+The owner requests half-size click-spawned blobs and a different noncircular
+shape on every click. This changes spawned blobs only; preserve the pending
+smaller separating groups, individual background blobs and cursor/trail.
+
+## Tasks
+
+- [x] Preserve the completed unpublished84source and its final evidence.
+- [x] Halve spawned-blob dimensions relative to the previous.15short-axis radius.
+- [x] Select a bounded soft irregular shape once per click and retain it through resize/Pause.
+- [x] Use the same shape for distance, shading, tint, shadow and cursor contact.
+- [x] Prove noncircular variety, opaque click centers, half-size bounds and no tint/crop leaks.
+- [x] Preserve newest8FIFO, normal controls, touch scrolling and all non-spawn behavior.
+- [x] Publish84/85together and repeat relevant actual live checks.
+
+## Acceptance criteria
+
+- Spawn base radius becomes.075of the short axis, with shape extent bounded
+  rather than stretched back beyond the requested half-size envelope.
+- Repeated clicks create genuinely different outlines, not merely rotated circles.
+- Shapes remain stable after creation, aside from existing gentle drift/breathing.
+- Original group classifications/scales, random separation cycles and edge bounds remain.
+- No cursor, individual background blob, photo, palette or local-study change.
+
+## Evidence
+
+- Published baseline27e82b6/Pages38094790715/a7f1fab52a19.
+- .local\group-motion-20261011\before-spawn-shapes\ preserves84candidatebabd1add85b2.
+- New implementation/evidence: .local\group-motion-20261011\spawn-shapes\.
+
+## Completion log
+
+- 2026-10-11 06:24 - Half-size random-outline spawns requested; implementation active.
+- 2026-10-11 - Deliveredabf0ae0/Pages38103687444/051d5117f212. All13LIVEreviews
+  pass,including72shapeGPUcases,half-sizeboundmax.4611ofoldopaque diameter,
+  uniqueoutlines/FIFO/contact andcontext-loss recovery.201Node/51enginecases,
+  148photos/1377protectedfilesretained. Finalpublication.json sealed08:07:11+05:30.

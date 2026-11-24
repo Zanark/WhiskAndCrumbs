@@ -1,0 +1,116 @@
+# Our Little Story and Cake Stickers
+
+Status: DONE
+Milestone: M3 Requested local implementation and review complete; user/native acceptance and launch separate
+Dependencies: 01_PRODUCT_DECISIONS.todo, 02_REFERENCES_AND_PHOTOGRAPHY.todo, 04_VISUAL_DESIGN.todo, 05_WEBSITE_AND_ORDERING.todo, 06_TESTING_AND_LAUNCH.todo, 08_READABILITY_AND_SIMPLE_ORDERING.todo
+
+## Purpose
+
+Implement the user's explicit request to bring back the original Our little story
+immediately below the first section and the chosen background-removed white cake
+stickers. This supersedes the earlier three-section-only policy without reviving
+FAQs, forms, new biography or a separate custom-cake section. Keep source
+preservation, local verification, visual judgement and user approval distinct.
+
+## Tasks
+
+- [x] Preserve the previous site and browser review before the sticker revision.
+- [x] Restore the exact original story copy and recipe-note illustration below hero.
+- [x] Keep section order home -> story -> cakes -> order and the three existing nav links.
+- [x] Retain direct Ask about this cake links; leave FAQ/form/custom sections out.
+- [x] Generate five separate cutouts, two sizes each in transparent WebP/PNG: 20 variants.
+- [x] Record rembg 2.0.85/BiRefNet model provenance and alpha-only correction recipe.
+- [x] Preserve the peacock eye; clear cherry/doll background fragments in alpha only.
+- [x] Keep source screenshots, crop masters and old prepared-photo variants unchanged.
+- [x] Display stickers with white contours and alpha shadows instead of photo rectangles.
+- [x] Keep all visible topper/sticker bounds and non-rotated View larger photo labels.
+- [x] Remove the overlapping hero badge and retain full prepared JPG enlargement.
+- [x] Keep normal preparation Pillow-only; isolate opt-in inference/model downloads locally.
+- [x] Document source/public boundaries and update current instructions/catalogue.
+- [x] Finish local build, Node and Python checks; record actual commands/results below.
+- [x] Finish browser regressions, including four-section/story and sticker/JPG behavior.
+- [x] Parent inspects the final cream/dark sheet, desktop/mobile full pages and 200% order view.
+- [x] Record source limitations and leave representative-user/final visual feedback separate.
+- [x] Keep publication blocked behind separate authorization and hosting/business gates.
+
+## Acceptance criteria
+
+- [x] The original story/note is immediately between home and cakes, with no new biography.
+- [x] Five real cakes remain directly enquireable; Instagram handoff/no-prefill is unchanged.
+- [x] Mask recipes and provenance are separate from original RGB/source photographs.
+- [x] No clipped cherries, dress base or upper feather are reconstructed or called perfect.
+- [x] Final derivatives decode with transparency, expected dimensions and matching hashes.
+- [x] Parent visually reviewed source/mask comparisons; opaque-pixel/feather-eye
+  checks pass and source-clipping limitations remain disclosed.
+- [x] Readability styles retain 18px reading copy/reduced motion; actual browser checks
+  pass 16px+ key labels, 48px controls, focus/navigation and usable 200% text without overflow.
+- [x] View larger photo loads the full prepared JPG; direct links work without JavaScript.
+- [x] The actual public output is 53 files, with 20 sticker variants
+  under site\assets\stickers; masks/manifests/recipes/private artifacts are excluded.
+- [x] User visual acceptance is explicitly unrecorded, separate from successful local checks.
+- [x] Publication remains blocked until explicitly approved.
+
+## Separate acceptance and release gates
+
+These do not reopen the completed requested local implementation:
+
+- [ ] Actual user visual/representative-customer acceptance — workstreams 01, 04 and 08.
+- [ ] Native Instagram/WhatsApp, real-device and assistive-technology acceptance — 06 and 08.
+- [ ] Approved business facts, suitable hosting and explicit public launch — 01 and 06.
+
+## Completion evidence
+
+- Scope: user's request to bring back Our little story below the first section and
+  selection of background removal with a white sticker outline.
+- Story source: ..\.local\revisions\before-three-sections-20261004\site\index.html.
+  Implemented in ..\web\index.template.html; original copy/illustration preserved
+  with the configured Instagram URL.
+- Previous revision: ..\.local\revisions\before-stickers-20261004\site\ and review\.
+- Unchanged source archive: ..\.local\photos\prototype-20261004\; retained prepared
+  full photos and crop provenance: ..\assets\images\cakes\.
+- Derivatives: ..\assets\images\cake-stickers\ (20 WebP/PNG variants), manifest.json,
+  mask-recipe.json, masks\*.png and masks\review.json. Provenance is source-side only.
+- Mask models: local rembg 2.0.85; birefnet-general-lite for ribbon/cherry/doll/butterfly,
+  birefnet-general for peacock. Corrections are alpha-only and recorded by hash/reason.
+- Reproduction: ..\scripts\prepare_cake_stickers.py (infer/refine/prepare),
+  ..\scripts\requirements-stickers.txt and ..\assets\images\cake-stickers\README.md.
+- Final comparison artifact: ..\.local\stickers\final-review.jpg.
+- Documentation check: scoped local Markdown links resolve and all numbered TODO
+  files retain required schema; no build, image generation or runtime review run
+  by this documentation task.
+- Final results supplied by the parent on 2026-10-04; the documentation task did
+  not rerun them. The current browser report was read to verify its recorded outcomes.
+- Build result: PASS — npm run build produced 53 public files, including 20 sticker
+  variants. Public-boundary checks retain photos while excluding private provenance.
+- Node result: PASS — npm test passed 20 Node cases.
+- Python result: PASS — python -m unittest discover -s .\tests -p test_cake_stickers.py -v
+  passed five cases. Checks cover RGBA/padding, dimensions/hashes/no upscaling,
+  invalid masks, feather-eye retention, unchanged archived screenshot/crop hashes
+  and source RGB equality at all opaque mask pixels before resizing/compression.
+- Browser result: PASS — python .\scripts\review_site.py;
+  ..\.local\website-review\review.json reports passed with home/story/cakes/order
+  and 188 main DOM words (113 focus + 75 story). All six on-page image instances
+  have transparent corner alpha and retain original prepared JPG viewer links.
+  Widths 320/390/600/768/1024/1440 pass with 16px+ key labels and 48px controls;
+  no-JS, keyboard/photo dialog, 200% text and cold 150ms/200kB-per-second network
+  coverage also passed. The report itself has no timestamp field.
+- Visual inspection: COMPLETE — parent visually inspected the final cream/dark
+  sheet, desktop/mobile full pages and the 200% order screenshot. Source-clipped
+  cherries, dress base and upper feather remain clipped; no complete-source or
+  perfect-cutout claim is made.
+- User visual approval: NOT RECORDED — scope choice is not final acceptance.
+- Publication: NOT AUTHORIZED — no deployment performed.
+
+## Completion log
+
+- 2026-10-04 - Final evidence received and recorded: 20 Node cases, five sticker
+  cases, 53-file build and current browser review pass; parent visual inspection
+  complete. Marked DONE for the requested local implementation only. User visual
+  acceptance, native app/device/AT acceptance and public launch remain separate
+  and uncompleted; original source limitations remain explicitly disclosed.
+- 2026-10-04 - Implemented the approved story restoration and white-contour sticker
+  treatment. Preserved originals and previous site/review; documented local masks,
+  recorded corrections, Pillow-only preparation and 53-file expected public boundary.
+  Instructions and current TODO facts now reflect four sections. Local technical
+  and visual review remains in progress; no new validation pass or visual approval
+  is claimed by this documentation handoff.

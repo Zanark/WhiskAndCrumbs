@@ -1,0 +1,61 @@
+# Larger Wooden Backlit Shop Sign
+
+Status: DONE
+Milestone: M20 Centered storefront identity
+Dependencies: 23_FULL_WIDTH_AWNING_AND_PLAIN_HERO.todo; 24_LARGER_EDGE_BOOK_TABS.todo
+
+## Purpose
+
+The owner wants the logo and shop name larger and repositioned like a shop sign,
+with a wooden backdrop and warm backlighting. Keep the existing font and logo;
+move the existing navigation underneath, above the full-width awning.
+
+## Tasks
+
+- [x] Preserve original header/template, tests, public overview and showcase bytes.
+- [x] Center a larger signboard using original Courgette and unchanged mark.
+- [x] Add original subtle wood detailing and steady warm lettering/medallion glow.
+- [x] Place the existing navigation below the name, preserving labels and targets.
+- [x] Check320-2560px,200%text, contrast, keyboard, no-JS and forced-colour fallbacks.
+- [x] Update the first README showcase image; keep exactly six linked images.
+- [x] Run existing site/entrance checks, record the baseline entry-focus failure, and publish only the scoped public output.
+
+## Acceptance criteria
+
+- Logo/name are materially larger, centered and visually separated from navigation.
+- Courgette font, actual mark bytes, business name and descriptor remain unchanged.
+- Dark wood is header-only; cream body, green sections and pink notebooks remain.
+- Text stays sharp/readable despite glow; no flashing or extra motion.
+- No clipping at narrow widths or200%text; controls retain48pxtargets.
+- Full-width awning and padded entrance remain unchanged.
+- No new image-tool views or owner visual acceptance claimed.
+
+## Completion evidence
+
+- Published7aebea1b9fac6de072ccd696d5e1c6f4fac80a73 / Pages37751181000,
+  version2a1e845b0e36. All162site files/README/ABOUTmatch; only5public paths.
+- Full public site/header and responsive entrance checks also pass. First README
+  image refreshed; remainingfive images and all120product variants unchanged.
+- Receipt:.local\wooden-shop-sign-20261008\publication.json; no new image-tool views.
+-77Node cases and full local site review pass, including16sign width/text cases.
+  Logo128pxdesktop/96pxmobile, lettering88/60.8/44.8px;200%text doubles each size.
+  Original Courgette/mark, visible keyboard focus and correct navigation order.
+- Five responsive entrance cases and16full-width awning states pass.
+- Existing full entrance reviewer hit a baseline focus race at its keyboard case:
+  CSS hiding can blur toBODY before animationend. The original old header also
+  reproduces it(4/4baseline;3/4current). Kept that unrelated entry code/test unchanged
+  and retained evidence; do not claim this run passed the full entrance suite.
+  Evidence:keyboard-focus-comparison.json andlocal-entrance-baseline-focus-failure\.
+- Baseline:fd73c996457a4af1d7ed261acdfe910ca2fb95f7.
+- Private evidence/snapshot:.local\wooden-shop-sign-20261008\.
+
+## Completion log
+
+- 2026-10-08 - Header release complete and live; original font/mark retained and
+  navigation beneath. Baseline focus limitation remains explicitly documented.
+- 2026-10-08 - Local sign/site/responsive checks complete. Navigation remains below
+  the name; sharp cream lettering uses static glow and rem sizes. A reproduced
+  pre-existing entrance-focus issue is documented, not silently fixed or skipped.
+- 2026-10-08 - Owner supplied shopfront/sign references and explicitly requested
+  preserving the font while changing size/location and adding wood/backlighting.
+  Chose original static CSS wood grain, cream lettering and a larger mark medallion.

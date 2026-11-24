@@ -1,0 +1,51 @@
+# Painterly Window-Lit Bakery Interior
+
+Status: DONE
+Milestone: M31 Warm hand-painted room and baked daylight
+Dependencies: 29_GROUNDED_PAINTED_BAKERY_SCENE.todo
+
+## Purpose
+
+The owner supplied four bakery references and reiterated a hand-painted animated-film
+art direction, especially beautiful sunlight coming from a window. The grounded
+room is retained, but its material, composition and lighting need a stronger revision.
+
+## Tasks
+
+- [x] Record the latest reference direction without copying characters or artwork.
+- [x] Assign an isolated candidate workspace so notebook builds remain safe.
+- [x] Refine original wood, plaster, bakery objects and richly stocked shelves.
+- [x] Add coherent fixed-window sunlight, cast shadows, contact shading and warm bounce.
+- [x] Preserve strong camera look-around, floor support and readable display glass.
+- [x] Render wide, portrait and short static posters from the same updated room.
+- [x] Check geometry, real lighting, resources, viewport fitting and entry fallbacks.
+- [x] Refresh the entrance campaign pair and publish only scoped reviewed output.
+
+## Acceptance criteria
+
+- Warm layered painted surfaces and bakery detail, not only a renamed shader.
+- Window light stays fixed in world space and respects opaque occluders.
+- Counter footing meets the floor, with visible contact shading and coherent perspective.
+- No copied film characters, signs, wreath composition or reference pixels.
+- Existing touch, skip, gesture-only bell, reduced-motion and resource fallbacks remain.
+- Preserve all real product media, notebook work, header/roof and local cream experiment.
+- No image-tool views or claims of aesthetic perfection or owner acceptance.
+
+## Completion evidence
+
+- Baseline: 9778fc8e4f31ddcfab7fa4e439d91bee71451895.
+- Private candidate/evidence: .local\painterly-windowlight-20261008\.
+- Scene agent completed its scoped implementation and returned ownership.
+- Published b74acc753e4fd97f020872691608a06f03cffa1d / Pages37830792274.
+-26scene tests,68,124opaque vertices,21new decorative bakes,272,528-byte light bake.
+- Same-renderer posters; actual shader A/B, floor/plate contacts, no idle draws.
+- Local/public missing/corrupt/stale bake, resize, context recovery and GPU-release
+  checks pass. Strong camera unchanged; no runtime ray tracer.
+
+## Completion log
+
+- 2026-10-09 - Installed, generated matching posters and published with current
+  campaign. All170live files/README/ABOUT match committed bytes. No image-tool
+  views, copied film artwork or inferred aesthetic acceptance.
+- 2026-10-08 23:21 IST - Owner supplied four references and emphasized window sunlight.
+  Plan the scene and notebook changes as a coordinated release; no new publication yet.

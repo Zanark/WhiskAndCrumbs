@@ -1,0 +1,37 @@
+# Remove diagonal Instagram background bands
+
+Status: DONE
+Milestone: M62 Clean portrait lighting
+Dependencies: 65_INSTAGRAM_BACKGROUND_COLOURS.todo, 66_INSTAGRAM_RAISED_PHONE_GLASS.todo
+
+## Purpose
+
+Remove the repeated slanted background streak identified by the owner.
+
+## Tasks
+
+- [x] Identify the procedural diagonal highlight and narrow shadow rail.
+- [x] Disable both for Instagram portraits without changing landscape defaults.
+- [x] Retain colours, cream, frost, raised phones, real captures and all foreground.
+- [x] Render/package six clean portraits in a new immutable kit.
+- [x] Preserve six README JPEGs byte-for-byte and leave the live site untouched.
+- [x] Check source-ground stripe removal, typography, gallery and ZIP.
+
+## Acceptance criteria
+
+- Neither diagonal lighting component remains in the six portrait backgrounds.
+- Phone angles, edge highlights and real website imagery are not changed.
+- No social posting, public build, commit, push or new image-tool inspection.
+
+## Completion evidence
+
+- exports\website-launch-20261009-instagram-no-diagonal\preview.html.
+- .local\instagram-no-diagonal-20261009\validation.json and gallery.json.
+- 51campaign tests;72JPEG typography checks; four gallery widths.
+- Source-ground rail depression8.71-8.94RGBlevels becomes within0.10ofzero.
+- Sixportraits changed/sixREADMEJPEGs identical; media/text geometry preserved.
+
+## Completion log
+
+- 2026-10-09 -22:45owner identified the repeated slant. Removed the artificial
+  window-light beam and shadow rail, not the phone's intentional orientation.

@@ -1,0 +1,71 @@
+# Repository Rename, Visual README and Pink Covers
+
+Status: DONE
+Milestone: M12 Verified singular repository, six-image README and light-pink covers
+Dependencies: 16_CATEGORY_NOTEBOOKS.todo; existing public-safe assets and Pages workflow
+
+## Purpose
+
+Follow the owner's verified repository rename, replace README prose with exactly
+six distinct horizontal website showcase images, preserve its text in ABOUT.md,
+and change only notebook cover faces to the requested light pink.
+
+## Tasks
+
+- [x] Hydrate stale context and read instructions, README, workstreams and full diffs.
+- [x] Verify GitHub resolves the old name to Zanark/WhiskAndCrumbs and Pages confirms
+  https://zanark.github.io/WhiskAndCrumbs/. Do not use the misspelled typed name.
+- [x] Preserve the former README bytes privately before moving prose to ABOUT.md.
+- [x] Update origin, canonical configuration and URL regression assertions.
+- [x] Set cover-only light pink #efb7c8, retaining cream body/hero/interiors and green labels.
+- [x] Record owner's permission for at most three extra sequential README review sheets;
+  keep the lifetime counter and the five-piece Chocolate composition pause unchanged.
+- [x] Generate six distinct 1600x1000 RGB JPG showcase compositions from the real website.
+- [x] Review the first15-tile sheet once; all six compositions selected at contact-sheet scale.
+- [x] Wire exactly six image links in README with alt text and no visible prose.
+- [x] Preserve all prior product assets, genuine story/contact facts and interaction behavior.
+- [x] Publish only generated site, README and the explicitly relocated public-safe ABOUT.md.
+- [x] Verify the renamed live URL, canonical/OG values, README links/images and exact release bytes.
+- [x] Update current contributor guidance, release receipt and own context store.
+
+## Acceptance criteria
+
+- README contains exactly six distinct linked landscape images and no visible text.
+- ABOUT.md retains the former public overview, caveats, contact and implementation description.
+- Source/capture/manifest files remain private; exactly six allowlisted showcase JPEGs publish.
+  The later cream interaction adds one optional module, bringing site output to156files.
+- New covers are light pink, not rejected blue/honey; green text meets 4.5:1 contrast.
+- No photo archive selection, mask changes or five-piece Chocolate composition is implied.
+- Website has the same 15 photo records, all media hashes, photo-first notebooks and no-scroll behavior.
+- GitHub repository and Pages names are verified, not inferred from the user's typo.
+
+## Completion evidence
+
+- Baseline release: a05964d05dd8c0d91ace7ebf9e7f29dcdc790016.
+- Verified destination: Zanark/WhiskAndCrumbs; Pages API html_url matches requested URL.
+- Pre-edit text: .local\readme-showcase-20261007\before\.
+- New source artwork: web\assets\showcase\; publish copies: site\assets\showcase\.
+- Published55480844c7ae17a38efe3c87b66067f9c65be1fb, Pages37674894908,
+  version75bf6d822e14. All156live files plusREADME/ABOUT match.73Node,
+ 5brand/showcase,152notebook/285photo local states and local/public browser checks.
+- Receipt: .local\readme-showcase-20261007\publication.json.
+- Artwork generator: scripts\generate_readme_showcase.py. First review sheet:
+  .local\readme-showcase-20261007\review-01.jpg, hash9791013c...b3c8e.
+  Six complete scenes plus nine details reviewed once; exact findings/budget in
+  review-budget.json. No whole-image full-resolution or owner acceptance claim.
+- The owner added a pointer-reactive cream background. Parent implemented a bounded
+  damped field with protected content regions and static/accessibility fallbacks.
+  Owner expanded the SAME3-sheet allowance to include cream review; all3sheets
+  are now consumed. Last reviewed cream-polished\cream-review-15.jpg selects
+  paler shadows/slow settling. No additional image views are authorized.
+
+## Completion log
+
+- 2026-10-08 - Published verified rename, six-image README, publicABOUT and pink
+  covers together with the subsequent optional cream request. Exact12public paths;
+  all prior product media/originals retained. Three authorized sheets consumed.
+
+- 2026-10-07 - Resumed after stale offload. Verified rename and clean tracked/index
+  state; owner authorized three README-only review sheets after109prior attempts.
+  Pink shade and canonical edits implemented; text moved and six-image README wired,
+  but generation, visual review and publication are not yet complete.

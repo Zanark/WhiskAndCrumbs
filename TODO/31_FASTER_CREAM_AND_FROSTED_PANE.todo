@@ -1,0 +1,52 @@
+# Faster Local Cream and Frosted Reading Pane
+
+Status: DONE
+Milestone: M26 Visible cream movement behind readable glass
+Dependencies: 28_CREAM_TRAILS_LAYOUT_AND_PAPER.todo
+
+## Purpose
+
+The owner wants the local preview blobs to move farther and faster, and remain
+visible behind the centered text through a seamlessly blended frosted pane.
+Keep this change isolated from the published bakery website.
+
+## Tasks
+
+- [x] Preserve the previous local experiment and context.
+- [x] Replace tiny edge-limited oscillations with larger bounded inward-shifted orbits.
+- [x] Increase motion phase speed by2.25while retaining the30fpspaint ceiling.
+- [x] Ensure multiple cream forms travel through the central reading area.
+- [x] Replace the96%opaque text wash with14%tint and8pxbackdrop frost.
+- [x] Keep actual lettering and controls sharp, with soft low-contrast pane edges.
+- [x] Preserve reduced-transparency, print, forced-colour and motion fallbacks.
+- [x] Retain the small cursor tail, peaks, paper pattern, Pause and scoop limits.
+- [x] Verify actual pane transmission and sampled reading contrast with a rendered cream fixture.
+- [x] Confirm public site/README/HEAD remain unchanged; no deployment.
+
+## Acceptance criteria
+
+- More visible travel, no clipping at viewport bounds or initial pose jump.
+- Cream actually visible through the pane rather than hidden by another opaque card.
+- Frost affects the background, not foreground text.
+- Pause freezes all motion; inactive and reduced-motion behavior remains safe.
+- No image-tool views or unsupported claim of new visual acceptance.
+
+## Completion evidence
+
+-18Node model/profile/trail cases pass.
+- Existing browser/GPU/lifecycle suite passes in candidate-02, including prior
+  tail/pattern/peaks/Pause/context/limit/DPR2/touch behavior.
+- Largest measured blob displacement:200.4px over792.2ms.
+- Centered rendered cream fixture changes26.85%ofpane pixels; sampled ordinary
+  reading contrast at least7.09:1. Pane tint14%, backdropblur8px; textfilter:none.
+- Reduced-transparency preference selects94%cream/no backdropfilter.
+- Receipt:.local\cream-frosted-motion-20261008\completion.json.
+- Candidate1timing assertion mixed a frame count from before pattern checks with
+  a timer started afterward. Corrected the measurement interval without changing
+  the renderer ceiling or weakening the threshold.
+- Production0fe8cbeunchanged; zero image-tool views, build/staging/commit/deployment.
+
+## Completion log
+
+- 2026-10-08 - Delivered faster/wider cream movement and a subtle frosted text pane
+  at4174. Existing tab needs refresh; the public website is unchanged.

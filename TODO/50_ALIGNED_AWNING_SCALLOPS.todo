@@ -1,0 +1,50 @@
+# One Scallop per Awning Stripe
+
+Status: DONE
+Milestone: M45 Matching fabric stripe and curved-hem widths
+Dependencies: 41_LONGER_RED_STRIPED_SUPPORTED_AWNING.todo
+
+## Purpose
+
+The owner rejects the mismatched stripe/curve proportions. Each curved end must
+be exactly one stripe wide and use that stripe's colour.
+
+## Tasks
+
+- [x] Preserve existing artwork/generator and identify30pxstripes versus50pxscallops.
+- [x] Derive colour bands, scallop masks and hem stitching from the same stripe width.
+- [x] Generate40matching30pxscallops without altering hem depth, slope or supports.
+- [x] Check the actual rendered tips/centres and retained cloth motion/hardware.
+- [x] Refresh affected showcase images, run full UI checks and publish scoped output.
+- [x] Update documentation/context without changing historical receipts.
+
+## Acceptance criteria
+
+- Exactly40stripes and40curved ends, aligned1:1 across the complete1200pxartboard.
+- Alternating rose/cream tips remain wholly within their matching stripe.
+- No changes to colour, overall dimensions, support artwork, motion or camera.
+- Local4174and all product media remain unchanged; no image-tool views.
+
+## Completion evidence
+
+- Baseline3b8449318acbb3be212e2f67e3566b9f7e268186.
+- .local\aligned-awning-scallops-20261009\before\ andlocal-alignment\review.json.
+-16targetedmodel/9asset cases pass;40renderedtipcentres alignwithin1sourcepixel.
+- All40tips have the correct single alternatingcolour. Fixedhardwarecores0change.
+- Existingfullclothreview passes; supportsSVG isbyte-identical.
+- Commit f313638c7168892b7c9462bba8588d196aeb4805; Pages37889702029 succeeded.
+- Version5f9daa8460ce; all175live files and README/ABOUT match committed bytes.
+- 131Node/nine asset cases; full local site/entry/fabric and public alignment/
+  fabric/entry checks pass. Six public paths changed;120product variants untouched.
+- Receipt:.local\aligned-awning-scallops-20261009\publication.json.
+- Kit:exports\website-launch-20261009-aligned-awning\; public01/02 refreshed.
+- Details:docs\aligned-awning-scallops.md. Local4174unchanged; no image views or posting.
+
+## Completion log
+
+- 2026-10-09 11:28 IST - Published and checked matching40stripes/40scallops.
+  Public welcome/entrance artwork and root docs updated; private guides/context
+  reconciled. No implementation, browser review or publication work remains for50.
+- 2026-10-09 10:51 IST - Owner requests matching widths. Replaced the independent
+  50pxscallop/stitch repeat with the same derived30pxwidth as each stripe.
+  Publication and refreshed artwork remain pending.

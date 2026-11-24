@@ -1,0 +1,377 @@
+{
+  "status": "packaged-not-posted",
+  "canonical_url": "https://zanark.github.io/WhiskAndCrumbs/",
+  "outputs": [
+    {
+      "file": "readme-landscape/01-welcome.jpg",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "sha256": "af945b3ba9e7f53eae5b7909e225a66553cef1e13aa85ad1e1bc5fa851ed7e86",
+      "bytes": 408718
+    },
+    {
+      "file": "readme-landscape/02-bakery-entrance.jpg",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "sha256": "e5f2ebaafe7c2530b2efea37d83298bdfb4c06f710e2337a17789ab74cf97b1a",
+      "bytes": 374003
+    },
+    {
+      "file": "readme-landscape/03-our-story.jpg",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "sha256": "a1ac5f61c175d9daaeab238d6ce271a1fffcc97e1b7228e0926be670c64d3e97",
+      "bytes": 381901
+    },
+    {
+      "file": "readme-landscape/04-cake-notebooks.jpg",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "sha256": "9e843ab429fbdd7f0657b71ffc3e512165bb156d29916faccdd496f62745d03d",
+      "bytes": 407253
+    },
+    {
+      "file": "readme-landscape/05-open-notebook.jpg",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "sha256": "75de80863f1146942197cbf5d03b8102962c89b0a3ec5ecbb30b5b48e25dd5a7",
+      "bytes": 409520
+    },
+    {
+      "file": "readme-landscape/06-simple-ordering.jpg",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "sha256": "167c34020eaa065ab49b2c237c6a4ad4dc1c312ca3b49ab1b074327e6c39af34",
+      "bytes": 342813
+    },
+    {
+      "file": "instagram-3x4/01-welcome.jpg",
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "sha256": "8c5db81b79500ae690ec4ae6ba423c052ec295c7d13959dabdc4e8a23b9b1cd6",
+      "bytes": 383799
+    },
+    {
+      "file": "instagram-3x4/02-bakery-entrance.jpg",
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "sha256": "017a629a3ff5f0abf5e4da1f374784846151077c512cddad7e13dfd524b8bb72",
+      "bytes": 358666
+    },
+    {
+      "file": "instagram-3x4/03-our-story.jpg",
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "sha256": "c70b2236f63909d71fa6d6baa8d53b3f3bb81939c79e0cb772940f5da0041ac2",
+      "bytes": 281792
+    },
+    {
+      "file": "instagram-3x4/04-cake-notebooks.jpg",
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "sha256": "6ff1db12028c484b06cef60bd58e993ecf0d49c0c932f002940552791485983c",
+      "bytes": 390567
+    },
+    {
+      "file": "instagram-3x4/05-open-notebook.jpg",
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "sha256": "2b630330661d1b6653d3ecd1a0877049505cce131ca301c3189922535e9c565f",
+      "bytes": 414789
+    },
+    {
+      "file": "instagram-3x4/06-simple-ordering.jpg",
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "sha256": "48ac4a936d81416bb0997be5220f27e4161e6dfb3c4fc85848b924bf835f73aa",
+      "bytes": 322315
+    }
+  ],
+  "instagram_archive": {
+    "file": "Whisk-and-Crumbs-Instagram-3x4.zip",
+    "sha256": "4e9a63753625fb86c3ce2c3037cc056763b8e8098d6ce2ad98b272250cb0a681",
+    "images": 6
+  },
+  "posting_performed": false,
+  "image_tool_views": 0,
+  "composition_manifest_sha256": "d2bd30e17fc77ae3a7e4ac02df0f1d9f1e70eb0c83a68c25eb54bb1875f53441",
+  "capture_manifest": {
+    "path": ".local\\launch-campaign-20261008\\captures\\living-cursor-20261011\\manifest.json",
+    "sha256": "a9a602c5fe98fbfe73c2b8e4a33d1ec1bb3d3a4108626cb4cdac23f91a90e2ae",
+    "top_level_keys": [
+      "status",
+      "source_commit",
+      "campaign_revision",
+      "source_worktree_dirty",
+      "canonical_url",
+      "browser",
+      "source_sha256",
+      "source_directory",
+      "captures",
+      "features",
+      "image_tool_views",
+      "limitations"
+    ],
+    "source_commit": "bac5f936131504d1edc2dcacea4fae76c373e5cc",
+    "campaign_revision": "editorial-20261009-final",
+    "draft": false,
+    "feature_records": [
+      {
+        "id": "02-bakery-entrance",
+        "file": "features/02-bakery-entrance.png",
+        "path": ".local\\launch-campaign-20261008\\captures\\living-cursor-20261011\\features\\02-bakery-entrance.png",
+        "sha256": "b3fd3e248b6ffec90a3d05e97a46e6b841bd5fb3bce945d00f9f3853571ebd7c",
+        "dimensions": [
+          2200,
+          1580
+        ],
+        "device_scale_factor": 2,
+        "capture_url": "http://127.0.0.1:4173/",
+        "selector": ".entrance-shop",
+        "capture_viewport_css": [
+          1280,
+          1000
+        ],
+        "source_crop": {
+          "x": 90,
+          "y": 96,
+          "width": 1100,
+          "height": 790
+        },
+        "important_bounds": [],
+        "parent_sha256_verified": true,
+        "all_important_content_inside": true,
+        "capture_declaration": "Complete actual component bounds; no DOM/style changes.",
+        "capture_method": "complete-component-bounds",
+        "whole_viewport_claimed": false,
+        "content_completeness_evidence": "Parent's complete-component capture declaration; crop extent and DPR2 raster verified. No descendant bounds supplied; descendant clipping is not independently remeasured.",
+        "independent_descendant_bounds_checked": false,
+        "feature_type": "element-capture",
+        "draft_only": false
+      },
+      {
+        "id": "03-our-story",
+        "file": "features/03-our-story.png",
+        "path": ".local\\launch-campaign-20261008\\captures\\living-cursor-20261011\\features\\03-our-story.png",
+        "sha256": "9dd6eaacd459dcd69261602bb5f68f2b6e9e695d96c03da1fa5aa3c4b6205f63",
+        "dimensions": [
+          914,
+          967
+        ],
+        "device_scale_factor": 2,
+        "capture_url": "http://127.0.0.1:4173/#story",
+        "selector": ".recipe-note",
+        "capture_viewport_css": [
+          1280,
+          1000
+        ],
+        "source_crop": {
+          "x": 821.5,
+          "y": 1251.5,
+          "width": 457.0,
+          "height": 483.5
+        },
+        "important_bounds": [],
+        "parent_sha256_verified": true,
+        "all_important_content_inside": true,
+        "capture_declaration": "Complete actual component including decoration and shadows; bounded crop from full-page capture, no DOM/style changes.",
+        "capture_method": "bounded-component-crop-from-full-page",
+        "whole_viewport_claimed": false,
+        "content_completeness_evidence": "Parent's complete-component capture declaration; crop extent and DPR2 raster verified. No descendant bounds supplied; descendant clipping is not independently remeasured.",
+        "independent_descendant_bounds_checked": false,
+        "feature_type": "element-capture",
+        "draft_only": false
+      },
+      {
+        "id": "04-cake-notebooks",
+        "file": "features/04-cake-notebooks.png",
+        "path": ".local\\launch-campaign-20261008\\captures\\living-cursor-20261011\\features\\04-cake-notebooks.png",
+        "sha256": "9fbcb368c682b5d1c38e0aa9d16b6ae75123cbfde12d6ac1a344a226d1e6ff2a",
+        "dimensions": [
+          2513,
+          2369
+        ],
+        "device_scale_factor": 2,
+        "capture_url": "http://127.0.0.1:4173/#cakes",
+        "selector": "#category-notebooks",
+        "capture_viewport_css": [
+          1280,
+          1000
+        ],
+        "source_crop": {
+          "x": 12.0,
+          "y": 2103.5,
+          "width": 1256.5,
+          "height": 1184.5
+        },
+        "important_bounds": [],
+        "parent_sha256_verified": true,
+        "all_important_content_inside": true,
+        "capture_declaration": "Complete actual component including decoration and shadows; bounded crop from full-page capture, no DOM/style changes.",
+        "capture_method": "bounded-component-crop-from-full-page",
+        "whole_viewport_claimed": false,
+        "content_completeness_evidence": "Parent's complete-component capture declaration; crop extent and DPR2 raster verified. No descendant bounds supplied; descendant clipping is not independently remeasured.",
+        "independent_descendant_bounds_checked": false,
+        "feature_type": "element-capture",
+        "draft_only": false
+      },
+      {
+        "id": "05-open-notebook",
+        "file": "features/05-open-notebook.png",
+        "path": ".local\\launch-campaign-20261008\\captures\\living-cursor-20261011\\features\\05-open-notebook.png",
+        "sha256": "3baa64804f72cc0830f90bb4f59bf06dedcde8b88aecd539208f654bfd80aac4",
+        "dimensions": [
+          2240,
+          1952
+        ],
+        "device_scale_factor": 2,
+        "capture_url": "http://127.0.0.1:4173/#cakes",
+        "selector": "#notebook-dialog",
+        "capture_viewport_css": [
+          1280,
+          1000
+        ],
+        "source_crop": {
+          "x": 80,
+          "y": 12,
+          "width": 1120,
+          "height": 976
+        },
+        "important_bounds": [],
+        "parent_sha256_verified": true,
+        "all_important_content_inside": true,
+        "capture_declaration": "Complete actual component bounds; no DOM/style changes.",
+        "capture_method": "complete-component-bounds",
+        "whole_viewport_claimed": false,
+        "content_completeness_evidence": "Parent's complete-component capture declaration; crop extent and DPR2 raster verified. No descendant bounds supplied; descendant clipping is not independently remeasured.",
+        "independent_descendant_bounds_checked": false,
+        "feature_type": "element-capture",
+        "draft_only": false
+      }
+    ],
+    "note": "Capture identity and browser validation are owned by the parent; this compositor independently checks dimensions and records exact source hashes."
+  },
+  "layout_contract": {
+    "phone_counts": {
+      "wide": 6,
+      "portrait": 2
+    },
+    "portrait_phones_by_stem": {
+      "01-welcome": 1,
+      "02-bakery-entrance": 0,
+      "03-our-story": 0,
+      "04-cake-notebooks": 0,
+      "05-open-notebook": 0,
+      "06-simple-ordering": 1
+    },
+    "middle_portrait_phone_count": 0,
+    "contract_passed": true
+  },
+  "design_revision": "frosted-gaussian-cream-20261009",
+  "actual_jpeg_raster_checks": 72,
+  "owner_visual_acceptance": "Not established.",
+  "cream_backgrounds": {
+    "manifest": ".local\\frosted-cream-launch-20261009\\layers-v2\\manifest.json",
+    "manifest_sha256": "2ace5dbadcc77b34a1f867c614cc2360c8f521a9b03a716be1845af08eae76f9",
+    "source_hashes": {
+      "experiments\\cream-metaballs\\model.mjs": "8921af6aecd0bf1b630b8afff4628ea87102d02828b8eec47dabe8f5627b22a3",
+      "experiments\\cream-metaballs\\preview.mjs": "652f93a49b3058569c85a60c99ca5cf2902d9108da46749e0d13c8f8f48165b1",
+      "experiments\\cream-metaballs\\preview.css": "28f7a4709c34aaead3ebac705e7871ca96f29cbecb59d947afe396e5b8b42bcb"
+    },
+    "method": "Original cream material/lighting with four Gaussian-varied multi-lobe clusters and five small droplets; twelve distinct orientations.",
+    "scope": "Launch-image backgrounds only; no website or local-study source changes.",
+    "static_not_animation": true,
+    "layout_validation": {
+      "unique_layouts": 12,
+      "minimum_orientation_gap_radians": 0.4327140847334885,
+      "maximum_normalized_coverage_iou": 0.3640319071791153
+    },
+    "recipe_source_sha256": "29d32f0472786e877729046a5d24f48cc7a10bc42434c7929f2e46ebc5ea1160",
+    "compositor_helper_sha256": "cda24162b90d9f6602e3ec18d08f871684d20c9de2f67c7d2be593a0a31ec971",
+    "foreground_treatment": "One continuous 8%-tint frosted pane; no text-shaped masking."
+  },
+  "portrait_background_variation": {
+    "scope": "instagram-portraits-only",
+    "grounds": {
+      "01-welcome": {
+        "name": "Buttercream",
+        "hex": "#fbf5e7",
+        "original_hex": "#f4e1b6",
+        "tint_strength": 0.333333333333333,
+        "white_blend_fraction": 0.666666666666667
+      },
+      "02-bakery-entrance": {
+        "name": "Blush",
+        "hex": "#fbedf3",
+        "original_hex": "#f3cada",
+        "tint_strength": 0.333333333333333,
+        "white_blend_fraction": 0.666666666666667
+      },
+      "03-our-story": {
+        "name": "Soft green",
+        "hex": "#f0f4ef",
+        "original_hex": "#d1dfce",
+        "tint_strength": 0.333333333333333,
+        "white_blend_fraction": 0.666666666666667
+      },
+      "04-cake-notebooks": {
+        "name": "Peach",
+        "hex": "#faece5",
+        "original_hex": "#efc5b2",
+        "tint_strength": 0.333333333333333,
+        "white_blend_fraction": 0.666666666666667
+      },
+      "05-open-notebook": {
+        "name": "Oat",
+        "hex": "#f7f1ec",
+        "original_hex": "#e6d6c5",
+        "tint_strength": 0.333333333333333,
+        "white_blend_fraction": 0.666666666666667
+      },
+      "06-simple-ordering": {
+        "name": "Vanilla",
+        "hex": "#fbf9f4",
+        "original_hex": "#f4eddd",
+        "tint_strength": 0.333333333333333,
+        "white_blend_fraction": 0.666666666666667
+      }
+    },
+    "cream_material_recoloured": false,
+    "tint_strength": 0.333333333333333,
+    "white_blend_fraction": 0.666666666666667
+  },
+  "raised_phone_glass": {
+    "scope": "instagram-phones-01-and-06",
+    "phones": 2,
+    "unaltered_viewports": true,
+    "renderer_sha256": "d94b12a5ad029b76f94ae2d7fa731c36596fcc4616ceb88222d4de82499a027b"
+  },
+  "portrait_background_lighting": {
+    "scope": "instagram-portraits-only",
+    "diagonal_bands": false
+  }
+}

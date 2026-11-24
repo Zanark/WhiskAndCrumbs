@@ -1,0 +1,43 @@
+# Default phone tilt where browser permission allows
+
+Status: DONE PUBLIC
+Milestone: M83 Automatic entrance tilt with honest permission fallback
+Dependencies: 87_VISIBLE_GLASS_ETCHING.todo
+
+## Tasks
+
+- [x] Preserve the existing entrance controller and tilt tests.
+- [x] Start tilt once automatically on an eligible phone when no permission gesture is required.
+- [x] Keep permission-gated browsers on the existing explicit tap-to-approve action.
+- [x] Preserve calibration, opt-out, missing-data fallback and entry/preference cleanup.
+- [x] Extend the current unit and mobile-emulated browser checks.
+- [x] Finish current86/87live reviews before rebuilding their generated snapshot.
+- [x] Build and run automatic/manual permission and controls checks.
+- [x] Publish and check the resulting live behavior.
+
+## Acceptance criteria
+
+- No automatic permission prompt or attempt to bypass a browser gesture requirement.
+- Ordinary supported phones begin listening/calibrating without tapping Phone tilt.
+- Explicitly turning tilt off stays off across layout changes; no automatic retry loop.
+- No sensor data stored/uploaded and no audio activation caused by tilt.
+- Direct links, reduced motion, short screens, backgrounding, Skip and Enter remain safe.
+- Actual device support is not claimed from synthetic browser tests.
+
+## Evidence
+
+- .local\default-phone-tilt-20261011\before\ preserves the source.
+- Eight tilt unit cases pass; browser cases prepared in scripts\review_phone_tilt.py.
+- Only authoring source changed so far; generated/public source is still the86/87release.
+
+## Completion log
+
+- 2026-10-11 - Default-on request implemented in authoring; publication pending.
+- 2026-10-11 -205Node and28mobile-emulated cases passed locally. Published
+  d5426bec9208834d8e9bd779ebca7d2b1d6095be/Pages38134100596/79f160338f1a.
+  Twochangedsitefiles/rootdocsmatch;1244unchangedGitblobs retained. LIVEtilt/site/
+  entrance checks running; no real-device validation claim.
+- 2026-10-11 - Completed16:42:42+05:30. All28LIVE mobile-emulated cases andfull
+  site/entrance checks passed. Permissionless automaticstart, explicitpermission
+  fallback,opt-out,nodatacleanupandcalibration confirmed. Receipt:
+  .local\default-phone-tilt-20261011\publication.json. No pending work.

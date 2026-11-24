@@ -1,0 +1,60 @@
+# Original Palette, Readable Lettering and Publication
+
+Status: DONE
+Milestone: M4 First public GitHub Pages release complete
+Dependencies: 06_TESTING_AND_LAUNCH.todo, 09_STORY_AND_CAKE_STICKERS.todo, 10_CUTE_CURSIVE_DESIGN.todo
+
+## Purpose
+
+Restore the user's original colours, replace overly elaborate cursive with
+clearer handwriting, keep the liked design details and publish the requested page.
+
+## Tasks
+
+- [x] Archive the prior palette/font revision without changing original cake files.
+- [x] Restore cream #f5ebdd, deep green #34483a and restrained terracotta.
+- [x] Use locally hosted, SIL-licensed Courgette in place of Dancing Script.
+- [x] Preserve story, stickers, cute details and readable DM Sans instructions.
+- [x] Update the sharing image and set the real GitHub Pages base URL.
+- [x] Review locally, including actual palette/font loading and enlarged text.
+- [x] Stage only site/, .gitignore and the Pages workflow.
+- [x] Commit with co-author trailer and push using existing normal Git credentials.
+- [x] Wait for the deployment and review the actual public page.
+- [x] Preserve private sources and distinguish publication from final design acceptance.
+
+## Acceptance criteria
+
+- [x] The original palette is present in real computed browser styles.
+- [x] Courgette loads; body/actions remain legible and primary controls at least 48px.
+- [x] Four sections, all five real cakes, full-photo links and direct contact remain.
+- [x] Local/public browser reviews pass, including 200% text on phones and desktop.
+- [x] Public output contains 58 allowlisted files, not private archives or masks.
+- [x] Actions reports success for the exact pushed commit.
+- [x] The live page and key assets match release bytes.
+- [x] Unverified native-app/user acceptance and hosting-policy risk remain explicit.
+
+## Completion evidence
+
+- Live: https://zanark.github.io/B-Bakery/
+- Commit: ac905f6ae237b6c71028fccc6b5615aae1d1ff7e
+- Run: https://github.com/Zanark/B-Bakery/actions/runs/37166487834 (success).
+- Workflow: ..\.github\workflows\pages.yml; uploaded directory is site only.
+- npm test: 21 passing cases; npm run build: 58 public files.
+- Local and public python .\scripts\review_site.py runs passed.
+- Current public evidence: ..\.local\website-review\review.json and screenshots.
+- Local review archive: ..\.local\revisions\local-before-first-publish\review\.
+- CI receipt: ..\.local\publication-receipt.json.
+- Live index.html, styles.css, main.mjs, Courgette font and sharing JPEG match
+  git show HEAD:site/<path> byte-for-byte.
+- Prior rejected appearance: ..\.local\revisions\before-palette-correction-20261004\.
+- Only 60 release paths were committed (58 site files, workflow, ignore rules).
+  Authoring sources/private materials remain local; they were not backed up by this commit.
+- No identity switching, permission bypass, raw-photo publication or new business facts.
+- GitHub's commercial-use restriction was disclosed before the explicit request;
+  deployment success is not a finding that the site complies with that restriction.
+
+## Completion log
+
+- 2026-10-04 - Applied the correction, published ac905f6 and confirmed the live site.
+  User feedback on the corrected font and native device/assistive-technology
+  acceptance remain separate from this completed requested release.

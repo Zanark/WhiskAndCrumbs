@@ -1,0 +1,385 @@
+# Category Spiral Notebooks
+
+Status: DONE VIA69/72 - SIX NOTEBOOKS, FIVE-PIECE COVER AND REVIEWED CATALOGUE PUBLISHED
+Milestone: M11 Complete category notebooks and approved148-photo catalogue
+Dependencies: 09_STORY_AND_CAKE_STICKERS.todo, 13_BAKERY_ENTRANCE_AND_COOKBOOK.todo, 15_BOUNDED_IMAGE_REVIEW.todo
+
+## Purpose
+
+Current completion:69delivered the owner-approved five-piece Chocolate cover;
+47/72prepared and published P038/P145 and the reviewed148-photo catalogue.
+Older uncompleted checklist entries below are historical, not new tasks to repeat.
+Receipt:.local\full-catalogue-20261010\publication.json.
+
+Keep Cakes we've made as a heading above six separate top-spiral notebooks:
+Birthday Cakes, Tea cakes, Cream cakes, Decorated cakes, Doll cakes and Chocolates.
+Birthday Cakes replaces Ice cream and is first, as the owner later requested.
+Each opens with a zoom directly to photos. Weight information appears once as a
+plain cake-weight line before the cover grid, never inside a notebook. Multi-page
+books turn upward using buttons, arrow keys or a bottom-edge drag.
+
+This supersedes the earlier single twelve-cake page. It does not authorize
+inventing category/product facts, silently publishing unreviewed photographs or
+resetting the current session's exhausted image-view budget.
+
+## Tasks
+
+- [x] Apply the latest request to remove every weight page and open all notebooks
+  directly to photos, while keeping one cake-weight line before the covers.
+- [x] Publish and verify the shared-weight/photo-first update.
+- [ ] In a fresh session, select exactly five real chocolates for the cover only.
+- [ ] Compose and review separate cover artwork without replacing the full
+  assortment/gallery/enlargement or changing any original image.
+- [ ] Integrate and publish the five-piece cover after bounded review. The owner
+  declined more image views in the current109-attempt session; do not bypass this.
+- [x] Read current source and complete diffs; preserve existing uncommitted work.
+- [x] Preserve 22 named pre-category source, generated-text and documentation files.
+- [x] Add six ordered covers beneath the existing Cakes we've made heading.
+- [x] Reuse the dark wire-through-slot binding, cream paper and original palette.
+- [x] Add small original ornaments around available cover photos.
+- [x] Replace the repeated heart/bow pair with two distinct name-matched stickers
+  per notebook, following the user's marked screenshot.
+- [x] Replace the later rejected Cream swirl with a mixing bowl and whisk, leaving
+  the other Cream ornament and every other cover unchanged.
+- [x] Remove the rejected wide left spine and card-like cover treatment.
+- [x] Use clean cream covers, thin paper layers, a subtle backing board and paired
+  wire loops through top slots without copying the supplied stock references.
+- [x] Apply the later cover-only colour change: honey faces, deep-green labels
+  and no cream text backplates, while keeping body/hero/inside paper cream.
+- [x] Verify all six cover colours, at least4.5:1 text contrast and distinct
+  cover/canvas surfaces without viewing new images.
+- [x] Publish and verify the honey-cover update.
+- [x] Replace the subsequently rejected honey with pastel blue#9db9df locally,
+  retaining readable deep-green text and cream body/interiors.
+- [x] Publish and verify the pastel-blue replacement; do not restore rejected honey.
+- [x] Add explicit notebook membership and same-category cover IDs.
+- [x] Preserve all twelve existing reviewed cakes without duplicating their records.
+- [x] Apply the later request to move the hero out of notebook styling into a
+  full-width unframed section, preserving its content/actions and the original story.
+- [x] Correct the unintended green hero colour back to cream with the original
+  deep-green text/actions and terracotta emphasis; keep the notebook frame removed.
+- [x] Use eleven visibly decorated cakes and the one reviewed doll conservatively.
+- [x] Mark four uncurated categories as photo-pending rather than invent replacements.
+- [x] Apply the later owner-confirmed Black Forest name and move its reviewed
+  sticker into Cream cakes, retaining asset identity and bytes.
+- [x] Rename/reorder Birthday Cakes first and replace ice-cream ornaments with
+  balloons and a gift. Record the five new source selections for preparation.
+- [ ] Prepare and visually review the five new sources without changing originals,
+  lettering or already-clipped details, then add the reviewed cutouts.
+- [x] Prepare the three specifically missing cover sources with full framing,
+  private detailed/lite masks and six candidate cutouts / 24 transparent variants.
+- [x] Verify original/RGB/hash preservation and create one unopened 15-thumbnail
+  filename-labelled comparison sheet for a fresh session.
+- [x] Select/refine the three masks through bounded review and install actual
+  Tea/Birthday/Chocolate cover stickers; preserve the earlier twelve records.
+- [x] Publish the corrected covers and fitted notebook snapshot.
+- [x] Prepare suitable covers from the owner-selected sources; full archive
+  categorization in workstream 15 is not a prerequisite for these known examples.
+- [ ] Confirm category assignments that cannot be established from visible design.
+- [x] Open a category with a zoom into a native dialog, without cloned DOM IDs.
+- [x] Show 1/2 KG, 1 KG, 1.5 KG, 2 KG, 2.5 KG and 3 KG once above the covers.
+- [x] Supersede the earlier cake-weight pages with direct photo-first opening.
+- [x] Omit weights from Chocolates and open it directly to the photo page.
+- [x] Hide redundant single-page controls and preserve a non-weight empty-state page.
+- [x] Publish and verify the Chocolates exception.
+- [x] Apply the later informational-only request: six available cake weights as
+  static list items, with no choice controls or preferred/selected-weight state.
+- [x] Remove weight-dependent enquiry updates and the obsolete helper/listeners.
+- [x] Publish and verify the informational-weight follow-up.
+- [x] Group following photo pages by four; allow an honest shorter final page.
+- [x] Apply the later no-vertical-scroll request while retaining FOUR photos,
+  explicitly chosen by the owner instead of adaptive fewer-photo pages.
+- [x] Fit media/spacing to the viewport, use two-by-two portrait and four-across
+  short landscape layouts, and preserve readable text and48px controls.
+- [x] Keep the selected weight in the existing helper line, not an extra header.
+- [x] Reproduce horizontal overflow in the enlarged-photo dialog and narrow
+  notebook controls; fit grid tracks, titles and images without smaller text.
+- [x] Extend geometry checks to every enlarged photo, control text, both scroll
+  axes and held/failed image loads;266notebook and285photo states pass locally.
+- [x] Reproduce and fix the late-font resize race found during public validation;
+  recheck after both successful and failed font loads, not only initial readiness.
+- [x] Publish and verify the horizontal-sizing follow-up.
+- [x] Measure actual content bounds and zero scroll offsets in196page/viewport
+  states, including selected weights and100%/200%text.
+- [x] Implement Previous page, Next page, left/right/up/down arrows and edge taps.
+- [x] Implement optional bottom-to-top dragging with deliberate thresholds.
+- [x] Reject short/downward drags; recover from touch cancellation/lost capture.
+- [x] Supersede the earlier radio-selection behavior with static weight information;
+  reopening shows the same six available weights, with no remembered choice.
+- [x] Keep Instagram/WhatsApp enquiry URLs unchanged; never append a weight from
+  the informational page.
+- [x] Keep enlargement/category photo navigation distinct from notebook page keys.
+- [x] Return to All categories and restore focus to the original cover.
+- [x] Keep complete baseline content for no JavaScript, failed modules/styles,
+  reduced motion, forced colours, printing and direct page/category links.
+- [x] Bound animation completion and recover interrupted/closed/resized notebooks.
+- [x] Run Node/build and sequential local site/entrance browser checks.
+- [x] Preserve 159 source-image hashes/mtimes and add zero image-tool views.
+- [x] Inspect the final covers/UI through the owner's explicitly authorized
+  eight-sheet continuation, retaining the original lifetime counter.
+- [x] Publish the owner-requested current category UI without uploading unreviewed
+  new source photos; retain honest placeholders and content-completion caveats.
+- [x] Finish the selected cover media and recheck before the follow-up publication.
+- [x] Update current documentation without relabelling the old live release.
+
+## Acceptance criteria
+
+- [x] Six correctly named notebooks appear under the one existing section heading.
+- [x] Every populated notebook starts with photos. One shared cake-weight line
+  sits before the covers; there are no weight pages or choice controls.
+- [x] Every reviewed cake appears in exactly one notebook; no silent dropped IDs.
+- [x] Every populated cover references a cake from that same category.
+- [x] Four-photo pages use two-by-two desktop layout and readable phone scrolling.
+- [x] Current Decorated pages hold 4/4/2 photos; Cream and Doll each have one photo page.
+- [x] Buttons, keyboard, mouse and native touch can operate the interaction.
+- [x] No failed/short/cancelled drag strands a hidden or inert page.
+- [x] Focus and page controls remain usable at 100%/200% text and six widths.
+- [x] The optional bakery entrance, bell policy, story and direct contact still work.
+- [x] The generated local allowlist contains149files, not the private export.
+- [x] All six category covers use selected, reviewed derivatives of identified sources.
+- [x] Final UI receives bounded visual review separately from automated captures.
+- [x] Current public release is recorded separately from unfinished cover/content review.
+
+## Completion evidence
+
+- Current pastel-blue release:a05964d05dd8c0d91ace7ebf9e7f29dcdc790016,
+  Pages37260819501, version395f59e906ff.149live files/README match;69Node and
+  local/public checks pass. Text4.8915:1/surface1.7061:1contrast; media unchanged.
+  Receipt: ..\.local\category-notebooks\pastel-blue-covers\publication.json.
+
+- Honey-cover release:cf39360a18041cb70f498fa1208e3959dfedcbcd,
+  Pages37253171653, version9d0024f53bc6;149live files/README match.
+ 69Node and full local/public checks pass. Cover text contrast4.6106:1,
+  cover/canvas contrast1.8101:1; cream interior/body and all images unchanged.
+  Receipt: ..\.local\category-notebooks\honey-covers\publication.json.
+
+- Shared weight line/photo-first release:d974f0ee335e88b329be2904c8f136d37a184629,
+  Pages37251302622, version574cbd67dd02. One global weight line, zero weight
+  pages, eight photo pages.149live files/README match;68Node,152notebook/285photo
+  local states and full local/public checks pass. All covers/media unchanged.
+  Receipt: ..\.local\category-notebooks\shared-weight-info\publication.json.
+
+- Latest Chocolate exception:5c08f99361a23adcd9d3cfabcc5622aa7eca7a94,
+  Pages37248095888, version0c48670fb432. All149live files/README match.
+  Five weight lists/30items; Chocolates has zero weight pages and starts with
+  photographs.68Node,247notebook/285photo local states and full local/public
+  checks pass. Receipt: ..\.local\category-notebooks\chocolates-no-weights\publication.json.
+
+- Informational-weight release:6b208e218dfc61aec75f601142c1958e0e6e027c,
+  Pages37246546238, versiond1809cdaaf48. All149live files/README match.
+  Six lists/36informational items/zero weight inputs, with no choice prompts,
+  selected state or weight-appending helper. All15enquiry URLs unchanged.
+ 66Node,266notebook/285photo local fit states and full local/public checks pass.
+  Receipt: ..\.local\category-notebooks\informational-weights\publication.json.
+
+- Latest horizontal/font-safe release:bb52b9a144b091f35c6583d913503f5c4bc246a4,
+  Pages37244829214, versiona44d4ef52290; all149live bytes and README match.
+ 266notebook/285photo cases, image loading/error and late-font success/failure
+  cases pass locally/publicly, along with full site/entrance checks.66Node cases.
+  Receipt: ..\.local\category-notebooks\horizontal-overflow\publication.json.
+
+- Current release:961279918ba831ab4ed63c8977734729fe615e0c, Pages37242217458,
+  version32e45347bbe2. All149live files and GitHub README match committed blobs.
+  Final224local/public fit states include320x480and explicit extreme-zoom
+  safe fallback. Independent screen-reader page announcements remain outside
+  the turn button. Full local/public site and entrance checks pass.
+- Receipt: ..\.local\category-notebooks\cover-fit-publication.json.
+  Evidence uses publication-local-fit/site/entrance and public-fit/site/entrance
+  folders. Earlier196-case receipts remain history, not the final count.
+- Reviewed local update:15photo records,149public files; all96earlier image
+  variants and159original inventory files retain their hashes.
+- Final visual sheet: ..\.local\category-notebooks\cover-fit-approved-candidate\covers-and-no-scroll-final-15.jpg.
+  Eight additional views were explicitly authorized and consumed; lifetime109
+  attempts/108successful. Native reflective-region checks are not full-archive review.
+- Selected mask provenance: ..\assets\images\cake-stickers\masks\owner-cover-review.json.
+  Chocolate face mask804318b2...962c retains the real reflective source pixels.
+-65Node and9sticker/source cases pass;196actual geometry states include selected
+  weights,14viewport/text cases, four-photo retention, contained images and48px targets.
+- Final local reports: ..\.local\category-notebooks\viewport-fit-confirmed-weight\,
+  cover-fit-local-site-final\ and cover-fit-local-entrance-final\.
+- P038/P145 source preparation and broader archive review remain incomplete;
+  workstream16 is not falsely closed because the three covers are ready.
+
+### Earlier evidence (historical)
+
+- Current one-icon release: 63f4437e4849802a9658770633753f68e1d288ae, successful
+  Pages run37230426976. Only index.html changed; all125live files match, and
+  Cream cover opening/paging/close/focus works. Receipt:
+  ..\.local\category-notebooks\mixing-bowl-publication.json.
+- Public release: 49aa3488b4a746e2866735571d4c7d6caef9d993; Pages run 37227774315
+  succeeded. Version c4a9e6c342ee; all125live files and GitHub README match Git blobs.
+  Public site/entrance browser checks pass. Receipt:
+  ..\.local\category-notebooks\publication.json.
+- IMPORTANT: that release still contains the three missing cover placeholders.
+  The owner called this out; sticker candidate preparation followed, not a
+  completed cover replacement. No unreviewed cutout was uploaded.
+- Candidate handoff: ..\docs\owner-cover-candidates.md.
+  Private candidates: ..\.local\stickers\owner-covers-20261005\.
+  Single first review target: owner-cover-candidates-15.jpg, fifteen thumbnails.
+  Technical checks pass for three exact sources, six candidate cutouts and
+  24 transparent variants. Correct segmentation still needs visual judgement.
+- Current local preview: http://127.0.0.1:4173/.
+- Source: ..\web\notebooks.mjs, main.mjs, index.template.html, styles.css and readability.css.
+- Data: ..\content\notebooks.json. Existing ..\content\cakes.json is unchanged.
+- Builder: ..\scripts\build-site.mjs; notebook module shares the asset cache version.
+- Tests: ..\tests\notebooks.test.mjs and updated site.test.mjs.
+- 62 Node cases pass; npm run build produces 125 allowlisted files.
+- Current hero/layout checks: ..\.local\category-notebooks\cream-hero-site\review.json
+  and ..\.local\category-notebooks\cream-hero-entrance\review.json pass.
+- Latest receipt: ..\.local\category-notebooks\cream-hero.json, c4a9e6c342ee;
+  only index/styles changed from the prior unframed green hero. The green colour
+  treatment is rejected history, not current approval.
+  Hero contrast is at least 4.67:1 and original story markup is unchanged.
+- Current assignment checks: ..\.local\category-notebooks\owner-categories-site\review.json
+  and ..\.local\category-notebooks\owner-categories-entrance\review.json pass.
+- Current source-selection guide: ..\docs\owner-selected-cakes.md.
+- Current paper-construction reports: ..\.local\category-notebooks\realistic-paper-site\review.json
+  and ..\.local\category-notebooks\realistic-paper-entrance\review.json both pass.
+- Latest receipt: ..\.local\category-notebooks\realistic-paper.json, version
+  ca8624dd8aa2. Only generated index.html/styles.css differ from the prior sticker
+  correction. The 30x40 paired-wire SVG decodes and contains both wire/hole pixels.
+- Latest sticker-correction browser records:
+  ..\.local\category-notebooks\category-stickers-site\review.json and
+  ..\.local\category-notebooks\category-stickers-entrance\review.json both pass.
+  Motif checks assert exact category mappings, twelve unique drawings, safe SVG
+  bounds, preserved white contours, hidden accessibility and no click interception.
+- Current correction receipt: ..\.local\category-notebooks\category-stickers.json;
+  local asset version e632c12f55c6. Only index.html/styles.css changed against the
+  earlier implementation receipt below; all media and public paths are retained.
+- Local browser records: ..\.local\category-notebooks\local-site-final\review.json
+  and ..\.local\category-notebooks\local-entrance-final\review.json.
+- Final implementation receipt: ..\.local\category-notebooks\implementation.json,
+  local asset version 6cf5637a5e49, all 125 generated hashes and published=false.
+- Covers/weight/photo pages tolerate 320/390/600/768/1024/1440px and 100%/200%
+  text. Ordinary text and main control minimums remain 18px / 16px / 48px.
+- Native desktop mouse and emulated-device touch drag were exercised, including
+  cancelled/lost-capture interactions. This is browser automation, not real-device
+  or user acceptance.
+- The category overview plus home/ordering contains 109 words; story 75.
+  The static all-notebooks fallback contains 608 main words. Weight pages are
+  bounded individually rather than removing content to satisfy an old one-page cap.
+- Pre-change snapshot: ..\.local\revisions\before-category-notebooks-20261004\.
+- The 159 inventoried source files and all prior sheet hashes remain unchanged.
+- All 96 existing prepared photo/sticker variants retain their manifest hashes.
+- Three categories have selected sources and private cover candidates, but no
+  installed cutouts yet; this is not an unavailable-product statement.
+- No image was opened: the old session remains at 100 earlier successful views
+  plus one earlier failed attempt. New automated captures remain uninspected.
+- Earlier local-only entries and be221e6/124-file receipts remain historical.
+
+## Completion log
+
+- 2026-10-05 - HONEY REJECTED; PASTEL BLUE PUBLISHED. Changed only the cover
+  colour to#9db9df, preserving cream interiors/body and green text. Published
+  a05964d / Pages37260819501, all149live files/README match.69Node and local/public
+  checks pass. No image changes/views; the five-piece composition remains paused.
+- 2026-10-05 - HONEY COVERS PUBLISHED. Scoped new#d7aa68colour to closed covers,
+  removed cream title/count plates and used deep-green labels for contrast.
+  Body/hero/inside pages remaincream. Publishedcf39360 / Pages37253171653,
+  all149live bytes/README match.69Node and local/public checks pass.
+  No image-tool views; five-piece Chocolate composition remains paused.
+- 2026-10-05 - WEIGHT PAGES REMOVED EVERYWHERE. Moved the six cake weights into
+  one plain line before the cover grid; every book opens directly to photos.
+  Updated counters/focus/drag checks for photo-first paging and kept empty books
+  honest. Publishedd974f0e / Pages37251302622;149live bytes/README match.
+ 68Node and local/public checks pass. Five-piece cover still paused; no media changes.
+- 2026-10-05 - COVER SIMPLIFICATION REQUEST PAUSED. User rejected the dense
+  whole-grid Chocolate cover and asked for five best pieces, cover only.
+  Actual budget109attempts/108successful; user declined3additional views and
+  selected saving for a fresh session. No new imagery/code/publication.
+  Existing gallery/full-photo media and live5c08f99remain unchanged.
+- 2026-10-05 - CHOCOLATES HAS NO WEIGHTS. Removed its weight page and opened
+  directly to photos, corrected counts and hid single-page controls. Cake
+  weight information stays in the other five notebooks; empty Chocolate data
+  keeps a non-weight pending page. Published5c08f99 / Pages37248095888;
+  all149live bytes/README match.68Node and local/public checks pass.
+- 2026-10-05 - INFORMATIONAL WEIGHTS COMPLETE. Owner removed weight selection.
+  Replaced all radio groups with accessible static lists and "We make cakes in
+  these weights". Removed listeners/state/weight-appending enquiry logic.
+  Published6b208e2 / Pages37246546238, all149live bytes/README match.
+ 66Node and complete local/public checks pass. No media changes or image views.
+- 2026-10-05 - HORIZONTAL FIT COMPLETE. Fixed native photo-dialog max-width,
+  oversized controls and fixed-vh media; publishedbdae54b. Public extreme-resize
+  validation caught a later-font race, reproduced with a held FontFace and fixed
+  withloadingdone/loadingerror rechecks. Publishedbb52b9a / Pages37244829214;
+  all149files/README match and266notebook/285photo local/public cases pass.
+  All120media variants/159originals unchanged; zero new image-tool views.
+- 2026-10-05 - PUBLISHED AND VERIFIED9612799. Committed only README, three
+  generated text files and24new image variants. Pages37242217458 succeeded;
+  all149served files and README match.224local/public fit cases plus full
+  site/entrance checks pass. A final short-screen rule and explicit extreme-
+  zoom fallback prevent overlap/clipping; page status has its own live region.
+  No further image views beyond the eight authorized sheets. P038/P145 and
+ 141archive representatives remain pending.
+- 2026-10-05 - MISSING COVERS AND NO-SCROLL VIEWS READY. Selected the detailed
+  Tea/Birthday masks; rejected several chocolate masks before a native-source
+  alpha repair restored the reflective face. Installed all three cover IDs,
+  three photo records and24new variants, preserving every old record/variant.
+  Owner requested no notebook scrolling and explicitly chose four photos.
+  Fixed-height pages scale contained media, not reading text, and combine the
+  page counter/turn/drag control.65Node,9sticker cases,196geometry states and
+  sequential full local browser checks pass. Eight authorized sheets reviewed;
+  originals and private/public boundaries retained. Follow-up publication pending.
+- 2026-10-05 - Replaced the disliked Cream swirl with an original mixing bowl
+  and whisk. Kept position, white outline, colour, layered-slice companion and
+  all other cover content. 62 Node and complete local browser checks pass.
+  Published only index.html as63f4437; Pages37230426976 succeeded, all125live
+  files match the commit and the live Cream notebook works. Missing cover
+  candidates remain private, unreviewed and uninstalled.
+- 2026-10-05 - Published the requested current snapshot as49aa348, successful
+  Pages run37227774315. Verified all125live files and GitHub README against blobs
+  and passed sequential public site/entrance checks. Only public site and README
+  were committed; authoring sources/private media remain local.
+- 2026-10-05 - User correctly pointed out missing Tea/Birthday/Chocolate cover
+  images after publication. Generated private full-framing photo derivatives,
+  detailed/lite local masks, six sticker candidates and24variants. Added the
+  checker and a single15-thumbnail sheet. Source/hash/RGB/metadata/padding checks
+  pass; no new image-tool view or mask approval. Covers are NOT replaced yet.
+- 2026-10-05 - User rejected the unintended hero background change. Restored
+  cream #f5ebdd, deep-green text and primary button, terracotta emphasis, muted
+  description, cream photo-label/text backing and the original outline button.
+  Retained the full-width unframed layout with no spiral/fold/tilt. Story/order
+  stay green. 62 Node cases and sequential local site/entrance checks pass;
+  source images, category content and all scripts are unchanged. Local only.
+- 2026-10-04 - Removed the hero's notebook class, spiral, paper framing/fold and
+  pointer-tilt initializer. Replaced it with a full-width deep-green section
+  using cream text, peach emphasis and the existing cake/actions. Kept the
+  original story as a separate section, with exact markup unchanged. 62 Node
+  cases and sequential local site/entrance checks pass, including 200% reflow,
+  theme-aware photo labels, contrast and preserved category interactions.
+  No new image-tool view, visual approval, commit or deployment.
+- 2026-10-04 - Applied the owner's explicit Black Forest/Cream assignment using
+  existing reviewed assets. Replaced Ice cream with Birthday Cakes and moved it
+  first, with unique balloon/gift ornaments. Five new source files are selected
+  and hash-verified, not yet prepared/approved cutouts. Preserved the visible
+  anniversary topper in the source selected for Birthday and flagged personal
+  lettering/character considerations on Doraemon without transcribing the name.
+  61 Node and ten inventory cases plus local site/entrance checks pass. No upload.
+- 2026-10-04 - Reworked the paper construction following the circled left edge and
+  five notepad references. Removed the wide pink left inset, large cover fold
+  and rounded-card corners. Kept cream paper, thin sheet lines and a symmetrical
+  green backing; original paired-wire tiles now enter top slots without clipping
+  partial coils. Category stickers, real photos, hero and controls are unchanged.
+  60 Node cases, build and sequential local site/entrance checks pass. References
+  are copied byte-for-byte only into private storage; no stock pixels are used.
+  No extra image-tool view, generated-output visual approval or publication.
+- 2026-10-04 - Replaced repeated cover hearts/bows with twelve original motifs:
+  teacup/loaf, cream swirl/slice, piping bag/candles, dress/tiara, chocolate bar/
+  wrapped truffle, cone/ice pop. Preserved positions, colours, white contours,
+  central photos/placeholders and all notebook behavior. 59 Node cases, build
+  and sequential local site/entrance checks pass. The motifs are decorative
+  artwork, not newly classified product images or visual acceptance.
+- 2026-10-04 - Implemented the requested category-notebook architecture locally:
+  cover grid, short modal zoom, weight-first pages, groups of four cake photos,
+  buttons/arrows/drag, scoped enlargement and complete baseline fallbacks.
+  Preserved original media and all existing cakes. Kept tea/cream/chocolate/
+  ice-cream photos explicitly pending instead of guessing from unseen sources.
+- 2026-10-04 - Browser checks exposed a text-resize issue caused by native dialog
+  max-width and fixed two-column weight tracks. Set an explicit dialog max-width
+  and rem-aware reflow; control/photo-page checks pass without smaller text.
+  Corrected direct-fragment fallback to return its target element and handle a
+  notebook temporarily moved into the dialog. No visual approval is inferred.
+- 2026-10-04 - Final checks confirm the animated pivot matches the actual spiral
+  slots, including its fixed heading offset. Initial and changed fragment links
+  work, as do native touch cancellation and lost mouse capture. Saved local receipt,
+  preserved all source/prepared media, and offloaded as ep_583 for the next session.

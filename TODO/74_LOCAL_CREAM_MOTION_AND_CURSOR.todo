@@ -1,0 +1,59 @@
+# Local cream motion recovery, varied groups and strawberry cursor
+
+Status: DONE LOCAL
+Milestone: M69 Responsive local cream movement and cursor replacement
+Dependencies: 63_LOCAL_MASSIVE_RANDOM_CLUMPS.todo
+
+## Purpose
+
+Fix the reported frozen local preview, increase ambient movement1.5X, randomize
+whether joined groups move together or apart, add more small droplets and replace
+the native mouse pointer with a strawberry-cream blob/trail. The owner explicitly
+selected LOCAL preview only, not the live website.
+
+## Tasks
+
+- [x] Reproduce stale blur state blocking Resume while the document has focus.
+- [x] Recover safely on explicit input, focus, pageshow and visible-page return.
+- [x] Keep manual pause/reduced-motion and honest inactive status.
+- [x] Render a strawberry pointer/trail above page controls with click-through.
+- [x] Hide native pointer only while its replacement is usable and rendered.
+- [x] Preserve native pointer on pause, inactivity, reduced motion, touch and failure.
+- [x] Complete exact1.5Xambient timing and random joined/divergent group behavior.
+- [x] Add bounded extra small droplets without losing massive groups or placement slots.
+- [x] Update static fallback, dynamic primitive budgets and full numerical review.
+- [x] Confirm unchanged offline material exports and public website.
+- [x] Record completion and open the refreshed local preview.
+
+## Acceptance criteria
+
+- Real motion resumes after a missed focus-return event; no inactive-time catch-up.
+- Ambient orbit/breathing1.5Xfaster, pointer/trail lag and dimensions unchanged.
+- Random group behavior is stable per load, smooth in time and bounded on screen.
+- Added small droplets are visible; large groups and12user-placement slots remain.
+- Strawberry pointer is above glass/text/buttons, never intercepts clicks.
+- No production cream integration, social posting or image-tool inspection.
+
+## Completion evidence
+
+- .local\cream-resume-20261010\focus-recovery.json:4recoverypaths and pause/reduce gates.
+- .local\cream-resume-20261010\full-review\review.json: full lifecycle review passed
+  before the later speed/group/drop/cursor requests.
+- .local\cream-strawberry-motion-20261010\cursor-review.json: pink head/tail,
+  click-through controls and native-pointer fallbacks pass.
+- .local\cream-strawberry-motion-20261010\model-completion.json and completion.json.
+-4-6groups plus5-8small droplets; coherent, flexing and large peel/rejoin modes.
+  Ambient rates.421875/.058125 are1.5Xpreceding; pointer/trail timing unchanged.
+-28model/57campaign/fullbrowser/90GPUcoveragecases;8191-seed survey and
+  1228290same-anchor timing comparisons.12Gaussian and12historical exports exact.
+- Up to26logical records/36GPUslots includingcursor;12placementslots preserved.
+- Finalgroup/dropletstatus tested at four widths; nativepointer fallbacks retained.
+
+## Completion log
+
+- 2026-10-10 -14:22owner reports no movement. Reproduced stale blur latch.
+  Later requests add1.5Xspeed, random group directions and more small droplets.
+  Explicit scope choice: local cream preview only for strawberry cursor replacement.
+- 2026-10-10 - Combined update completed. Status distinguishes groups from droplets.
+  The historical six-form exporter was decoupled from local ambient quantities.
+  Public1936679andall1243trackedsite/rootdocfiles remain unchanged; no social posting.

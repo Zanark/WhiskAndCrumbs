@@ -1,0 +1,62 @@
+# Visible Exterior Book Tabs and Larger Reading Text
+
+Status: DONE
+Milestone: M30 Correct the visible book silhouette and reading scale
+Dependencies: 24_LARGER_EDGE_BOOK_TABS.todo; 34_EXTRA_PALE_PINK_COVERS.todo
+
+## Purpose
+
+The owner reiterated that open-book tabs must protrude visibly, not remain inside
+the outer rounded panel. They like the closed-cover flags but reject the visible
+inner attachment rectangles, and want larger reading/action text inside books.
+
+## Tasks
+
+- [x] Preserve current notebook CSS, behavior, markup, tests and context.
+- [x] Identify the opaque outer dialog/gutter as a visible-envelope issue missed
+  by earlier internal-paper edge measurements.
+- [x] Paint closed-cover flags only outside the pink paper, hiding their attachment.
+- [x] Move open-book actions beyond the visible paper outline with clear photo association.
+- [x] Remove the surrounding filled dialog panel that visually encloses the tabs.
+- [x] Increase inside reading/labels while preserving large actual click/tap targets.
+- [x] Retain four photos, contained imagery, no modal scrolling and honest static fallback.
+- [x] Check actual inner-cover pixels, outer silhouettes, focus and enlarged-text layouts.
+- [x] Refresh current campaign images and publish only scoped notebook changes.
+
+## Acceptance criteria
+
+- No coloured attachment rectangle visible over the closed pink cover.
+- Actual open-book outline ends before the exposed tabs; native logical gutters
+  remain transparent and do not visually absorb the tags.
+- Essential inside text is at least18px, with visibly larger captions/headings;
+  no shrinking text to pass a former fitting threshold.
+- Correct photo/enquiry associations, keyboard/focus return,48pxtargets and safe
+  no-JS/module/style/reduced-motion fallbacks remain.
+- Four photos per page remain; extreme readable-text cases may use the complete
+  static view, never clipped content or secretly fewer-photo pages.
+- No image-tool views or automatic inference of owner aesthetic acceptance.
+
+## Completion evidence
+
+- Baseline:9778fc8e4f31ddcfab7fa4e439d91bee71451895.
+- Private snapshot/evidence:.local\book-edge-readable-20261008\.
+- Specialiststicky-book-tabs owns notebook implementation/fit checks; parent
+  owns full-site assertions, campaign, docs and publication.
+- Parent added a pixel-level closed-cover attachment test to distinguish visible
+  paint from logical protrusion measurements.
+- Published b74acc753e4fd97f020872691608a06f03cffa1d / Pages37830792274.
+- Local/public matrices:139enhanced notebook states,300photo states; actual
+  label centers beyond backing,96inside cover patches unchanged,80actual tab clicks.
+- Transparent native dialog;20pxcaptions/actions,26pxbook title,18pxhelpers.
+- Seven measured Decorated matrix fallbacks preserve15photos/sixbooks/eightpages.
+- Complete current record:..\docs\editorial-launch-20261009.md.
+
+## Completion log
+
+- 2026-10-09 - Published and checked with the coordinated room/sign/campaign
+  release. Live fit samples now wait for eight stable scroll/layout frames;
+  the initial public screenshot caught underlying smooth fragment scrolling,
+  not a different deployed stylesheet. No threshold or runtime behavior weakened.
+- 2026-10-08 - Owner correctly points out that previous tab geometry did not
+  meet the desired visible shape. Reworking the full envelope rather than
+  repeating a24pxinternal-edge check; larger readable type is part of the task.

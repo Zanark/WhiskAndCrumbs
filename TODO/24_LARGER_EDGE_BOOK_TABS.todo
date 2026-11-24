@@ -1,0 +1,48 @@
+# Larger Exterior Book Tabs
+
+Status: DONE
+Milestone: M19 Physical edge-attached notebook markers
+Dependencies: 19_LIGHTER_PINK_TABS_AND_MATERIAL_STUDY.todo; 23_FULL_WIDTH_AWNING_AND_PLAIN_HERO.todo
+
+## Purpose
+
+The owner clarified that index tabs should be larger, attached at the paper edge,
+and project outward. Closed pink covers need text-free varied pastel tabs along
+the right edge, rather than only showing flags inside open notebooks.
+
+## Tasks
+
+- [x] Add decorative closed-cover tabs with deterministic varied pastel colours.
+- [x] Enlarge real action flags and anchor book-level tabs outside paper edges.
+- [x] Reserve sufficient gutters so flags and focus rings are not clipped.
+- [x] Preserve full names,48pxtargets, four photos and both-axis viewport fitting.
+- [x] Refresh the closed/open notebook README views.
+- [x] Run existing fit/site checks and publish with the canopy/hero correction.
+
+## Acceptance criteria
+
+- Preview tabs have no text, controls or accessibility-tree clutter.
+- Right-side tabs visibly extend beyond each closed pink cover.
+- Open book-level actions attach to an actual paper edge and protrude.
+- Pastel variation is stable per notebook, not flickering random runtime state.
+- Readable text, keyboard/focus return, direct enquiries and static fallbacks remain.
+- No image-tool views, new product facts, weight controls or cream effect.
+
+## Completion evidence
+
+- Publishedfd73c996457a4af1d7ed261acdfe910ca2fb95f7 / Pages37736362545,
+  versionc4fa39962130. All162live files/README/ABOUTmatch.
+- Passingfit-candidate-3:152notebook/285photo states,456closed-flag and171navigation
+  measurements, full target corners. Local/public site interaction/contrast pass.
+- Closed flags18-26pxoutside/38-48pxtall; navigation16pxattached/32px+exposed;
+  close24pxright. No typography reduction, behavior changes or image-tool views.
+- Specialist scope/handoff:.local\edge-book-tabs-20261008\.
+- Combined release receipt will live in.local\full-width-awning-20261008\.
+
+## Completion log
+
+- 2026-10-08 - Complete with76Node/8asset and full local/public checks; six README
+  images refreshed. Prior failed fitting candidates remain separate history.
+- 2026-10-08 - Owner requested larger exterior tabs and visible right-edge markers
+  on closed pink cover previews. Reused the notebook specialist; parent retains
+  awning/window integration, site checks, README and publication ownership.

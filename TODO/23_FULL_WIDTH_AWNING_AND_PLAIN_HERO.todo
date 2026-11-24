@@ -1,0 +1,51 @@
+# Full-Width Awning and Plain Hero
+
+Status: DONE
+Milestone: M18 Storefront canopy correction
+Dependencies: 22_COZY_WHOLE_SITE.todo
+
+## Purpose
+
+The owner wants the header canopy to cover the whole page width, inspired by
+full-front shop awnings rather than a small floating ornament. The owner also
+explicitly rejected the illustrated window behind the real hero cake.
+
+## Tasks
+
+- [x] Preserve the prior SVG, stylesheet, template, showcase and context bytes.
+- [x] Remove page-awning side padding, maximum width and SVG letterboxing.
+- [x] Draw deeper original striped fabric, projecting front bar and scalloped valance.
+- [x] Retain the cream/blush colour family and padded entrance scene.
+- [x] Remove the hero window from markup, styles, builder and public output.
+- [x] Remove window-specific empty space above the real cake.
+- [x] Check painted edge-to-edge coverage at320-2560px and100%/200%text.
+- [x] Refresh the affected README images and public-safe overview.
+- [x] Complete local/public regression checks and scoped publication with workstream24.
+
+## Acceptance criteria
+
+- Actual awning pixels, not just a wrapper, reach both viewport edges.
+- No horizontal scrolling, clipped navigation or artwork over reading text.
+- Original illustration only; no copied stock imagery, text or watermarks.
+- Rejected hero window absent, with real cake/sticker bytes and label retained.
+- Entrance glass/room/parallax/gesture bell/skip remain intact.
+- No extra image-tool views or owner visual acceptance claimed.
+
+## Completion evidence
+
+- Publishedfd73c996457a4af1d7ed261acdfe910ca2fb95f7 / Pages37736362545,
+  versionc4fa39962130. All162live files/README/ABOUTmatch.76Node/8asset and
+  complete local/public site, entrance and responsive checks pass.
+- Receipt:.local\full-width-awning-20261008\publication.json.
+- Baseline:b48ec94e098df13d5ae6ff93dd89650ed89db54d.
+- Snapshot/evidence:.local\full-width-awning-20261008\.
+- Initial asset checks:8passed. Five entrance cases and16awning width/text states
+  pass, including actual raster-alpha samples at both full-width edges.
+
+## Completion log
+
+- 2026-10-08 - Published together with larger edge tabs; all six README images
+  refreshed. Actual front-bar edges pass local/public checks; removed window404.
+- 2026-10-08 - User supplied a screenshot of the narrow canopy plus three
+  shopfront references, then rejected the window behind the hero cake.
+  Implemented both corrections without changing brand colours or real imagery.

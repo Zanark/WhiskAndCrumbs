@@ -1,0 +1,61 @@
+# Instagram Profile Artwork
+
+Status: DONE
+Milestone: M9 Deliver square, circular-frame and portrait brand images
+Dependencies: 12_WHISK_AND_CRUMBS_BRAND.todo
+
+## Purpose
+
+Create a recognisable profile image for the existing Instagram account, with a
+matching edge-touching circular-frame copy and a 3:4 variant without that frame.
+Use the singular Whisk & Crumbs identity and preserve the original palette/mark.
+
+## Tasks
+
+- [x] Research current Instagram profile-image shape and sizing guidance online.
+- [x] Distinguish third-party advice from unverified official upload restrictions.
+- [x] Create a 1080x1080 square master with the approved whisk and large lettering.
+- [x] Create a matching square with a centred 540px-radius circle touching all edges.
+- [x] Create a 1080x1440 portrait without the circular frame or stretched artwork.
+- [x] Inspect a three-variant preview and small circular crops.
+- [x] Verify geometry, safe artwork bounds, file hashes and native output dimensions.
+- [x] Record the final delivery paths without changing the Instagram account or website.
+
+## Acceptance criteria
+
+- [x] Exactly three main PNG files have the requested dimensions and ratios.
+- [x] Essential square artwork is within radius 440px of the canvas centre, leaving
+  at least 100px clearance inside Instagram's centred 540px-radius crop.
+- [x] The framed circle is centred at (540, 540) and meets all four square edges.
+- [x] Portrait artwork is reflowed, not stretched, and has no outer circular frame.
+- [x] Tiny avatar previews are inspected separately from full-resolution artwork.
+- [x] No claim is made that an image was uploaded or accepted by Instagram.
+
+## Completion evidence
+
+- Generator: ..\scripts\generate_instagram_assets.py.
+- Deliverables: ..\assets\social\instagram\.
+- Geometry/source/hash record: ..\assets\social\instagram\manifest.json.
+- Review images: ..\.local\instagram-profile-review\.
+- Targeted tests: ..\tests\test_instagram_assets.py.
+- Four targeted cases pass. All three PNGs reproduce byte-for-byte on a second
+  generation run; RGB outputs carry no EXIF/XMP.
+- Measured essential-artwork radius: 434.28px, leaving 105.72px inside the crop.
+  Four tangent pixels match the outer green circle; inner artwork is identical
+  between square/framed files. Portrait art matches the translated square pixels.
+- Sources checked 2026-10-04:
+  https://blog.hootsuite.com/social-media-image-sizes-guide/
+  https://sproutsocial.com/insights/social-media-image-sizes-guide/
+- Hootsuite describes square inputs displayed as circles and recommends at least
+  320px; Sprout recommends 1:1 and recognisable small-size branding. Their exact
+  pixel figures differ and are not treated as official Instagram restrictions.
+
+## Completion log
+
+- 2026-10-04 - Completed and verified all three PNG deliverables. Reviewed the
+  square/frame/portrait trio and actual 240/180/110/64px simulated avatar crops.
+  Four tests and exact rerendering pass. No website publication or account upload
+  was performed; the existing deployed website is unchanged.
+- 2026-10-04 - Generated three matching original brand compositions from the local
+  whisk mark and licensed Courgette/DM Sans fonts. Inspected the trio and simulated
+  240/180/110/64px circular previews. Exact file and geometry verification pending.

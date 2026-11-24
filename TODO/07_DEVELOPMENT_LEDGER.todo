@@ -1,0 +1,998 @@
+# Development Ledger
+
+Status: IN_PROGRESS
+Milestone: Entire project lifecycle
+Dependencies: None
+
+## Purpose
+
+Record instructions, decisions, corrections and outcomes so future sessions can
+resume without inventing progress or approval.
+
+## Tasks
+
+- [x] Record planning and photo acquisition as the initial authorized scope.
+- [x] Record public Instagram failure and the owner-export alternative.
+- [x] Record screenshot inputs and the minimal-edit requirement.
+- [x] Correct the rejected flat checklist to the user's numbered TODO convention.
+- [x] Save the TODO structure and schema as cross-repository user memories.
+- [x] Record explicit authorization to implement without questions until a prototype is ready.
+- [ ] Update this ledger and the workstream files at meaningful milestones.
+- [ ] Keep agent evidence, direct inspection and user approval distinguishable.
+
+## Acceptance criteria
+
+- [x] A new session can find the current scope, artifacts, blockers and remaining tasks.
+- [x] Local implementation is distinguished from public deployment and recovered-account media.
+- [ ] Historical entries remain accurate when later work supersedes them.
+
+## Completion evidence
+
+- Session: 03add3ad-cb94-4cee-957f-c909f9dc0535.
+- Main design plan: ..\docs\website-plan.md.
+- Asset/source policy: ..\docs\instagram-photo-import.md and
+  ..\assets\references\README.md.
+- Current sticker/source policy: ..\assets\images\cake-stickers\README.md;
+  current verification and acceptance fields: 09_STORY_AND_CAKE_STICKERS.todo.
+- User memories stored: TODO directory/index/ledger structure; per-workstream schema.
+
+## Completion log
+
+- 2026-10-11 -88COMPLETEPUBLIC16:42:42:d5426bec9208834d8e9bd779ebca7d2b1d6095be,
+  Pages38134100596/79f160338f1a. Permissionlessphone tilt auto-startsonce;
+  requestPermissionbrowsersretainexplicitapproval. Opt-out/no-data/calibration/
+  entrycleanup preserved.205Node/28local+28LIVEmobile-emulated/fullsite/entrypass.
+  Twochangedsitefiles/rootdocsmatch;1244unchangedGitblobs;noart/cream/mediachanges.
+  Receipt.local\default-phone-tilt-20261011\publication.json. All160SQLtasksdone.
+- 2026-10-11 -86/87COMPLETEPUBLIC16:27:30:c7cd407/Pages38131807188/64d54db0dcef.
+  Halfautomaticpieces(roundup),peak0,temporarycross-parentgroups,visibleoriginal
+  etching. Parentexecuted12LIVEreviews:224population/108formation,15etchedsections,
+  388contrasts/84motionsamples,360max8spawnwindows andfullsite/entrypass.
+  Receipt.local\smooth-grouping-20261011\publication.json;prioragentackwasnotexecution.
+- 2026-10-11 -84/85COMPLETEPUBLIC08:07:11:abf0ae0305d1c6c32bffe4807a0eb520d0073a81,
+  Pages38103687444/051d5117f212. Smallerordinary/largestgroups(2/3,1/3canonical)
+  withseededrepel/attract;clickspawnshalfsizewithstableuniqueirregularshape.
+  201Nodeandall13LIVEreviews pass:486group/72shape/735edgeGPUcases,388contrasts,
+  84glasssamples,360max8windows29.52-29.96FPSzeroGPUparityerror;fullsite/entrypass.
+  Eightchangedlivefiles/rootdocs fetched;1238unchangedGitblobsauditchain preserved.
+  Receipt.local\group-motion-20261011\publication.json,kit-smaller-separating-groups;
+  148photos/1377protectedfilesintact. No remainingrequestedwork.
+- 2026-10-11 -81/82/83COMPLETEPUBLIC05:14:27e82b612f1877f199e65dddc581bf261ee6a10f,
+  Pages38094790715,a7f1fab52a19. Longertrail,2Xbackground/spawnsize,cursorhead
+  unchanged,6-9groups,newest8FIFO,primaryclickcursorcontinuity,edgeenvelopes and
+  softSDFcontact restored.189Node,fullsite/entry;NINEliveGPU/interaction/glass/
+  liveness reviews pass(34contact/259edge/388contrasts/84glasssamples/390windows).
+  8changedlivefiles/rootdocsmatch;1238unchangedGitblobslinkedtoaudit history.
+  148photos/1377protectedfilesintact;currentkitinteractive-cream;noimageviews.
+  Finalreceipt.local\interactive-cream-20261011\publication.json; no pendingrequests.
+- 2026-10-10 -78COMPLETE PUBLIC21:24:20a97ad31/Pages38064424387,
+  versionc87397ebe557. All1246livefiles/README/ABOUT match,148photos unchanged.
+  Approvedcreambackground/glass/strawberrycursor withproductionPausecontrol,
+  no demoplacement/reset. Protectedreading/entry/dialog/preferencefall back.
+ 162Node/57campaign/72JPEG/fullsite-entry/562notebook2960photos andlive7GPU/
+  9readingstatespass.1377protectedlocal-study/product/prior-artfiles unchanged.
+  Currentkitwebsite-launch-20261010-official-cream; trackedtreeclean, linksopened.
+- 2026-10-10 -76/77completeLOCAL. Strawberrybase255/193/213->255/224/234;
+  actualcursoralpha/headsame, opaquegreen+29 andblue+20. Trail.44->.66,
+  exact1.5Xpath,1.485-1.496GPUvisibleextent acrosssixcases.
+  Laterallmotionspeedrequest adds1.5Xorbit/breath/split-rejoin;15,120primitive
+  comparisonsmatchold1.5twithin3.41e-12.28modelcases/currentversion36940be35c06
+  pass; publicsite unchanged. No newimageviews or productionintegration.
+- 2026-10-10 -75cachefixcomplete: owner15:37screenshotnewcopy/old5clumpstatus/
+  ivorycursor exposedcachedbareJS. ServernowhashversionsCSS/entry/model,nostore/
+  no304; modulequerypropagates. ConfirmedPID57996wasown4174server, restartedonlyit.
+  Realwarm-cache regression provesoldreuse thennormalnavigationrecovery.
+  Actual4174revisione1f4ecd0dd4b/pinkcursor/addeddroplets moving,4server+28model/
+  fourfocuspathchecks. Publicsite unchanged; freshpreviewopened.
+- 2026-10-10 -74DONE LOCAL:4-6groups+5-8extrasmalldroplets,1.5Xambient rates,
+  seededcoherent/flexing/largepeel-rejoin paths. Strawberrypointer/trailabovepage
+  hidesOSpointeronlywhenactive; pause/reduce/touch/inactive/failure restoreit.
+ 28model/57campaign/fullbrowser/90GPUcases/8191seeds pass;1228290timingpairs
+  preserve1.5Xrate.12Gaussian/12historicalexports byte-identical. PublicHEAD/
+  1243trackedsite-docfilesunchanged. Receipt.local\cream-strawberry-motion-20261010\completion.json.
+- 2026-10-10 -74activeLOCAL: owner14:22reportsstillcream. Parentreproduced
+  stale blur flag blocking Resume evenwhenfocused; recoverFocus nowresynchronizes
+  input/pageshow/visible-return, preservespause/reduce andsurfacesinactive status.
+  Fullold-geometryreviewpasses. Latestuserrequests1.5Xspeed,randomgroupdirections,
+  more small blobs andLOCALONLYstrawberrycursor. Parentcursoroverlayproofpasses;
+  model/fullcombinedreview remainswithlocal-cream-final. No newpublicwork.
+- 2026-10-10 -73owner06:02requestsInstagramcolours3Xlighter. Deliveredone-third
+  editorialgroundstrengthbeforeunchangedcream/frost/foreground, not wholeimage
+  fading.57campaign/72JPEG/fourwidthgallerychecks, sixREADMEJPEGsidentical.
+  Kitwebsite-launch-20261010-instagram-three-times-lighter; public1936679unchanged,
+  no newimageviews/posting. Existingkits preserved.
+- 2026-10-10 -05:53fullrequestedcataloguedeliverycomplete:1936679c/Pages38006778064,
+  148photos/1241livefiles/rootdocs exact. Local562pages/2960photostates and78live
+  page states pass; currentkitwebsite-launch-20261010-complete-catalogue.
+  Incoming1241-filetreebackedup; guarded38fileupdate syncs4173andtrackedtreeclean.
+  InitialHTTP503 retained; bounded resumableverification completedallfiles.
+  Source15/16/47oldblockersreconciled; no requestedcataloguequeuework remains.
+  Twoexplicitrejections remainexcluded; unrequestedproductioncream stilldeferred.
+- 2026-10-10 -04:31owner explicitly resumes remaining catalogue delivery.
+  Source47reviews/import are complete:45initial+88rounded archive stickers,
+  2manualrejections excluded,148photos total. P038/P145filename/hash/import
+  records verified; their old preparation blockers closed without new image views.
+  Fullfresh1241file build adds1062approvedmedia paths; amongold179onlyHTML
+  changes beforeartrefresh. Incoming1241tree/diff/docs backed up.149Nodepass;
+  fullpage/photo/browserreview active. Livecream remains unrequested/deferred.
+- 2026-10-10 -71DONE: urgentlayout43264edd/Pages37998387090, thenmatchingart
+  9eee4ec2/Pages38000529461,version5253313789dd.179livefiles/rootdocs match.
+  Removed20pxspiralocclusion; toolbarinsideheading,4pxgap/full40pxcoils.
+  Photospace/type/fourphotos unchanged;Backfocus no longerstolenmidturn.
+ 64Node/134notebook300photo/localfullUI/24livecategorystates/twomotioncases pass.
+  Currentkitwebsite-launch-20261010-title-below-spiral;72JPEG/fourgallerywidths.
+  Protected2587files including1241fileprivatearchivecandidate. No archivepublish/views/posting.
+- 2026-10-10 -70confirmedcomplete:5a21f7d7/Pages37991143358,179files/15photos,
+  32revisedcacheURLs/localpublicgates verified. No rounding/deployment work remains.
+- 2026-10-10 -70authoringroundingcomplete:148masks+onecoveraudited;only8original
+  source-framecutsneedwork. Inwardcurvecaps retain94.77-99.54%alpha,zeroexpansion,
+  protectedinterior/Birthdaytopperexact.140stickers/cover/592fullphotosunchanged.
+ 46Nodecache/builder+5Pythonpass; content-hashURLsonlyrevisedassets. Publicdelivery
+  delegatedisolated179baseline; source47candidate148photos/1241files staysprivate.
+- 2026-10-10 - Reconciledverified68/69release receipts. Windfeb616955/
+  Pages37971393377:19.5pxinitial/5.26pxat14s/idle19.4s. Chocolateb9d2a571/
+  Pages37980997473:179livefiles/15photos plusrootdocsmatch,5piececoveronly.
+  Kitwebsite-launch-20261009-five-selected-chocolates. No archivepublication.
+- 2026-10-09 -69ownerapprovedallcutoutedges, thenchangedcounttoFIVErandomly
+  selected andexplicitlyrejectedcirclelayout. PersistedoneSystemRandomdraw:
+ 2flowers/2hearts/1spiral. Newunevenscatter5components,4hullvertices,radialCV.398.
+  No cutoutmodification or furtherquestion; agentintegratescover-only afterwind68.
+- 2026-10-09 -69owner23:19selectstenchocolatesandwantsthemscatteredoncoveronly.
+  Supersedespriorpausedfive-pieceask. Texturealignment10patches min.8539corr/
+  max.2911pxresidual; alpha-onlygates/unchangedsourceRGB yieldtenseparatedpieces.
+  candidate-v2/privateactualcoverreviewready; eightoriginalvariantsunchanged.
+  New touching-piece boundaries awaitownerapproval; no integration/publication/views.
+- 2026-10-09 -67DONE LOCAL: removed repeated diagonal highlightbeam/shadowrail
+  from sixInstagramgrounds,notphoneorientation. Samecolorscreamfrostphones/
+  sourcecaptures/foreground; sixREADMEJPEGsidentical.51campaign/72JPEG/fourgallery
+  checks. Sourcegroundrail8.71-8.94->within.10RGBofzero; not a new visual approval.
+  Kitwebsite-launch-20261009-instagram-no-diagonal; no publicbuild/push/posting.
+- 2026-10-09 -66DONE LOCAL: Instagram01/06raisedglassedgerims. Original rounded
+  distance-field surface normals shade rearbody/metal/glass;7pxglassroll and
+  3x4pxsidewall. Screenssamewidth/aspect/pixels before rotation, no masks/glare.
+  TwoJPEGschange/tenidentical, currentcolorscreamfrostcopydesktop retained.
+ 49campaign/72JPEG/fournative-feededge/fourgallerywidthchecks.
+  Kitwebsite-launch-20261009-instagram-raised-glass; no publicbuild/posting/views.
+- 2026-10-09 -65DONE LOCAL: Instagram-only background colour variance. Opt-in
+  sixgroundpalette beforeunchangedcream/frost; exactsamecapture/foreground/type.
+  SixREADMElandscapesbyte-identical; allsixportraitschange.46campaign/72JPEG/
+  four-widthgallerychecks,minreadingcontrast6.05,minpairgroundRGBdistance21.22.
+  New immutablekitwebsite-launch-20261009-instagram-colour-variance.
+  No websitebuild/commit/push/IGposting/imageview; concurrentimport preserved.
+- 2026-10-09 -63DONE LOCAL22:21 AFTER website62/64. Random4-6clumps with
+  giant silhouettes44.3-49.4%shortviewport; head25%smaller, visibletrail29-31%longer.
+  Same material/glass/sidepatterns/quarterrate;12placementslots/28GPUcapacity.
+ 26model/54coverage/6GPU/8191seed/286685state checks and12identicalexports.
+  Receipt.local\cream-massive-random-20261009\completion.json. No liveintegration.
+- 2026-10-09 -22:01 final62/64release68d2aec/Pages37958797053/version1016478169f5.
+  Catalogue click-only/right arrows/noTurn, slower1800ms spiral turn/shadows and
+  steady neon door icons complete. All175livefiles/README/ABOUT match; seven
+  scopedpaths. Full local/public site-entry/neon,12architecture/13safety,
+  134Node/43campaign/10assets/72JPEGchecks;134notebook/300photo motion-fit retained.
+  Finalkitexports\website-launch-20261009-final-catalogue-neon\. Sixwide/sixportrait/
+  six-imageZIP and four-widthgallery ready; no imageview/IGposting.
+  New concurrent generated catalogue-count changes appeared AFTER this receipt;
+  preserved, not part of this release. No build/reset/stage of that later work.
+- 2026-10-09 21:36 -62FOLLOW-UP HANDOFF: parent explicitly takes final combined
+  motion/neon review, final README/Instagram refresh, clickable gallery and single
+  publication before any queuedlocal63work. Agent stops browser/build/push work.
+  Pre-neon134Node/134notebook/300photo/fullsite-entry and6motion/48pose/sixelapsed
+  checks pass;43campaign/10asset/72JPEGchecks pass. Combinedpreview2ff00c90f2d7
+  includes unchanged parentneonSHA6c39971c2017; no follow-up deployment.
+  Earliercaptures/kit811a3101b80dare pre-neon. Galleryfixture696stopped waiting
+  forcollapsedlazyimages; finalgallerycheck remains. All source/frozen/evidence
+  retained; exactpaths/status in.local\physical-page-turn-20261009\parent-final-handoff.json.
+- 2026-10-09 -62FOLLOW-UP: owner says "remove the page turn button"; parent
+  confirms separateTurnonly, not previous/nextarrows. Existingafb18cbalready
+  satisfies this: nextarrow is the onlydragtarget, no separateTurnlabel/handle.
+  Added persistent Node/browser assertions; targetedNode and6noJS/48enhanced
+  local/live cases pass.25source/16capture/12kit hashes and6publicREADMEimages
+  match; no imageviews or redundantrecapture/rebuild/commit/deploy.
+  Evidence.local\catalog-right-tags-20261009\no-separate-turn-control.json;
+  originalpublicationreceipt preserved. Workstream62remainsDONE.
+- 2026-10-09 -62COMPLETE:afb18cbf22ce250bec7f7f1912fcec28c7dc582f,
+  Pages37949350437,versione582762c863a.175livefiles/README/ABOUTmatch exactGitblobs;
+  only10explicit reviewed public paths committed with both required trailers.
+  Fifteen direct image anchors replace per-photo controls; both opaque previous/
+  next arrows are right-side book tags. Native modifiers/noJS/keyboard/focus/
+  viewer error/drag/interruption safety preserved; no double advance.
+  Measured230fit/reflow cases before replacing obsolete fallback expectations.
+  No typography/photo-count/threshold reductions.132Node/43campaign/10assets/
+  72JPEGchecks; local+public134notebook/300photo/full site-entry checks pass.
+  Currentkitexports\website-launch-20261009-catalogue-right-tags\: sixlandscapes/
+  sixportraits, changedlandscapes03/04/05andportrait05only. No oldtextmasks.
+  Pending64neon authoring rules appeared mid-task: preserved unchanged, excluded
+  via frozen reviewed source build; all25capture-source hashes match finaloutput.
+  Normalrootbuild includes64and needs separate review/artwork/publication.
+  All17local4174files/120productvariants unchanged. Receipt:
+  .local\catalog-right-tags-20261009\publication.json. Docs/workstream updated;
+  no remaining62work, no imageviews/IGposting/archiveimport/livecreamintegration.
+  No .agent-context edits; parent owns context handoff and subsequent localwork.
+- 2026-10-09 -62IN-PROGRESS: resumed existing catalogue/right-tag implementation.
+  Read full five-file diff; preserved existing snapshots and17local4174hashes.
+  Measuring actual fallbacks before updating expectations; no typography/photo
+  count reductions. Website scope exclusively owned until exact-SHA publication.
+- 2026-10-09 -61COMPLETE:c12aa53d4f2bcef20ba99c8032be517f5ce2e265,
+  Pages37938241419.175livefiles/README/ABOUTmatch;4paths,version1825f6cd99c4
+  unchanged. Modal/sixstaticlabelsAll categories ->Back,accessibleBack to cake
+  categories distinctfromBack to previous page. Samecontrollers/IDs/hrefs/focus.
+  132Node/10assets/full localUI/131notebook/300photo/local+publicsixreturn-focus/
+  sixstatic/pageBack checks pass. Onlypublic05showcase refreshed;currentkit
+  website-launch-20261009-back-label. Latestlocal60clumps/othermedia unchanged.
+  Docs/contextupdated;noimageviews/IGposting/livecreamintegration/no remaining61work.
+  Updatedgalleryopened;publiccompletionep_744written/read,
+  marker2026-10-09T19:12:30+05:30;localstudyremains ep_743.
+- 2026-10-09 -60COMPLETE LOCAL4174: sixseparateunequalclumps from15joinedlobes,
+  per-parentdrift/breath/resize; not transientcollisionmerges. Same6motionenvelopes/
+  rates/patterns/glass/cursortrail;28old-newtrajectorycases exact.18logicalrecords
+  stillallows12placements,28GPUprimitivecap includes9satellitesandcursor.
+  Generated15-lobestaticfallback fromsameprofiles.25model/43campaign/fullbrowser
+  pass;18actualframeshavesixvisiblegroups, nativearearatios1.296-1.746vsmainlobes.
+  Patternstillbehindcream,207inkpixelsfullyoccluded.12offlineGaussianexports
+  byte-identical;official9f51bc3/trackedfiles/README/currentkit unchanged.
+  Receipt.local\cream-clumps-20261009\completion.json. No build/commit/push/
+  imageviews/IGposting. Docs/contextupdated,no remaining60work;ownerreviewpending.
+  Local completion offload ep_743 written/read; marker2026-10-09T18:48:55+05:30.
+- 2026-10-09 -59COMPLETE LOCAL4174: samecenteretchedglass,exact640x480website
+  outlinepattern behindleft/rightcream. Associated-alpha canvas/shadows exposes
+  backgroundemptyspace; plaincenter alignswithglass. Model/seeds/speed/trail/
+  SVGbytes unchanged.21model/43campaign/fullbrowserpass;18separation/eightwidths,
+  lifecycle/noJS/graphics/preferences retained. Final459patternpixelsundercream
+  fullyoccluded,zero centerinterior/throughcreamchanges. Plain-ground material
+  comparemax2RGB/mean<.028;all12offlineGaussianexports byte-identical.
+  OfficialHEAD9f51bc3/trackedfiles/README/currentlaunchkit unchanged. No build/
+  commit/push/imageviews; .local\cream-side-patterns-20261009\completion.json.
+  Docs/contextupdated; no59implementation/reviewwork remains. Localreview/
+  explicitintegrationpermission stillpending.
+  Local completion offload ep_741 written/read; marker2026-10-09T18:26:47+05:30.
+- 2026-10-09 -58COMPLETE:9f51bc3cca618d35dbabb5c36bb571d02fd9d085,
+  Pages37930956117,version1825f6cd99c4.175livefiles/README/ABOUTmatch;sevenpaths.
+  Ownerplanesketchpromptedupper-leftroof/frontlighting:rearcontactshade,litfold,
+  roundedfrontbar and27pxlipshadow. Bothrodshadowsdown-right;mirroredgeometry
+  nolongermirrorslighting. Geometry/stripepalette/15pxcurves/91pxstraight/
+  sidefill/physics unchanged.132Node/17cloth/10assets/full localUI/publiclighting-
+  fabricpass;hardwaremotiondelta0. Highlight-awareedgecomparisonmaxRGBerror3,
+  fullyopaque664samples;oldfixedsaturationclassifierfailurepreserved.
+  Onlypublic01/02art refreshed;kitwebsite-launch-20261009-awning-depth.
+  Docs/contextupdated;noimageviews/IGposting/livecreamintegration/no remaining58work.
+  Completion offload ep_740 written/read; marker2026-10-09T18:10:23+05:30.
+- 2026-10-09 -57COMPLETE:078067f8b831dbfd8668eb3d3bdb07ef970c3c08,
+  Pages37928044903,version5144b7e3b8c8.175livefiles/README/ABOUTmatch;sixpaths.
+  Ownerrejectslongcurves:53pxquadratics ->15pxsemicircles,straight53->91px.
+  Forty30pxalignedends/stitches,hemY294/canvas1200x300/slope/sidefill/colours/
+  supports/physics unchanged. Oldshapefailed4400straightpixels;new106800samples
+  fullyopaque.131Node/16cloth/9asset/full localUI/publicshape-fabricpass.
+  Only01/02showcases refreshed;currentkitwebsite-launch-20261009-shallow-awning
+  preservesfrostedGaussianart. Allothermedia/runtime unchanged;docs/contextupdated,
+  noimageviews/IGposting/livecreamintegration/no remaining57work.
+  Completion offload ep_739 written/read; marker2026-10-09T17:43:52+05:30.
+- 2026-10-09 -56COMPLETE:8d9af9fe549d210da1673764983b98722bca5325,
+  Pages37925598686.175livefiles/README/ABOUTmatch;8paths, appversione75de07cb66a
+  unchanged. Ownerrejectedtext-maskedcreamart;newforegroundonone8%tint/
+  9pxblurglasspanel,greenlettering/creamground.12uniqueGaussianlayouts,
+  4irregularclusters+5droplets/17primitives/9actualcoveragegroups each.
+  Minorientationgap.4327rad,maxmaskIoU.3641;originalmaterialRGBreconstruction1level.
+  Atleast81.83%contrastretainedinsideglass;visiblecream6.14-12.71%.
+  43campaign/9asset/README/72JPEGchecks,30artifacts exactrerender,12foreground
+  media/textlayoutsunchanged.25capturesourcehashesmatch;24oldimages/2ZIPspreserved.
+  Currentkitwebsite-launch-20261009-frosted-cream. Allruntime/othermedia/local4174
+  unchanged;oldmaskedartrejectedhistory. No imageviews/IGposting/liveintegration.
+  Docs/contextupdated;no remaining56work.
+  Newgalleryopened; completion offload ep_738 written/read,
+  marker2026-10-09T17:21:13+05:30.
+- 2026-10-09 -55COMPLETE:a61f3a6e63f314bfdafb184c71cfe95a8368cd6e,
+  Pages37918633744,versione75de07cb66a.175livefiles/README/ABOUTmatch;fivepaths.
+  Scopedwidth100%/text-align:center oncakeh4labels, enhancedandstatic.
+  410localcaptionmeasurements have0framecentre delta;maxsingle-linedelta.0078125px.
+  131Node/9asset/full localUI/131notebook/300photo andpublic15static/four
+  enhancedlayouts pass. Fonts/buttons/links/media/otherstyles/JS unchanged.
+  Onlypublic05showcase refreshed;kitwebsite-launch-20261009-centered-labels.
+  Initialreviewer-scope error corrected and failedfolder preserved. No imageviews/
+  IGposting/livecreamintegration;docs/contextupdated,no remaining55work.
+  Updatedgalleryopened; completion offload ep_737 written/read,
+  marker2026-10-09T16:14:27+05:30.
+- 2026-10-09 -54COMPLETE:3d9d1124322f2a3f218b59f96c2243323a8d584c,
+  Pages37914078688,version5bd5689496ef.175livefiles/README/ABOUTmatch;fivepaths.
+  CompactOrder/staticOrderthiscake-or-thesechocolates/namedaccessiblelinks
+  replaceAsk;all15destinationsunchanged,noorderconfirmationchange.
+  Fixedlongerwordat667x375usingexisting4pxcolumngap/3.5remOrderslot/noinnergap,
+  retaining20pxtype/56pxheight/fourphotos/allcornerhits. Normalbuttons unchanged.
+  131Node/9assets/full localUI/131notebook/300photo checks andpublic15labelgroups/
+  fourlayouts/noJS pass. Public05showcase refreshed; currentkitwebsite-launch-20261009-order-label.
+  Docs/contextupdated;noimageviews/IGposting/websitecreamintegration.
+  Updatedgalleryopened; completion offload ep_736 written/read,
+  marker2026-10-09T15:34:07+05:30.
+- 2026-10-09 -53COMPLETE:07876c8d9d382f70a56fa53acc44f68ba25d6e4f,
+  Pages37908475321.175livefiles/README/ABOUTmatch;8publicpaths only:
+  sixshowcaseJPEGs/rootdocs. Appversion9db31e68d7d1/runtime/nonshowcaseassets/
+  120products/local4174unchanged. Currentkitwebsite-launch-20261009-cream-backgrounds.
+  Originalcreamshader exports6unequalforms/layer;12layers reconstructoriginalRGB
+  within1level. Protectedcopy/foregroundgeometry;7.85-15.48%visiblefinalcream.
+  36campaign/9asset/README/72JPEGglyphchecks;30artifactsrerenderexact,default
+  12JPEGs andhistoricalstudio12JPEGs/ZIPunchanged. Phoneonlyportrait01/06.
+  Artifact-onlypermission;no websiteintegration/image-toolviews/IGposting/visualapproval.
+  Exporter-created bytecodecache removed; future reuse suppresses cachewrites.
+  Exact generation source preserved; docs/contextupdated, no remaining53work.
+  Newgalleryopened; completion offload ep_734 written/read, marker2026-10-09T14:44:25+05:30.
+- 2026-10-09 -52COMPLETE:a8ab9d4df41aadc41346afddacec572781529942,
+  Pages37903005669,version9db31e68d7d1. All175livefiles/README/ABOUTmatch;
+  ninepublicpaths. Intro24px/captionandphototitle28/openheading34/covertitle36;
+  buttonlabels20px/dimensions/positions preserved. Solidpasteltabfaces and
+  attachments replace fadedcream-backedgradients; coverflags96%->100%.
+  Local+public131notebook/300photo/18opaque-case checks pass; zero pink/green
+  underlaydifference.131Node/9assets/31campaign/README/full localUI pass.
+  Primarymatrix13measuredfallbacks andbroaderreflow5 preserveall15photos/sixbooks/
+  eightpages. No shrink/clipping/fewerphotos. Runtime/120media/entry/awning/
+  local4174unchanged. Public03-06showcases refreshed;01/02unchanged.
+  Kitexports\website-launch-20261009-readable-opaque-final\; docsupdated.
+  Late6pxwelcome-capture shift corrected byfinalscrollY0assertion, notappchanges;
+  initialcandidate/reviewerfailures preserved. Noimageviews/IGposting/visualapproval.
+  Completion offload ep_732 written/read; marker2026-10-09T13:48:34+05:30.
+- 2026-10-09 -51COMPLETE: site58febcc649a68dcdcb097ba7453fb33ae3fa5681,
+  Pages37896215170,version6f4e7c3ab5aa. Currentdocs/repository8be7095995f5ad00676cf5fa3e16cd78a5c09ea6
+  differs only by README key correction; site Git trees identical.175livefiles/
+  currentrootdocsmatch. Sixpublicpaths overall; currentkitwebsite-launch-20261009-edge-fill.
+  Baseline656/664unfilledside samples now664/664opaque/rightcolour;2,450changed
+  rasterpixels confined to outer13pxstrips, innerseams/hem unchanged.131Node/
+  9assets/full localUI/liveedges-fabric-entrypass. No runtime/support/camera/
+  productmedia/local4174changes. README's accidental13-char key corrected to12;
+  initialfailure/captures retained. Rootdocs do not triggerPages; optionaldispatch
+  denied403,no retry/permissionchange/workaround. Verifiedexistingdeployment.
+  No image-toolviews/Instagram posting or owner visual approval.
+  Completion offload ep_730 written/read; marker2026-10-09T12:38:08+05:30.
+- 2026-10-09 11:28 IST -50COMPLETE:f313638c7168892b7c9462bba8588d196aeb4805,
+  Pages37889702029,version5f9daa8460ce.175livefiles/README/ABOUTmatch;sixpaths.
+  Each30pxstripe has one matching30pxscallop; pattern/mask/stitch share width.
+  131Node/9asset/full localUI andpublicalignment/fabric/entrychecks pass.
+  All40tipruns align/alternate; sixsupportcoresunchanged. Welcome/entrance
+  showcaseimages refreshed; kitexports\website-launch-20261009-aligned-awning\.
+  Runtime/camera/posters/depth/colours/supports/120realmedia/local4174unchanged.
+  Docs/contextupdated;noimageviews/socialposting/visualapproval.
+  Completion offload ep_728 written/read; marker2026-10-09T11:31:39+05:30.
+- 2026-10-09 10:51 IST -50ACTIVE:ownerrejects40stripes/24misalignedcurves.
+  Generatornowderivesallhem/colour/stitchwidthsfrom1200/STRIPES=30,40scallops.
+  Actualrastertipsalignandalternatecorrectly;16model/9asset/fullfabricpass.
+  SupportsSVG,depth,colour,motionandcameraunchanged;publicationpending.
+- 2026-10-09 -49COMPLETE:3b8449318acbb3be212e2f67e3566b9f7e268186,
+  Pages37887037434,version0fe20a62bf44.175livefiles/README/ABOUTmatch,8publicpaths.
+  NeutraleyeY/targetY1.65,Z8.4 gives0pitch/two-unitpullback/counterspan78.54%.
+  Looktravelcompensatedtoholdexistingstrong-responsegate;3matchingposters/
+  entranceshowcase refreshed.131Node/9assets/localfullsite-lifecycle/livecamera-
+  entry-24phone-facadechecks pass. No room/light/facade/media/local4174changes.
+  Kitexports\website-launch-20261009-level-camera\,noIGposting/imageviews.
+  Completion offload ep_726 written/read; marker2026-10-09T10:49:11+05:30.
+- 2026-10-09 10:08 IST -49ACTIVE:ownerrequeststraight/pulledbackentranceview.
+  Defaultpitch-7.3626->0,eyeY2.4->1.65,Z6.4->8.4,targetY1.25->1.65.
+  CompensatedlooktravelX1.3/targetX1.8/Y1.25aftershortviewgatefailedoldtravel.
+  Defaultcounterspan78.54%prior;geometry/light/bake/facadestaysfixed. Matching
+  postersgenerated;131Node andlocalcamera/entry/phonechecks pass. Local4174untouched.
+- 2026-10-09 09:37 onward -48LOCALDONE:ownerrejectsmergedsymmetriccream,
+  thenaskscenter-onlyfrost and0.25xambientrate. Sixunevenindependentblobs with
+  boundednonoverlappingbands;760pxcenterglass+etchings,zerosidepaint;rates
+  .28125/.03875.20model/18actualraster6-componentcases/28exacttimingcomparisons.
+  Existingcursor/one-thirdtrail/glass10%8pxtexture unchanged. Officialb37df44
+  untouched,noimageviews/build/push. Finalreceipt.local\cream-center-glass-20261009\completion.json.
+  Local completion ep_725 written/read; marker2026-10-09T10:05:09+05:30.
+- 2026-10-09 07:20 IST - Owner requestsfullrecursivefoodarchivecategorization/
+  importwithsixvisualrules andnonfoodexclusion,noquestions/memoryissues.
+ 159images/15subfolders,153unique/6duplicates,allbytes/mtimes/sheetsverified.
+  Realcurrentaudit118attempts/117success;batch-01reservationSTOPsexhaustedbudget.
+  No counterreset/alternateimageviewer/guessedlabels/newimports.47BLOCKED;
+  request-and-preflight.json/image-queue.json/session-budget.json preserveeverything.
+  Reviewauditorstreams336MBlognow;11tests preserveaccounting/gates. Official/
+  local4174work untouched. Freshsessionmustresumeexisting8sheetswithitsrealeventslog.
+  Blocked handoff ep_724 written/read; marker2026-10-09T07:33:43+05:30.
+- 2026-10-09 07:06 IST -46LOCALDONE:cursortrailrenderpathscaled1/3abouthead,
+  keepingheadsize/radiustaper/8links/internalcatchupphysics.20model/fullbrowserpass;
+  actualGPU170.993pxvs512.978pxexpanded,head32px,pixelproberestores. Officialsite
+  b37df44unchanged;onlyexperimentmodel/preview/test/reviewchanged.
+- 2026-10-09 -45LOCALCOMPLETE:4174has two cohesive cream groups,left/right,
+  ambientorbit/breathingratehalved,full-page10%glass/same8pxblur and original
+  recessed/light-edgeetching.19model/24half-timecomparisons(max0) andfinal
+  browser/GPU/lifecycle/layout checks pass. Text>=6.887ordinary/3.93largeaccent,
+  bothsidecream~21.36%/20.48%visiblechange,etch2.05%,foregroundsharp.
+  Receipt.local\cream-etched-glass-20261009\completion.json;candidate-04-final.
+  Officialb37df44/trackedfiles/7beforehashesunchanged. No commit/build/push/
+  imageviews; ownerwillreviewthenmustexplicitlyauthorizeanyofficialintegration.
+  Local offload ep_722 written/read; marker2026-10-09T07:03:34+05:30.
+- 2026-10-09 -44COMPLETE:b37df44690b0188cfd56ffad2ba473d7d59a1fca,
+  Pages37862860587.175livefiles/rootdocs match;8paths only,app26dede947f25/
+  allruntime/brand/120productvariants unchanged. All12studioJPEGs refreshed
+  from16freshcaptures;48pxwide/32pxportraitbody,clearerbrand/URL/spacing.
+ 31campaign/9asset/2Node and72native/540JPEGglyphchecks,29artifactsexactrerender;
+ 4gallerywidths/12decodedimages/noexternalrequests,6liveREADMEcacheURLsmatch.
+  Kitexports\website-launch-20261009-studio\;ZIPdf3aa3f1a53c...f2969ac.
+  Docsupdated;phoneONLY01/06,noquestions/views/IGposting/visualapprovalclaim.
+  Completion offload ep_721 written/read; marker2026-10-09T05:54:14+05:30.
+- 2026-10-09 05:05 IST - Owner requests another full README/image/Instagram refresh,
+  onlyfirst/lastphoneposts andhighqualityiteration,then docs,noquestions.
+  Workstream44active;fresh16captures from7122385 and scopedartrefinementassigned.
+  Runtime175-fileapplicationmustnotchange. Existingviewbudgetstill exhausted;
+  source/layout/readability reviewonly, no subjectiveperfectionclaim.
+- 2026-10-09 -43COMPLETE:712238543f2db707604f581b54fdf1758aec6b80,
+  Pages37858472274,version26dede947f25.175livefiles/README/ABOUTmatch,4publicpaths.
+  Strongermouseforcing/radii/couplingandlowerdamping give~3xpeak/~2xspread;
+  liveGPUmesh19.5px/900px,1.25pxtailaround2s,exactidle4.7105s/0uploads.
+ 130Node/localfullsite-entry/local-livefabric-response-supportpass. Rigidrails/
+  hardware,20pxgutter/2Mbudget/exactnativefallback intact. Allstaticassets,
+  screenshots,phone tilt/notebooks/othercodeunchanged; no unnecessarymediaregeneration.
+  Docupdated;noquestions/imageviews/socialposting/visualacceptanceclaims.
+  Completion offload ep_719 written/read; marker2026-10-09T05:03:42+05:30.
+- 2026-10-09 04:15 IST - Workstream43 requests muchstronger/wider/lingeringcloth.
+  Onlytwo motionmodules tuned:112pxnearzone,26px/14%cap,strongerforcing/coupling,
+  lowerrest/damping. Canonicalmodel~3xearlypeak/~2xspread;actualbrowser19.5pxpeak/
+  900pxaffectedwidth,1.25pxtail around2s,exactrest4.7095s/zeroidleuploads.
+ 130Node andfullcloth/supportchecks pass. Staticart/media/phone tiltunchanged;
+  no unnecessaryshowcase regeneration. Publicationpending.
+- 2026-10-09 -41/42COMPLETE:a7325203eaffef402caf5fe3b594b555098a69f4,
+  Pages37853015851,versionff6086d91be6.175livefiles/README/ABOUTmatch,16scopedpaths.
+  Longerrose40striped cloth/staticsupports andoptionalpermission-gatedphone tilt.
+ 128Node/25campaign/9assetchecks,24syntheticsensorcases local/live,fullsite/entry/
+  facade/fabric/supportchecks pass. Hardwarecore0change,farGPUmotion0;nativeGPU
+  rasterdifference recordedseparately,premultipliededgecolourcorrected/clamped.
+  Phoneinput32msgate/calibrated/bounded,nostorage/upload,fulllistenercleanup.
+  Tiny200%controls-fitbypass and6pxnarrower mobileplaque preserveactualusability.
+  Kitexports\website-launch-20261009-rose-tilt\,6wide/6portrait,phoneONLY01/06.
+  Docsupdated;physicalphonevalidation/image-toolviews/socialpostingnotperformed.
+  Completion offload ep_718 written/read; marker2026-10-09T04:13:05+05:30.
+- 2026-10-09 02:32 IST - Workstream41: longer sloped cloth,40rose/creamstripes,
+  separate rigid wallplates/tensionrods. Source175files/121Node/9assets pass;
+  actualmotionlocalitygate currentlyfails andisbeingdiagnosed. No publication.
+- 2026-10-09 -39/40COMPLETE:3d86ad16057016b2e0f5590c87ac5463064105a0,
+  Pages37841392015,versionf5adedeeb7c7.174livefiles/rootREADME/ABOUTmatch.
+  Fouroriginalfacadeassetsplusconnectedbuilding/woodidentity; mainnavnowinside
+  woodboardwithcream18pxlinks/raisedwoodbutton. Actualcreamstrip0pixels.
+ 120Node/25campaign/9asset,12facade/13safety/16headertextcases andfulllocal/live
+  site/entry/cloth checks pass. Room/controller/notebook/120productbytesunchanged.
+  Newkitexports\website-launch-20261009-storefront\; all6wide/6portraits refreshed,
+  phoneONLY01/06. Docsupdated;15scopedpublicpaths;noIGposting/imageviews/approval.
+  Completion persisted/read as ep_715; marker2026-10-09T02:30:18+05:30.
+- 2026-10-09 - Live plaque A/B initially included the room's initial paint in its
+  rotated bounding rectangle. Reviewer now waits for ready after resetting text
+  size before exact reflection/restoration comparison; thresholds and runtime
+  unchanged. public-entrance-settled is final; first incomplete folder retained.
+- 2026-10-09 01:49 IST - Owner rejects the cream navigation strip. Parent moved
+  existing nav into the wooden sign, matched cream descriptor-like18pxtext and
+  added the wood ordering button. Existing48pxtargets/focus/print/forced-colours
+  remain. Workstream40 joins39;174-file build/120Node/12facade layout cases pass.
+  Full combined review and artwork/publication remain pending.
+- 2026-10-09 01:11 IST - Owner rejects floating entrance front and requests proper
+  building architecture plus wooden raised/glowing identity. Reference favorites
+  suggest a cozy substantial storefront/gable, windows, framed glazing, planted
+  pavement and restrained cuteness. Workstream39 active; facade agent assigned
+  original implementation, parent integration/review/artwork/docs. No copying,
+  image-tool views or promise of subjective perfection. b74acc7 preserved.
+- 2026-10-09 - COORDINATED35-38 RELEASE COMPLETE:b74acc753e4fd97f020872691608a06f03cffa1d,
+  Pages37830792274,version05d9422f0e85. All170livefiles/README/ABOUTmatch;
+  21publicpaths/120productvariants preserved. Trulyexteriortabs/largertext,
+  originalpaintedwindowlitroom/BVHbake andbehind-glassopenplaque delivered.
+  READMEall6recaptured(5changed),6new3:4kit phoneONLY01/06/middle4features.
+  exports\website-launch-20261009-editorial\;ZIP2998972e4ec5...e392e.
+ 118Node/25campaign/9assetchecks andfull local/publicsite/entry/responsive/lifecycle;
+ 139notebook/300photo states. ExactREADMEGFM6images/6links/noprose.
+  Source/capture/geometry/contrast/determinism reviewed,NOimage-toolviews orvisual
+  acceptance claim;noIGposting. Docsupdated; allfourworkstreamsDONE.
+  Completion offload ep_713, readback confirmed; marker2026-10-09T01:07:54+05:30.
+- 2026-10-09 - Public fitting initially sampled while native fragment smooth-scroll
+  was stillmovingunder a fixed dialog. Actualpixel/scroll tracing reproduced the
+  first-frame mismatch,thenexactcream. Reviewer nowwaits8stableframeswith5stimeout;
+  thresholdsunchanged, finalpublicmatrixpasses. Initialevidence retained.
+- 2026-10-08 23:45 IST - Owner requests cute "We are OPEN" behind door glass.
+  Parent added the door-local cord/plaque/heart and moved glass reflection above it.
+  Source tests pass; new actual-pixel/viewport/motion checks await browser lane.
+  Workstream37 active. Scene candidate is isolated with25pure tests; its new baked
+  lighting binary will expand the public allowlist to170 only during integration.
+- 2026-10-08 23:21 IST - New owner references reiterate a hand-painted bakery mood
+  and strong sunlight from the window. Workstream36 active; original room/lighting
+  revision delegated to bakery-scene-geometry in a private candidate workspace.
+  Workstream35 notebook fitting continues independently. No image views or
+  publication; current live baseline remains9778fc8.
+- 2026-10-08 - EXTRA PALE COVERS published9778fc8 / Pages37813590487,
+  version351a2a9f2186.169livefiles/README/ABOUTmatch;6publicpaths. Faces#fbedf2,
+  greenlabels8.67:1; oldweight-noteaccentdecoupledandpreserved. No roof/tab/body/
+  insidepage/media/behaviorchanges.110Node/9asset+full local/publicsite/entrypass.
+  Workstream34DONE/offloadep_709.04/05campaignpairupdated; newpaler-coverskit,noimageviews.
+- 2026-10-08 - TALLER ROOF published3ca782b / Pages37809726551,
+  version51ee2b822d42. Roofheights+50%,deeperY128-234hem/curves181-234,
+ 169livefiles/README/ABOUTmatch.97x17clothmesh/sourcegeometryandnativefixedrails.
+ 110Node/9asset/4JPEGmetadata tests andfull local/publicchecks pass.
+  Workstream33DONE,offloadep_708. Welcome/entrancecampaignpairsupdated;kitin
+  exports\website-launch-20261008-taller-awning\. No imageviews/posting.
+  JPEGfalsepositivefixedbysegmentmetadata-validation,notbinarypayloadtextscan.
+- 2026-10-08 - CONTINUOUS WOOD/RAISED SIGN publisheddf6d437 /
+  Pages37803845199,version3dc58f859194.169livefiles/README/ABOUTmatch;6publicpaths.
+  Removedcenterfade, addedoriginalgraintexture andstrongerletter/medallion
+  extrusion/drop-shadows/backlight. Font/mark/layout/currentcreamstudy unchanged.
+ 109Node/9asset/16headerstates andfull local/publicsite/entrancepass.
+  Workstream32DONE/offloadep_707. Newwelcome campaignpair/kit preservesoriginal
+  delivery andother5compositions. Noimageviews/socialposting.
+- 2026-10-08 - FASTER LOCAL CREAM/FROSTED PANE COMPLETE(workstream31).
+  Widerboundedpaths,2.25xphasepace,14%tint/8pxbackdropfrost; creamvisiblebehindtext,
+  foregroundtextsharp.18modeltests andbrowser/GPU/lifecyclechecks pass:200.4px
+  movement/792ms,26.85%pane fixturechange,7.09:1minimumreadingcontrast.
+  Production0fe8cbe/READMEunchanged; no imageviews/deployment. Completionreceipt
+  .local\cream-frosted-motion-20261008\completion.json; priorstudy preserved.
+- 2026-10-08 - LAUNCH CAMPAIGN COMPLETE0fe8cbe / Pages37795360157.
+  Six1600x1000READMEvisuals from12actualfullviewportdesktop/mobilecaptures,
+  sixrecomposed1080x1440Instagramvariants andofflinegallery/6JPEGZIP/caption/alt.
+  GFM6images/6links/0prose, galleryresponsive/metadata/sourcechecks pass.
+  All168livefiles/README/ABOUTmatch;8publicpaths only, runtime/appversion6170092be017
+  andallotherassets unchanged. NoInstagramposting/handlechange/siblingwrites/imageviews.
+  Receipt.local\launch-campaign-20261008\publication.json; deliveryexports\website-launch-20261008\.
+- 2026-10-08 - GROUNDED BAKERY SCENE COMPLETE777e7d2 / Pages37779612182,
+  version6170092be017. Original3Dgeometry/paintatlas/windowshadows, floorcontact,
+  strongcamera withfixedframe; three source-linkedstaticfallbacks.168livefiles/
+  README/ABOUTmatch;17publicpaths.109Node/8asset andfull local/publicsite/
+  entrance/responsive/fabricchecks pass. Previousentryfocusracefixednowcoupled
+  tocontrollerrewrite. Media/copy/tabs/header/local4174unchanged;02showcaseonly.
+  No image views or guarantee of aesthetic perfection. Receipt inpainted-bakery-scene.
+- 2026-10-08 - LOCAL CURSOR/LAYOUT/PATTERN COMPLETE(workstream28). Smaller
+  half-radiusfollowingblob,8-linktaperedcatch-uptrail,centered1200pxcontainer/
+  responsivegutters and exactbutter-paperSVGoverlay.16model+browser/GPUchecks
+  pass;Pause/peaks/limitsretained. Production4043eafuntouched,nopublication,
+ 0imageviews. Receipt.local\cream-trails-layout-20261008\completion.json;
+  offloadep_691. Userstatusquestion answeredwhileworkcontinued.
+- 2026-10-08 - LOCAL CREAM REVISION COMPLETE(workstream27).4174nowdrifts
+  continuously withlight0.8pxblur andsomewhippedpeaks, retainingoriginalround
+  style.11modeltests and actualshader/browser/lifecyclecoverage pass;Pausefully
+  freezesmovement,activepaintscapped30fps. Originalpublic4043eafunchanged,
+  noREADMEchange/build/commit/deployment.0imageviews;newappearanceapprovalunknown.
+  Receipt.local\moving-cream-study-20261008\completion.json;offloadep_690.
+- 2026-10-08 - FABRIC AWNING published4043eaf / Pages37759691640,
+  versionf5d31f754818.164live files/README/ABOUTmatch;9public paths.
+  Local cursor/near/scroll spring deformation with fixed rails, bounded resources,
+  exact rest/no idleloop, preference/resource fallbacks. Story inset-shadow seam
+  removed; original patterns/scallops retained.90Node/8asset, full local site/
+  responsive and local/live cloth tests pass. Full public site/responsive checks
+  also pass;workstream26DONE,offloadep_688. No image-tool views.
+  Fixed actual offscreen-resize stale geometry;
+  strengthened test after numeric inspection caught old1440pxbuffer at320px.
+- 2026-10-08 - WOODEN SHOP SIGN COMPLETE7aebea1 / Pages37751181000,
+  version2a1e845b0e36. Large centered originalCourgette/mark, warmwood/static
+  glow, navbelow.5publicpaths;162live files andREADME/ABOUTmatch.77Node/8asset,
+  full local/public SITE+16headerstates and responsiveentrypass.
+  Existing full entrance test failsfocus onold/newheaders; evidence retained,
+  runtimeunchanged, no false fullentrypassclaim. Only01showcaseupdated, all
+  realproductassets/other5showcases/text/linksunchanged. Offloadep_686.
+- 2026-10-08 - CANOPY/HERO/TABS correction pushedfd73c996457a4af1d7ed261acdfe910ca2fb95f7;
+  Pages37736362545succeeded, versionc4fa39962130. All162live files/README/ABOUTmatch.
+  Original sloped full-width canopy, explicit hero-window removal, enlarged
+  physical-edge action flags and varied text-free closed-cover tabs.
+  76Node/8asset,152notebook/285photo fitting and full local site/entrance checks
+  pass. Six README exports refreshed; all120real product variants, customer text/
+  links, three room layers and runtime modules unchanged. Full public site,
+  entrance and responsive suites also pass. No additional image-tool views;
+  original sources preserved. Workstreams23/24DONE; offloadep_684.
+- 2026-10-08 - COZY SITE COMPLETE:b48ec94 / Pages37704501432,
+  version5404ae813e89.16public paths;163live files andREADME/ABOUTmatch.
+  Full local/public checks pass, including75Node/7asset and152notebook/285photo
+  fit states. Six new showcase exports installed; all real product media and
+  customer copy preserved. Zero image-tool views; workstreams21/22DONE.
+  Receipt:.local\cozy-bakery-20261008\publication.json; offload ep_683.
+- 2026-10-08 - WARM INTERIOR / COZY SITE requested. Four new interior references
+  led to original timber, amber lamps, plants and a two-tier glazed cake display.
+  User then requested a cozy whole-site surprise. Added original hero window and
+  kitchen shelf plus a progressive paper/linen/timber stylesheet. All63template
+  text nodes and13navigation/enquiry links are unchanged; no image-tool views.
+  Interior panes pass20actual cake-tier pixel comparisons.75Node/7asset checks and
+  full site/entrance/responsive checks pass; fitting/showcase/publication in progress.
+  A new review helper initially awaited an offscreen lazy shelf image; fixed the
+  reviewer to scroll it into view before decode. This was not a site-runtime defect.
+- 2026-10-08 - LIGHTER TABS / STOREFRONT COMPLETE7774539 / Pages37698182681.
+  Production lighterpinkandstickycontrols plus originalawning/transparent
+  depth-layered room published; all160files/README/ABOUTmatch.74Node/6asset,
+ 152notebook/285photo local states and responsive/local/public suites pass.
+  Six showcaseJPEGsrefreshed,120realproduct variants/159originalsretained.
+  Roundedcreamstudy localonly4174; not restoredlive. Threeallowedreviewviews
+  consumedlifetime118. No copiedstockart; no morequestions were asked.
+- 2026-10-08 - CREAM REMOVED AND PARKED. Owner rejected appearance and requested
+  removal rather than further iteration. Archived eleven exact files with hashes;
+  deleted active cream source/import/CSS/build/test wiring and public module.
+  Published3b9d6e49ca5370c632605e3d57ebba39c5372ebe / Pages37688949889,
+  versionf7af8892c51b. Static background runtime checks pass, oldmodule404.
+ 72Node/full local-public site/entrance checks pass; all imagery/README intact.
+  TODO18deferred; revisit only on new instruction. No additional image views.
+- 2026-10-08 - PRETTIER SHARED WEIGHTS. Replaced comma-separated text with one
+  cream bakery note: script heading, original decorative whisk, pink edge/dots
+  and an accessible static six-size list. No controls or weight pages; no media
+  changes.74Node,152notebook/285photo local states and full site/entrance/cream
+  checks pass. Published only index/styles as80fe088b62235759f559fcf04e9865a4cb8e3dad,
+  successfulPages37677612234; live changed bytes match. Full public site/entrance
+  checks pass. Receipt:.local\pretty-weight-note\publication.json.
+- 2026-10-08 - COMBINED RELEASE COMPLETE5548084 / Pages37674894908. Renamed
+  verifiedWhiskAndCrumbsURL, six1600x1000README images with prose inABOUT.md,
+  light-pink covers and optional cream mouse surface published.156site bytes
+  andREADME/ABOUT match;73Node,5asset,152notebook/285photo local states and full
+  local/public site/entrance/cream checks pass.12public paths only. All prior
+  images/originals retained;3new review sheets consumed, lifetime112attempts.
+- 2026-10-07 - RENAME / VISUAL README / PINK REQUEST. GitHub confirms actual
+  singular repositoryWhiskAndCrumbs (not typedWhiskAndCrubms), with the matching
+  Pages URL. Preserved old README/config/CSS bytes; updated origin/canonical and
+  cover-only light pink#efb7c8. Public prose moved to ABOUT.md; README wired to six
+  distinct landscape images now being generated from real site captures.
+  Owner permits up to3additional README review sheets after109prior attempts.
+  No new image view yet; Chocolate composition/whole-archive review remain paused.
+- 2026-10-05 - REJECTED HONEY REPLACED. User says honey is not cute. Published
+  pastel-blue#9db9dfcovers as a05964d05dd8c0d91ace7ebf9e7f29dcdc790016,
+  Pages37260819501, version395f59e906ff.149live bytes/README match;69Node and
+  local/public checks pass. Green labels/cream interiors/media unchanged.
+  Previous honey receipt is history, not approval or a future colour to restore.
+- 2026-10-05 - COVER-ONLY HONEY COLOUR COMPLETE. User wanted separation from the
+  canvas. Applied#d7aa68faces with#34483alabels and transparent text plates,
+  retaining cream website/inside pages. Publishedcf39360a18041cb70f498fa1208e3959dfedcbcd
+  / Pages37253171653, version9d0024f53bc6;149live files/README match.
+ 69Node and local/public checks pass, text4.61:1/surface1.81:1contrast.
+  All images unchanged; no new image-tool views or five-piece composition.
+- 2026-10-05 - SHARED WEIGHT INFORMATION PUBLISHED. Removed every notebook weight
+  page and added one cake-weight line above the covers. All books start with photos;
+  existing page turns, four-photo grouping and no-scroll fit remain.
+  Publishedd974f0ee335e88b329be2904c8f136d37a184629 / Pages37251302622,
+  version574cbd67dd02.149live files/README match;68Node,152notebook/285photo local
+  states and local/public checks pass. Cover/gallery markup and all media unchanged.
+  The declined extra image budget and paused five-piece cover remain in force.
+- 2026-10-05 - FIVE-PIECE CHOCOLATE COVER SAVED, NOT IMPLEMENTED. Owner wants
+  five best pieces on the cover, not the whole grid; inside assortment stays.
+  Rechecked109attempts/108successful. Owner declined up to3extra contact-sheet
+  views and chose saving for a fresh session. No new view, selection, asset,
+  code change or publication. Prioritize this bounded cover-only work on resume.
+- 2026-10-05 - CHOCOLATE WEIGHT EXCEPTION COMPLETE. Owner clarified no weights
+  for chocolates. Its notebook now opens directly to photos; five cake notebooks
+  retain static weights. Single-page controls hide, empty state stays honest.
+  Published5c08f99361a23adcd9d3cfabcc5622aa7eca7a94 / Pages37248095888,
+  version0c48670fb432.149live files/README match;68Node,247notebook/285photo local
+  states and full local/public checks pass. No media/enquiry changes or image views.
+- 2026-10-05 - AVAILABLE WEIGHTS ARE INFORMATION ONLY. Converted six notebook
+  first pages to plain half-kilo-through3KG lists; removed radio inputs, selection
+  prompts/state and weight-appending enquiry logic. Published6b208e218dfc61aec75f601142c1958e0e6e027c,
+  Pages37246546238, versiond1809cdaaf48. All149live files/README match;66Node,
+ 266notebook/285photo local states and full local/public browser checks pass.
+  All15enquiry links,120media variants and159originals unchanged; zero image views.
+- 2026-10-05 - HORIZONTAL/FONT-SAFE RELEASE VERIFIED. Initialbdae54b fixed real
+  19pxsideways viewer pan. Public validation exposed a skipped fit recheck during
+  later font loading; reproduced it, added two FontFaceSet events and published
+  bb52b9a144b091f35c6583d913503f5c4bc246a4. Pages37244829214 succeeded, version
+  a44d4ef52290, all149live files/README match.66Node,266notebook and285photo states
+  pass locally/publicly with loading/error cases and full browser checks.
+  No media changes or additional image-tool views. Failed first validation is
+  preserved in horizontal-overflow\publication-bdae54b.json.
+- 2026-10-05 - HORIZONTAL OVERFLOW REPRODUCED AND FIXED LOCALLY. At320x900/200%,
+  the old live photo dialog had240px client width vs259px scroll width and could
+  pan19px. Native max-width was calc(100%-78px); title/controls and a fixed-vh
+  image also forced vertical scrolling. Explicit bounded grid rows/columns now
+  fit the image between readable controls, while balanced notebook controls
+  avoid text overflow.66Node,266notebook and285photo geometry states pass;
+  loading/error and full site/entrance paths pass. All120media variants unchanged.
+  No image-tool view added. Publication is pending for this narrow follow-up.
+- 2026-10-05 - COVER/FIT RELEASE COMPLETE. Published961279918ba831ab4ed63c8977734729fe615e0c;
+  Pages37242217458 succeeded. All149live file bytes and GitHub README match;
+ 224local/public page-fit states and full site/entrance checks pass. Added
+  short320x480coverage, a visible complete-content fallback at extreme text/
+  screen sizes, and a separate accessible page announcement. No media changed
+  after the eighth visual sheet.28public paths only; authoring work retained.
+  Canonical receipt: .local\category-notebooks\cover-fit-publication.json.
+- 2026-10-05 - REVIEWED COVERS AND FOUR-PHOTO FIT READY. Owner approved a five-sheet
+  continuation after disclosure of101earlier attempts, then three more to resolve
+  reflective chocolate detail. Eight sequential labelled sheets were reviewed;
+  all trial exclusions and native-coordinate alpha repairs are recorded.
+  Tea/Birthday/Chocolate are installed locally, with15photo records/149public files
+  and unchanged96old variants/159originals. Owner also forbade notebook scrolling
+  and explicitly chose FOUR photos rather than adaptive pagination. Fitted media,
+  compact full-named controls and selected-weight helper pass65Node,9sticker and
+ 196geometry cases plus full local site/entrance checks. Public follow-up is next;
+  P038/P145 and141archive representatives remain pending.
+- 2026-10-05 - REJECTED CREAM SWIRL REPLACED. Changed only the Cream notebook's
+  small primary SVG ornament to a mixing bowl/whisk. Preserved its white contour,
+  location, palette, cake-slice companion, real cake and all remaining UI/media.
+  62 Node and local site/entrance checks pass. Committed only index.html as63f4437;
+  Pages37230426976 succeeded and all125served files match. Live Cream open/turn/
+  close/focus checked. No additional image-tool view or candidate-cover promotion.
+- 2026-10-05 - PUBLICATION AND MISSING-COVER FOLLOW-UP. Committed only README plus
+  five changed/generated site files as49aa3488b4a746e2866735571d4c7d6caef9d993.
+  Pages37227774315 succeeded; all125live files and README match committed blobs,
+  and public site/entrance browser checks pass. The release still has three
+  photo-pending covers, correctly called out by the owner. Generated detailed/
+  lite private cutouts for the exact Tea/Birthday/Chocolate sources: six
+  candidates,24transparent variants and one15-thumbnail comparison sheet.
+  Technical source/hash/RGB/metadata checks pass, but no visual mask approval
+  or live cover replacement is claimed. Prioritize that sheet in a fresh session.
+- 2026-10-05 - HERO COLOUR CORRECTED. The user only wanted its notebook frame
+  removed; interpreting the story reference as a green palette change was wrong.
+  Restored original cream/deep-green/terracotta hero colours, default actions,
+  focus and reading/photo-label backings without reverting the unframed layout.
+  Story and category notebooks are unchanged. 62 Node cases and sequential local
+  browser checks pass; no image-tool views, original edits or deployment.
+- 2026-10-04 - HERO REMOVED FROM NOTEBOOK PRESENTATION. Following the supplied
+  hero/story comparison, the intro is now an unframed full-width green section.
+  Removed its spiral and tilt; kept cake, headline, actions and the separate
+  original story. Matched copy/photo-label washes and button/focus colours to
+  the green surface rather than leaving cream rectangles behind text.
+  62 Node cases and sequential local site/entrance checks pass; no original or
+  prepared image changed. Only index/main/styles differ from the previous local
+  receipt. Visual review remains unperformed; no publication occurred.
+- 2026-10-04 - OWNER CATEGORY EXAMPLES APPLIED. Verified six supplied filenames
+  and hashes against the private inventory/import. Renamed the existing cherry/
+  curl display label to Black Forest and assigned it to Cream, preserving every
+  asset byte/ID. Replaced Ice cream with Birthday Cakes first and gave it distinct
+  balloon/gift doodles. Recorded decorated, two-tea-cake, Doraemon, chocolate and
+  Birthday sources separately from derivative approval. Kept the actual Happy
+  Anniversary topper unchanged in the source assigned by the owner to Birthday.
+  V2 contact sheets exclude the six identified sources: 141 unreviewed images on
+  eight 17-18-tile sheets; original revision preserved. 61 Node/ten inventory cases
+  and sequential local site/entrance checks pass; no image-tool views or deployment.
+- 2026-10-04 - TOP-BOUND PAPER CONSTRUCTION CORRECTED LOCALLY. User rejected the
+  broad left strip and supplied five construction references. Replaced category
+  cover/open-book shadows with thin paper layers and a subtle green backing;
+  removed cover ruling/large fake fold and used 2px corners. Original paired-wire
+  SVGs enter rectangular top slots, with complete spaced coils. The previous
+  category-specific stickers, photos, weights, page controls and hero remain.
+  60 Node cases and sequential local site/entrance reviews pass; only generated
+  index/styles changed from the previous local receipt. Preserved original media
+  and private reference copies; no stock image pixels, new image-tool views,
+  visual acceptance or public deployment. Receipt: realistic-paper.json.
+- 2026-10-04 - CATEGORY-SPECIFIC COVER STICKERS. The user's attached annotation
+  identified the repeated heart/bow pair on all six notebooks. Replaced them
+  with twelve different original SVG motifs matching the notebook names, while
+  retaining white contours, palette, positions and click/accessibility behavior.
+  59 Node cases, the unchanged 125-file allowlist and sequential local site/entrance
+  checks pass. No original or prepared product image was edited or newly
+  classified, and no extra image-tool view was used. Full category photo curation
+  and visual review remain separate; the local correction is not published.
+- 2026-10-04 - CATEGORY NOTEBOOK INTERACTION IMPLEMENTED LOCALLY. The new request
+  supersedes the earlier single twelve-cake sheet. Added Tea cakes, Cream cakes,
+  Decorated cakes, Doll cakes, Chocolates and Ice cream covers under Cakes we've
+  made, original heart/bow decorations, 380ms modal zoom, weight-only first pages
+  and groups of four cake photos. Buttons, native arrow-key behavior and optional
+  bottom-to-top mouse/touch drag include short/downward/cancelled-drag protection.
+  Modal close restores focus; reduced motion, failures, print and direct links
+  restore full baseline content. Image enlargement stays scoped to its category.
+  58 Node cases and the local 125-file build pass. Sequential local site/entrance
+  checks cover functional paths, six widths and 200% text, without opening images.
+  Preserved all twelve existing cakes and 159 original-file hashes/mtimes.
+  Four category photo assignments and final cover choices await workstream 15;
+  no invented media, full-resolution review, visual approval or deployment.
+- 2026-10-04 - Corrected a genuine 200% text layout issue in the native dialog:
+  override its browser max-width and let weight/control columns reflow with rem
+  minimums instead of shrinking text. Kept geometry assertions after the intended
+  zoom finishes. Also fixed dynamic direct-fragment recovery to return an element,
+  including when the requested notebook is mounted in its dialog.
+- 2026-10-04 - BOUNDED IMAGE REVIEW PREPARED, NOT VISUALLY COMPLETE. Read the
+  required repository material and complete tracked/index diffs without resets.
+  The supplied posts folder contains 159 decodable files / 153 distinct hashes:
+  136 JPG and 23 WebP. Six duplicate entries and seven hash-proven prior website
+  selections need no redundant view; 146 remain for new classification.
+  Created nine labelled 16-17-thumbnail sheets, inventory JSON/CSV, invalid-until-
+  reviewed decision drafts and the project classification ledger. Nine targeted
+  tests pass; source bytes/mtimes and sheet hashes are preserved.
+  The actual old-session log already contained 100 successful image views and
+  one failed attempt before this request. Added ZERO new views and exercised the
+  real-session guard, which refused a reservation. Saved workstream 15 and the
+  exact batch-01 resume point for a fresh session. No visual findings, full-
+  resolution inspection, new shortlist, publication or user approval are claimed.
+- 2026-10-04 - INSTAGRAM PROFILE ARTWORK COMPLETE LOCALLY. Researched Hootsuite
+  and Sprout guidance, explicitly treating their different pixel figures as
+  third-party advice rather than official Instagram restrictions. Delivered RGB
+  PNG square/framed-square (1080x1080) and unframed portrait (1080x1440) under
+  assets/social/instagram. Preserved the original whisk and singular wordmark in
+  cream/green/terracotta. The circle is centred with radius 540px; essential art
+  reaches only 434.28px. Inspected native/small circular views; four tests and
+  exact reproduction pass. No Instagram upload or website changes were performed.
+- 2026-10-04 - SINGULAR-BRAND NOTEBOOK PUBLISHED AND VERIFIED. Commit
+  be221e660422dad8e74a67a46526ab81f3391306 and Pages run 37212121826 succeeded.
+  Live version e268ea148bb4, all 124 served files and GitHub README match the
+  committed blobs. Both production browser reviews pass. Fixed a reviewer race
+  by waiting for stable focus scrolling before changing viewports, retaining the
+  full visibility/bar-clearance assertion. No production workaround was needed.
+  Sources, original media, archive and local guides stay private; only site/ and
+  the approved public-safe README were pushed. The repository itself was not renamed.
+- 2026-10-04 - TWELVE-CAKE NOTEBOOK AND SINGULAR NAME READY LOCALLY. Recovered the
+  interrupted requirements, preserved the dirty worktree and imported the supplied
+  export offline (167 eligible entries, 160 unique originals). A filename-labelled
+  review rejected the initial incorrectly associated private candidate batch; v2
+  supplies seven tested export photos and reviewed stickers. Existing five records
+  and forty media variants are byte-preserved, and all twelve stickers reproduce
+  exactly. The cover turns upward around the top spiral, with native corner/tap/
+  Enter/Space activation, correct focus, one gallery and static/failure exits.
+  Hardened review traversal to visit each lazy image and wait for settled keyboard
+  focus rather than racing smooth scrolling. Raised photo labels above neighbouring
+  washes so their dark text remains rule-free and unwashed.
+- 2026-10-04 - The user requested Whisk & Crumbs everywhere, singular, explicitly
+  reserving the repository rename for later and asking for no further questions.
+  Updated 27 maintained text files, renamed workstream 12, regenerated the logo,
+  SVG titles and sharing image, and preserved old artwork privately. Prepared a
+  public-safe GitHub README with captioned public images; retained the full former
+  working README in docs/authoring-guide.md. 51 Node, seven sticker and four
+  branding cases, the 124-file build and local notebook/entrance reviews pass.
+  The new release has not yet been pushed by this entry.
+- 2026-10-04 - NOTEBOOK SHEETS GIVEN PHYSICAL DEPTH. Replaced the card-like page
+  treatment with stacked paper edges, sharper corners, stronger restrained shadow
+  and a small curl. Added optional pointer tilt/lift with reset and reduced-motion/
+  touch protection. 50 tests, 68-file build and both local browser reviews passed.
+- 2026-10-04 - ENTRANCE MADE INTENTIONAL AND FULL-PAGE. Replaced automatic opening
+  with a full-viewport click/keyboard target, expanded the doorway within generous
+  responsive edge padding, added subtle layered pointer parallax and moved bell
+  playback to the entry gesture. Retained skip, native-link, preference and module
+  failure paths. 50 Node tests, 68-file build and both local browser reviews passed.
+  Published 5c61fc3; run 37204518507 succeeded. Live bytes and both browser reviews
+  pass at the canonical URL with asset version dfb6d40074a5.
+- 2026-10-04 - SPIRAL DEPICTION CORRECTED. User supplied a reference showing dark
+  wire loops passing through rectangular punched slots and correctly rejected the
+  earlier oval-and-dot shorthand. Replaced the repeated SVG tile with rounded
+  U-shaped dark wire, inset highlight and rectangular slots on both cookbook pages.
+  50 Node cases, 68-file build and local browser reviews passed. Published
+  6325cad; Pages run 37203943996 succeeded. Live index/styles bytes match committed
+  blobs, and full-site plus entrance reviews pass against the canonical URL.
+- 2026-10-04 - ENTRANCE RELEASE REPAIRED AND LIVE. User screenshot proved a
+  mixed-cache production failure: new HTML arrived with old cached CSS, rendering
+  entrance elements as raw page content. Immediately reverted the public five-file
+  change in 6edf472; run 37200198417 restored the known-good site. Added a generated
+  12-character content version to both CSS links, both module preloads and main.mjs;
+  main propagates that version to entrance.mjs and bell.mjs. Revised cookbook pages
+  to match the cream canvas, use fully opaque no-rule text zones and top spiral
+  binding without overlapping tabs. 50 Node cases, 68-file build and local full-site/
+  entrance reviews passed. Published 9be430e0df63478dd08ff24735bcccc13a10ba98;
+  run 37200454931 succeeded. Deployed CSS/JS bytes match committed blobs, and both
+  browser reviews pass against the canonical live URL.
+- 2026-10-04 - ENTRANCE/COOKBOOK LIVE. The first report that the entrance was not
+  working was correct for the public URL: it still served release 9723c286 because
+  the reviewed update had only been built locally. Confirmed the absence directly,
+  then committed only the five public site files as
+  f3761031b04fc1fe277988a3cb76ac642ccdb63f and pushed main. Pages run
+  37200032861 succeeded. The canonical URL now serves the entrance markup,
+  entrance.mjs and bell.mjs; the dedicated entrance review passed against the live
+  site. No authoring source, private image, TODO or review directory was published.
+- 2026-10-04 - ENTRANCE/COOKBOOK LOCAL REVIEW COMPLETE. `npm test` passed 49
+  cases and `npm run build` produced 68 public files. The full-site browser review
+  passed at 320/390/600/768/1024/1440px plus 200% text. The dedicated entrance
+  review passed automatic allowed audio, blocked audio without resume/replay,
+  reduced motion, direct links, short landscape, skip, slow load, module failure,
+  CSS-only/no-JS fallback and resource cleanup. Its offline muted waveform measured
+  1.4 seconds, 0.1072 peak and 0.0146 RMS; this is generated evidence, not a claim
+  of hearing device playback. Parent inspected entrance and updated page screenshots
+  in batches of two. No public deployment is recorded for this revision.
+- 2026-10-04 - ENTRANCE/COOKBOOK CONTINUATION IN PROGRESS. Preserved the existing
+  uncommitted paired-door entrance, optional Web Audio bell, generated site files
+  and all earlier authoring work. Added lightly ruled paper framing to the home and
+  cake sections, with restrained tabs and the real transparent stickers. Kept the
+  original pattern strength in open areas while adding 94% cream and 95% green
+  local washes behind reading copy. Added captioned README images and workstream 13.
+  Current validation and public deployment are not yet recorded by this entry.
+- 2026-10-04 - WHISK & CRUMBS LIVE. Applied the selected name/descriptor throughout
+  the page, accessibility and social metadata. Created an original whisk/crumb
+  mark, transparent logo, SVG/PNG/ICO/touch icons and branded sharing image.
+  Added original 640x480 outline-only patterns: 0.075 cream / 0.065 green opacity,
+  1.62% ink coverage, measured 1.124:1 / 1.191:1 contrast. No supplied reference
+  pixels were used; six reference files remain private. Original palette, fonts,
+  cakes, four sections and Instagram account remain unchanged.
+  Rebrand a1ff03b249ba5908d73e881cf32a92e0475c54f3 deployed in run37195641928.
+  During push GitHub reported the repo moved to Zanark/WhisksAndCrumbs; API confirmed
+  https://zanark.github.io/WhisksAndCrumbs/. No repo/local-folder rename was performed
+  here. Updated origin/canonical/share URLs and published follow-up
+  9723c286e465d2c6ebec59c1db4555f0f664dcd5; run37195797175 succeeded.
+  25 Node cases, four branding cases, 66 public files; local/live browser review
+  and twelve served-file byte comparisons passed. Actual identity/pattern,
+  desktop/mobile and sharing artwork inspected. Only public site files were pushed.
+  Evidence: .local\publication-whisks-and-crumbs.json, .local\branding\ and
+  .local\website-review\. Native-app/visual approval and legal availability unverified.
+- 2026-10-04 - GIANT INSTAGRAM BUTTON LIVE. Added a large monochrome camera mark
+  inside the main contact button, retaining a visible action label, login/help,
+  original palette and a correctly unbranded WhatsApp fallback. 22 Node cases and
+  local/live browser review pass (128px logo, 230px button, accessible name).
+  Only site/index.html and site/styles.css were pushed in
+  2b4596bfb29c7113d00833909f861c0cbb02b6d2. Run 37167145069 succeeded; live HTML/CSS
+  match that commit. Receipt: .local\publication-instagram-logo.json.
+- 2026-10-04 - PALETTE/FONT CORRECTION AND PUBLIC RELEASE COMPLETE. User rejected
+  the unrequested palette change and overly cursive type, retained the other cute
+  details, and explicitly requested GitHub Pages publication after the hosting
+  warning. Restored cream/deep green/terracotta, selected clearer Courgette, and
+  preserved stickers, story, scallops, rounded controls and short ordering copy.
+  21 Node cases and local/live browser reviews pass; 58 public files, 188 DOM words.
+  Set siteUrl to https://zanark.github.io/B-Bakery/. Committed only site/, .gitignore
+  and .github/workflows/pages.yml as ac905f6ae237b6c71028fccc6b5615aae1d1ff7e.
+  Normal git push succeeded using existing credentials without changing identities;
+  the earlier gh READ permission did not prevent the existing Git transport.
+  Actions run 37166487834 succeeded. Live HTML, CSS, module, Courgette font and
+  sharing-image bytes match the release commit. Private photos/references, masks,
+  model caches, authoring sources and local docs were not pushed.
+  Provider commercial-use limits remain a documented risk, not made compliant
+  by the user's publication request or external message links.
+- 2026-10-04 - CUTE CURSIVE DESIGN COMPLETE. User requested cursive instead of the
+  roman/serif look and an extremely cute website. Added licensed local Dancing
+  Script headings, wordmark, cake names and notes; kept DM Sans instructions and
+  controls. Added blush/sage panels, rose pill buttons, scallops, heart/bow doodles
+  and matching sharing artwork. Story, sticker assets and contact logic unchanged;
+  no proposed bakery name was selected. Previous site/review preserved under
+  .local\revisions\before-cursive-20261004.
+  21 Node cases and current browser review pass; 56 public files, 188 main DOM words.
+  Actual desktop/mobile, enlarged-text and sharing-image views inspected.
+  Font enlargement now reflows at 320/390/600/1280px; no text-size reduction or
+  overflow hiding used. No public deployment or final user appearance approval.
+Entries below are historical snapshots, newest first. Later scope changes do not
+erase earlier implementation or turn old test counts into current evidence.
+
+- 2026-10-04 - STORY/STICKER LOCAL DELIVERY COMPLETE. Parent supplied final results:
+  npm test passed 20 Node cases; npm run build produced 53 files; python -m unittest
+  discover -s .\tests -p test_cake_stickers.py -v passed five cases, including
+  unchanged archived screenshot/crop hashes and source RGB equality at all opaque
+  mask pixels before resizing/compression. python .\scripts\review_site.py passed:
+  home/story/cakes/order; 188 DOM words (113 focus + 75 story); six transparent
+  on-page image instances preserving full-JPG viewer links; six viewport widths,
+  16px+ labels/48px controls, no-JS, keyboard/dialog, 200% text and slow network.
+  Parent visually inspected final cream/dark sheet, desktop/mobile full pages and
+  200% order screenshot. Current evidence: .local\website-review\review.json and
+  .local\stickers\final-review.jpg. Marked workstream 09 DONE for requested local
+  implementation; actual user visual acceptance, native app/device/AT acceptance
+  and public launch remain separate. Clipped source details are not reconstructed
+  and no perfect-cutout claim is made.
+- 2026-10-04 - STORY/STICKER REVISION IMPLEMENTED; LOCAL REVIEW IN PROGRESS.
+  User explicitly asked to restore Our little story right below the first section
+  and selected background removal with white sticker outlines. Restored the exact
+  original story and recipe note: home -> story -> cakes -> order. Navigation is
+  still short; FAQs, forms and separate custom-cake marketing remain out.
+  Five separate cutouts produce 20 transparent WebP/PNG variants. Local rembg 2.0.85
+  uses BiRefNet general-lite for four masks and general for peacock, with recorded
+  alpha-only corrections for the feather eye and cherry/doll background fragments.
+  Preparation uses saved masks and Pillow only; no photographs are uploaded.
+  Sources under .local\photos\prototype-20261004 and old photo variants are retained.
+  Source-clipped cherries, dress base and upper feather remain clipped, not rebuilt.
+  Expected public output is 53 files, with stickers under site\assets\stickers and
+  full prepared JPGs still used for enlargement. Masks/manifests/recipes are source-side.
+  Prior site/review: .local\revisions\before-stickers-20261004. Final comparison:
+  .local\stickers\final-review.jpg. Documentation/instructions and workstream 09
+  now reflect this scope. New Node/Python/browser outcomes and actual visual
+  inspection are pending evidence; no final visual approval or publication.
+- 2026-10-04 - THREE-SECTION SIMPLIFICATION COMPLETE. User asked for much less text
+  and only landing, cakes previously made, and how to order. Removed story, FAQs,
+  separate custom-cake marketing, card descriptions and the optional message form.
+  Kept all five real cakes with plain design names and appearance-based categories,
+  direct enquiry links, large readable text and visible order navigation.
+  Main DOM copy is 115 words (not counting CSS-generated photo labels); review
+  guards against growth beyond 180. 19 Node tests and the current six-width Edge
+  review pass; actual desktop/mobile/200% text images inspected.
+  The longer site and review remain in .local\revisions\before-three-sections-20261004.
+  Current preview: http://127.0.0.1:4173/. No public deployment or final approval.
+  Updated AGENTS.md, the design/maintenance guides and this numbered catalogue.
+- 2026-10-04 - READABILITY REFINEMENT COMPLETE. User supplied Bakingo/Creme Castle
+  and four cute layout references, then emphasized customers with varied digital
+  confidence and reading needs. Visually inspected live desktop/mobile hero and
+  browsing sections and the supplied images; copied references without modifying
+  originals and recorded the layout lessons.
+  Preserved prior site/review under .local\revisions\before-readability-20261004.
+  Added AGENTS.md and workstream 08 because repository-scoped memory storage was
+  unavailable; no global-memory success is claimed. Applied 18px body/16px key
+  labels, 48px principal targets, visible mobile navigation, literal action labels,
+  text-labelled photo controls and direct contact ahead of the optional helper.
+  33 public files; current Node/browser checks include 200% text resizing and the
+  fully collapsed helper. Image files/crops remain unchanged. No public deployment
+  or final user/representative-customer acceptance.
+- 2026-10-04 - LOCAL PROTOTYPE COMPLETE. User's 02:25 instruction authorized
+  implementation, followed by no questions until ready. Created the static source,
+  structured content, 32-file public output, local licensed fonts and sharing image.
+  All five prepared photos retain their framing. Added native photo viewer,
+  progressive enquiry composer, Instagram fallback and configurable WhatsApp.
+  No phone/prices/delivery facts, reviews or portrait were invented.
+  18 Node cases pass; actual Edge desktop/mobile/no-JS/slower-network and interaction
+  review is in .local\website-review\. Inspected actual page images. Fixed a Windows
+  text/plain MIME association with an explicit loopback preview server, not weaker
+  browser protections; copy-denial now opens the message; contextual mobile CTA
+  avoids hero/form overlap. Public release and user visual approval remain pending.
+  Preview: http://127.0.0.1:4173/; guide: docs\prototype-guide.md.
+- 2026-10-04 - Completed faithful preparation of the five supplied screenshots:
+  20 WebP/JPEG derivatives, original byte copies, lossless crop masters and a
+  before/after preview. All five source/crop compositions visually inspected;
+  crop masters equal source pixels at the recorded coordinates. Some background
+  remains intentionally. No fabricated detail, website or final user approval.
+  Re-ran the offline importer's 28 synthetic cases successfully.
+- 2026-10-04 - User rejected flat TODO.md and designated ClipFarm\TODO as the
+  structural model for every future chat. Inspected representative source files,
+  stored two user-scoped conventions and migrated to numbered .todo workstreams.
+  No ClipFarm files or sibling context stores were modified.
+- 2026-10-04 02:12 - User supplied five screenshots in Downloads\cakes-photos for
+  a prototype and requested minimal changes despite distracting backgrounds.
+  All five were visually inspected; faithful cropping/preparation remains active.
+- 2026-10-04 - Offline importer implemented with synthetic coverage, including
+  an extracted-folder input. Real account-export compatibility remains unconfirmed.
+- 2026-10-04 - User deferred Instagram export until account access is available.
+  Future handoff requires only the extracted folder path; screenshots are provisional.
+- 2026-10-04 - Read the supplied PDF, preserved it and four kitchen references,
+  wrote the design/contact plan and documented GitHub Pages' commercial-use limit.
+  Bounded Instagram download returned HTTP 429 and saved no cake photos.

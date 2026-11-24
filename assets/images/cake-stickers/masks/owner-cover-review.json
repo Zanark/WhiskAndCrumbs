@@ -1,0 +1,32 @@
+{
+  "status": "agent-selected-for-category-covers",
+  "review_scope": "Eight sequential labelled contact sheets, including native-scale reflective-region comparisons and actual local cover/UI captures.",
+  "owner_visual_acceptance": false,
+  "full_archive_full_resolution_review": false,
+  "final_sheet": ".local\\category-notebooks\\cover-fit-approved-candidate\\covers-and-no-scroll-final-15.jpg",
+  "final_sheet_sha256": "4ea7e21202e7b598b1fad9c14fea83bc0ce9afb1ec9d8f7ef9080edc021712c5",
+  "photos": [
+    {
+      "id": "round-and-heart-tea-cakes",
+      "model": "birefnet-general",
+      "reviewed_mask_sha256": "2e705d8a540e19e13b95f4ff2bac30deb59c4ff1848c9560b76c744d1873ecaf",
+      "correction": "None. Retain both visible cakes as one photographed group."
+    },
+    {
+      "id": "pastel-celebration-cake",
+      "model": "birefnet-general",
+      "reviewed_mask_sha256": "7e701ea3b44736202e2abd862d72310a2cf450df92224c8422ae9117903f8cd4",
+      "correction": "None. Retain the real anniversary topper, lettering and existing source clipping."
+    },
+    {
+      "id": "assorted-moulded-chocolates",
+      "model": "birefnet-general plus recorded local alpha refinement",
+      "original_candidate_mask_sha256": "b785574e22886ba1ed84adda3d35a500b838fffb322d2044af00c0c86511f135",
+      "reflection_base_mask_sha256": "c3f2bade212779b554dafb6c1ec1417d17e261a2d3cd321604de0fe12aa212f9",
+      "reviewed_mask_sha256": "804318b27fca4172de35a82c16f43121969deb5ab6ae5a55c97201a05ccc962c",
+      "correction": "Local edge segmentation, neutral puzzle recovery and a native-source keep polygon restore the real reflective face. Seventy-nine saturated-blue boundary pixels retain their prior alpha. No source RGB is changed.",
+      "recipe": ".local\\stickers\\owner-covers-20261005\\final-masks-v7\\reflection-recipe.json",
+      "recipe_sha256": "41b7a0e5aaabf8470df48898ee34f7e4f98a443297f72f9dbd8a2a88ae36e984"
+    }
+  ]
+}

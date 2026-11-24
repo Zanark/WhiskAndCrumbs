@@ -1,0 +1,122 @@
+{
+  "status": "packaged-not-posted",
+  "canonical_url": "https://zanark.github.io/WhiskAndCrumbs/",
+  "outputs": [
+    {
+      "file": "readme-landscape/01-welcome.jpg",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "sha256": "145b7315a3f2a063f19dbad8e0998e9fc1445c8297483cbe1194b06329bd491b",
+      "bytes": 347092
+    },
+    {
+      "file": "readme-landscape/02-bakery-entrance.jpg",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "sha256": "167119ccf961fdb123d0d0b1fa19a310848cc5c3e478d28a39d76977c9f30e95",
+      "bytes": 313058
+    },
+    {
+      "file": "readme-landscape/03-our-story.jpg",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "sha256": "f5cb96f3bc5dfbdfb4b42075038be9b835685c414a4e6230ef978a36f682cd92",
+      "bytes": 348785
+    },
+    {
+      "file": "readme-landscape/04-cake-notebooks.jpg",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "sha256": "f87dba8ec3fff72b6cec2430b29481a3e7d3d841f55dab97ba0e1b80b175a81b",
+      "bytes": 386081
+    },
+    {
+      "file": "readme-landscape/05-open-notebook.jpg",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "sha256": "6fcfe4cdd2165126bbb0c5b46c807579134e36e997bda632e4d663654b724b1b",
+      "bytes": 363954
+    },
+    {
+      "file": "readme-landscape/06-simple-ordering.jpg",
+      "dimensions": [
+        1600,
+        1000
+      ],
+      "sha256": "4e83e2789cfe53ecc405a6498f69459ca4163ef157c92c110d7ca25cc5115534",
+      "bytes": 288144
+    },
+    {
+      "file": "instagram-3x4/01-welcome.jpg",
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "sha256": "632f508b4893463ae56cb7249440d09895eb8858be5a440ccd8d4dbb97ea0823",
+      "bytes": 321243
+    },
+    {
+      "file": "instagram-3x4/02-bakery-entrance.jpg",
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "sha256": "a4e4c01a71d6b9144ae6fe8d0c41f875972f3edc6d150a263c660ba8fd754d92",
+      "bytes": 302064
+    },
+    {
+      "file": "instagram-3x4/03-our-story.jpg",
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "sha256": "150310bed6a6f1aa3ceb40dc8dcb0181053c6168e60133ef2c6b4cb8b01e0e77",
+      "bytes": 319857
+    },
+    {
+      "file": "instagram-3x4/04-cake-notebooks.jpg",
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "sha256": "2e13c6f6e89cb8d890c6776fd543c399c56255f1db4e1b66bcdd7f930f3a5ff7",
+      "bytes": 350330
+    },
+    {
+      "file": "instagram-3x4/05-open-notebook.jpg",
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "sha256": "0388d73ffb1e362b0b80517bf7363b4fcfb13fc8e9fa7f926c03e8bff2d81502",
+      "bytes": 338052
+    },
+    {
+      "file": "instagram-3x4/06-simple-ordering.jpg",
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "sha256": "10298f67e504d24f94a2285ad29d31c524bb46a8da7d638a7b4b0028e59eb55f",
+      "bytes": 279142
+    }
+  ],
+  "instagram_archive": {
+    "file": "Whisk-and-Crumbs-Instagram-3x4.zip",
+    "sha256": "009aa6f03cc01f11522837557852cd98a843584e57b5a12faf1bf947e2fbc443",
+    "images": 6
+  },
+  "posting_performed": false,
+  "image_tool_views": 0,
+  "owner_visual_acceptance": "Not established."
+}

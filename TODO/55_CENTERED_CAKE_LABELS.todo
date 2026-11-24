@@ -1,0 +1,45 @@
+# Center Cake Labels
+
+Status: DONE
+Milestone: M50 Centered cake names beneath their photographs
+Dependencies: 52_LARGER_TITLES_OPAQUE_NOTEBOOK_TABS.todo, 54_ORDER_ACTION_LABEL.todo
+
+## Purpose
+
+Center each cake caption without changing typography, image placement or controls.
+
+## Tasks
+
+- [x] Give cake captions the full label width and center their text.
+- [x] Cover both enhanced notebooks and complete static/no-JavaScript pages.
+- [x] Check caption-box and single-line text centres against each photo.
+- [x] Complete fit/full UI checks and refresh the notebook artwork.
+- [x] Publish scoped output and update documentation/context.
+
+## Acceptance criteria
+
+- All cake names centered beneath their own image frames.
+- Keep28pxnames, current Order/Enlarge controls and four-photo layouts.
+- No changes to product imagery, contact links or local4174.
+- No image-tool views or Instagram posting.
+
+## Completion evidence
+
+- Baseline3d9d1124322f2a3f218b59f96c2243323a8d584c.
+- .local\center-cake-labels-20261009\before\ andalignment-probe.json.
+- All15staticcaptions andthreeenhancedviewportcases pass; frame-centre delta0.
+- Fulllocal131notebook/300photo checks include410caption measurements:
+  framecentres0delta, maxsingle-linetextdelta0.0078125px.
+- 131Node/nineasset/fullsite/entry andpublic15static/fourenhancedlayouts pass.
+- Commita61f3a6e63f314bfdafb184c71cfe95a8368cd6e; Pages37918633744 succeeded.
+- Versione75de07cb66a; all175livefiles/README/ABOUTmatch;fivepublicpaths.
+- Currentkitexports\website-launch-20261009-centered-labels\; onlypublic05refreshed.
+- Receipt:.local\center-cake-labels-20261009\publication.json.
+
+## Completion log
+
+- 2026-10-09 - Published centered labels and refreshed the matching notebook
+  artwork. Fonts/buttons/links/media/otherbehavior unchanged. No imageviews,
+  Instagram posting or websitecream integration; no remaining55release work.
+- 2026-10-09 - Added a scoped width100%/text-align:center rule. The width is
+  necessary for static flex-column captions as well as the open-book layout.

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "notes": "Reviewed alpha-only corrections. Coordinates refer to preserved full-resolution crops. No source RGB is painted or generated.",
+  "photos": [
+    {
+      "id": "peacock-feather-cake",
+      "model": "birefnet-general",
+      "keep_polygons": [[[288, 0], [435, 0], [446, 47], [427, 142], [385, 186], [330, 192], [298, 158], [288, 110], [286, 60]]],
+      "reason": "The detailed model includes the feather but incorrectly treats its dark eye as background. Keep the actual source eye and surrounding central vane."
+    },
+    {
+      "id": "ribbon-and-pearl-cake",
+      "model": "birefnet-general-lite",
+      "reason": "Reviewed cake, ribbon loops and trailing ribbons; no manual correction."
+    },
+    {
+      "id": "cherry-topped-cake",
+      "model": "birefnet-general-lite",
+      "clear_boxes": [[0, 875, 1129, 954]],
+      "reason": "Remove detached placemat fragments beneath the round gold board. Source-clipped top cherries remain unchanged."
+    },
+    {
+      "id": "pink-doll-cake",
+      "model": "birefnet-general-lite",
+      "threshold_boxes": [{"box": [0, 1000, 90, 1124], "minimum": 220}],
+      "reason": "Remove a translucent cake-board remnant beside the lower-left dress. The source-clipped dress base is not reconstructed."
+    },
+    {
+      "id": "butterfly-celebration-cake",
+      "model": "birefnet-general-lite",
+      "reason": "Reviewed cake and complete butterfly topper; no manual correction."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+# Massive refresh-randomized local cream
+
+Status: COMPLETED
+Milestone: M58 Local-only varied large clumps and refined pointer trail
+Dependencies: 62_CATALOGUE_ONLY_RIGHT_PAGE_TAGS.todo, 64_ENTRANCE_NEON_ICONS.todo
+
+## Purpose
+
+After finishing the public website work, update http://127.0.0.1:4174/ with
+massive connected cream clumps mixed with smaller clumps. Randomize initial
+quantity and sizes on each refresh. Make the pointer blob smaller and its actual
+visible trail slightly longer.
+
+## Tasks
+
+- [x] Finish the current website work before implementing this local follow-up.
+- [x] Preserve current local source and verify independent offline-export behavior.
+- [x] Introduce bounded refresh randomness, stable within each load and resize.
+- [x] Keep large/small clumps connected internally without one continuous smear.
+- [x] Reduce the pointer head; measure the longer visible trail rather than a constant.
+- [x] Exercise seeds, viewports, placement limits, fallbacks and lifecycle behavior.
+- [x] Record local completion without publishing experimental files.
+
+## Acceptance criteria
+
+- Some clearly massive clumps and smaller clumps; varied size and quantity on refresh.
+- Original cream shading, center etched frost and side pattern behind cream retained.
+- Composition remains stable while moving or resizing; safe GPU and placement bounds.
+- Cursor stays responsive, visibly smaller, with a slightly longer bounded trail.
+- Pause, reduced motion, no-JavaScript and graphics failure paths remain usable.
+- No production integration, image-tool review or Instagram posting.
+
+## Completion evidence
+
+- Previous local study: .local\cream-clumps-20261009\completion.json.
+- The user's explicit order is website first, then this local preview.
+- Current receipt: .local\cream-massive-random-20261009\completion.json.
+- Numerical browser review: review-v1\review.json in the same directory:
+  54coverage cases with4–6connected clumps; actual giant diameter44.3–49.4%of
+  shorter viewport; minimum sampled envelope gap34.45px.
+- Head fraction.032->.024(25%smaller). Trail scale1/3->.44; stored gap2.4->3.2
+  compensates for smaller radius. Six GPU comparisons show29.0–30.9%longer
+  visible trailing extent, not just a larger constant.
+- 26isolated model tests,43campaign tests and full existing local browser
+  lifecycle/material/layout coverage pass. All12Gaussian exports byte-identical;
+  exporter source unchanged. Eight real loads yielded distinct seeds and all
+  three quantities. Each count preserves12placement slots and28GPUprimitives.
+- geometry-preservation.json:8,191unique recipes/286,685viewport-time states;
+  no clipping or envelope merge, minimum sampled gap6.83%of shorter viewport.
+  Shader text/material/motion profiles are identical;28old/new placed-orbit
+  samples match exactly. The existing4174server serves the revised model.
+- The17-file before snapshot and read-only incoming diff hash are preserved.
+  Concurrent site/index.html archive-import changes are outside this workstream;
+  no root rebuild, reset, staging, commit, push or public integration occurred.
+- No image-tool views or owner visual approval. Generated screenshots are unviewed.
+
+## Completion log
+
+- 2026-10-09 - Requirements persisted; implementation has not started.
+- 2026-10-09 - Website62/64prerequisite completed first at68d2aece/Pages37958797053.
+  Local work63implemented and verified at4174. Refresh chooses a new bounded
+  recipe; Reset shapes rewinds the same recipe and removes placements. Original
+  material, center glass/etchings, side pattern and quarter-rate timing retained.
+  Parent owns global index/ledger/AGENTS/context updates; handoff included in receipt.

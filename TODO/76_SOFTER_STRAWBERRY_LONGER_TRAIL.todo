@@ -1,0 +1,33 @@
+# Softer strawberry cursor and longer trail
+
+Status: DONE LOCAL
+Milestone: M71 Half-strength pink and1.5Xvisible trail
+Dependencies: 75_LOCAL_PREVIEW_CACHE_VERSIONING.todo
+
+## Tasks
+
+- [x] Blend the strawberry base50%toward white:255/193/213 ->255/224/234.
+- [x] Increase rendered trail scale.44 ->.66, preserving head radius and lag.
+- [x] Measure actual cursor colour/alpha and six GPUtrail comparisons.
+- [x] Keep ambient geometry/speed, pause/native-pointer fallbacks and live site unchanged.
+- [x] Open the fresh automatically versioned local preview.
+
+## Acceptance criteria
+
+- Strawberry tint is half as strong, not faded by reducing opacity.
+- Trail centerline is1.5Xlonger; cursor head size and catch-up behavior stay intact.
+- Existing asset versioning serves both changed modules together.
+
+## Completion evidence
+
+- .local\strawberry-half-tint-20261010\tint-review.json: exact50%base-colour blend,
+  unchanged rendered alpha/head shape; lighter actual opaque pixels.
+- trail-length-review.json:6cases, exact1.5Xpath length,1.485-1.496visible trailing
+  extent ratio; unchanged head radius and bounded on-screen rendering.
+-28model tests pass. Sharedpreviewrevision785570f2ae5c.
+- completion.json records unchanged public files and exact two-parameter source changes.
+
+## Completion log
+
+- 2026-10-10 - Owner requested2Xlighter strawberry, then1.5Xlonger trail.
+  No ambient movement, size, material opacity, website or Instagram changes.

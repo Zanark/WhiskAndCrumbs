@@ -1,0 +1,50 @@
+# Rename Ask to Order
+
+Status: DONE
+Milestone: M49 Consistent Order action labels
+Dependencies: 52_LARGER_TITLES_OPAQUE_NOTEBOOK_TABS.todo
+
+## Purpose
+
+Rename the cake action without changing contact destinations or treating a link
+click as a confirmed order.
+
+## Tasks
+
+- [x] Rename all15compact labels and accessible names; update full static labels.
+- [x] Preserve every contact URL and the existing enquiry handoff.
+- [x] Keep the longer word readable in short landscape without smaller type.
+- [x] Run fit/full local UI checks and refresh the affected cream-background artwork.
+- [x] Publish scoped output and update docs/context.
+
+## Acceptance criteria
+
+- Compact Order, static Order this cake / Order these chocolates, named accessible links.
+- Same contact destinations and confirmation wording; no automatic ordering.
+- Four-photo pages and20pxaction text; no clipped labels or new fallback from the rename.
+- Preserve all real media and separate local4174source.
+
+## Completion evidence
+
+- Baseline07876c8d9d382f70a56fa53acc44f68ba25d6e4f.
+- .local\order-action-label-20261009\before\ andlabel-fit-probe.json.
+- 131Node cases pass; all15contactdestinations unchanged.
+- Short667x375initialOrder overflow reproduced. The final row borrows its existing
+  4pxcolumn gap, reserves3.5remforOrder and drops the internal2pxgap.
+  Both labels and all corners are clickable; four photos remain enhanced.
+  Evidence:short-landscape-fit.json.
+- 131Node/nineasset/full localUI and131notebook/300photo checks pass.
+- Commit3d9d1124322f2a3f218b59f96c2243323a8d584c; Pages37914078688 succeeded.
+- Version5bd5689496ef;175livefiles/README/ABOUTmatch;fivepublicpaths.
+- Public15labelgroups/same15destinations/fourlayouts/noJS pass.
+- Kitexports\website-launch-20261009-order-label\; onlypublic05image refreshed.
+- Receipt:.local\order-action-label-20261009\publication.json.
+
+## Completion log
+
+- 2026-10-09 - Published Order consistently and refreshed its notebook artwork.
+  Existingcontactlinks/confirmationrules/media/JavaScript retained. No image views,
+  Instagram posting or website cream integration. No remaining54release work.
+- 2026-10-09 - Renamed compact/static/accessible labels consistently. Default
+  portrait/desktop button geometry is unchanged; short-landscape spacing alone
+  accommodates the longer word at the existing font size.

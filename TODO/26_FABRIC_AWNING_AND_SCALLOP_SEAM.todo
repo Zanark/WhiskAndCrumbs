@@ -1,0 +1,67 @@
+# Fabric Awning and Scallop Seam
+
+Status: DONE
+Milestone: M21 Bounded interactive fabric
+Dependencies: 23_FULL_WIDTH_AWNING_AND_PLAIN_HERO.todo; 25_WOODEN_BACKLIT_SHOP_SIGN.todo
+
+## Purpose
+
+The owner wants the full-width page awning to react like cloth to a cursor on or
+near it and to scrolling. They also questioned lines at the patterned green
+section's scalloped edge. Keep the existing art, palette, rails, width and copy.
+
+## Tasks
+
+- [x] Preserve original runtime, styling, tests, public overview and context.
+- [x] Implement a bounded damped spring mesh with fixed rails and local response.
+- [x] Render the original awning texture at bounded high resolution, without seams.
+- [x] Connect nearby fine-pointer input and signed scroll impulses.
+- [x] Stop after settling; retain exact static fallback and preference gates.
+- [x] Measure the story-edge shadow mismatch; remove the extra inset shadow.
+- [x] Exercise cursor/near/scroll, pinned rail, settling, idle and lifecycle behavior.
+- [x] Run existing full site/asset checks; keep baseline entry-focus issue separate.
+- [x] Refresh the story README image and public descriptions.
+- [x] Publish only allowlisted modules/styles and affected public docs/showcase.
+
+## Acceptance criteria
+
+- Local cloth deformation, not rigid whole-awning tilt or movement of navigation.
+- Top rail/front bar/side anchors fixed; exact original SVG returns after release.
+- Pointer influence within72px; touch does not intercept scrolling.
+- Scroll response works in both directions; reduced-motion/forced-colour/print stay static.
+- No continuous idle frame loop, unbounded field growth or external dependencies.
+- GPU loss/missing modules/unsupported WebGL retain original artwork and links.
+- Canvas is decorative, aria-hidden, click-through and confined to the page awning.
+- Background cream/green pattern stays static; no rejected cream renderer restored.
+- Green scallops retained without the extra darker inset-shadow strip.
+- No new image-tool views or owner acceptance claimed.
+
+## Completion evidence
+
+- Published4043eafb50e3d769b6d499fc5e7af789ab1d6292 / Pages37759691640,
+  versionf5d31f754818. All164live files/README/ABOUTmatch;9public paths.
+-90Node/8asset and full local/public site/fabric/responsive checks pass.
+  Finalproof:local-fabric-final/public-fabric plus exactresize expected dimensions.
+- Receipt:.local\fabric-awning-20261008\publication.json. No image-tool views.
+- Baseline:7aebea1b9fac6de072ccd696d5e1c6f4fac80a73.
+- Private evidence:.local\fabric-awning-20261008\.
+- Physics:12Node cases;90combined Node tests pass initially.
+- Passing initial browser candidate2:2.09%cloth pixels change near pointer, top rail
+  0%change, distant area0.0011%; nearby-pointer1.14%, exact-rest pixels and idle
+  checks pass. Context loss, motion preferences, touch scroll and fallback cases pass.
+- Candidate1 exposed a review sequencing assumption: toggling forced-colours
+  intentionally leaves existing notebooks in static mode. Moved modal test before
+  preference tests; no notebook/runtime change or weakened assertion.
+- Follow-up numeric inspection caught a real offscreen-resize defect:the retained
+  renderer could keep1440pxcoordinates after switching to320px. Input now always
+  calls the cached dimension check before applying forces; exact expected backing
+  sizes are asserted. Before-fix evidence is preserved and is not final release proof.
+- Section seam A/B:story-seam-analysis.json, corresponding generated crops unviewed.
+
+## Completion log
+
+- 2026-10-08 - Both changes published; exactrest/noidle and staticfallbacks verified
+  locally/publicly. Existing entry-focus baseline issue remains separate.
+- 2026-10-08 - Owner asks for cursor/scroll-reactive awning and questions scallop
+  lines. Isolated the motion to the page canopy. Removed the story inset shadow
+  after measuring its mismatch with the flat-green scalloped extension.

@@ -1,0 +1,56 @@
+# Smaller groups with randomized separation and rejoining
+
+Status: DONE PUBLIC
+Milestone: M79 Smaller grouped cream with independent internal motion
+Dependencies: 83_CURSOR_BACKGROUND_CONTACT.todo
+
+## Purpose
+
+The owner asks to reduce only the grouped blobs by1.5X(two-thirds of their
+current dimensions), then adds that members should repel and attract randomly
+so they visibly separate. Individual droplets, spawned blobs, cursor and trail
+must not be resized or otherwise changed.
+The later05:33clarification additionally halves only the largest background groups.
+Relative to the currently live release, largest group pieces/joined geometry are
+one-third size; other groups are two-thirds. The original large-group classification
+stays stable after resizing.
+
+## Tasks
+
+- [x] Preserve the current published group geometry and source.
+- [x] Add a separate group-only size multiplier, including group edge envelopes.
+- [x] Apply the additional50%reduction only to the originally largest background groups.
+- [x] Give every group seeded, independent separation/return cycles.
+- [x] Prove actual visible splitting/rejoining, not merely changing center positions.
+- [x] Preserve individual/cursor geometry, contact, FIFO and motion safeguards;85separately updates spawns.
+- [x] Recheck edge bounds, contrast, layout and performance.
+- [x] Refresh matching artwork, publish and repeat actual live checks.
+
+## Acceptance criteria
+
+- Joined/canonical geometry and constituent piece radii are one-third of the
+  previous release for largest groups and two-thirds for other groups. The span
+  naturally changes during the new separation motion.
+- Every group can visibly split and rejoin without teleporting or changing identities.
+- Random cycles remain reproducible and stable through resize and explicit Pause.
+- Largest group envelopes stay at the outer edges throughout separation.
+- Individual droplets, click-spawns and cursor/trail remain unchanged.
+- No original image, private study, palette, notebook or ordering change.
+
+## Evidence
+
+- Baseline27e82b612f1877f199e65dddc581bf261ee6a10f/Pages38094790715/a7f1fab52a19.
+- .local\group-motion-20261011\before\ preserves controller/material/model/tests.
+- Runtime agent owns group implementation and targeted numerical reviews;
+  parent owns integration, artwork, publication and final records.
+
+## Completion log
+
+- 2026-10-11 - Group reduction and random repel/attract requests combined; not published yet.
+- 2026-10-11 05:33 - User selected largest background groups only for another
+  halving. Engine scope updated; non-group blobs remain unchanged.
+- 2026-10-11 - Publishedabf0ae0305d1c6c32bffe4807a0eb520d0073a81,
+  Pages38103687444,version051d5117f212. Live486groupGPUcases and735edgecases
+  pass; canonicalordinary2/3andlargest1/3ratiosconfirmed,actualsplit/rejoin proven.
+  Fullsite/entry,388contrasts/84glass samples and360max-loadwindows pass.
+  Receipt .local\group-motion-20261011\publication.json; no remaining work.

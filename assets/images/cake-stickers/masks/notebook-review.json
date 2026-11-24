@@ -1,0 +1,54 @@
+{
+  "recipe_sha256": "c5bae1c94d1e627aaa6fddb67a16d07163476b689b40b3ac7d65340c01566fed",
+  "photos": [
+    {
+      "id": "rainbow-butterfly-cake",
+      "model": "birefnet-general",
+      "candidate_mask_sha256": "c2f9c176a88bdd429d3ec715a022cc346fe49cc2bef92112c87fb2b19271e822",
+      "reviewed_mask_sha256": "c2f9c176a88bdd429d3ec715a022cc346fe49cc2bef92112c87fb2b19271e822",
+      "correction": "The detailed local mask retains the full butterfly and piped cake, without the partial board wing retained by the lite candidate."
+    },
+    {
+      "id": "purple-birthday-cake",
+      "model": "birefnet-general",
+      "candidate_mask_sha256": "4be6e66f711f79396a4929f5a0bf88a0191c95ab9804f356cf04c6015addbfda",
+      "reviewed_mask_sha256": "4be6e66f711f79396a4929f5a0bf88a0191c95ab9804f356cf04c6015addbfda",
+      "correction": "The detailed mask retains the complete birthday topper, butterflies and cake; the source-clipped lower edge and a connected portion of the real board remain."
+    },
+    {
+      "id": "golden-drip-cake",
+      "model": "birefnet-general-lite",
+      "candidate_mask_sha256": "dc58f7789260f5715acaac205085f4b6b984c92322e2e8f462cd6cc60b38a879",
+      "reviewed_mask_sha256": "dc58f7789260f5715acaac205085f4b6b984c92322e2e8f462cd6cc60b38a879",
+      "correction": "The lite mask retains all visible swirls, golden decorations and the round cake base; no manual correction."
+    },
+    {
+      "id": "cherry-curl-cake",
+      "model": "birefnet-general-lite",
+      "candidate_mask_sha256": "d93bce873e3ee0da9bb939e548c4ca11ee0fd0053ee4c0a51a978f249b8bf6f4",
+      "reviewed_mask_sha256": "d93bce873e3ee0da9bb939e548c4ca11ee0fd0053ee4c0a51a978f249b8bf6f4",
+      "correction": "The lite mask retains every visible cherry, dark curl and cake base while excluding the surrounding turntable; no manual correction."
+    },
+    {
+      "id": "pink-swirl-cake",
+      "model": "birefnet-general",
+      "candidate_mask_sha256": "a499a89f3a33ab34cf7ade9936ddf20a4ca41ecf128d87f648a671b7c303c170",
+      "reviewed_mask_sha256": "a499a89f3a33ab34cf7ade9936ddf20a4ca41ecf128d87f648a671b7c303c170",
+      "correction": "The detailed mask removes the placemat leaves retained by the lite mask and preserves the complete swirls and central decoration."
+    },
+    {
+      "id": "rose-topped-cake",
+      "model": "birefnet-general-lite",
+      "candidate_mask_sha256": "fef0559b9f176b9caca8145e6ad906142af48ef7cd094fbd6a5951c68225c677",
+      "reviewed_mask_sha256": "fef0559b9f176b9caca8145e6ad906142af48ef7cd094fbd6a5951c68225c677",
+      "correction": "The lite mask retains the full rose and leaves; the already-clipped lower edge remains unchanged."
+    },
+    {
+      "id": "lavender-swirl-cake",
+      "model": "birefnet-general-lite",
+      "candidate_mask_sha256": "10d5ba66002f61a3dde647db90afe9eefe172336ebe2380d7b8cc0a72536fa37",
+      "reviewed_mask_sha256": "2aca2ab0552e054f45d3616f70c15f49c70f687c1a20b504068d56515b4442f7",
+      "correction": "Clear the right-side placemat remnant outside the cake silhouette. Existing top clipping, icing, lettering and source RGB are unchanged."
+    }
+  ]
+}

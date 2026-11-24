@@ -1,0 +1,44 @@
+# Hanging Door Open Sign
+
+Status: DONE
+Milestone: M32 A welcoming sign behind the door glass
+Dependencies: 36_PAINTERLY_WINDOWLIT_INTERIOR.todo
+
+## Purpose
+
+The owner requests a cute "We are OPEN" sign behind the entrance door's glass.
+It belongs to the moving door, not the parallax room or an interactive control.
+
+## Tasks
+
+- [x] Preserve the affected entrance template, stylesheet and source tests.
+- [x] Add a cream/deep-green hanging plaque with cord, brass details and a small heart.
+- [x] Place the glass reflection above the sign and retain the transparent room view.
+- [x] Keep exact wording, no independent animation and no extra interaction.
+- [x] Add and pass focused source tests.
+- [x] Check actual glass-layer pixels, narrow/short screens and door motion.
+- [x] Refresh the entrance campaign pair and include only scoped output in publication.
+
+## Acceptance criteria
+
+- One readable "We are OPEN" sign hangs behind the right door glass.
+- Sign moves with the opening door, not with interior look-around.
+- No hidden/overflowing lettering or interference with entry/skip controls.
+- Existing no-JS, reduced-motion, forced-colour and resource-failure exits remain.
+- No hours, order confirmation or physical-shop claim is introduced.
+
+## Completion evidence
+
+- Private snapshot: .local\door-open-sign-20261008\before\.
+- Source test: tests\site.test.mjs, hanging-sign and native-doorway cases.
+- Browser review: scripts\review_entrance.py, review_open_sign passed locally/publicly.
+- Five viewports,100%/200%text, actual overlay pixels, fixed parallax and door motion.
+- Published b74acc753e4fd97f020872691608a06f03cffa1d / Pages37830792274.
+- Coordinated publication receipt target: .local\painterly-windowlight-20261008\.
+
+## Completion log
+
+- 2026-10-09 - Corrected the initial OPEN line box and compact-height geometry,
+  then captured and published the final sign. Full local/public entry suites pass.
+- 2026-10-08 23:45 IST - Owner requested the sign. Source implemented; two focused
+  tests pass. Browser lane remains with the notebook revision; publication pending.

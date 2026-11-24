@@ -1,0 +1,39 @@
+# Raised, rounded glass on Instagram phones
+
+Status: DONE
+Milestone: M61 Convex glass edges and device depth
+Dependencies: 65_INSTAGRAM_BACKGROUND_COLOURS.todo
+
+## Purpose
+
+The owner says the phone screen looks flat and asks for bulged edges.
+Give the two Instagram phone mockups rounded raised glass and side depth.
+
+## Tasks
+
+- [x] Add a deterministic rounded-surface lighting renderer for original phone shells.
+- [x] Add7pxconvex glass roll, upper-left highlights and3x4pxsidewall offset.
+- [x] Keep actual screen dimensions, every source corner and native capture colours.
+- [x] Preserve current background colours, cream/frost, all copy and desktop devices.
+- [x] Change only Instagram01/06; leave four middle portraits/six README images identical.
+- [x] Package a new immutable review kit and six-image ZIP.
+- [x] Check actual edge shading at1080/540px and four gallery widths.
+
+## Acceptance criteria
+
+- Curved raised edges, not a single flat rectangular outline.
+- No screenshot corner mask, lens distortion, painted reflection over copy or lost content.
+- Phone-only scope with no website, local cream or public release changes.
+- No automatic Instagram posting or claim of visual approval.
+
+## Completion evidence
+
+- exports\website-launch-20261009-instagram-raised-glass\preview.html.
+- .local\instagram-raised-phone-glass-20261009\validation.json and gallery.json.
+- 49campaign tests,72actual-JPEG typography checks, four rendered phone-edge cases.
+- Onlyportrait01/06change; tenotherJPEGs byte-identical. Source viewports preserved.
+
+## Completion log
+
+- 2026-10-09 -22:34 owner requested phone-edge bulge. Implemented original
+  shaded convex rim and separate sidewall; no screenshot distortion.

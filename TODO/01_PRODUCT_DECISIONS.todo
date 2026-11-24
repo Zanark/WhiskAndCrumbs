@@ -1,0 +1,73 @@
+# Product Decisions
+
+Status: IN_PROGRESS
+Milestone: M0 Confirm the brief and public business facts
+Dependencies: None
+
+## Purpose
+
+Separate the user's requirements, proposed defaults and verified business facts.
+
+## Tasks
+
+- [x] Record a vegetarian home bakery, real cake photography and personal ordering.
+- [x] Record planning/assets first, before website implementation.
+- [x] Accept the five supplied screenshots as prototype inputs, not a full archive.
+- [x] Record restrained image edits: preserve the actual cake and original files.
+- [x] Record future handoff by extracted export folder path alone.
+- [x] Record October 4 authorization to implement without questions until a prototype is ready.
+- [x] Use the supplied profile as the working brand/Instagram contact, with unknown
+  WhatsApp, prices and service facts omitted instead of invented.
+- [x] Implement the earlier three-section reduction with readable text/direct links;
+  record its later supersession by the story restoration in workstream 09.
+- [x] Record the user's choice of separate background-removed cakes with white contours.
+- [x] Restore only the original story/note directly under the hero; keep FAQs,
+  forms and a separate custom-cake section out.
+- [x] User chose Whisk & Crumbs and approved updating the name, logo and favicon;
+  use Home-baked vegetarian cakes as the descriptor. Legal availability is unverified.
+- [ ] Confirm products, descriptions, sizes, portions, prices and seasonal availability.
+- [ ] Confirm vegetarian/eggless wording, allergens and made-to-order preparation.
+- [ ] Confirm lead time, city/service area, pickup/delivery rules and fees.
+- [ ] Confirm a public contact number, contact hours and optional email.
+- [ ] Agree on availability confirmation, payment methods and cancellation policy.
+- [ ] Approve WhatsApp as primary and Instagram as secondary contact.
+- [ ] Confirm whether a public phone/email fallback is wanted; forms are out of scope.
+- [ ] Approve which contact details may be public; do not expose a home address by default.
+- [x] Keep new biography, portraits and reviews outside the approved restored-story scope.
+- [ ] Resolve hosting: GitHub for source, an appropriate static host for orders.
+- [x] Obtain authorization for prototype implementation.
+- [ ] Obtain approval of the resulting design and final launch-ready scope.
+
+## Acceptance criteria
+
+- [ ] Public claims and product data come from the baker, not guesses from a photo.
+- [ ] Eggless is not presented as vegan or allergen-free.
+- [ ] An enquiry is not called a confirmed order; manual confirmation is explicit.
+- [ ] Hosting and public contact choices have actual user approval.
+
+## Completion evidence
+
+- Supplied 19-page specification: ..\docs\references\home-bakery-design-specification.pdf.
+- Proposed options and verified hosting constraint: ..\docs\website-plan.md.
+- 2026-10-04 user messages authorize prototype screenshots and minimal edits;
+  later explicitly authorize implementation without further questions. No prices,
+  service terms, public phone number or final visual acceptance were supplied.
+- Later explicit user request: "I liked the our little story part tho, lets bring
+  that back right belw the first section"; chosen treatment: "Cut out each cake,
+  remove its background and add a white sticker outline (Recommended)".
+  These approve scope, not final visual quality or publication.
+
+## Completion log
+
+- 2026-10-04 - User selected Whisk & Crumbs and asked for a complete rebrand with
+  very faint outline backgrounds. The real Instagram account is unchanged.
+- 2026-10-04 - User restored the original Our little story immediately below the
+  first section and chose white-contour cutouts. Current order is home -> story ->
+  cakes -> order; original sources and full-photo enlargement remain. This supersedes
+  the earlier three-section restriction without authorizing extra biography/forms.
+- 2026-10-04 - User explicitly narrowed the experience to landing, cakes previously
+  made and how to order. Story/reviews/forms are not remaining prototype requirements.
+- 2026-10-04 - Continued into the authorized prototype with reversible, configurable
+  defaults: Instagram contact and descriptive past-bake gallery, not a fake menu.
+- 2026-10-04 - Recorded the brief, proposed contact options and unresolved facts.
+  Five prototype screenshots do not establish five confirmed menu products.

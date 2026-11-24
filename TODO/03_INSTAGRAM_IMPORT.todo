@@ -1,0 +1,60 @@
+# Instagram Import and Full Photo Archive
+
+Status: IN_PROGRESS
+Milestone: M1 Recover available owner-uploaded media
+Dependencies: Supplied export imported; full-account history reconciliation remains unverified
+
+## Purpose
+
+Collect actual uploaded media without screenshots, credentials or rate-limit bypasses.
+
+## Tasks
+
+- [x] Attempt bounded public retrieval of @homemadevegcakes.
+- [x] Stop on HTTP 429 with zero downloaded photos; no credential access or retry loop.
+- [x] Write the owner-export guide.
+- [x] Implement offline ZIP, multiple ZIP and extracted-directory input.
+- [x] Include eligible carousel files, SHA256 deduplication and source associations.
+- [x] Exclude messages/profile data and reject unsafe paths or output conflicts.
+- [x] Exercise importer behavior with synthetic unittest fixtures.
+- [ ] Request all-time, highest-quality owner posts/content export when accessible.
+- [x] Receive and process the supplied extracted export path without requiring repacking.
+- [x] Run against the real export and reconcile counts, duplicate associations and exclusions.
+- [ ] Inspect any unsupported export layout instead of silently claiming completion.
+- [ ] Compare recovered media with account history without confusing posts and images.
+- [ ] Identify higher-quality replacements for screenshots by visual review.
+
+## Acceptance criteria
+
+- [x] The user can provide only an extracted-folder path; repacking is unnecessary.
+- [x] No account credentials or network connection are required by the importer.
+- [x] Zero eligible files is an actionable error, not success.
+- [x] Real-export compatibility is established for the supplied account export.
+- [x] Archive completeness claims are scoped to the provided export, not all time
+  on Instagram; deleted/expired/unselected media cannot be promised.
+
+## Completion evidence
+
+- The later bounded posts-only review is tracked in workstream 15: 159 files,
+  153 distinct hashes, six duplicate entries, seven prior website sources and
+  146 not-yet-reviewed images on nine contact sheets. These narrower counts do
+  not replace the whole-export import counts below or prove account completeness.
+- ..\scripts\import_instagram.py and ..\tests\test_import_instagram.py.
+- Parent ran 28 passing synthetic unittest cases, including an extracted folder
+  with wrapper directories. No real account media was imported by those tests.
+- Guide: ..\docs\instagram-photo-import.md.
+- Actual import: 178 scanned files, 167 eligible entries, 160 unique originals,
+  seven duplicates and 11 exclusions (seven outside scope, three videos disabled,
+  one unsupported extension). Manifest: ..\.local\instagram\imported\manifest.json.
+- Seven visually curated designs use metadata-free public derivatives and retain
+  original hashes/crops. No signed-in account-history comparison was performed.
+
+## Completion log
+
+- 2026-10-04 - Successfully imported the supplied real export offline, including
+  nested dated media folders. Preserved original bytes and duplicate associations.
+  Seven reviewed cake photos supplement the original five screenshots for the
+  notebook; other media and all account archives remain private.
+- 2026-10-04 - Public retrieval blocked; isolated downloader environment removed.
+  Offline import tooling completed. Real retrieval is deferred until an export
+  exists; prototype screenshot work proceeds separately.

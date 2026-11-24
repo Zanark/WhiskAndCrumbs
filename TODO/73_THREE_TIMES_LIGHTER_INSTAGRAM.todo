@@ -1,0 +1,38 @@
+# Three-times-lighter Instagram backgrounds
+
+Status: DONE
+Milestone: M68 Softer portrait background colours
+Dependencies: 72_COMPLETE_REVIEWED_CATALOGUE.todo
+
+## Purpose
+
+The owner06:02finds the current Instagram colours too bright and requests3Xlighter.
+Keep only one third of each editorial-ground tint by blending two thirds toward white.
+
+## Tasks
+
+- [x] Add an explicit portrait tint-strength control without changing historical defaults.
+- [x] Apply the white blend before unchanged cream/glass/foreground composition.
+- [x] Preserve the current148-photo source captures, type, photos and phone details.
+- [x] Render a new immutable six-portrait kit; keep all six README images identical.
+- [x] Confirm the one-third RGB transformation, readability and gallery/download.
+- [x] Leave the live website, original kits and tracked worktree unchanged.
+
+## Acceptance criteria
+
+- Current portrait tint strength1/3; this is not fading the entire image.
+- Glass stays8%tint/9pxblur; ivory cream and foreground content stay unchanged.
+- Six soft colour variants remain; no return of diagonal bands or flat phone edges.
+- No posting, image-tool viewing, public build or commit.
+
+## Completion evidence
+
+- exports\website-launch-20261010-instagram-three-times-lighter\preview.html.
+- .local\instagram-third-strength-20261010\completion.json.
+-57campaign tests,72JPEG typography checks, four gallery widths.
+- Ground tint ratios.333236-.333374 from8-bit rounding; minimum body contrast7.60.
+- Six README JPEGs byte-identical; source geometry/text/cream/glass/device records exact.
+
+## Completion log
+
+- 2026-10-10 -06:02owner request completed as portrait-only2/3white blend.

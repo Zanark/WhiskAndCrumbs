@@ -1,0 +1,54 @@
+# Local Side Background Pattern and Center Glass Etchings
+
+Status: DONE LOCAL
+Milestone: M54 Layer the original bakery pattern behind local cream
+Dependencies: 48_LOCAL_SEPARATED_CENTER_GLASS.todo
+
+## Purpose
+
+On4174only, retain center glass etchings and place the website's normal subtle
+outline tile on both side backgrounds, beneath the cream blobs.
+
+## Tasks
+
+- [x] Reuse the exact640x480website pattern; preserve the existing etched asset.
+- [x] Add a background layer with a plain center aligned to the glass.
+- [x] Render associated-alpha cream/shadows so the background is visible only beneath them.
+- [x] Adapt the existing artwork exporter and coverage probe to the material output.
+- [x] Prove side visibility, pattern occlusion by cream and preserved center scope.
+- [x] Run full local lifecycle/layout/fallback checks and material/export parity.
+- [x] Record unchanged official website and update docs/context.
+
+## Acceptance criteria
+
+- Center etchings remain above10%tint/8pxfrost, confined to760pxmaxreading column.
+- Side pattern stays below opaque cream and its shadows, not painted on globules.
+- Original tile bytes/opacity/640x480scale retained; no duplicated center base pattern.
+- Six uneven separated blobs, quarter-speed model and one-third cursor trail unchanged.
+- Complete noJS/graphics/preference fallbacks; no website build/publication.
+- No new image-tool views or Instagram image changes.
+
+## Completion evidence
+
+- .local\cream-side-patterns-20261009\before\ andlayer-probe.json.
+- 21localmodel/layer cases and43campaign cases pass.
+- At1440px,sideink visible~1.38%/1.37%;464pattern pixels occluded by cream,
+  with zero changes through opaque cream or center interior.
+- Center glass/etching scope stillmatches; hiding them changes zero side pixels.
+- Full localbrowserreview passes:18separation frames,eightresponsivewidths,
+  pause/visibility/reducedmotion/forcedcolours/print/noJS/WebGLrecovery retained.
+- Final heldpose has459under-creaminkpixelsfullyoccluded; zero through-cream/
+  centerinterior changes. Earlierprobe464is a different preserved static pose.
+- Desktop/DPR1 andmobile/DPR2 plain-groundmaterial differmax2RGBlevels/mean<.028.
+- All12Gaussianmaterialexports arebyte-identical; existing launchkit unchanged.
+- Receipt:.local\cream-side-patterns-20261009\completion.json.
+- OfficialHEAD9f51bc3cca618d35dbabb5c36bb571d02fd9d085/trackedworktree unchanged.
+
+## Completion log
+
+- 2026-10-09 - Completed4174-onlylayering anddocs. No build/commit/push or
+  image-toolviews. Refresh the existing preview to see the side pattern; owner
+  review and any future official integration remain separate.
+- 2026-10-09 - Replaced opaque-paper canvas output with associated-alpha cream/
+  shadows over a CSSpatterned ground. The center cutout lives only in the background
+  layer and matches the existing glass width. No texture-loader or runtime dependency added.

@@ -1,0 +1,55 @@
+# Cozy Bakery Website
+
+Status: DONE
+Milestone: M17 Cohesive sunlit bakery atmosphere
+Dependencies: 21_WARM_BAKERY_INTERIOR.todo
+
+## Purpose
+
+The owner asked for the entire website to feel cozy like a bakery, with creative
+decisions made autonomously. Extend the warm illustrated entrance into the page
+without replacing its readable cream/green identity or authentic cake photographs.
+
+## Tasks
+
+- [x] Preserve affected source before extending the current interior work.
+- [x] Draw an original hero window and quiet kitchen-counter footer illustration.
+- [x] Add progressive cozy-bakery.css before the final readability stylesheet.
+- [x] Refine header timber, paper note, linen recipe-table surround and order frame.
+- [x] Keep cover faces, actual inner tabs, four-photo dialogs and all copy unchanged.
+- [x] Refresh the six actual-view landscape README compositions.
+- [x] Check responsive/text-zoom geometry, contrast, decoration failure and static behavior.
+- [x] Run full existing site, entrance, notebook-fit and asset checks sequentially.
+- [x] Publish the scoped combined interior/cozy-page result and record exact live bytes.
+
+## Acceptance criteria
+
+- Sunlit window artwork stays behind the real hero cake, outside the reading copy.
+- Original story, contact wording, business facts and section order are unchanged.
+- Cream canvas, green story/order, blush-pink covers and 48px controls remain.
+- Linen and timber details do not add lines behind reading text or cake labels.
+- No new motion, cream effect, generic cake cards or fabricated product photos.
+- Decorative assets remain optional, noninteractive and hidden from accessibility.
+- No more image-tool views; visual acceptance is not inferred from numerical checks.
+
+## Completion evidence
+
+- Published:b48ec94e098df13d5ae6ff93dd89650ed89db54d / Pages37704501432,
+  version5404ae813e89. All163live files/README/ABOUT match committed bytes.
+-75Node/7asset cases,152notebook/285photo fit states, full local/public site/
+  entrance/responsive checks pass. Actual window visibility and failed art/styles
+  covered. Original120product variants,63text nodes and13template links unchanged.
+- Six current showcase exports:.local\readme-showcase-20261007\cozy-20261008\exports\.
+- Receipt:.local\cozy-bakery-20261008\publication.json. Zero new image-tool views.
+- Current live baseline:77745397e1b466de015582143f61fc7ca446b068.
+- Private work/evidence:.local\cozy-bakery-20261008\.
+- Warmer interior and actual visible-cake checks:.local\warm-bakery-interior-20261008\.
+
+## Completion log
+
+- 2026-10-08 - Combined interior/cozy redesign published, with16public paths only.
+  Original screenshots/source snapshots retained; owner visual acceptance unrecorded.
+- 2026-10-08 - Owner asks to make the entire website cozy and says "surprise me".
+  Chose sunlit cream, small timber edges, original greenery/window art and tactile
+  paper/linen accents. The prior interior update is combined into this release,
+  rather than publishing an intermediate revision.

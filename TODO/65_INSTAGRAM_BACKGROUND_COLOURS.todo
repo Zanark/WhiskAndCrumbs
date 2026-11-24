@@ -1,0 +1,43 @@
+# Instagram background colour variance
+
+Status: DONE
+Milestone: M60 Six distinct portrait-only background colours
+Dependencies: 62_CATALOGUE_ONLY_RIGHT_PAGE_TAGS.todo, 64_ENTRANCE_NEON_ICONS.todo
+
+## Purpose
+
+Give the six Instagram images different background colours without recolouring
+the cream sculptures, replacing the lightly frosted pane or changing the website.
+
+## Tasks
+
+- [x] Add an explicit portrait-only colour option; keep default rendering unchanged.
+- [x] Preserve real final website captures, foreground positions and typography.
+- [x] Apply buttercream, blush, soft green, peach, oat and vanilla ground colours.
+- [x] Keep original cream layers and the continuous8%-tint glass.
+- [x] Produce a new immutable kit with six3:4portraits and six unchanged landscapes.
+- [x] Check readability, distinct rendered colours and gallery/download behavior.
+- [x] Preserve public files, original kits and concurrent catalogue-import work.
+
+## Acceptance criteria
+
+- Six distinct Instagram grounds, with sharp unchanged foreground and ivory cream.
+- No opaque text patches, copied reference pixels or new website palette.
+- README landscapes remain byte-identical to the preceding final kit.
+- Actual JPEG typography retains its existing contrast/size gates.
+- No Instagram posting, public build, commit or push for this request.
+
+## Completion evidence
+
+- Kit: exports\website-launch-20261009-instagram-colour-variance\preview.html.
+- Evidence: .local\instagram-color-variance-20261009\composition-validation.json
+  and gallery.json.46campaign tests;72actual-JPEG typography checks.
+- Six landscapes byte-identical; all six portraits distinct and changed.
+- Minimum measured pairwise ground RGB distance21.22; minimum reading contrast6.05.
+- Four gallery widths,12decoded images each; ZIP contains exactly six portraits.
+- No image-tool views or owner visual acceptance claimed.
+
+## Completion log
+
+- 2026-10-09 -22:22 owner requested Instagram background colour variance.
+  Completed as an opt-in composition/package path, not a public-site revision.

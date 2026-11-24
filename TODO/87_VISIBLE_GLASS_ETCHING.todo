@@ -1,0 +1,42 @@
+# Restore visible etched bakery outlines on the glass
+
+Status: DONE PUBLIC
+Milestone: M82 Visible etching without text backplates or lost contrast
+Dependencies: 86_FEWER_SMOOTH_GROUPING_BLOBS.todo (combined release)
+
+## Purpose
+
+The owner's screenshot shows the pattern is effectively invisible. The glass
+layer's additional.08opacity multiplied the SVG's.12recess to less than1%.
+Restore the original etching strength and theme-safe ink, not a new opaque panel.
+
+## Tasks
+
+- [x] Inspect the actual SVG/CSS source without new image-tool views.
+- [x] Remove the additional8%opacity; tone green-section etching with brightness.4.
+- [x] Preserve the original SVG, glass tint, text, product images and background motion.
+- [x] Pass actual baseline/max-eight-spawn contrast at seven viewport/text sizes.
+- [x] Measure visible ink against hidden and old8%-opacity same-pose references.
+- [x] Publish with86 and repeat etching/contrast/runtime checks on the live site.
+
+## Acceptance criteria
+
+- Real etched outlines are visibly stronger in the cream screenshot area.
+- The original recessed/highlight texture remains; no solid text backplates.
+- Body text contrast stays at least4.5:1 and large headings at least3:1.
+- Green/cream themes, reduced transparency, reduced motion and print fallbacks remain.
+
+## Evidence
+
+- .local\visible-glass-etching-20261011\before\cream.css.
+- glass-final-v2.json andglass-max-spawns-v2.json:14cases/388contrasts pass.
+- etching-final.json:3viewports/15sections; hero visible ink exceeds100pixels,
+  mean change at least8RGB levels and more than3Xthe old faint reference.
+- Earlier .45green brightness missed contrast by a small margin; .4passes unchanged thresholds.
+
+## Completion log
+
+- 2026-10-11 - Local etching correction complete; combined publication pending.
+- 2026-10-11 - Completedc7cd407/Pages38131807188/64d54db0dcef. LIVE15etched
+  sections,14glasscases/388contrasts/84motion samples andfullsite/entrypass.
+  OriginalSVG/model/material preserved. Receipt .local\smooth-grouping-20261011\publication.json.

@@ -1,0 +1,77 @@
+# Owner-selected scattered chocolates on the cover
+
+Status: DONE
+Milestone: M64 Five randomly selected approved pieces, cover-only
+Dependencies: 68_STRONG_SCROLL_WIND.todo
+
+## Purpose
+
+The owner approved the ten highlighted cutouts, then requested exactly FIVE picked
+randomly from them, without further questions. Scatter them non-uniformly, not in
+a circle. Preserve the full assortment inside. This supersedes the initial
+ten-piece arrangement and the older paused selection task.
+
+## Tasks
+
+- [x] Preserve the annotated reference and record its hash.
+- [x] Align all ten marked pieces numerically to the existing reviewed source.
+- [x] Make separate alpha-only cutouts and a spaced/rotated transparent composition.
+- [x] Preserve original RGB and all eight existing assortment image variants.
+- [x] Create a private review page using the actual Chocolate-cover markup.
+- [x] Obtain owner approval of newly split edges; owner delegates a random five-piece arrangement.
+- [x] Randomly choose five once and persist an uneven non-circular composition.
+- [x] Integrate the approved derivative as cover-only, with hash-checked variants.
+- [x] Review and publish without silently including the deferred archive import.
+
+## Acceptance criteria
+
+- Exactly five from the ten approved cutouts; no reroll or unselected source pieces.
+- Five disconnected silhouettes, including an interior piece rather than a perimeter ring.
+- Cover-only change; all inside photos/enlargement destinations remain unchanged.
+- No new image-tool viewing, source uploads or implicit archive publication.
+
+## Completion evidence
+
+- Reference: .local\chocolate-cover-selection-20261009\owner-highlighted-selection.png.
+- Correlation across ten interior patches: minimum.8539, maximum affine residual.2911px.
+- candidate-v2\manifest.json: ten separate shapes, source RGB unchanged, nonoverlap
+  and canvas bounds pass; four transparent cover variants prepared.
+- Review: .local\chocolate-cover-selection-20261009\review.html.
+- owner-review.json records all eight unchanged assortment variants and provenance.
+- Owner approval: owner-approval.json. Exact random subset: flower-detailed,
+  flower-right, heart-left, heart-right, spiral-left. No masks were changed afterward.
+- Final five-approved\manifest.json has five disconnected shapes, four hull vertices
+  and radial variation.398. Varied scale/spacing/angles; no perfect-circle layout.
+- Final preview: .local\chocolate-cover-selection-20261009\review-five.html.
+- wind-release-boundary agent now owns source integration/review/publication after68.
+  The60cake/533filearchivecandidate remains outside both scoped public releases.
+- Publication: b9d2a571ed54f4342d4a568d7cfd1f334818c03c; successful Pages37980997473;
+  version32df5a36a07funchanged. Public179files/15photos; all181site/root-document
+  responses matchGit. Localcover/site/entrance/fit and publiccover/site/entrance pass.
+- Tests:56current-authoringNode,11frozen-publiccover,51campaign and13publisherguards.
+  Twelve fresh kit exports retain all four approved styling flags;72JPEGraster
+  checks pass. Portrait04andwide/portrait05change; othernineexports remain exact.
+  Kit:exports\website-launch-20261009-five-selected-chocolates\preview.html.
+- Concurrent archive work independently expanded the private candidate to148photos/
+  1241files. The first guard stopped and retained evidence; no import or rollback
+  was performed here. Original60stickerrecords remain exact. Finaltransaction
+  preserves3289existingworktreefiles;2720protectedsource/candidatefiles match
+  their recorded post-concurrency boundary. Publicsource remains frozen15photos.
+- Receipt:.local\chocolate-cover-selection-20261009\publication.json.
+  Implementation/evidence:docs\scattered-chocolate-cover.md.
+
+## Completion log
+
+- 2026-10-10 IST / 2026-10-09 UTC - Published the approved fixed-five cover through
+  the guarded private index:exactly8paths, no archive publication, no main-site
+  overwrite. Verified exactPagesSHA,179liveassets/rootdocuments and publicbehavior.
+  Alloriginalassortmentvariantsandapprovednativecutoutsremainunchanged; noimage
+  toolviews, maskchanges orInstagramposting. Wind68receipt remains separate.
+
+- 2026-10-09 - Owner: "use 5 of them pick them randomly dont ask me, the cut outs
+  look good, just spread them in a non uniform fashion, right now it loks like a
+  perfect circvle". Saved approval and oneSystemRandom.sample result; five-approved
+  composition prepared without modifying approved cutouts. No further approval gate.
+- 2026-10-09 -23:19owner supplies explicit ten-piece selection, superseding five.
+  Candidate-v1 exceeded the canvas at a lower heart; preserved failed draft.
+  Candidate-v2 fits with ten separated silhouettes. No public/source integration.

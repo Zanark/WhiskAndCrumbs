@@ -1,0 +1,57 @@
+# Shop Awnings and Transparent Bakery Windows
+
+Status: DONE
+Milestone: M15 Original storefront canopy and layered entrance interior
+Dependencies: 19_LIGHTER_PINK_TABS_AND_MATERIAL_STUDY.todo; original entrance safety
+
+## Purpose
+
+Add a real shop-style striped/scalloped canopy in a suitable top position and
+transparent entrance windows revealing a cute illustrated bakery interior.
+The reference images inspire construction/mood only, not copied artwork.
+
+## Tasks
+
+- [x] Choose canopy placement beneath the normal site header and above entrance doors.
+- [x] Implement a separate entrance-shop.css with true transparent glass apertures.
+- [x] Add three separately moving room layers behind the doors, using the existing
+  bounded pointer coordinates and distinct depth factors.
+- [x] Finish original awning/backwall/shelves/counter SVGs and verify safe assets.
+- [x] Verify real room pixels are visible through closed windows, not duplicate
+  pictures drawn on opaque panes.
+- [x] Check desktop/mobile/short-screen bounds, skip/click/keyboard and audio policy.
+- [x] Review combined15tile sheet(s) within remaining two of the current three-view budget.
+- [x] Refresh the six README showcase exports to match the new roof/tabs/light covers.
+- [x] Publish only reviewed production files; isolated cream demo remains local.
+
+## Acceptance criteria
+
+- The canopy frames the top without covering navigation or hero reading.
+- Windows have translucent glaze and reveal one continuous room behind both doors.
+- Background, fittings and counter move at distinct restrained depths on fine pointers.
+- Room art is original decorative fiction, not a claim of a real storefront/menu.
+- Existing paired doors/bell/skip and no-JS/reduced-motion/direct-link safety remain.
+- No cream effect is restored to the live website.
+
+## Completion evidence
+
+- Published77745397e1b466de015582143f61fc7ca446b068 / Pages37698182681,
+  version74180cf4cd35. All160live sitefiles/README/ABOUTmatch.74Node/6asset,
+ 152notebook/285photo local states and five responsive entrance cases pass.
+- Full local/public site/entrance checks include actual transparent-window image
+  differences, distinct layer matrices, gesture-only bell and skip/failure cases.
+- Receipt:.local\entrance-shop-20261008\publication.json. Originalart references
+  stayed inspiration only; three latest allowed review sheets are consumed.
+
+- Source stylesheet: web\entrance-shop.css.
+- Original assets: bakery-awning.svg and bakery-room-{back,middle,counter}.svg.
+- Responsive reviewer: scripts\review_entrance_shop.py.
+- Existing entrance reviewer additionally measures actual glass visibility and depth matrices.
+- Artwork agent bakery-window-art owns only four new SVG files and private artwork receipt.
+
+## Completion log
+
+- 2026-10-08 - User adds shop roof and transparent-window/parallax request while
+  lighter pink/tabs work is in progress. Chose canopy under header plus matching
+  entrance canopy; added isolated CSS and original layered-room integration.
+  No questions; no reference art copied. Artwork/review/publication pending.

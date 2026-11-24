@@ -1,0 +1,57 @@
+# Frosted Glass over Irregular Cream Artwork
+
+Status: DONE
+Milestone: M51 Replace rejected text-shaped masks with a continuous glass foreground
+Dependencies: 53_CREAM_LAUNCH_BACKGROUNDS.todo, 55_CENTERED_CAKE_LABELS.todo
+
+## Purpose
+
+The owner rejects the old masked-cream posts. All foreground content must sit
+on lightly frosted glass, with unique irregular cream structures behind it:
+clusters, smaller droplets and Gaussian variation, never repeated orientations.
+
+## Tasks
+
+- [x] Preserve the rejected edition and unchanged live website/local4174.
+- [x] Generate12distinct seeded-Gaussian layouts with4irregular multi-lobe clusters and5droplets each.
+- [x] Put all foreground on one continuous8%-tint glass panel; remove text-shaped masks from this mode.
+- [x] Use deep-green copy on the existing cream palette so transparency does not require cutouts.
+- [x] Complete regression, uniqueness, glass-transmission and actual JPEG readability checks.
+- [x] Package/reproduce the new edition and update Instagram/README artwork.
+- [x] Publish image-only output and update docs/context.
+
+## Acceptance criteria
+
+- All foreground inside one glass panel; no per-word/line opaque patches.
+- Only8%tint,92%background transmission,9pxfrost; cream remains visibly behind glass.
+- Twelve distinct orientations/geometry hashes and non-repeating rendered masks.
+- Four genuinely protruding, connected cream clusters plus five smaller droplets per image.
+- Preserve current genuine website captures, type sizes and portrait phone-only01/06rule.
+- No website/study integration, image-tool views or Instagram posting.
+
+## Completion evidence
+
+- Baselinea61f3a6e63f314bfdafb184c71cfe95a8368cd6e.
+- .local\frosted-cream-launch-20261009\before\,layers-v1(history),layers-v2\manifest.json.
+- V2enforces visible protruding lobes; actual9coveragegroups per image, original-shader
+  reconstruction error1RGBlevel. Existing36campaign cases passed before new regressions.
+- Candidate:.local\launch-campaign-20261008\composed\frosted-cream-20261009-v1\.
+  All12compositions pass initial foreground/contrast/transmission checks.
+- Final:.local\launch-campaign-20261008\composed\frosted-cream-20261009-final\.
+- 43campaign/9asset/README and72JPEGtypography checks pass;30artifacts exactrerender.
+- 12uniquegeometryhashes/orientations; minangularseparation.4327rad,maxmaskIoU.3641.
+- Atleast81.83%materialcontrast retainedinsideglass;6.14-12.71%visiblefinalcream.
+- All12foregroundmedia/textlayouts unchanged;25capture-sourcehashes match.
+- Kitexports\website-launch-20261009-frosted-cream\; older24images/twoZIPs preserved.
+- Commit8d9af9fe549d210da1673764983b98722bca5325; Pages37925598686success.
+-175livefiles/rootdocsmatch;8publicpaths. Appversione75de07cb66a/website/local4174unchanged.
+- Receipt:.local\frosted-cream-launch-20261009\publication.json.
+
+## Completion log
+
+- 2026-10-09 - Replaced all12launch images, updated sixREADME images and published
+  narrowimage-onlyoutput. Docs/contextupdated. No56implementation/render/package/
+  publication work remains; no image-toolviews/Instagram posting/ownerapproval.
+- 2026-10-09 - Identified old green cutouts as deliberate text-box masks.
+  Newmode never receives text boxes when rendering its glass background.
+  Rejected oldart remains immutable history; live website and localstudy untouched.

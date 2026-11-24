@@ -1,0 +1,63 @@
+# Longer Rose-Striped Canopy with Rigid Supports
+
+Status: DONE
+Milestone: M36 Longer supported sloping cloth
+Dependencies: 33_TALLER_AWNING_AND_DEEP_VALANCE.todo; 39_ARCHITECTURAL_BAKERY_FACADE.todo
+
+## Purpose
+
+The owner requests a longer slanted fabric section, plausible visible supports,
+a more reddish-pink colour and more stripes.
+
+## Tasks
+
+- [x] Preserve the current shared art, cloth geometry, styles and release inputs.
+- [x] Generate a longer 1200x300 slope with forty rose/cream stripes and24scallops.
+- [x] Add two original bolted wall brackets/tension rods as a separate static layer.
+- [x] Align the cloth rows and fixed rails with the longer source geometry.
+- [x] Keep notebook colours, wooden navigation and existing building structure unchanged.
+- [x] Resolve the stronger stripe artwork's motion/locality discrepancy without weakening safeguards.
+- [x] Check actual stripe count, longer rendered slope and fixed support pixels.
+- [x] Run full entry/facade/fabric/site checks and refresh the launch art/docs.
+- [x] Publish only the reviewed canopy changes.
+
+## Acceptance criteria
+
+- Slope length increases; the artwork is not simply a longer flat hanging hem.
+- Forty narrower alternating#ce7183rose and cream stripes replace the former24.
+- Metal hardware visibly connects wall plates to the projecting front bar and
+  stays rigid while the fabric deforms.
+- Main-page canopy is25%taller; entry keeps its complete building envelope while
+  its sloped portion grows about23%. Deep scallops remain, without hiding signage.
+- Preserve fixed rails, bounded cloth, idle stopping, exact static return and all escapes.
+- No global recolouring, original-media changes, questions or image-tool views.
+
+## Completion evidence
+
+- Baseline:3d86ad16057016b2e0f5590c87ac5463064105a0.
+- Source/evidence:.local\red-supported-awning-20261009\.
+- Generator:scripts\generate_awning_art.py.
+- Geometry:300pxheight,frontbar182-190,hem294;97x17meshwithsamepinnedrows.
+- Source build175files,121Node/9assetcases pass.
+- Renderer specialist returned ownership. Actual far motion is0against a matched
+  zero-deformation GPU control; native/GPU sampling differences are recorded separately.
+- Fixed straight-alpha dark edges with matched premultiplied input/output and
+  associated-colour clamping. Injected dark-edge/nonlocal defects are rejected.
+- Six hardware core samples remainpixel-identical during motion;40stripes confirmed.
+- Main actualslope ratio1.54;entryratio1.232. Combinedsource128Nodetests pass.
+- Publisheda7325203eaffef402caf5fe3b594b555098a69f4 / Pages37853015851,
+  versionff6086d91be6.175livefiles/README/ABOUTmatch;16scopedpublicpaths.
+- Local/live support/fabric/fullsite/entry/facade pass. Newkit:
+  exports\website-launch-20261009-rose-tilt\;priorartifacts preserved.
+
+## Completion log
+
+- 2026-10-09 - Published with optional phone tilt42, current artwork/docs updated.
+  Fixed support pixels, real local motion and exact static restoration verified.
+  No image-tool views, social posting or aesthetic-perfection claim.
+- 2026-10-09 - Renderer/locality issue resolved and local support/fabric reviews
+  pass. Combined publication now also includes the later phone-tilt request42.
+- 2026-10-09 02:32 IST - Owner requests the new shape/palette/supports. Source art
+  and matching geometry implemented. Initial cloth locality pixel gate reports
+  far-field differences despite near-zero far mesh displacement; diagnosis is
+  active, not a successful motion result. Fragment high precision alone did not fix it.

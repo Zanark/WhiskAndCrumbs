@@ -1,0 +1,46 @@
+# Rename All Categories to Back
+
+Status: DONE
+Milestone: M56 Plain Back label for returning from a notebook
+Dependencies: 54_ORDER_ACTION_LABEL.todo, 55_CENTERED_CAKE_LABELS.todo
+
+## Purpose
+
+Rename the category-return action while preserving its behavior and distinguishing
+it accessibly from the existing previous-page Back button.
+
+## Tasks
+
+- [x] Rename the modal button and six static links to Back.
+- [x] Use accessible name Back to cake categories; preserve previous-page name.
+- [x] Verify all six keyboard returns, focus restoration and noJS links.
+- [x] Run relevant UI checks and refresh affected current artwork.
+- [x] Publish scoped output and update docs/context.
+
+## Acceptance criteria
+
+- Visible Back label; no All categories label in current generated markup.
+- Modal Back closes to the covers and restores its opener's focus.
+- Page Back stays inside the book; static Back links still target#cakes.
+- No controller, colour, typography, product-media or local4174changes.
+
+## Completion evidence
+
+- Baseline9f51bc3cca618d35dbabb5c36bb571d02fd9d085.
+- .local\back-to-categories-20261009\before\ andlocal-back.json.
+- 132Nodecases pass; six keyboard return/focus cases, six static links and
+  previous-page Back behavior verified.
+- Full localUI/131notebook/300photo/tenasset/README checks pass.
+- Commitc12aa53d4f2bcef20ba99c8032be517f5ce2e265; Pages37938241419 succeeded.
+-175livefiles/rootdocsmatch;4publicpaths, appversion1825f6cd99c4 unchanged.
+- Publicsixcategoryreturns/focus,sixstaticlinks andprevious-pageBack pass.
+- Currentkitexports\website-launch-20261009-back-label\;onlypublic05refreshed.
+- Receipt:.local\back-to-categories-20261009\publication.json.
+
+## Completion log
+
+- 2026-10-09 - Published the shorter Back label and refreshed notebook artwork.
+  Controller/styles/othermedia andlatestlocalclumps preserved. No remaining61work;
+  no image-toolviews/IGposting/livecream integration.
+- 2026-10-09 - Changed only visible/accessible category-return labels.
+  Existing IDs,hrefs andcontrollerbinding remain unchanged.

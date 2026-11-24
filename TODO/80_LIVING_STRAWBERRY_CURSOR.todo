@@ -1,0 +1,50 @@
+# Living strawberry cursor
+
+Status: DONE PUBLIC
+Milestone: M75 Reactive, continuously changing cursor silhouette
+Dependencies: 79_WIDE_THEMED_GLASS_AND_LIVENESS.todo (shared final release)
+
+## Purpose
+
+The owner wants the strawberry follower to feel alive rather than remain a
+perfect circle. Use bounded organic deformation and direction-responsive oval
+stretching, retaining its pale colour, current trail and native-pointer safeguards.
+The same release must finish79's smallest-phone glass visibility correction.
+
+## Tasks
+
+- [x] Preserve the published controller, material, model, CSS and tests.
+- [x] Add smooth idle morphing and velocity-directed stretch to the cursor only.
+- [x] Keep shape, material shading and strawberry tint aligned; prevent crop clipping.
+- [x] Prove ambient output/model/time, trail, click targets and fallbacks unchanged locally.
+- [x] Strengthen small-phone visibility through green glass without losing contrast locally.
+- [x] Publish the reviewed changes and repeat live motion/glass/cursor checks.
+- [x] Close79 and80 only after the actual live checks pass.
+
+## Acceptance criteria
+
+- The resting follower changes shape; moving it produces a smooth reactive oval.
+- Shapes are soft and bounded, not flickering, jagged or enlarged without limit.
+- Strawberry colour and trail remain; no input interception or extra controls.
+- Ambient2Xmovement and full-column themed glass remain intact.
+- Pause, native viewers, reduced motion and graphics failure retain normal pointers.
+- Existing148photos, original sources and local4174study are preserved; matching artwork is refreshed only for the glass change.
+
+## Evidence
+
+- Baseline: bac5f936131504d1edc2dcacea4fae76c373e5cc, Pages38071939495.
+- .local\living-cursor-20261010\before\ holds the unmodified source snapshot.
+- Previous live engine/360windows passed; 320x568 green-glass sample had36 changed
+  pixels against the unchanged >100threshold. This remains open, not accepted.
+
+## Completion log
+
+- 2026-10-10 - Scope recorded; implementation and combined live release pending.
+- 2026-10-11 -175Node/25targeted,18exactambientA/B,16shapes/19crops/3pointer
+  views and7builtglass/194contrast/42motion cases pass. Deployed220031ef/
+  Pages38077308464/ead23634e316; live acceptance remains pending.
+- 2026-10-11 - Final live gates PASS:7engine groups,18pixel-identical ambient
+  comparisons,16shapes/19crops/3cursor viewports; first-paint recovery12.6/20.1/2.8ms.
+  Glass7/194contrasts/42samples(min861pixels),360advancing windows, zero2Xparity
+  error.9changed served files andbothrootdocsmatch;1237unchangedGitblobs linked
+  topreviouscompleteHTTPaudit. Receipt .local\living-cursor-20261010\publication.json.

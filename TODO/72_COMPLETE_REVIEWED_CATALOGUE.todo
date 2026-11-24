@@ -1,0 +1,62 @@
+# Complete and publish the reviewed catalogue
+
+Status: DONE
+Milestone: M67 Complete approved catalogue delivery
+Dependencies: 47_COMPLETE_ARCHIVE_NOTEBOOK_IMPORT.todo, 71_TITLE_BELOW_SPIRAL.todo
+
+## Purpose
+
+The owner04:31asks to finish all pending catalogue and previously requested work
+before starting queue items. Publish the prepared148-photo collection with every
+current UI/sticker correction. Keep the two rejected masks excluded.
+
+## Tasks
+
+- [x] Reconcile stale queue blockers with completed source/review receipts.
+- [x] Confirm exact45initial+88rounded approved archive records and two exclusions.
+- [x] Preserve the incoming1241-file candidate and both public documents.
+- [x] Build a fresh1241-file release from current authoring, not the stale candidate.
+- [x] Confirm only133approved archive additions/1062media variants expand the public set.
+- [x] Run149Node and source/import/artwork regressions.
+- [x] Exercise562notebook states and2960full-photo views with the latest title/edge fixes.
+- [x] Finish all-page/photo fit and complete site/entrance review.
+- [x] Refresh source-bound README/Instagram images with all approved art options.
+- [x] Publish only the verified generated files and approved root documents.
+- [x] Verify live catalogue/bytes and synchronize the local preview from the reviewed build.
+- [x] Close requested catalogue work; leave unrequested production-cream integration deferred.
+
+## Acceptance criteria
+
+-148photos:35Birthday/4Tea/32Cream/73Decorated/3Doll/1Chocolate.
+- Exactly133reviewed archive additions; p032/p139rejected masks remain absent.
+- Latest title clearance, four-photo fit, rounded edges, five-piece cover and wind retained.
+- No original/source image edits, fresh image-tool views, invented details or social posting.
+- Only generated1241-file allowlist plus README/ABOUT published; private provenance stays local.
+
+## Completion evidence
+
+- .local\full-catalogue-20261010\publication.json: complete-published-and-synchronized.
+  All1241livefiles andREADME/ABOUT match1936679c; main4173nowserves the same
+  148-photo catalogue. Trackedworktreeclean; originalcandidate preserved before/site.
+- Deployed1936679c707dc8aa592bdbc767276429545339e9/Pages38006778064.
+  Live78desktop/mobile page states coverall148photos with latesttitle/focus/
+  nativefullphotolinks andcomplete39-page noJSbaseline.
+- Full localfit562notebook/2960photo states,site/entrance and53campaign/capture
+  tests pass. Currentkitwebsite-launch-20261010-complete-catalogue.
+- .local\full-catalogue-20261010\preflight.json and build-scope.json.
+-159originalsource paths accounted; all active prepared variants/masks hash-verified.
+- Private fresh build1241files/314,416,817bytes; onlyindex.html changes among
+  the prior179files before artwork refresh. No runtime or existing media regressions.
+- Original1241-file tree preserved in before\site; incoming diff/documents retained.
+- Preview:http://127.0.0.1:4180/#cakes.
+
+## Completion log
+
+- 2026-10-10 -05:53deliverycomplete. InitialHTTP503 interrupted the first full
+  download comparison; bounded retries, persistent connections and per-file
+  checkpoints completed every1241comparison without waiving failures. Updated38
+  generatedworktree files after checking the entire incoming1241-file backup.
+  No requestedcataloguework remains. Only unrequestedlivecreamintegration stays deferred.
+- 2026-10-10 -04:31owner resumes remaining catalogue delivery explicitly.
+  Previous image-batch/P038/P145blockers were stale: all source reviews/imports
+  are already recorded. No image review is repeated. Production cream stays deferred.

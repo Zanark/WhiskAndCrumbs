@@ -1,0 +1,65 @@
+# Round artificial source-frame cuts on stickers
+
+Status: DONE
+Milestone: M65 Rounded photo-boundary cuts, unchanged real details
+Dependencies: 69_SELECTED_SCATTERED_CHOCOLATE_COVER.todo
+
+## Purpose
+
+Audit every active sticker and round abrupt cut edges like the marked Birthday
+cake's right and bottom. Keep legitimate straight details and original photos.
+
+## Tasks
+
+- [x] Audit148active masks and the five-piece Chocolate cover without new image views.
+- [x] Identify8source-frame-clipped masks; leave140other stickers/cover unchanged.
+- [x] Apply inward curved caps only at source boundaries, never new foreground.
+- [x] Preserve source RGB, protected interiors and the Anniversary topper region.
+- [x] Back up/install8masks and32variants; keep592full-photo variants unchanged.
+- [x] Add content-hash URLs only for revised stickers;46builder/cache tests pass.
+- [x] Finish isolated179file/15photo build and browser checks.
+- [x] Refresh affected actual README/Instagram captures without changing art direction.
+- [x] Publish scoped changes while preserving the148photo/1241file import candidate.
+
+## Acceptance criteria
+
+- Source-frame flat cuts become curves, not another inset straight line.
+- Genuine signs, toppers and all interior alpha away from the frame stay exact.
+- No source RGB edits or reconstructed missing cherries, feather, skirt or cake.
+- RevisedPNG/WebP cache keys follow exact bytes; full-photo links stay unchanged.
+- No implicit archive publication, new image-tool views or social posting.
+
+## Completion evidence
+
+- .local\rounded-active-stickers-20261010\audit.json:148masks+1cover;8warnings.
+- prepared-v2\manifest.json and authoring-validation.json:8rounded,140unchanged,
+  cover unchanged,592original photo variants verified; no long source-frame cuts.
+- Foreground retained94.77-99.54%; no newly visible alpha. Birthdayright462pxcut
+  nowmax68pxflat raster steps; bottom630->90. Actual upper600x1000mask region exact.
+-5Python rounding tests and46Node site/cache/builder tests pass. Rootsite not rebuilt.
+- prepared-v1 is superseded by stronger short-arc curvature; retain as history.
+- wind-release-boundary agent owns isolated browser/art/publication completion.
+- Published5a21f7d7cbbb4e84f744674077f896dc5f8f00a6; successfulPages37991143358.
+  All179livefiles+README/ABOUT matchGit;15publicphotos; appversion32df5a36a07funchanged.
+- Local/public sticker,fullfit,site,entrance gates pass sequentially. Each environment:
+  32exactcache-queryresponses,16stickerinteractions,134notebook/300enlargedphotostates.
+- 68selectedNodechecksverified(67initial+1targetedmissing-fixturererun),5Python,
+  51campaign and16publisherguards. Full-response raster dimensions remain strict;
+  browsernaturalWidth is correctly treated as density-corrected forwidth-srcsets.
+- Freshkit:exports\website-launch-20261010-rounded-sticker-edges\preview.html.
+  6wide/6portraits;only04/05pairschange;other8exact. All4artflags retained,72raster
+  checks pass. No Instagram posting or new image-tool views.
+- Private-indexcommit touched37reviewedpaths only.3309existingworktreefiles compared;
+  2720protectedfiles andall1241maincandidatefiles unchanged. No archivepublication.
+- Parentalgorithm/masks/prepared-v2outputs were not modified by the release agent.
+  Original592authoringphotos/60publicfull-photo variants andfive-piececover remain exact.
+- Receipt:.local\rounded-active-stickers-20261010\publication.json.
+  Directdocumentation:docs\rounded-sticker-source-edges.md.
+
+## Completion log
+
+- 2026-10-10 - Rounded-edge public release completed and checked at the exactPagesSHA.
+  Retained every preparation/fixture failure as evidence; corrected harness handling,
+  not source masks or runtime. No physical visual review or owner mask-approval claim.
+- 2026-10-10 -01:19owner asks to round artificial straight sticker edges.
+  Scoped rounding completed in authoring; safe public delivery remains active.

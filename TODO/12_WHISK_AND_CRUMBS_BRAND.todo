@@ -1,0 +1,147 @@
+# Whisk & Crumbs Identity and Quiet Bakery Backgrounds
+
+Status: DONE
+Milestone: M8 Singular display identity published with the twelve-cake notebook and verified live
+Dependencies: 08_READABILITY_AND_SIMPLE_ORDERING.todo, 09_STORY_AND_CAKE_STICKERS.todo, 11_PALETTE_READABILITY_AND_PUBLISHING.todo
+
+## Purpose
+
+Apply the user's chosen Whisk & Crumbs display name throughout the existing
+website, with original whisk/crumb artwork and understated bakery outlines.
+Preserve the cream/deep-green design, accessible ordering and real cake sources.
+Name selection is not a brand-availability, legal-uniqueness or trademark finding.
+
+## Tasks
+
+- [x] Apply the later singular Whisk & Crumbs name across maintained source, tests and docs.
+- [x] Regenerate the logo, accessible SVG titles and sharing card with singular asset filenames.
+- [x] Preserve the repository and Pages URL until the owner performs the repo rename.
+- [x] Prepare the explicitly requested GitHub README using only public-ready images.
+- [x] Preserve old artwork, the detailed working README and private authoring materials.
+- [x] Publish the singular-name revision and confirm its exact live files.
+- [x] Preserve six supplied background references privately and archive the prior site/review.
+- [x] Set name/wordmark to Whisk & Crumbs and descriptor to Home-baked vegetarian cakes.
+- [x] Keep Instagram homemadevegcakes unchanged; follow GitHub's verified canonical Pages URL.
+- [x] Integrate escaped title, header/footer, accessible branding and sharing metadata.
+- [x] Draw an original tilted balloon whisk and three crumb dots; export the complete transparent logo.
+- [x] Provide SVG favicon, native 16/32 PNGs, 16/32/48 ICO and 180px apple touch icon.
+- [x] Produce whisk-and-crumbs-social-card.jpg using the logo and actual cake sticker.
+- [x] Add sparse 640x480 outline-only tiles at opacity 0.075 on cream and 0.065 on green.
+- [x] Keep header, controls and recipe note solid; no filled motifs or background animation.
+- [x] Preserve Courgette/DM Sans, original story, all real stickers and giant Instagram action.
+- [x] Retire cake-mark.svg/social-card.jpg from the strict allowlist; preserve unexpected-output rejection.
+- [x] Keep ordinary builds independent of image/browser tooling and private references.
+- [x] Document local reproduction, evidence, limits and the public/private boundary.
+- [x] Run Node, branding-asset, build and local browser checks; record parent-reported results.
+- [x] Inspect identity review, both pattern previews and the new sharing card (parent report).
+- [x] Complete and record full-page screenshot inspection.
+- [x] Follow the verified external repository move; correct siteUrl and canonical/OG URLs.
+- [x] Record the exact new public commit, successful Pages run and live verification.
+- [x] Finalize this workstream's release evidence without rewriting historical releases.
+
+## Acceptance criteria
+
+- [x] New display branding is consistent; rendered HTML escapes '&' as '&amp;'.
+- [x] The retired exact display brand is absent from active rendered HTML, not erased from history.
+- [x] Actual Instagram routing and the configurable WhatsApp option are preserved.
+- [x] Logo PNG is wider than 900px with transparent edges; icon sizes match their declarations.
+- [x] Pure SVG patterns contain no image/text/script/animation or filled motifs.
+- [x] Raster guards enforce max alpha <=22/255, stroke contrast <=1.25:1 and coverage <=6%.
+- [x] Six viewports and 200% text checks preserve readable text, visible navigation and contact controls.
+- [x] Current build contains 124 allowlisted files; nine brand assets match the new private hash receipt.
+- [x] Reference pixels, original photographs, manifests, private reviews and docs are not published.
+- [x] Full-page visual inspection for the new identity is recorded.
+- [x] The new release succeeds for the exact commit and its live files are verified.
+- [x] Native-app/device/assistive-technology acceptance, business facts and hosting risk remain explicit.
+- [x] Display-name approval is not represented as trademark or brand-availability clearance.
+
+## Completion evidence
+
+- Singular-name release: be221e660422dad8e74a67a46526ab81f3391306.
+- Pages run: https://github.com/Zanark/WhisksAndCrumbs/actions/runs/37212121826
+  succeeded. Asset version e268ea148bb4. All 124 live files and GitHub README match
+  the committed blobs; local/public notebook and entrance reviews pass.
+- Current final receipt: ..\.local\notebook-release\publication.json.
+- Current singular-name revision: 51 Node tests, seven sticker/provenance cases,
+  four branding cases, the 124-file build and both local browser reviews pass.
+- Current logo/icon/pattern receipt: ..\.local\singular-brand\asset-manifest.json.
+  Identity review and sharing card were visually inspected in a small batch.
+- Current display name is singular; the older repository slug remains intentionally
+  unchanged. Retired plural-named artwork is archived, not left in public output.
+- The evidence below records the earlier identity release; its commit hashes,
+  counts and private archive references are historical, not new-release receipts.
+- User choice reported by the implementation parent on 2026-10-04: Whisk & Crumbs;
+  descriptor Home-baked vegetarian cakes. Availability was not checked.
+- Configuration: ..\content\site.json.
+- Implementation: ..\scripts\generate_brand_assets.py, ..\scripts\generate_social_card.py,
+  ..\scripts\build-site.mjs, ..\web\index.template.html and ..\web\styles.css.
+- Maintenance guide: ..\docs\brand-and-backgrounds.md.
+- Six private supplied references: ..\.local\references\backgrounds-20261004\.
+- Prior site/review: ..\.local\revisions\before-whisks-and-crumbs-20261004\.
+- Private identity/pattern review: ..\.local\branding\identity-review.png,
+  pattern-cream-preview.png and pattern-green-preview.png.
+- Nine-asset receipt: ..\.local\branding\asset-manifest.json (SHA-256 and byte counts).
+  The separately generated sharing JPEG is not one of those nine receipt entries.
+- Parent-reported local checks:
+  npm test: 25 passed.
+  npm run build: 66 public files.
+  python -m unittest discover -s .\tests -p test_brand_assets.py -v: 4 passed.
+  python .\scripts\review_site.py: passed against the local preview.
+- Public python .\scripts\review_site.py: passed against
+  https://zanark.github.io/WhisksAndCrumbs/, including canonical/OG URLs, brand,
+  native icon responses, unchanged Instagram handoff, patterns, six widths and 200% text.
+- Public review: ..\.local\website-review\review.json and screenshots.
+  Preserved local review: ..\.local\branding\local-site-review\.
+- Browser coverage: current name/icons/patterns, original palette/fonts, six viewport
+  widths, 200% text resizing, no-JavaScript browsing, contact handoff, keyboard photo
+  navigation, slow network and existing sticker/source-fidelity guards.
+- Pattern raster limits: max alpha <=22/255; stroke contrast <=1.25:1;
+  nontransparent coverage <=6%. These are decorative-stroke guards, not text-contrast
+  targets or a substitute for human/native assistive-technology acceptance.
+- Public measurements: cream alpha 19/255, contrast 1.124:1; green alpha 17/255,
+  contrast 1.191:1; each tile has 1.6159% nontransparent coverage.
+- Before publication, the parent inspected the complete desktop page, mobile hero,
+  dark story, identity/native-size favicon sheet, both pattern previews and branded
+  social card; real live browser confirmation followed.
+- Live URL: https://zanark.github.io/WhisksAndCrumbs/.
+- GitHub reported an already-moved repository at
+  https://github.com/Zanark/WhisksAndCrumbs.git during push. Its API confirmed
+  nameWithOwner Zanark/WhisksAndCrumbs and the new Pages html_url. The parent did
+  not rename the repository or local folder; it followed that verified destination,
+  updated origin, content.siteUrl and tests, then corrected canonical/OG URLs.
+  Local root remains C:\devdesk\homedesk\B-Bakery.
+- First rebrand commit: a1ff03b249ba5908d73e881cf32a92e0475c54f3.
+  Run https://github.com/Zanark/WhisksAndCrumbs/actions/runs/37195641928 succeeded.
+- Final canonical fix: 9723c286e465d2c6ebec59c1db4555f0f664dcd5.
+  Run https://github.com/Zanark/WhisksAndCrumbs/actions/runs/37195797175 succeeded.
+  Final CI receipt: ..\.local\publication-whisks-and-crumbs.json.
+- Parent verified 12 served HTML/CSS/logo/icon/pattern/social files against final
+  git HEAD bytes. Old exact display-name/logo references are absent in published text.
+- The browser contact test intercepts the external Instagram destination; it does
+  not establish real login, native-app delivery, a sent message or an accepted order.
+- No new business/product facts, account rename, brand-availability search or legal
+  clearance. Existing GitHub Pages commercial-use restriction remains unresolved.
+- Only reviewed site/ and the established release configuration are publishable.
+  Only public site files were committed/pushed for this rebrand; these docs,
+  authoring sources, references, masks, model caches and private evidence remain local.
+
+## Completion log
+
+- 2026-10-04 - Published the singular-brand notebook release as be221e6. Verified
+  Pages run 37212121826, every live file byte and the public README, then completed
+  both production browser reviews and small-batch screenshot inspection.
+- 2026-10-04 - Applied the user's singular-name correction throughout maintained
+  files and regenerated the actual logo/sharing artwork. Kept the live repository
+  slug, origin, account and canonical URL unchanged at the user's request. Prepared
+  the GitHub README without exposing private sources. Local checks and visual
+  review pass; the new public release is pending.
+- 2026-10-04 - Marked DONE for the delivered request after the first rebrand release
+  a1ff03b2 and final canonical correction 9723c286 both deployed successfully.
+  Recorded the externally verified repository move, unchanged local folder, public
+  browser pass, 12 release-byte matches, measured pattern restraint and parent visual
+  inspection. Native-app/user acceptance, unknown business facts and legal clearance
+  remain separate; no such approval is inferred from successful publication.
+- 2026-10-04 - Created workstream 12 for the chosen display name, original identity,
+  quiet outlines and private evidence. Recorded the implementation parent's passing
+  local checks and asset/social inspection. Status remains IN_PROGRESS because
+  full-page inspection, exact public release and live verification are pending.

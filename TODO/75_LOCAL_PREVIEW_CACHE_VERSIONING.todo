@@ -1,0 +1,44 @@
+# Prevent mixed cached assets in the local cream preview
+
+Status: DONE LOCAL
+Milestone: M70 Fresh matching HTML, styles and JavaScript on ordinary navigation
+Dependencies: 74_LOCAL_CREAM_MOTION_AND_CURSOR.todo
+
+## Purpose
+
+The owner's screenshot showed current HTML text but the older five-clump status
+and ivory cursor. A new document query did not invalidate the unversioned modules.
+Fresh-browser checks had missed this delivery problem.
+
+## Tasks
+
+- [x] Inspect the running server and its missing cache-control headers.
+- [x] Hash HTML, both stylesheets, the entry module and model into a shared revision.
+- [x] Serve versioned CSS/entry URLs and propagate the revision to the model import.
+- [x] Disable preview caching and old conditional304responses.
+- [x] Restart only the confirmed local preview process on4174.
+- [x] Reproduce a real warm-cache old-script load and recover with ordinary navigation.
+- [x] Check actual4174revision agreement, extra droplets, pink cursor and motion.
+- [x] Reopen the fresh preview without changing the public bakery.
+
+## Acceptance criteria
+
+- A cached old bare module cannot be reused by a new versioned page.
+- Both CSS and transitive model imports share the entry revision.
+- Future source changes update revision automatically; no manual cache-key edits.
+- Existing motion, strawberry material, pointer fallbacks and public files unchanged.
+
+## Completion evidence
+
+- .local\cream-cache-20261010\warm-cache-review.json: old modules genuinely loaded
+  from cache on the second legacy navigation; new navigation requested current
+  versioned modules/styles and rendered the strawberry pointer.
+- .local\cream-cache-20261010\live-preview-review.json: actual4174HTML/module
+  revision agree; moving4groups/8droplets and1992opaque pink pointer pixels.
+-4HTTP/versioning tests,28model tests and four focus-recovery paths pass.
+- Current server shellId:cream-versioned-preview. Old confirmedPID57996 stopped.
+
+## Completion log
+
+- 2026-10-10 -15:37owner reports no update; fixed browser-cache delivery rather
+  than repeating clean-browser-only assertions. Shared revisione1f4ecd0dd4b.

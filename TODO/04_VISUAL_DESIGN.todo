@@ -1,0 +1,83 @@
+# Visual Design
+
+Status: IN_PROGRESS
+Milestone: M2 Approve the prototype direction
+Dependencies: 01_PRODUCT_DECISIONS.todo, 02_REFERENCES_AND_PHOTOGRAPHY.todo
+
+## Purpose
+
+Make the site feel like a warm Indian home kitchen rather than a generic storefront.
+
+## Tasks
+
+- [x] Translate the supplied PDF and four references into an initial website plan.
+- [x] Propose cream/deep green, restrained terracotta/pink and serif/sans typography.
+- [x] Apply the later cursive/cute request: Dancing Script, blush/sage panels,
+  scalloped edges, rounded controls, heart/bow details and a matching sharing image.
+- [x] Propose a mobile-first, one-page MVP with a multi-page expansion path.
+- [x] Define WhatsApp enquiries and quieter contact fallbacks without a shopping cart.
+- [x] Choose a hero composition that respects the available photo quality and framing.
+- [x] Implement mobile/desktop flow with actual cakes and restrained recipe-card styling.
+- [x] Review typography, thin borders, spacing, photo rhythm and key colour contrast.
+- [x] Implement the earlier three-section reduction; preserve it as history.
+- [x] Restore original story/note under the hero in the approved four-section order.
+- [x] Use transparent cake stickers with white contours, alpha-following shadows
+  and no rectangular photo-card backing or overlapping hero badge.
+- [x] Finish the new sticker/story browser and visual review in workstream 09.
+- [x] Show visual design categories without manufacturing flavour/menu breadth.
+- [x] Omit fabricated reviews, counters, availability, baking schedules and claims.
+- [x] Review Bakingo/Creme Castle layouts and the four new visual references.
+- [x] Prioritize readable text and clear navigation over decorative microcopy.
+- [ ] Approve the visual direction and requested implementation scope with the user.
+
+## Acceptance criteria
+
+- [x] The food stays primary; decoration does not overwhelm the actual photos.
+- [x] Mobile image/text/actions fit the previously reviewed viewport layouts.
+- [x] Revalidate full sticker bounds, readable labels and enlarged text for this revision.
+- [x] Sparse content is edited honestly instead of padded into empty pages.
+- [ ] The user has approved the prototype direction; file creation is not approval.
+
+## Completion evidence
+
+- ..\docs\website-plan.md records layout, image policy, contact options and hosting caveat.
+- ..\docs\references\home-bakery-design-specification.pdf is the source design baseline.
+- Implemented prototype: ..\site\index.html; authored design: ..\web\.
+- Earlier desktop/mobile visual review is preserved under
+  ..\.local\revisions\before-stickers-20261004\review\.
+- Current story/sticker browser review passed; evidence is in
+  ..\.local\website-review\review.json and workstream 09. Parent visually inspected
+  the final cream/dark contact sheet, desktop/mobile full pages and 200% order
+  screenshot. Actual user visual approval remains separate.
+- Cream/green recipe-book styling, the original story illustration, full uncropped
+  sticker bounds and readable enlargement labels remain the direction. Final user
+  approval is unrecorded.
+
+## Completion log
+
+- 2026-10-04 - Completed the selected Whisk & Crumbs mark, logo, favicon set and
+  branded sharing image. Added sparse outline-only baking motifs at low opacity
+  on the unchanged cream/green palette; workstream 12 records the measured bounds
+  and actual desktop/mobile/identity review.
+- 2026-10-04 - The user's explicit cursive/cute direction supersedes the earlier
+  serif style. Workstream 10 records the implementation and local review;
+  original cake pixels, simple navigation and all four sections remain.
+- 2026-10-04 - Completed local sticker/story review: parent inspected the final
+  contact sheet and actual desktop/mobile/200% order views; browser regressions
+  passed. Workstream 09 is locally complete, not final user visual acceptance.
+- 2026-10-04 - Restored the original story/note below the hero and removed photo-card
+  rectangles/hero badge for the chosen white-contour cutouts. Navigation stays
+  Home, View cakes and How to order. No new biography, FAQs, forms or extra custom
+  section was added; new local visual review is in progress.
+- 2026-10-04 - Removed story, FAQs, extra custom-cake marketing and form to prioritize
+  the three requested sections. Inspected desktop/mobile layouts; real photos,
+  cream/green styling and readable type remain intact.
+- 2026-10-04 - Completed reference study and readability refinement. Kept cream/green
+  and real photos; took clear browsing cues without adding commercial catalogue
+  complexity or copying the reference brands/photographs. Workstream 08 owns the
+  ongoing accessibility baseline; wholesale pink/arched redesign is not implied.
+- 2026-10-04 - Implemented and visually reviewed the first local prototype.
+  Adjusted the mobile contact bar so it does not cover hero or enquiry actions;
+  strengthened form boundaries and dark-section focus contrast.
+- 2026-10-04 - Initial plan written; actual prototype imagery is now available for
+  conservative preparation before the visual composition is chosen.

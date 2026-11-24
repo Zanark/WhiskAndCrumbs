@@ -1,0 +1,46 @@
+# Separate Uneven Blobs, Center Glass and Quarter-Speed Motion
+
+Status: DONE (LOCAL ONLY; OWNER REVIEW PENDING)
+Milestone: M43 Correct the local cream layout and glass scope
+Dependencies: 45_LOCAL_FULL_PAGE_ETCHED_GLASS.todo; 46_LOCAL_SHORTER_CURSOR_TRAIL.todo
+
+## Purpose
+
+The owner rejects merged/symmetrical ambient cream, then requests frost only in
+the center column and background blobs at0.25x their preceding speed.
+
+## Tasks
+
+- [x] Preserve the previous local experiment and official-site boundary.
+- [x] Replace paired merged groups with six uneven, asymmetrical, independent blobs.
+- [x] Keep default blobs separated using bounded side lanes and vertical motion bands.
+- [x] Align frost and etched icons with the760pxmaximum center reading column.
+- [x] Leave side columns outside the glass, retaining the existing tint/blur texture.
+- [x] Scale ambient orbit/breathing to0.25x, leaving cursor and short trail unchanged.
+- [x] Check actual raster components, outside-glass pixels, timings and existing behavior.
+- [x] Save local receipts and update docs; make no official-site changes.
+
+## Acceptance criteria
+
+- Six different seed radii and non-mirrored positions; no default ambient merges.
+- Glass and etching share the center bounds; zero paint changes in side columns.
+- Current ambient timing at4t equals prior timing att on identical trajectories.
+- Existing small cursor, one-third trail, Pause, added scoops and fallbacks remain.
+- Official integration remains unapproved; no images viewed or uploaded.
+
+## Completion evidence
+
+- Final preview:http://127.0.0.1:4174/.
+- `.local\cream-center-glass-20261009\completion.json`.
+-20model cases;18actual coverage cases each have6components, sampledgap>=35.21px.
+-28quarter-rate comparisons with maximumdifference0.
+- Eight responsive glass widths; outside-pane pixelchanges0.
+- Source-only preceding separation receipt preserved in
+  `.local\cream-separated-blobs-20261009\completion.json`.
+- Official HEADb37df44/trackedsite unchanged; no build/commit/publication.
+
+## Completion log
+
+- 2026-10-09 09:37 onward - Applied the three local corrections in order.
+  The current candidate includes all three; earlier full-width merged groups
+  are superseded, not the resume target. Await owner review.

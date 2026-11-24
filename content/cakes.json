@@ -1,0 +1,742 @@
+[
+  {
+    "id": "cherry-topped-cake",
+    "name": "Cherry-topped cake",
+    "category": "Classic cakes"
+  },
+  {
+    "id": "ribbon-and-pearl-cake",
+    "name": "Ribbon & pearl cake",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "butterfly-celebration-cake",
+    "name": "Butterfly celebration cake",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "pink-doll-cake",
+    "name": "Doll cake",
+    "category": "Theme cakes"
+  },
+  {
+    "id": "peacock-feather-cake",
+    "name": "Peacock feather cake",
+    "category": "Theme cakes"
+  },
+  {
+    "id": "rainbow-butterfly-cake",
+    "name": "Rainbow butterfly cake",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "purple-birthday-cake",
+    "name": "Purple birthday cake",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "golden-drip-cake",
+    "name": "Golden drip cake",
+    "category": "Classic cakes"
+  },
+  {
+    "id": "cherry-curl-cake",
+    "name": "Black Forest cake",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "pink-swirl-cake",
+    "name": "Pink swirl cake",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "rose-topped-cake",
+    "name": "Rose-topped cake",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "lavender-swirl-cake",
+    "name": "Lavender swirl cake",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "pastel-celebration-cake",
+    "name": "Pastel celebration cake",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "round-and-heart-tea-cakes",
+    "name": "Round & heart tea cakes",
+    "category": "Tea cakes"
+  },
+  {
+    "id": "assorted-moulded-chocolates",
+    "name": "Assorted chocolates",
+    "category": "Chocolates"
+  },
+  {
+    "id": "archive-p001-9f0ab931",
+    "name": "Birthday cake 1",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p003-34407bb9",
+    "name": "Decorated cake 1",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p008-1d04e84e",
+    "name": "Decorated cake 2",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p011-84417fe9",
+    "name": "Cream cake 1",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p015-9aee413d",
+    "name": "Decorated cake 3",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p016-bd66a35c",
+    "name": "Decorated cake 4",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p017-aaf0584d",
+    "name": "Decorated cake 5",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p018-74a26666",
+    "name": "Decorated cake 6",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p023-6861ab4f",
+    "name": "Birthday cake 2",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p029-8937045f",
+    "name": "Decorated cake 7",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p037-afa5570c",
+    "name": "Birthday cake 3",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p038-15ab31b0",
+    "name": "Decorated cake 8",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p039-13b3402a",
+    "name": "Birthday cake 4",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p041-09639f3c",
+    "name": "Birthday cake 5",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p043-604de935",
+    "name": "Decorated cake 9",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p047-66831dae",
+    "name": "Cream cake 2",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p048-cc7de370",
+    "name": "Birthday cake 6",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p051-6c77ee4c",
+    "name": "Decorated cake 10",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p057-a62ae13e",
+    "name": "Birthday cake 7",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p061-6327f4ce",
+    "name": "Decorated cake 11",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p070-302e3ecc",
+    "name": "Decorated cake 12",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p073-e805260f",
+    "name": "Birthday cake 8",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p085-3e33f376",
+    "name": "Decorated cake 13",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p086-7c1edb78",
+    "name": "Decorated cake 14",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p088-e83b6888",
+    "name": "Decorated cake 15",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p090-b48f2405",
+    "name": "Birthday cake 9",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p091-23f23e65",
+    "name": "Cream cake 3",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p096-9bfcbb0b",
+    "name": "Birthday cake 10",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p099-b6f824ef",
+    "name": "Decorated cake 16",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p102-8a038624",
+    "name": "Cream cake 4",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p103-26729bc1",
+    "name": "Cream cake 5",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p114-907c7816",
+    "name": "Cream cake 6",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p115-6bf7675d",
+    "name": "Birthday cake 11",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p117-7b2d5f66",
+    "name": "Birthday cake 12",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p119-e2492cc0",
+    "name": "Cream cake 7",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p121-eea6ca5b",
+    "name": "Cream cake 8",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p122-fa81d9ea",
+    "name": "Tea cake 1",
+    "category": "Tea cakes"
+  },
+  {
+    "id": "archive-p123-556fd3cb",
+    "name": "Tea cake 2",
+    "category": "Tea cakes"
+  },
+  {
+    "id": "archive-p125-7d3e923b",
+    "name": "Decorated cake 17",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p127-363a4a9f",
+    "name": "Birthday cake 13",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p146-47cb7ed3",
+    "name": "Decorated cake 18",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p149-beac6e22",
+    "name": "Birthday cake 14",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p150-f3562dab",
+    "name": "Decorated cake 19",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p155-0e3db14f",
+    "name": "Cream cake 9",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p157-98d79786",
+    "name": "Birthday cake 15",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p006-8d5eb9fe",
+    "name": "Cream cake 10",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p009-34e71d17",
+    "name": "Decorated cake 20",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p010-bce0b870",
+    "name": "Decorated cake 21",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p013-d04548d0",
+    "name": "Cream cake 11",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p014-78596408",
+    "name": "Decorated cake 22",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p019-9ba0fb64",
+    "name": "Cream cake 12",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p022-89de28a9",
+    "name": "Doll cake 1",
+    "category": "Doll cakes"
+  },
+  {
+    "id": "archive-p024-57918b43",
+    "name": "Cream cake 13",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p025-ea96507f",
+    "name": "Decorated cake 23",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p026-907b5398",
+    "name": "Birthday cake 16",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p027-1f48ce9c",
+    "name": "Decorated cake 24",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p031-b0ebf46c",
+    "name": "Cream cake 14",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p034-b1fbebc8",
+    "name": "Cream cake 15",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p035-853effbe",
+    "name": "Decorated cake 25",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p036-4922cc03",
+    "name": "Decorated cake 26",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p040-ac55c610",
+    "name": "Decorated cake 27",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p045-25187672",
+    "name": "Cream cake 16",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p046-7ab4093e",
+    "name": "Decorated cake 28",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p049-d8546fed",
+    "name": "Decorated cake 29",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p050-3e97d1a9",
+    "name": "Cream cake 17",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p052-2b5d7a0f",
+    "name": "Cream cake 18",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p053-4e4e6c82",
+    "name": "Decorated cake 30",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p054-c50b9bf4",
+    "name": "Birthday cake 17",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p055-b4c99715",
+    "name": "Birthday cake 18",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p056-77c3ef61",
+    "name": "Decorated cake 31",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p059-9a9de7f5",
+    "name": "Decorated cake 32",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p060-a3384507",
+    "name": "Decorated cake 33",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p064-234799e9",
+    "name": "Cream cake 19",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p065-6fda1c4c",
+    "name": "Decorated cake 34",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p066-422bb5da",
+    "name": "Decorated cake 35",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p067-bb24e826",
+    "name": "Cream cake 20",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p071-f8a383b7",
+    "name": "Decorated cake 36",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p072-dc0023f7",
+    "name": "Birthday cake 19",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p074-2c0fe474",
+    "name": "Decorated cake 37",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p076-bb615e2a",
+    "name": "Birthday cake 20",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p077-2c5f9cda",
+    "name": "Birthday cake 21",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p078-59b212cc",
+    "name": "Decorated cake 38",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p079-f25eb513",
+    "name": "Decorated cake 39",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p080-2364f5f1",
+    "name": "Decorated cake 40",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p081-3d641020",
+    "name": "Cream cake 21",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p083-62f9c676",
+    "name": "Cream cake 22",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p084-a9767bac",
+    "name": "Decorated cake 41",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p087-607bd3c2",
+    "name": "Birthday cake 22",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p089-77cb33fc",
+    "name": "Decorated cake 42",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p092-221c5074",
+    "name": "Birthday cake 23",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p094-bff6d98a",
+    "name": "Decorated cake 43",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p097-8d057229",
+    "name": "Birthday cake 24",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p098-bf674f45",
+    "name": "Birthday cake 25",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p100-9cf30e84",
+    "name": "Decorated cake 44",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p101-47095bb7",
+    "name": "Birthday cake 26",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p104-64123d7b",
+    "name": "Decorated cake 45",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p105-3b576339",
+    "name": "Decorated cake 46",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p106-e5084e4e",
+    "name": "Birthday cake 27",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p107-7fce4f7f",
+    "name": "Decorated cake 47",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p108-5885554b",
+    "name": "Decorated cake 48",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p109-1f029e0b",
+    "name": "Cream cake 23",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p110-5f3ec7c0",
+    "name": "Birthday cake 28",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p111-e6a69dff",
+    "name": "Cream cake 24",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p113-d9a76854",
+    "name": "Cream cake 25",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p116-0a3695c5",
+    "name": "Cream cake 26",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p118-3de9f98c",
+    "name": "Cream cake 27",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p120-984abb68",
+    "name": "Decorated cake 49",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p124-d8bc87e5",
+    "name": "Decorated cake 50",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p126-db8a8f17",
+    "name": "Decorated cake 51",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p128-11185254",
+    "name": "Cream cake 28",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p129-0312e2ac",
+    "name": "Birthday cake 29",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p130-36bed2e4",
+    "name": "Birthday cake 30",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p131-c7861d0d",
+    "name": "Birthday cake 31",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p132-1fa546a2",
+    "name": "Decorated cake 52",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p133-2307f255",
+    "name": "Cream cake 29",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p134-771b087d",
+    "name": "Decorated cake 53",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p135-c036d062",
+    "name": "Decorated cake 54",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p136-176693df",
+    "name": "Doll cake 2",
+    "category": "Doll cakes"
+  },
+  {
+    "id": "archive-p137-6dc311d8",
+    "name": "Decorated cake 55",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p138-9a5f2d69",
+    "name": "Decorated cake 56",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p140-be31807e",
+    "name": "Birthday cake 32",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p141-30615f8b",
+    "name": "Decorated cake 57",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p142-2b12bc91",
+    "name": "Birthday cake 33",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p143-a659360e",
+    "name": "Decorated cake 58",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p144-a8bc56e1",
+    "name": "Decorated cake 59",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p145-fda016ea",
+    "name": "Decorated cake 60",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p147-74881656",
+    "name": "Tea cake 3",
+    "category": "Tea cakes"
+  },
+  {
+    "id": "archive-p148-871423c7",
+    "name": "Decorated cake 61",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p151-47c53353",
+    "name": "Decorated cake 62",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p152-032944d6",
+    "name": "Birthday cake 34",
+    "category": "Birthday Cakes"
+  },
+  {
+    "id": "archive-p154-fb6928bb",
+    "name": "Decorated cake 63",
+    "category": "Decorated cakes"
+  },
+  {
+    "id": "archive-p156-872f1110",
+    "name": "Cream cake 30",
+    "category": "Cream cakes"
+  },
+  {
+    "id": "archive-p159-b2f811c2",
+    "name": "Cream cake 31",
+    "category": "Cream cakes"
+  }
+]

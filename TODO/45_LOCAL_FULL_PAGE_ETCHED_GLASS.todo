@@ -1,0 +1,56 @@
+# Local Full-Page Etched Glass and Two-Sided Cream
+
+Status: DONE (LOCAL ONLY; OWNER REVIEW PENDING)
+Milestone: M40 Local-only material refinement for owner review
+Dependencies: 31_FASTER_CREAM_AND_FROSTED_PANE.todo
+
+## Purpose
+
+The owner likes the4174study and requests half-speed cream on both sides,
+slightly more transparent glass over the whole website and etched bakery icons.
+They explicitly want to review it before deciding on official-site integration.
+
+## Tasks
+
+- [x] Preserve the previous experiment and official-site file hashes.
+- [x] Halve ambient orbit and breathing rates without lowering the rendering ceiling.
+- [x] Arrange two cohesive side groups while retaining the small cursor trail and added scoops.
+- [x] Extend the existing8pxfrost to one full-page plane with10%tint instead of14%.
+- [x] Create original recessed/highlight etching from existing bakery-outline geometry.
+- [x] Remove the separate reading-card/footer wash; keep foreground text and controls sharp.
+- [x] Check side visibility, motion, pixels, contrast, scrolling, retained state and fallbacks.
+- [x] Save the final local receipt, update docs/context and prepare the owner handoff.
+
+## Acceptance criteria
+
+- This affects only experiments\cream-metaballs and local documentation/evidence.
+- No official-site source/build/publication or Instagram action.
+- Two default connected groups remain on their left/right sides over time and resize.
+- Animation phases are half the former rate; pointer/trail interaction remains intact.
+- Whole viewport is frosted behind header/content/footer, not merely a central card.
+- Original etched linework is visible and noninteractive; no reference pixels copied.
+- Pause/reduced motion/visibility/print/forced colours/graphics-failure controls remain.
+- Owner review and explicit production integration permission remain separate.
+
+## Completion evidence
+
+- Preview:http://127.0.0.1:4174/.
+- Private before/review:.local\cream-etched-glass-20261009\.
+-19model cases;24same-path half-time comparisons, maximum difference0.
+- Final browser report:candidate-04-final\review.json; no image-tool views.
+- Side cream affects21.36%left/20.48%right sampled regions; etching affects2.05%pixels.
+- Reading fixture contrast:ordinarytext>=6.887:1,largeaccent3.93:1.
+- Official tracked worktree and before hashes unchanged; HEADb37df44 remains.
+- Finalreceipt:.local\cream-etched-glass-20261009\completion.json.
+- Current4174response200contains thefullglasslayer; refresh theopenbrowser toloadit.
+- No commit/push/publication or integration authorization.
+
+## Completion log
+
+- 2026-10-09 - Local delivery complete and responsive. Full-page etched glass,
+  half-rate two-sided cream and preserved interaction/fallbacks are ready for
+  the owner's review. Official site remains unchanged; no automatic promotion.
+- 2026-10-09 05:57 IST - Owner requests local material feedback implementation,
+  explicitly reserving the official-site decision. New glass/side motion implemented.
+  Initial tall-phone group separation was corrected with unit-relative vertical
+  spacing; the final connectivity, retention and browser checks pass.

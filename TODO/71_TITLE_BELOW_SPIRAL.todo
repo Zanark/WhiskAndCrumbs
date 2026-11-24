@@ -1,0 +1,50 @@
+# Keep notebook titles below the complete spiral
+
+Status: DONE
+Milestone: M66 Unobscured binding and preserved photo space
+Dependencies: 70_ROUNDED_STICKER_SOURCE_EDGES.todo
+
+## Purpose
+
+Remove the title bar's overlap with the top spiral. Keep all four photos, readable
+type, outside tabs and the existing keyboard/page-turn behavior.
+
+## Tasks
+
+- [x] Reproduce the20pxocclusion caused by the toolbar's24pxextended cream backing.
+- [x] Move the complete title/Back toolbar into the active notebook heading.
+- [x] Reserve the full40pxbinding strip and4pxclearance before the title.
+- [x] Restore the toolbar before the mount on close and every fallback path.
+- [x] Preserve Tab order and prevent page turns stealing focus from Back.
+- [x] Preserve photo-stage position at desktop/portrait/short-landscape sizes.
+- [x] Publish the urgent layout separately, then refresh the matching artwork.
+- [x] Confirm179livefiles/README/ABOUT and preserve the1241-file archive candidate.
+
+## Acceptance criteria
+
+- No opaque title backing or focus ring paints over the spiral.
+-34pxtitle,28pxcaptions and four photos remain; no text shrinking or hidden overflow.
+- Native Tab/Back focus, failure/reduced-motion/static modes and top-hinge motion work.
+- No implicit archive publication, new image-tool views or social posting.
+
+## Completion evidence
+
+- Layout:43264edd0f39397aed81acbc1ab6848655b04548 / Pages37998387090.
+- Finalart:9eee4ec20059535256f0806fede90846f61f2ddc / Pages38000529461.
+- Version5253313789dd.179files/15photos; all181servedfiles/documents match.
+-64Node,134notebook/300photo local fit states, full local site/entry,24live
+  category/text states, two live motion directions and fallback coverage pass.
+- .local\notebook-title-binding-20261010\publication.json.
+- Kit:exports\website-launch-20261010-title-below-spiral\preview.html.
+
+## Completion log
+
+- 2026-10-10 - Title backing previously covered20of40binding pixels. Nowzero;
+  complete coils sit above the title. Photo-stage positions are unchanged on all
+  three primary viewport shapes, including the short-landscape padding adjustment.
+- Moving the toolbar initially exposed a genuine focus-handoff coupling; excluded
+  persistent toolbar focus from page-turn autofocus. The existing no-focus-stealing
+  test passes. Paper sampling now avoids actual tab shadows/focus rings without
+  relaxing opacity thresholds. Initial failed runs are retained.
+- Urgent five-path hotfix shipped first. Matching three-path artwork/README refresh
+  followed, with all approved colour/frost/phone/no-diagonal treatments preserved.

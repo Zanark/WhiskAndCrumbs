@@ -1,0 +1,55 @@
+# Lighter Pink Covers, Sticky Tabs and Isolated Material Study
+
+Status: DONE
+Milestone: M14 Production notebook styling and separate reference-inspired preview
+Dependencies: 16_CATEGORY_NOTEBOOKS.todo; parked cream boundary in18
+
+## Purpose
+
+Apply the owner's lighter-pink cover and sticky-tab button requests without
+changing notebook behavior. Separately demonstrate rounded glossy cream forms
+in a local experiment after the user supplied a Framer reference screenshot.
+Do not restore cream to the live bakery.
+
+## Tasks
+
+- [x] Interpret2Xlighter pink as50%white mixed into#efb7c8, giving#f7dbe4.
+- [x] Style actual inner-book actions as translucent attached index tabs.
+- [x] Preserve readability,48pxcontrols, focus and both-axis four-photo fitting.
+- [x] Build original isolated WebGL2 rounded-form/material preview, not copied code.
+- [x] Verify shader compilation, motion/idle retention, reset, pause, resource cap,
+  reduced motion, touch, DPR2and unavailable/context-loss fallbacks.
+- [x] Review the first15-tile material sheet within the authorized three-view total.
+- [x] Review actual tab UI sequentially within the remaining allowance.
+- [x] Publish only production UI together with the later storefront request; experiment remains local.
+- [x] Persist exact live-release and local-preview outcomes separately.
+
+## Acceptance criteria
+
+- Production covers are lighter pink; body/hero/open pages stay cream.
+- Inner-book buttons look like page tabs rather than pills, remain labelled and usable.
+- No live cream module/canvas/import is restored.
+- Local material study uses rounded merged forms and glossy soft shading, not piped trails.
+- Three authorized new comparison-sheet views total across these tasks; no counter reset.
+- User asked for no further questions; make bounded decisions and deliver honest results.
+
+## Completion evidence
+
+- Production77745397e1b466de015582143f61fc7ca446b068 / Pages37698182681,
+  version74180cf4cd35.160live files/README/ABOUTmatch;74Node/6assetchecks and
+  local/public browser paths pass. Receipt:.local\entrance-shop-20261008\publication.json.
+- Local material study stays at4174; `.local\cream-metaballs-20261008\completion.json`.
+  No live cream canvas/import. One prototype plus two production review sheets consumed.
+
+- Original isolated source: experiments\cream-metaballs\.
+- Preview: http://127.0.0.1:4174/ ; source-specific loopback server, not Pages.
+- Model tests:4passed. Shader/runtime/limit receipts in .local\cream-metaballs-20261008\.
+- First sheet:candidate-01\metaballs-review-15.jpg, selected as a local concept only.
+- Production tab agent owns CSS/regression files; parent owns experiment/docs/release.
+
+## Completion log
+
+- 2026-10-08 - User clarified rounded glossy reference; local original shader
+  study built and reviewed, live bakery unchanged. User then requested lighter
+  pink and sticky tabs, and asked for no more questions. Production UI work
+  proceeds independently; no new cream-production authorization inferred.

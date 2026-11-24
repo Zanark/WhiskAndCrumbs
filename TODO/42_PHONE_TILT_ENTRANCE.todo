@@ -1,0 +1,56 @@
+# Optional Phone-Tilt Entrance Look-Around
+
+Status: DONE
+Milestone: M37 Permission-gated phone orientation controls the room camera
+Dependencies: 29_GROUNDED_PAINTED_BAKERY_SCENE.todo; 39_ARCHITECTURAL_BAKERY_FACADE.todo
+
+## Purpose
+
+The owner requests phone gyroscope/orientation input for the same interior
+look-around currently driven by a pointer.
+
+## Tasks
+
+- [x] Preserve the entry controller and current pending canopy work.
+- [x] Add an optional Phone tilt button only for supported secure touch/coarse browsers.
+- [x] Request permission only from its tap, never automatically on page load.
+- [x] Calibrate the first usable sample, map screen rotation, bound and smooth look input.
+- [x] Retain the fixed building, existing room camera and opt-in poster fallback.
+- [x] Stop sensor listeners on toggle-off, entry, skip, hidden/pagehide, preferences and links.
+- [x] Keep actual controls readable; bypass the optional scene if enlarged controls cannot fit.
+- [x] Check pure angle mapping and browser permission/lifecycle fixtures.
+- [x] Complete combined canopy/site reviews, refresh artifacts/docs and publish.
+
+## Acceptance criteria
+
+- Phone tilt uses the same bounded look variables, not a separate distorted room.
+- No orientation samples are stored or uploaded; no permission request before a tap.
+- Denied/rejected/missing/null data leaves a clear inactive state and working entry/Skip.
+- No late permission response can start listening after dismissal.
+- Screen changes recalibrate rather than jumping; reduced motion remains authoritative.
+- Unsupported browsers retain the ordinary entrance and native fallback.
+- Synthetic browser evidence is not physical iPhone/Android sensor verification.
+
+## Completion evidence
+
+- Source:web\entrance.mjs, entry tools markup/styles.
+- Seven pure tests in tests\entrance-tilt.test.mjs.
+-24local browser cases in.local\phone-tilt-20261009\local-final\review.json.
+-24live cases inpublic-review\review.json; fullsite/entry/facade local/live pass.
+- Publisheda7325203eaffef402caf5fe3b594b555098a69f4 / Pages37853015851.
+-175livefiles/README/ABOUTmatch; versionff6086d91be6.
+- Real mobile-emulated Edge exposes the initially-off control without a mock.
+  Physical phone/nativeSafari sensor acceptance remains explicitly unverified.
+- DeviceOrientation permission facts:
+  https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/requestPermission_static
+  https://www.w3.org/TR/orientation-event/
+
+## Completion log
+
+- 2026-10-09 - Published with supported canopy41; no samples saved/uploaded.
+ 320x568200%complete-site fallback is explicit;390x844200%keeps the entrance,
+  with a6pxnarrower plaque andunchangedlettering toavoid a cake sightline overlap.
+- 2026-10-09 03:06 IST - Owner requests sensor-based entrance parallax. Implemented
+  gesture-only opt-in, calibration/dead zone, screen-axis mapping, bounded smoothing,
+  no-data timeout, listener cleanup and responsive control space. Physical-device
+  behavior remains unverified; local synthetic tests pass.

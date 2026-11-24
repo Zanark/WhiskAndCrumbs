@@ -1,0 +1,12 @@
+{
+  "name": "homemade-veg-cakes",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-site.mjs",
+    "test": "node --test tests/contact.test.mjs tests/site.test.mjs tests/cover-stickers.test.mjs tests/bell.test.mjs tests/notebooks.test.mjs tests/awning-cloth.test.mjs tests/bakery-scene.test.mjs tests/bakery-view.test.mjs tests/bakery-lighting.test.mjs tests/entrance-tilt.test.mjs tests/cream.test.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

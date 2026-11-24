@@ -1,0 +1,64 @@
+# Desktop/Mobile Launch Campaign and Instagram Variants
+
+Status: DONE
+Milestone: M25 Cohesive website-introduction artwork
+Dependencies: 29_GROUNDED_PAINTED_BAKERY_SCENE.todo; 17_REPOSITORY_RENAME_AND_VISUAL_README.todo
+
+## Purpose
+
+The owner rejects the basic README presentation and requests more polished
+desktop/mobile website imagery, referencing their DeepSeaFoam campaign. Rebuild
+all six wide README images and supply six separately composed3:4Instagram images.
+Create files, not Instagram posts; do not assume or change an account handle.
+
+## Tasks
+
+- [x] Preserve current public docs and all six showcase JPEGs.
+- [x] Locate the earlier campaign renderer read-only through its artifact ledger.
+- [x] Capture twelve complete real browser viewports from the current bakery release.
+- [x] Compose six1600x1000landscape images with stronger editorial hierarchy/device framing.
+- [x] Recompose six1080x1440portrait variants, not crops or letterboxed landscapes.
+- [x] Check type/device bounds, source hashes, dimensions, readability and metadata.
+- [x] Deliver a portable local gallery, six-image Instagram ZIP, caption and alt text.
+- [x] Publish only the six approved showcase copies and related public docs.
+- [x] Preserve all runtime, product imagery, identity and real contact destinations.
+
+## Acceptance criteria
+
+- Real complete desktop1280x800/mobile390x844viewport captures atDPR2, not section
+  crops masquerading as screens or invented native-app layouts.
+- Cohesive cream/forest/terracotta/blush identity, original mark and existing fonts.
+- Distinct compositions with readable headlines, realistic proportions and no
+  clipped devices or text. Frames are editorial illustrations, not hardware photos.
+- Exactly six wide README images, with no visible README prose.
+- Exactly six3:4uploadJPEGs,1080x1440RGB, no private metadata/contact sheets.
+- No Instagram posting, handle changes, claims of configured bio links or new products.
+- No additional image-tool views; generated material is not owner visual acceptance.
+
+## Completion evidence
+
+- Published0fe8cbe3f3512d0a5e8c63666476d10dddbe7c4a / Pages37795360157.
+  All168livefiles/README/ABOUTmatch; only8publicpaths changed, appversion6170092be017.
+- Six full-viewport wide images and six recomposed3:4portraits;12uniqueRGBJPEGs,
+  exactdimensions, sourcehashes, bounds/contrast and deterministic rerun checks.
+- Delivery:exports\website-launch-20261008\ with preview.html, twoimagefolders,
+  caption/alttext andWhisk-and-Crumbs-Instagram-3x4.zip(sixJPEGsonly).
+- Localgallery12images decode at1440/768/390/320withoutoverflow; noexternalrequests.
+  Two targetedNode/eightassettests pass; GitHubGFM6images/6links/0visibleprose.
+- Publicreceipt:.local\launch-campaign-20261008\publication.json. Allsix actual
+  READMEimagecache-keyURLs matchnewbytes. No posting/handlechanges/image-toolviews.
+- Baseline scene release:777e7d2df8bbf41136f9c74a302aacce76bd322d.
+- Captures:.local\launch-campaign-20261008\captures\manifest.json.
+- All12captures are full viewports, no page CSS/DOM rearrangement, no browser errors.
+- Read-only reference ledger:DeepSeaFoam\.agent-context\README.md identifies its
+  instagram-studio\build-instagram.cjs in orchestration sessiondfcc71d9.
+- Parent owns captures/package/publication;readme-showcaseagent owns new compositor.
+
+## Completion log
+
+- 2026-10-08 - Complete, published and packaged. Website code and all other site
+  assets unchanged. Generated16tile proof sheet remains unviewed; user aesthetic
+  acceptance is separate from numerical/source validation.
+- 2026-10-08 - Owner requests campaign-level README imagery and3:4Instagram
+  variants. Kept the six-scene structure, but rejected the old section-crop/basic
+  frame approach. Reference craft only; no DeepSeaFoam branding/assets copied.

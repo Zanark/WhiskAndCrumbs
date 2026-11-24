@@ -1,0 +1,49 @@
+# Cream Cursor Trail, Centered Layout and Paper
+
+Status: DONE
+Milestone: M23 Local bakery-layout material testing
+Dependencies: 27_MOVING_SOFT_PEAKED_CREAM_STUDY.todo
+
+## Purpose
+
+Make the local4174preview easier to compare with the bakery: a smaller following
+blob with a tapered tail, centered data with side gutters, and the exact existing
+butter-paper pattern. The live site uses a centered container, not three fixed
+content columns.
+
+## Tasks
+
+- [x] Preserve the previous experiment and context before editing.
+- [x] Halve the cursor head's nominal radius from6.4%to3.2%of the shorter viewport.
+- [x] Add eight bounded lagging links with continuous tapered-capsule rendering.
+- [x] Let the tail catch up into the head without opacity fading or permanent paint.
+- [x] Match the actual1200pxmax centered container and responsive40/24/20pxgutters.
+- [x] Center the reading surface; keep controls inside the same content column.
+- [x] Copy the exact existing640x480bakery cream-pattern SVG into local assets.
+- [x] Layer paper above softened cream but below the quiet reading surface/controls.
+- [x] Preserve drift, peaks, blur, Pause,18scooplimit and lifecycle fallbacks.
+- [x] Check geometry, actual GPU trail contribution and pattern-byte equality.
+- [x] Confirm production/public README remain unchanged; no deployment.
+
+## Acceptance criteria
+
+- Smaller following head and visible tapered trail; no disconnected dot approximation.
+- Tail geometry bounded to eight links; Pause freezes it, stopping merges it into head.
+- Website-matching container widths and empty side gutters at all checked viewports.
+- Exact pattern bytes, no external artwork, and no text/control blur.
+- No added image-tool views or inferred owner acceptance.
+
+## Completion evidence
+
+-16Node model/profile/trail cases and browser/GPU/lifecycle checks pass.
+- Eight layout cases320-1920px; actual header/main/footer widths and centers agree.
+- GPU trail-toggle fixture changes the frame and restores its exact hash.
+- PatternSHA256:bf360f925bf221b2465e7c3aedc592bc7e9d4f569e8f55d424abeb61d34ae080.
+- Receipt:.local\cream-trails-layout-20261008\completion.json.
+- Review:candidate-01\review.json;15tile sheet generated but NOTviewed.
+- ProductionHEAD4043eafandtrackedfilesunchanged; no build/stage/commit/publish.
+
+## Completion log
+
+- 2026-10-08 - Delivered the three requested local refinements. User asked if work
+  was ongoing; confirmed scope/status directly. Existing4174server serves new files.

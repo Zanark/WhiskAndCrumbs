@@ -1,0 +1,60 @@
+# Strong, long-lived scroll wind
+
+Status: DONE
+Milestone: M63 Broad scroll-driven cloth gusts
+Dependencies: 43_STRONGER_LINGERING_CLOTH.todo
+
+## Purpose
+
+Make the awning react much more strongly to scrolling and continue billowing
+well after scrolling stops, like a gust of wind.
+
+## Tasks
+
+- [x] Preserve previous model/reviewers and measure the old response.
+- [x] Add18seconds of travelling pressure, stronger immediate kick and smooth decay.
+- [x] Preserve exact pointer-only trajectories, fixed rails/ends and displacement bounds.
+- [x] Check repeated/reversed input, bounded extremes, reset and eventual exact idle.
+- [x] Complete isolated175file baseline proof without touching the533file import candidate.
+- [x] Run actual-GPU wind, existing cloth safety and full site/entry reviews locally.
+- [x] Publish only the reviewed cloth/cache HTML/ABOUT changes.
+- [x] Record live behavior/bytes and preserve the unpublished archive candidate.
+
+## Acceptance criteria
+
+- Strong broad response, continuing meaningful waves at10-14seconds after scroll.
+- Wind stops completely at finite idle; no perpetual renderer loop.
+- Reduced motion, print, forced colours, blur, hidden/offscreen states and dialogs stop motion.
+- Fixed supports, artwork,2Mpixel budget and20pxcanvas gutter remain unchanged.
+- No implicit archive publication or unnecessary static artwork regeneration.
+
+## Completion evidence
+
+- .local\awning-scroll-wind-20261009\model-comparison.json.
+-19targeted model tests pass.4320pointer-only frames are byte-identical.
+- At1440x324/single60pxscroll: peak3.48->26; exactidle4.29->19.41seconds.
+  About7modelpixels remain at14seconds. Projected maximum19.5px fits20pxgutter.
+- Allfive sequential local response/fabric/supports/site/entrance gates pass against
+  isolated4175with genuine15cake reviewer fixtures. No thresholds/counts weakened.
+- Publishedfeb6169550f5759275ad33b428dae763cebafe2e,Pages37971393377,
+  version32df5a36a07f. All175live files plusREADME/ABOUTmatch committed bytes.
+  ExactlyABOUT.md,site/index.html,site/awning-cloth.mjs changed.
+-23private release-helper guards pass; requiredco-author/sessiontrailers verified.
+  The commit preserved all1766inventoried nonignored worktree files byte-for-byte.
+- Allfour sequential public response/fabric/site/entrance gates pass.
+  ActualdesktopGPUpeak19.5px across1410px; at14s5.26pxremains; exactidle19.41-19.48s.
+  Simulatedtouchpeak15.75px,14stail3.61px,idle19.11s. Pins andidleuploads0.
+  Pointer-only publicrelease4.75s. No physical-phone/aestheticapproval implied.
+- Receipt.local\awning-scroll-wind-20261009\publication.json; preservation proof
+  publication-preservation.json. docs\scroll-wind.md records implementation/evidence.
+
+## Completion log
+
+- 2026-10-09 -22:56owner requests much stronger scrolling and long wind-like linger.
+  Implemented model; first reset regression caught missing gust reset and is fixed.
+- 2026-10-09 -23:40scoped Pages release succeeds after allfive local gates.
+  Privateindexplumbing preserves the533file/60cake import candidate and358new
+  untracked archive variants; no rootbuild, imageviews, artrecapture orIGposting.
+- 2026-10-10 -00:00allpublicbrowser gates complete; ordinarycanonicalHTML and
+  versionedmoduleURLs also match. No windimplementation/review/publishing remains.
+  Browserlane released after finalreceipt; globalindex/ledger/context remainparent-owned.

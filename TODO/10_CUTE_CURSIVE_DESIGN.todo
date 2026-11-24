@@ -1,0 +1,59 @@
+# Cute Cursive Design
+
+Status: DONE
+Milestone: M3 Local visual revision complete; final user acceptance pending
+Dependencies: 04_VISUAL_DESIGN.todo, 06_TESTING_AND_LAUNCH.todo, 08_READABILITY_AND_SIMPLE_ORDERING.todo, 09_STORY_AND_CAKE_STICKERS.todo
+
+## Purpose
+
+Historical revision: the user subsequently rejected its palette change and
+Dancing Script font. Workstream 11 restores the original colours and uses clearer
+Courgette; the other cute layout details are retained. Do not restore this revision.
+
+Respond to the user's explicit request for cursive fonts and an extremely cute
+website without sacrificing readable content, faithful photos or simple ordering.
+
+## Tasks
+
+- [x] Preserve the prior site and review before changing its appearance.
+- [x] Add unmodified upstream Dancing Script with its SIL Open Font License.
+- [x] Use cursive display text and large cake names; keep DM Sans reading/actions.
+- [x] Add blush/sage/cream colours, rose pills, scallops and heart/bow doodles.
+- [x] Keep restored story, all five stickers and direct contact unchanged.
+- [x] Update sharing artwork to match the cursive/sticker treatment.
+- [x] Support enlarged text through wrapping and responsive tracks, not smaller text.
+- [x] Run local checks and inspect actual browser/sharing-image output.
+- [x] Leave branding unchanged until the user selects a proposed name.
+
+## Acceptance criteria
+
+- [x] The locally hosted cursive face actually loads in the browser.
+- [x] Display headings, wordmark, note and cake names use Dancing Script.
+- [x] Body and order actions stay clear, with 18px copy/16px labels/48px controls.
+- [x] No page overflow at six standard widths or 200% text at 320/390/600/1280px.
+- [x] Focus, skip link, no-JavaScript contact, reduced motion and photo viewer remain.
+- [x] Generated output excludes masks, sources, model files and private artifacts.
+- [x] Final appearance approval and public deployment remain separate.
+
+## Completion evidence
+
+- Sources: ..\web\styles.css, readability.css, index.template.html and assets\.
+- Font origin/license: ..\web\assets\fonts\README.md and Dancing-Script-OFL.txt.
+- Prior design: ..\.local\revisions\before-cursive-20261004\site\ and review\.
+- npm test: 21 cases pass. npm run build: 56 allowlisted public files.
+- python .\scripts\review_site.py: passed; current evidence in
+  ..\.local\website-review\review.json and actual page screenshots.
+- Review covers loaded Dancing Script, sans-serif body/buttons, six widths,
+  enlarged-text phone/desktop layouts, full-photo links and sticker transparency.
+- DOM copy remains 188 words (113 browsing/ordering + 75 story).
+- Actual desktop/mobile, enlarged-text story/order and 1200x630 sharing image
+  inspected. The new palette's green/rose/muted text combinations on the four
+  main backgrounds range from 4.94:1 to 8.96:1.
+- Earlier sticker/source-fidelity checks remain in 09; no sticker bytes changed.
+- No public deployment, chosen new name or final user appearance approval.
+
+## Completion log
+
+- 2026-10-04 - Implemented the requested cute cursive direction. Fixed hero
+  decoration overflow and doubled-text intrinsic sizing/offscreen skip-link
+  behavior without shrinking or hiding text. Rebuilt and reviewed locally.

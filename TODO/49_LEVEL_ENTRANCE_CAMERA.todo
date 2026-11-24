@@ -1,0 +1,51 @@
+# Level and Pulled-Back Entrance Camera
+
+Status: DONE
+Milestone: M44 A straight default view with room for the shop interior
+Dependencies: 39_ARCHITECTURAL_BAKERY_FACADE.todo; 42_PHONE_TILT_ENTRANCE.todo
+
+## Purpose
+
+The owner says the default entrance camera looks down too much and asks for a
+straight view, with the camera pulled back or the building scaled to fit.
+
+## Tasks
+
+- [x] Preserve the existing camera and three fallback posters.
+- [x] Level the default optical axis and pull the camera back without stretching the facade.
+- [x] Compensate bounded look-around travel for the greater viewing distance.
+- [x] Regenerate matching wide/portrait/short fallback views from the same lit room.
+- [x] Check neutral horizon, cake/footing visibility and mouse/phone look-around.
+- [x] Complete full site/fallback checks, refresh the entrance artwork/docs and publish.
+
+## Acceptance criteria
+
+- Neutral eye and target are at the same height; no default downward pitch.
+- Camera is farther back and the display occupies less of the glazing.
+- Scene geometry, fixed lighting, baked illumination and facade dimensions remain unchanged.
+- All four cake landmarks remain visible; counter support and strong look-around remain.
+- Static posters match the live camera; local4174experiment is untouched.
+
+## Completion evidence
+
+- Baseline:b37df44690b0188cfd56ffad2ba473d7d59a1fca.
+- Private before/review:.local\level-entrance-camera-20261009\.
+- Default eye:[0,1.65,8.4], target:[0,1.65,-2.5]; pitch0instead of-7.3626degrees.
+- Camera moves back2sceneunits; projected counter width becomes78.54%ofprevious.
+- Mouse/phone input range stays bounded; eye-X1.3/target-X1.8/target-Ytravel1.25
+  compensate the distance rather than weakening the prior responsiveness check.
+-131Node cases; local facade, five camera viewports, entry and24phone fixtures pass.
+- Published3b8449318acbb3be212e2f67e3566b9f7e268186 / Pages37887037434,
+  version0fe20a62bf44.175livefiles/README/ABOUTmatch;8scopedpublicpaths.
+- Livecamera/entry/24phone/facadechecks pass;localfullsite/lifecycle/9assets pass.
+- Onlycamera/3posters/entranceshowcase/cacheHTML/rootdocschanged. Local4174untouched.
+
+## Completion log
+
+- 2026-10-09 - Published the level, pulled-back view and matching posters/art.
+  All four cake landmarks and floor contact remain framed. Exact reflection
+  fixture waits for eight stable render/layout frames after text resize.
+  No weakened camera responsiveness, facade stretching or image-tool views.
+- 2026-10-09 10:08 IST - Owner supplied before/desired framing. Changed only the
+  camera, preserving physical room/building/light. Initial unadjusted look travel
+  missed the short-screen responsiveness threshold; distance compensation restores it.

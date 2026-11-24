@@ -1,0 +1,92 @@
+# Website and Ordering
+
+Status: IN_PROGRESS
+Milestone: M3 Story/sticker implementation locally reviewed; business facts/acceptance pending
+Dependencies: 01_PRODUCT_DECISIONS.todo, 02_REFERENCES_AND_PHOTOGRAPHY.todo, 04_VISUAL_DESIGN.todo
+
+## Purpose
+
+Deliver a lightweight, editable site with clear direct-contact enquiries.
+
+## Tasks
+
+- [x] Begin only after the user authorizes implementation.
+- [x] Establish a dedicated public site directory; never deploy the repository root.
+- [x] Centralize business configuration and structured gallery data with stable IDs.
+- [x] Build design tokens, responsive navigation, semantic sections and local/fallback fonts.
+- [x] Build the real-photo hero, introduction and curated past-bake gallery.
+- [x] Omit unconfirmed sizes, prices and availability instead of inventing them.
+- [x] Implement product-specific, URL-encoded WhatsApp enquiries behind one configuration field.
+- [ ] Activate WhatsApp after the actual public number is supplied.
+- [x] Implement Instagram contact and optional configured public email/location.
+- [x] Make the primary Instagram action a giant camera-logo button with a visible
+  action label, accessible name and unchanged cream/green colours.
+- [x] Make clear that clicking a message link does not send or confirm an order.
+- [x] Keep the approved order home -> story -> cakes -> order with the original
+  story/note and concise cake/order guidance; no FAQ, form or extra custom section.
+- [x] Render transparent sticker variants while retaining full prepared JPG viewer links.
+- [x] Complete current regression/public-boundary review through workstream 09.
+- [ ] Add contact/service-area information and essential lead-time/allergen/payment rules.
+- [x] Keep a contextual mobile enquiry CTA accessible without covering content or focus.
+- [x] Use a small local gallery rather than a heavy live Instagram widget.
+- [x] Include only prepared image derivatives with responsive sizing and loading behavior.
+- [x] Keep core content and contact links usable without JavaScript.
+- [x] Remove the message helper and make every cake enquiry a direct contact link.
+- [x] Include the cake name in configured WhatsApp links; do not imply Instagram
+  can receive a prefilled name or message.
+- [x] Defer additional pages until genuine content justifies them.
+
+## Acceptance criteria
+
+- [x] No shopping cart, login, payment collection or backend is invented for the MVP.
+- [x] Enquiry preparation does not pretend to be checkout or automatic message delivery.
+- [x] Gallery/contact data is updateable through central JSON files and a rebuild.
+- [x] Real photos remain faithful to the supplied work.
+- [ ] Final business facts and user acceptance are recorded before public release.
+
+## Completion evidence
+
+- npm run build produced 66 allowlisted public files in site/, including 20
+  sticker variants. Current Node suite has 25 passing cases; workstream 09
+  retains the five-case sticker/source checks.
+- Node tests cover contact formatting/configuration, static output, media and
+  publication boundaries. Browser evidence is in ..\.local\website-review\.
+- Five cake cards and the order section link directly to the configured channel.
+  The original story is the only restored section; no form, clipboard step, FAQ
+  or separate custom-cake section remains.
+- Source/server guidance: ..\docs\prototype-guide.md.
+
+## Completion log
+
+- 2026-10-04 - Rebranded every customer-facing name/metadata/icon surface to Whisk
+  & Crumbs, kept the real Instagram account, and published the themed faint pattern
+  update. GitHub reported a repository move; the verified canonical Pages address
+  is now https://zanark.github.io/WhisksAndCrumbs/.
+- 2026-10-04 - Replaced the main Instagram action with a 128px camera logo inside
+  a 230px-minimum-height button. Kept the visible action label and login/help text,
+  palette and WhatsApp configuration behavior. Local browser/22 Node checks pass;
+  inspected actual desktop/mobile order views. Public update 2b4596b deployed
+  successfully in run 37167145069; live browser and release-byte checks pass.
+- 2026-10-04 - Completed local regression/public-boundary review: 53-file build,
+  20 Node cases, five sticker cases and browser review pass. Full-JPG enlargement
+  and direct contact remain available; business/user/native acceptance and launch
+  remain separate gates.
+- 2026-10-04 - Integrated the approved story restoration and separate transparent
+  stickers without changing direct contact or the full-photo viewer destination.
+  Expected public output increases from 33 to 53 files; current validation belongs
+  to workstream 09 and is not inferred from the earlier tests.
+- 2026-10-04 - Completed the requested three-section page. Plain design labels,
+  visual categories and direct card links replace descriptions, separate
+  custom-cake content and the optional composer. Instagram remains the active
+  destination; WhatsApp configuration still produces cake-specific notes.
+- 2026-10-04 - Simplified contact for limited digital confidence: visible mobile
+  navigation, literal action labels, an immediate contact button and a fully
+  optional message helper. Invalid optional entries never disable direct contact.
+- 2026-10-04 - Completed the local prototype. Instagram is active; WhatsApp is
+  implemented but not configured. Added a Windows-safe loopback preview server
+  because this machine labelled .mjs files text/plain. No browser protections
+  were disabled, and no public host was provisioned.
+- 2026-10-04 02:25 - User explicitly authorized website implementation and requested
+  no questions until a prototype is ready. Build locally with Instagram enquiries
+  while WhatsApp, prices and public business details remain unconfigured.
+- 2026-10-04 - Future implementation scope recorded without beginning the website.

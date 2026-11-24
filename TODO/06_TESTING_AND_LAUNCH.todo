@@ -1,0 +1,109 @@
+# Testing and Launch
+
+Status: IN_PROGRESS
+Milestone: M4 Public release complete; native acceptance and hosting-policy risk remain
+Dependencies: 01_PRODUCT_DECISIONS.todo, 05_WEBSITE_AND_ORDERING.todo
+
+## Purpose
+
+Keep technical checks, visual review, user approval and publication distinct.
+Workstream 11 records the corrected palette/font and successful public release.
+Workstream 09 preserves the sticker/source checks. Native acceptance and provider
+commercial-use compliance are not established by publication.
+
+## Tasks
+
+- [x] Review keyboard navigation, visible focus, key contrast pairs and reduced motion.
+- [ ] Complete native screen-reader and real-device acceptance.
+- [x] Review small-phone/tablet/desktop layouts, simulated slower connection and no-JS fallback.
+- [x] Verify at least 16px key text, principal 48px controls and 200% text resizing.
+- [x] Verify the earlier three-section/no-form/five-cake revision; retain its evidence.
+- [x] Verify home -> story -> cakes -> order, exact story/note restoration, full
+  transparent stickers and full-JPG enlargement through workstream 09.
+- [x] Record new build/Node/Python/browser results and actual visual inspection in 09.
+- [x] Review the later cursive design, real font loading and 200% phone text in 10.
+- [x] Exercise Instagram handoffs in the browser and synthetic WhatsApp URLs in Node.
+- [ ] Confirm native Instagram/WhatsApp handoff after actual contact details are supplied.
+- [x] Confirm no fake order-success/availability state or unintentional form submission.
+- [x] Add titles, descriptions, headings, alt text and a generated sharing image.
+- [x] Set the real public URL and confirm the deployed sharing image is reachable.
+- [ ] Confirm actual social-app preview rendering.
+- [ ] Check local business metadata against approved public information.
+- [ ] Confirm photo permissions and remove sensitive metadata from public derivatives.
+- [x] Exclude raw exports, private manifests, source screenshots, reference images and PDF.
+- [x] Check actual responsive image loading, dimensions, crops and a cold slower connection.
+- [ ] Confirm a suitable host's current terms and approved deployment configuration.
+- [x] Release only when explicitly requested; inspect the actual deployed result.
+- [x] Provide a prototype content/contact/photo maintenance guide.
+- [ ] Record user acceptance without inferring it from generated artifacts.
+
+## Acceptance criteria
+
+- [x] The public directory contains only intended customer-facing assets and font licenses.
+- [x] Verify the current 66-file allowlist and exclusion of sticker
+  manifests/masks/recipes, source README files and private model/review data.
+- [x] There is evidence for the actual pages and links, not only a successful build.
+- [x] Record the user's explicit launch authorization.
+- [ ] Complete remaining business facts without inventing them.
+- [x] GitHub source control is not confused with approval to host orders on GitHub Pages.
+
+## Completion evidence
+
+- Historical three-section result: 19 Node tests passed. That site was reviewed in headless Edge at
+  320/390/600/768/1024/1440px, with no horizontal overflow or page-script errors.
+- Visible mobile navigation, skip link, 30 sequential keyboard-focus steps, modal
+  navigation/focus restoration, intercepted direct-contact handoffs, no-JS fallback
+  and public-root exclusions exercised. Its main DOM text was 115 words (guard: 180);
+  CSS-generated photo labels are separate from that count.
+- Simulated cold load: 150ms latency and 200,000 bytes/sec download throughput.
+- That prior evidence is retained under
+  ..\.local\revisions\before-stickers-20261004\review\.
+- Current result fields: 12_WHISK_AND_CRUMBS_BRAND.todo. npm test passed 25 cases;
+  npm run build produced 66 files and brand-asset unittests passed four cases.
+  Workstream 09 retains the five passing
+  sticker/source-fidelity cases; the cursive revision does not change those assets.
+- Current browser output: ..\.local\website-review\review.json reports passed,
+  home/story/cakes/order, 188 main words (113 focus + 75 story), six transparent
+  image instances with full-JPG viewer links and six tested widths. Labels are
+  16px+ and controls 48px+; keyboard/dialog, no-JS, 200% text and slow-network
+  coverage passed. The report has no timestamp field; final evidence was supplied
+  by the parent on 2026-10-04.
+- Parent visually inspected the final cream/dark contact sheet, desktop/mobile
+  full pages and 200% order screenshot. Opaque source RGB equality and unchanged
+  archived screenshot/crop hashes were included in the five sticker cases.
+- No external message was sent. Real devices, native assistive technology and
+  final user acceptance remain open.
+- Importer testing belongs to 03_INSTAGRAM_IMPORT.todo and does not certify the site.
+
+## Completion log
+
+- 2026-10-04 - Local/public rebrand review passed: name/icons/social metadata,
+  unchanged Instagram, quiet pattern alpha/coverage/contrast, six viewports and
+  enlarged text. Run 37195797175 deployed 9723c28 at the renamed repo's verified
+  URL; twelve served brand/page assets match the release.
+- 2026-10-04 - Published the explicitly requested page as ac905f6, run 37166487834.
+  The actual GitHub Pages browser review passed and key served bytes match the
+  release commit. Private sources remained local; provider policy and native
+  device/app acceptance remain separate concerns.
+- 2026-10-04 - Cursive revision passed 21 Node cases and browser review. Added actual
+  local-font checks and 200% text reflow at 320/390/600/1280px; fixed decorative
+  overflow, intrinsic text-grid sizing and offscreen skip-link growth without
+  shrinking text. Source sticker assets were not regenerated.
+- 2026-10-04 - Final local evidence supplied by the parent and current browser report
+  recorded: 20 Node cases, five sticker cases, 53-file build and browser review pass.
+  Parent visual inspection completed. Workstream 09 is DONE for local delivery;
+  actual user acceptance, native apps/devices/AT and public launch are not complete.
+- 2026-10-04 - Opened current regression review for restored story and 20 transparent
+  sticker variants. Required evidence includes four-section order, masks/source
+  limits, full-photo enlargement and the expected 53-file public boundary. No new
+  pass, actual screenshot inspection or user approval is claimed in this handoff.
+- 2026-10-04 - Replaced obsolete helper checks with exact section count, no-form,
+  short-copy and direct-link coverage. 19 Node cases and the six-width browser
+  review pass; inspected desktop/mobile and 200% text views.
+- 2026-10-04 - Repeated current browser coverage for larger type, visible mobile
+  links, direct-contact-first interaction and 200% text resizing. Added a guard
+  ensuring every helper control/help line is within the collapsed optional section.
+- 2026-10-04 - Completed local prototype review and inspected actual page images.
+  Fixed ES-module MIME handling, manual-copy visibility and mobile action overlap.
+  No deployment or production social-preview claim is made.
+- 2026-10-04 - Launch gates recorded separately from current planning/asset work.

@@ -1,0 +1,61 @@
+# Cream Blob Backgrounds for Launch Artwork
+
+Status: DONE
+Milestone: M48 Static cream material in Instagram and README artwork only
+Dependencies: 44_CURRENT_EDITORIAL_CAMPAIGN_REFRESH.todo, 52_LARGER_TITLES_OPAQUE_NOTEBOOK_TABS.todo
+
+## Purpose
+
+The owner references the studio launch gallery and requests the cream-blob look
+behind the Instagram images and an updated README. This is artwork-only permission,
+not permission to integrate the local4174experiment into the live website.
+
+## Tasks
+
+- [x] Preserve the previous artwork tooling, immutable kits and local study.
+- [x] Export transparent static layers from the actual original cream shader.
+- [x] Add an opt-in compositor mode while preserving current foreground layouts.
+- [x] Preserve reading-background pixels and measure visible cream on both sides.
+- [x] Run new/existing regressions and deterministic/default-mode comparisons.
+- [x] Package a new six-portrait/six-landscape edition; never overwrite studio.
+- [x] Publish six updated README images and scoped public root docs.
+- [x] Update documentation/context and confirm unchanged website runtime/background.
+
+## Acceptance criteria
+
+- Six1080x1440Instagram JPEGs and six1600x1000README JPEGs.
+- Phones only on portrait01/06; actual latest website captures stay unchanged.
+- Existing fonts/copy/brand/source media and device/feature geometry preserved.
+- Same original cream lighting/material, six unequal separate source forms.
+- Background visible on both sides; no decoration through reading copy.
+- Existing JPEG contrast/metadata/size gates remain; no image-tool views.
+- No Instagram posting, website cream integration or local4174source edits.
+
+## Completion evidence
+
+- Baselinea8ab9d4df41aadc41346afddacec572781529942.
+- .local\cream-launch-backgrounds-20261009\before\ andlayers-v1\manifest.json.
+- All12layers have six separate components and reconstruct original shader
+  output within1RGBlevel. Original study bytes unchanged.
+- Candidate:.local\launch-campaign-20261008\composed\cream-backgrounds-20261009-v1\.
+  All12compose with protected foreground geometry and existing JPEG type gates.
+- Final:.local\launch-campaign-20261008\composed\cream-backgrounds-20261009-final\.
+- 36campaign/9asset/README checks and72JPEGtypography checks pass.
+- 30artifacts rerenderbyte-identically; default12JPEGs andoldstudio12JPEGs/ZIP unchanged.
+- Visiblecream changes7.85-15.48%ofeachfinalimage; bothsides visible, readingpixels unchanged.
+- Delivery:exports\website-launch-20261009-cream-backgrounds\.
+- Commit07876c8d9d382f70a56fa53acc44f68ba25d6e4f; Pages37908475321 succeeded.
+- All175livefiles/README/ABOUTmatch;8publicpaths only, appversion9db31e68d7d1 unchanged.
+- Receipt:.local\cream-launch-backgrounds-20261009\publication.json.
+
+## Completion log
+
+- 2026-10-09 - Delivered and published allsixInstagram/sixREADME cream backgrounds.
+  The oldstudio gallery remainsintact; currentkit useslatestreadable/opaqueUI.
+  Allruntime/nonshowcaseassets/120productvariants/local4174bytes preserved.
+  Cleaned only the exporter-created bytecode cache; future coverage imports suppress
+  bytecode writes. Exact generation source preserved with the layer receipt.
+  No remaining53implementation/render/package/publication work; no image views or posting.
+- 2026-10-09 - Added static cream material to campaign backgrounds using the
+  unchanged current website captures, not the older studio UI. Source shader
+  math/lighting retained; only print placement and transparent output differ.

@@ -1,0 +1,48 @@
+# Shallow Rounded Awning Ends
+
+Status: DONE
+Milestone: M52 Short rounded scallops and longer straight hanging fabric
+Dependencies: 50_ALIGNED_AWNING_SCALLOPS.todo, 51_FULL_WIDTH_AWNING_SLOPE.todo
+
+## Purpose
+
+The owner rejects the long narrow curved ends and wants smaller curves with a
+longer straight section. Keep the overall canopy height and forty aligned stripes.
+
+## Tasks
+
+- [x] Preserve current artwork and reproduce the old long-curve proportions.
+- [x] Replace53pxcurves with15pxsemicircles; extend straight hanging fabric53->91px.
+- [x] Match each circular hem stitch to its stripe and shallow curve.
+- [x] Verify actual opaque straight fabric, matching tips and stationary supports.
+- [x] Complete local UI/fabric checks and refresh affected frosted-glass launch images.
+- [x] Publish scoped output and update docs/context.
+
+## Acceptance criteria
+
+- Forty30px-wide rounded ends, each15pxdeep, aligned to its stripe.
+- Straight valance startsY188and reachesY279; final hem staysY294.
+- Keep1200x300canvas, slope, side fill, colours, fixed supports and motion.
+- No product media, notebook or local4174changes; no image-tool views.
+
+## Completion evidence
+
+- Baseline8d9af9fe549d210da1673764983b98722bca5325.
+- .local\shallow-awning-curves-20261009\before\ andbaseline-shape.log.
+- Oldartfailed4400of106800straight-band pixels; correctedband isfullyopaque.
+- 16cloth/nineasset cases andlocal-shape reviewer pass.40alignedtips,664opaque
+  side-edge samples, zero fixed-support pixel changes.
+- 131Node/full localUI/fabric andpublicshape/fabric checks pass.
+- Commit078067f8b831dbfd8668eb3d3bdb07ef970c3c08; Pages37928044903 succeeded.
+- Version5144b7e3b8c8;175livefiles/rootdocsmatch;sixpublicpaths only.
+- Currentkitexports\website-launch-20261009-shallow-awning\;onlypublic01/02refreshed.
+- Receipt:.local\shallow-awning-curves-20261009\publication.json.
+
+## Completion log
+
+- 2026-10-09 - Published shallowroundedends andlongerstraightvalance with
+  unchangedoverallheight andmotion. Currentfrostedart/docs/context updated.
+  No57implementation/browser/art/publication work remains; no imageviews/posting.
+- 2026-10-09 - Shortened the curved portion by38sourcepixels (about72%) and
+  lengthened the straight valance by the same amount. True circular arcs replace
+  elongatedquadraticends; sourcecanvas/hemline/slope/physics unchanged.

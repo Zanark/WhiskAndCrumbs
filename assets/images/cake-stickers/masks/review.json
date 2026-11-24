@@ -1,0 +1,40 @@
+{
+  "recipe_sha256": "9d4c4eef855b907db491b7679a47c61afce07969ed48243dace3734e1148e50d",
+  "photos": [
+    {
+      "id": "peacock-feather-cake",
+      "model": "birefnet-general",
+      "candidate_mask_sha256": "31b3224a8aba4de79dafd7406bf710e869b6eeed79a57a0263d131412634e101",
+      "reviewed_mask_sha256": "059dc13ec39b5b2564f1be28b4a49665db90f7235fd6f217e3c3aab271b65758",
+      "correction": "The detailed model includes the feather but incorrectly treats its dark eye as background. Keep the actual source eye and surrounding central vane."
+    },
+    {
+      "id": "ribbon-and-pearl-cake",
+      "model": "birefnet-general-lite",
+      "candidate_mask_sha256": "5b5719d20b4161ffc59b3aa4eb8e6b9177764b1134bbfc682b2683a36b48689c",
+      "reviewed_mask_sha256": "5b5719d20b4161ffc59b3aa4eb8e6b9177764b1134bbfc682b2683a36b48689c",
+      "correction": "Reviewed cake, ribbon loops and trailing ribbons; no manual correction."
+    },
+    {
+      "id": "cherry-topped-cake",
+      "model": "birefnet-general-lite",
+      "candidate_mask_sha256": "df71f86dfbd0e990a46ac0c7efb01b7cb6f481c5ed036134c50602a1b5942ae9",
+      "reviewed_mask_sha256": "2d6cef58b309356875bd6e2bacaeb4e1c5d3a85d067dbc1b3483d9d715c2fbe2",
+      "correction": "Remove detached placemat fragments beneath the round gold board. Source-clipped top cherries remain unchanged."
+    },
+    {
+      "id": "pink-doll-cake",
+      "model": "birefnet-general-lite",
+      "candidate_mask_sha256": "f1053d29443d0d566620d4a88bf8a52a3c03d6a3e85fc2c91b804c2b26ebd17e",
+      "reviewed_mask_sha256": "e420d884c4f46068777880adf494dc4b5ac598d4422d3761ab7c65d7b93e2ea3",
+      "correction": "Remove a translucent cake-board remnant beside the lower-left dress. The source-clipped dress base is not reconstructed."
+    },
+    {
+      "id": "butterfly-celebration-cake",
+      "model": "birefnet-general-lite",
+      "candidate_mask_sha256": "d7cadf7fec33c822afada9f79cdd706774abd66ce5c818957680b860ea42c701",
+      "reviewed_mask_sha256": "d7cadf7fec33c822afada9f79cdd706774abd66ce5c818957680b860ea42c701",
+      "correction": "Reviewed cake and complete butterfly topper; no manual correction."
+    }
+  ]
+}

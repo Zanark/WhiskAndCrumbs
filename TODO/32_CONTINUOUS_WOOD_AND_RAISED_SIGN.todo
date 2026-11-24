@@ -1,0 +1,54 @@
+# Continuous Wood and Raised Illuminated Sign
+
+Status: DONE
+Milestone: M27 Unfaded wood texture and dimensional sign lighting
+Dependencies: 25_WOODEN_BACKLIT_SHOP_SIGN.todo; 30_PROFESSIONAL_LAUNCH_CAMPAIGN.todo
+
+## Purpose
+
+The owner explicitly rejects fading the wood behind the main logo/name and wants
+a more realistic wooden panel with lit, raised lettering and a distinct drop shadow.
+Preserve Courgette, the original mark, sign size/location and navigation.
+
+## Tasks
+
+- [x] Preserve current header, source checks, public docs and context.
+- [x] Generate an original continuous wood-grain texture with plank joints and knots.
+- [x] Remove the center fade mask; keep grain equally present behind the name.
+- [x] Add layered letter edges, cast shadows and warm steady backlighting.
+- [x] Retain original logo pixels, typography, geometry and accessibility fallbacks.
+- [x] Check actual center texture and lighting pixels, contrast and16width/text cases.
+- [x] Refresh the current campaign's welcome desktop/mobile image and3:4variant.
+- [x] Run existing full site/entrance checks and publish the narrowly scoped change.
+
+## Acceptance criteria
+
+- Wood remains opaque and textured across the sign, including its center.
+- Raised sign lighting is visible without fuzzy letters, flashing or moving glow.
+- No font/mark/layout changes, public cream integration or unrelated scene edits.
+- Preserve existing local artifacts; do not overwrite the first Instagram delivery.
+- No image-tool views or visual acceptance claims.
+
+## Completion evidence
+
+- Publisheddf6d437d0c9440611f01d052dfc4bc7f5feea9f8 / Pages37803845199,
+  version3dc58f859194.169livefiles/README/ABOUTmatch;6public paths.
+- Full local/public site/entrance/responsive checks pass. All120products,
+  existingfont/mark/layout/scene/runtime andlocal4174sourcehashesunchanged.
+- Welcomecampaignpairrefreshed; otherfivepairsbyte-identical. Newlocalkit:
+  exports\website-launch-20261008-raised-sign\,originaldeliveryretained.
+- Receipt:.local\wood-grain-raised-sign-20261008\publication.json.
+- Original texture:1600x600RGB losslessWebP; no reference photograph input.
+- TextureSHA256:b6df4bc77baad343fbb20bef5ede297690a6b74bb69dd3f4afd973bc7e4fe11d.
+-109Node/9asset cases and16targeted header cases pass. Rendered center variation
+  is3.38/2.51/1.82RGBstddev; actual letter lighting changes9.40%ofsign pixels.
+  Center mask:none, opacity:1; all decoded texture pixels opaque.
+- Snapshot/evidence:.local\wood-grain-raised-sign-20261008\.
+
+## Completion log
+
+- 2026-10-08 - Complete and live. Removedwoodfade andstrengthenedraisedshadow/
+  lighttreatment; welcomeREADME/Instagramartupdated. No socialposting/imageviews.
+- 2026-10-08 - Replaced faded CSS linework with full wood texture and clearer
+  directional letter/logo shadows. The supplied attachments show the same header;
+  followed the explicit written grain/depth request without inventing differences.

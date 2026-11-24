@@ -1,0 +1,85 @@
+# References and Photography
+
+Status: IN_PROGRESS
+Milestone: M1 Faithful, usable prototype assets
+Dependencies: 01_PRODUCT_DECISIONS.todo
+
+## Purpose
+
+Preserve provenance and improve presentation without changing what was baked.
+
+## Tasks
+
+- [x] Read and preserve the original 19-page design PDF.
+- [x] Copy and descriptively rename all four kitchen references without changing bytes.
+- [x] Label kitchen references as inspiration, not verified photographs of this bakery.
+- [x] Receive and inspect five screenshots from Downloads\cakes-photos.
+- [x] Preserve byte-identical screenshot originals in ignored local storage.
+- [x] Crop distracting outer background/black screenshot margins conservatively.
+- [x] Retain cake decoration, shape, colours, existing text and visible toppers.
+- [x] Do not synthesize backgrounds, alter icing or invent missing cropped detail.
+- [x] Generate web-sized copies without upscaling and record exact source/crop mappings.
+- [x] Visually inspect all five prepared compositions beside their source screenshots.
+- [x] Record recommended prototype uses and honest framing/quality limits.
+- [x] Add 20 separate transparent sticker variants under the user's later authorization.
+- [x] Retain crop-only photos/originals and record model, alpha corrections and hashes.
+- [x] Complete current sticker/source visual and technical review in workstream 09.
+- [ ] Get the user's visual feedback on the crops and sticker derivatives.
+- [ ] Select a hero and 4-6 favourites from genuine suitable photos, not fake products.
+- [ ] Obtain confirmed names, descriptions and alt text with the baker.
+- [ ] Later collect 10-20 strong actual photos and replace screenshots after review.
+- [ ] Obtain phone/camera originals for stronger hero candidates where possible.
+- [ ] Collect 4-8 actual kitchen/process photos and 1-3 baker/working photos.
+- [ ] Review names, faces, order labels, permissions and EXIF/GPS before publication.
+- [ ] Produce responsive WebP/AVIF where useful, with fallback and explicit dimensions.
+
+## Acceptance criteria
+
+- [x] All five supplied images have been visually inspected, not merely enumerated.
+- [x] Every prepared image maps to an untouched source and reproducible crop.
+- [x] No cake content is generated, retouched away or misrepresented.
+- [x] Screenshot quality and already-clipped subjects remain honestly disclosed.
+- [x] Private originals are outside the intended public asset directory.
+- [x] Validate the current sticker allowlist excludes masks, recipes and manifests;
+  preserve source-clipped details and full-JPG enlargement (workstream 09).
+- [ ] Future deployment continues to exclude those originals.
+
+## Completion evidence
+
+- Reference provenance: ..\assets\references\README.md.
+- Original inputs: C:\Users\mishrad\Downloads\cakes-photos (five PNG screenshots).
+- Observed: doll cake, cherry-topped round cake, butterfly celebration cake,
+  ribbon-decorated cake and orange cake with tall feather decoration.
+  These are appearance labels, not confirmed flavours or product names.
+- Prepared images and source/crop manifest: ..\assets\images\cakes\.
+- Private originals, pixel-identical crop masters and inspected before/after
+  preview: ..\.local\photos\prototype-20261004\.
+- Retained crop-only batch: five large WebP files total 752,098 bytes; 20 total WebP/JPEG variants decode
+  at recorded dimensions with no upscaling or EXIF. Source hashes still match.
+- Sticker variants, manifest, mask-recipe.json and masks/review.json:
+  ..\assets\images\cake-stickers\. Reproduction guide: README.md in that directory.
+- Candidate masks use local rembg 2.0.85/BiRefNet general-lite (four cakes) and
+  general (peacock). Alpha corrections preserve its eye and remove cherry/doll
+  background remnants, not source cake pixels or missing detail.
+- Current comparison sheet: ..\.local\stickers\final-review.jpg, visually inspected
+  by the parent on cream/dark. Five sticker tests pass, including unchanged
+  screenshot/crop hashes, expected alpha/dimensions/hashes and source RGB equality
+  at all opaque mask pixels before resizing/compression. See workstream 09.
+  User visual acceptance and source-clipping limitations remain separate.
+
+## Completion log
+
+- 2026-10-04 - Parent completed final contact-sheet inspection and five passing
+  sticker checks, including source preservation and the feather-eye guard. Current
+  browser/53-file public-boundary review also passed. No missing source detail
+  was reconstructed and no user visual acceptance is inferred.
+- 2026-10-04 - Added the approved separate white-contour sticker treatment and
+  recorded its local inference/refinement/preparation workflow. Originals and old
+  photo variants remain; source-clipped cherries, dress base and upper feather are
+  not reconstructed. Current review remains in progress under workstream 09.
+- 2026-10-04 - Completed crop-only preparation of all five screenshots and inspected
+  their before/after compositions. Removed the cherry image's black margin and
+  reduced outer distractions without replacing backgrounds. Ribbon cake is a
+  suggested feature candidate; feather/doll remain portrait assets.
+- 2026-10-04 - Preserved four kitchen references/PDF; received and visually
+  inspected five cake screenshots before choosing crops.

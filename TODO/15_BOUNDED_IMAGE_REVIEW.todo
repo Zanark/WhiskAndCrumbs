@@ -1,0 +1,131 @@
+# Bounded Posts Image Review
+
+Status: DONE VIA47/72 - REVIEWED SOURCES ACCOUNTED AND APPROVED CATALOGUE DELIVERED
+Milestone: M10 Completed sequential review in recorded fresh sessions; final delivery under72
+Dependencies: Supplied posts directory; existing provenance in 02_REFERENCES_AND_PHOTOGRAPHY.todo and 03_INSTAGRAM_IMPORT.todo
+
+## Purpose
+
+Current completion: all159source paths are accounted for in the recorded47review
+receipts. The approved148-photo collection is published as1936679c/Pages38006778064.
+Earlier paused/checklist text below records the original session boundary, not
+remaining work. Do not reopen completed sheets or infer new legal/visual clearance.
+
+The October9complete import request is tracked in47_COMPLETE_ARCHIVE_NOTEBOOK_IMPORT.todo.
+It expands the older shortlist-only goal below to eligible food/notebook import
+after actual review. The current session remains blocked by the same image gate.
+
+Categorize the complete supplied posts-image inventory through sequential,
+labelled contact sheets, preserving originals and an honest, resumable record.
+Do not turn the complete private archive into the public website gallery.
+
+The existing session already had100successful image views and one failed attempt
+BEFORE this request. No archive sheet has been opened for this workstream.
+The owner later authorized eight additional sheets for the three known cover
+sources/UI only; those are consumed and recorded in workstream16. The lifetime
+counter was not reset. Resume archive review in a fresh session.
+
+The later category-notebook request in workstream 16 gives this curation a concrete
+destination: choose suitable cover/cake assignments for Birthday Cakes, Tea cakes,
+Cream cakes, Decorated cakes, Doll cakes and Chocolates. Treat inferred ingredients
+or uncertain product types as unconfirmed, not facts. Update explicit notebook
+membership only after reviewing evidence; current blank categories stay blank.
+
+## Tasks
+
+- [x] Read AGENTS.md, README.md, TODOs, docs, Git status and both complete diffs.
+- [x] Preserve existing untracked authoring work and the clean tracked/index state.
+- [x] Audit the actual session event log before opening any images.
+- [x] Inventory every supplied posts file locally, with paths, filenames, hashes,
+  dimensions, byte counts, modification times and explicit decode status.
+- [x] Preserve all 159 originals and verify their bytes and modification times.
+- [x] Identify six redundant byte-identical entries without deleting originals.
+- [x] Reuse seven prior website selections by exact source-hash provenance only.
+- [x] Generate nine labelled sheets for the remaining 146 distinct images:
+  two sheets of 17 thumbnails and seven sheets of 16.
+- [x] Record six subsequent owner-provided source classifications by exact hash,
+  separately from mask/contact-sheet review; preserve the original revision.
+- [x] Generate the v2 remainder: 141 representatives on eight 17-18-tile sheets,
+  excluding the newly identified sources from repeated viewing.
+- [x] Preserve full framing; record each tile ID, filename, dimensions and hash prefix.
+- [x] Save the complete initial per-file classification ledger in project docs.
+- [x] Add pre-view reservations, repeated-view prevention, a 16-slot stopping
+  margin, per-batch recording and explicit interrupted-session recovery.
+- [x] Verify the real exhausted session cannot reserve its first contact sheet.
+- [ ] Review v2 batch-01 through batch-08 sequentially in a fresh session.
+- [ ] After EACH batch, record every classification, selection, exclusion,
+  reason and uncertainty before opening the next sheet.
+- [ ] Resolve uncertain/shortlisted details through new 15-20-tile focused sheets,
+  never individual image views or parallel/multi-agent viewing.
+- [ ] Continue across fresh sessions until every distinct image is categorized.
+- [ ] Reconcile shortlist, reserve and exclusion decisions without inventing
+  flavour/product facts or treating thumbnails as full-resolution approval.
+- [x] Persist the exact resume point and leave originals/live-site assets unchanged.
+
+## Acceptance criteria
+
+- [x] Inventory covers the provided posts directory completely, not a guessed
+  account-wide or website-variant count.
+- [x] All 159 still images decode; 153 distinct SHA-256 values are recorded.
+- [x] Every original path is retained, including all six duplicate associations.
+- [x] Every generated sheet contains 15-20 distinct, filename-labelled thumbnails.
+- [x] Existing prior selections are not presented as newly inspected or approved.
+- [x] No archive view is added to the exhausted session; the later owner-authorized
+  cover-only exception is tracked separately without resetting history.
+- [ ] Every remaining representative has evidence-based classification and reason.
+- [ ] Focus-required cases are resolved or explicitly left on hold with reasons.
+- [ ] Final shortlist remains subject to full-resolution/privacy/permission review.
+- [x] Only local private review artifacts and source/documentation are created;
+  no original edits, site changes, commits, uploads or deployment occur.
+- [x] Progress can be resumed without loading historical image payloads.
+
+## Completion evidence
+
+- Source:
+  C:\Users\mishrad\Downloads\instagram-homemadevegcakes-2026-10-04-EUoajskJ\media\posts
+- Current inventory: ..\.local\image-review\posts-20261004-owner-v2\inventory.json
+  and inventory.csv; original IDs and source bytes are retained.
+- Source scope: 159 files, 136 JPG + 23 WebP, all decoded; 153 unique byte hashes.
+- Current classifications: 141 unreviewed, five owner-confirmed cakes, one
+  owner-confirmed chocolate source, six remaining prior selections and six
+  exact-byte-duplicate entries. Owner identification is not new cutout approval.
+- Eight unopened sheets: ..\.local\image-review\posts-20261004-owner-v2\sheets\.
+- First sheet: batch-01.jpg, 18 tiles, with exact IDs
+  reflected in sheets.json. Use exact tile labels, not contiguous-ID assumptions.
+- Individual draft decisions: ..\.local\image-review\posts-20261004-owner-v2\drafts\.
+- Project ledger: ..\docs\image-review-posts-20261004-owner-v2.md.
+- Owner source mappings: ..\docs\owner-selected-cakes.md and
+  ..\.local\image-review\owner-classifications-20261004.json.
+- Workflow/recovery protocol: ..\docs\image-review-workflow.md.
+- Local tool: ..\scripts\review_image_inventory.py.
+- Ten targeted tests in ..\tests\test_review_image_inventory.py pass, covering
+  count bounds, preservation, EXIF orientation, corrupt inputs, budget accounting,
+  repeated-view prevention, successful-view evidence and interruption recovery.
+- Real-session guard rejects batch-01 without creating a reservation or viewing it.
+- Original SHA-256 and modification times match after preparation. All sheet
+  hashes match their manifest. These are technical checks, not visual findings.
+
+## Completion log
+
+- 2026-10-09 - Reverified159originals/15subfolders,153distincthashes/6duplicates
+  andunchanged8owner-v2sheets. Actualsessionaudit118attempts/117success; batch-01
+  reservationrejected. No newviews/classifications/import. Latestcategoryrules
+  andexactresumequeue savedunder.local\archive-import-20261009\. Auditnowstreams
+  the336MBsessionlog;11tests preservebudgetaccountingandallstops.
+- 2026-10-05 - Three known owner-selected cover sources were reviewed separately
+  under an explicit eight-sheet exception. Their source IDs were already excluded
+  from the owner-v2 remainder. No archive sheet was opened or representative
+  falsely classified; all141remain pending and all159original hashes/mtimes match.
+- 2026-10-04 - Owner directly identified six exact source files, including the
+  already prepared Black Forest image and five new selections. Persisted their
+  hashes/category evidence without pretending a contact sheet was viewed.
+  Generated an immutable v2 remainder with 141 images on eight 17-18-tile sheets.
+  Original nine sheets remain unchanged. No additional image-tool view occurred.
+- 2026-10-04 - Prepared the complete 159-file posts inventory and nine labelled,
+  unopened contact sheets. Six exact duplicate entries and seven previously
+  selected sources are accounted for; 146 distinct images await visual review.
+  Inspected no new image. The same session had already accumulated 100 successful
+  image views and one failed attempt before the user imposed the new budget.
+  Saved all classifications/statuses and the next sheet so a fresh session can
+  continue safely. Website, generated site, original files and prior work remain
+  unchanged. Workstream remains IN_PROGRESS, not falsely marked reviewed.

@@ -1,0 +1,62 @@
+# Larger Cake Titles and Opaque Notebook Tabs
+
+Status: DONE
+Milestone: M47 Readable cake names and solid notebook surfaces
+Dependencies: 35_VISIBLE_OUTER_TABS_AND_READING_SIZE.todo
+
+## Purpose
+
+The owner finds the cake description and names too small, explicitly approves
+button sizes, and rejects the faded/translucent-looking attachment strips.
+
+## Tasks
+
+- [x] Preserve source/styles/reviews and identify the current 18/20/26px typography.
+- [x] Increase section description to24px, cake names to28px, open-book title to34px,
+  and cover/static category titles to36px; retain20px button labels.
+- [x] Replace faded tab gradients and96%cover flags with solid pastel paint.
+- [x] Verify actual sizes, four-photo fit, complete fallbacks and opaque pixels.
+- [x] Refresh affected showcase/launch artwork and publish scoped output.
+- [x] Update docs/context and record public evidence.
+
+## Acceptance criteria
+
+- Larger reading text, unchanged button typography/targets/edge placement.
+- Solid pastel faces and attachment strips; no washed-out fake-transparency effect.
+- Opaque cream paper, with transparent logical gutters retaining protruding tabs.
+- Four photographs per full page; never clipped content or smaller replacement text.
+- Complete readable static fallback at genuinely impossible viewport/text combinations.
+- No product image or local4174changes; no new image-tool views or social posting.
+
+## Completion evidence
+
+- Baseline repository8be7095995f5ad00676cf5fa3e16cd78a5c09ea6.
+- .local\notebook-readable-opaque-20261009\before\ andnode-tests.log.
+- 131Node cases and131enhanced notebook pages/300photo views pass.
+- 18pink/green-underlay comparisons produce zero changed paper/tab pixels;
+  attachment/face samples match the full pastel pigment. Captions>=28px,
+  controls retain20px (both scale with browser text settings).
+- Primary20-viewport matrix has13measured fallbacks:8Decorated and5narrow200%
+  single-photo cases. All retain15photos/sixbooks/eightpages, no hidden/inert content.
+- Broader site reflow also covers the genuinely impossible320x900/100%Decorated case.
+- Its full12-case preflight also measured768x900/200%; the broader review now
+  requires the exact five-case fallback set, preserving full-content checks.
+- Preserve failed review iterations; exact explanation inreview-history.json.
+- Full local site/entry, nine asset/31campaign/README contract and gallery checks pass.
+- Pusheda8ab9d4df41aadc41346afddacec572781529942; Pages37903005669 succeeded.
+  Version9db31e68d7d1; all175livefiles/README/ABOUTmatch.
+- Public131notebook/300photo/18opaque-surfacecases pass;9publicpaths changed.
+- Final kit:exports\website-launch-20261009-readable-opaque-final\.
+- Receipt:.local\notebook-readable-opaque-20261009\publication.json;
+  details:docs\notebook-readable-opaque.md.
+
+## Completion log
+
+- 2026-10-09 - Published larger titles and fully opaque pastel tabs; all final
+  local/public evidence passes. Four current showcase images03-06 refreshed,
+  welcome/entrance byte-identical. No runtime/product/local4174changes or image views.
+  Capture helper now reasserts welcome scrollY0 after late layout settling;
+  the shifted first candidate remains history. No remaining52release work.
+- 2026-10-09 - Owner requests larger titles and solid attachment strips. The old
+  attachment gradients were painted over cream, not truly transparent paper.
+  Removed that faded treatment and actual96%cover-flag alpha. Buttons unchanged.

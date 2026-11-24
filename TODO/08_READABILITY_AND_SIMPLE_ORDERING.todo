@@ -1,0 +1,83 @@
+# Readability and Simple Ordering
+
+Status: IN_PROGRESS
+Milestone: M3 Story/sticker readability locally revalidated; user/native acceptance pending
+Dependencies: 04_VISUAL_DESIGN.todo, 05_WEBSITE_AND_ORDERING.todo, 06_TESTING_AND_LAUNCH.todo
+
+## Purpose
+
+Make the bakery usable by customers with varied reading needs and digital
+confidence. The user explicitly prioritizes font sizes, accessible presentation
+and intuitive use over decorative detail. The earlier three-section reduction was
+implemented, then superseded by the user's explicit story restoration. Workstream
+09 owns home -> story -> cakes -> order and transparent cake stickers; the readable
+text/direct-order baseline remains and the current local review has passed.
+Completed earlier checks remain historical, separate from the current results.
+
+## Tasks
+
+- [x] Record the audience requirement without treating age as a proxy for ability.
+- [x] Study Bakingo and Creme Castle desktop/mobile layouts and the four supplied images.
+- [x] Preserve the references separately from public bakery assets.
+- [x] Increase ordinary copy to 18px and important labels/help to at least 16px.
+- [x] Keep principal buttons/navigation targets at least 48px high.
+- [x] Make the main mobile navigation visible without a hamburger interaction.
+- [x] Use plain labels: View cakes, How to order and Ask about this cake.
+- [x] Complete the earlier three-section reduction; its story exclusion is now
+  superseded by 09, while FAQs, extra custom-cake content and forms stay out.
+- [x] Show all five real cakes with short design names and appearance-based categories.
+- [x] Make cake and ordering actions direct links, with no form or clipboard step.
+- [x] Keep the earlier revision concise without shrinking type.
+- [x] Recheck current readable copy/layout bounds in 09 without imposing the
+  obsolete three-section 180-word cap or removing the approved story.
+- [x] Explain the Instagram handoff and possible login; do not imply prefilled DMs.
+- [x] Label photo enlargement and Close/Previous/Next controls in visible text.
+- [x] Preserve contrast, focus visibility, original photo framing and reduced motion.
+- [x] Review narrow screens and 200% text resizing.
+- [ ] Activate a confirmed public WhatsApp number when supplied.
+- [ ] Consider click-to-call only after a public number/contact preference is confirmed.
+- [ ] Gather representative-customer feedback on finding a cake and contacting the baker.
+- [ ] Complete real-device and native assistive-technology acceptance.
+
+## Acceptance criteria
+
+- [x] Customers can reach direct contact without discovering or completing a form.
+- [x] The earlier three-section scope was implemented and preserved as history.
+- [x] Revalidate four-section story/sticker local accessibility checks under workstream 09.
+- [x] Key information is not dependent on tiny text, icons, hover or carousel gestures.
+- [x] Enlarged text does not force horizontal page scrolling in the reviewed layout.
+- [x] The actual cake remains visible; the enlargement label sits below its image.
+- [ ] Representative users can complete the intended task without coaching.
+
+## Completion evidence
+
+- Requirements: ..\AGENTS.md and ..\docs\layout-reference-review.md.
+- Implementation: ..\web\readability.css, index.template.html and main.mjs.
+- Earlier three-section output/review: ..\.local\revisions\before-stickers-20261004\.
+  That revision had 33 public files and 19 passing Node cases, with actual
+  desktop/mobile/200% text views inspected.
+- Current build is 66 files. Workstream 12 and ..\.local\website-review\review.json
+  record passed browser/text/control checks across six widths, no-JS, keyboard/
+  dialog, 200% text and slow-network loading. Main DOM copy is 188 words (113 focus
+  + 75 story); labels remain 16px+ and controls 48px+. Parent inspected desktop/
+  mobile full pages and the 200% order screenshot. User/native acceptance is open.
+- The repository-memory service did not accept a repository-scoped entry.
+  The requirement is preserved in project instructions and this TODO instead;
+  no global-memory success is claimed.
+
+## Completion log
+
+- 2026-10-04 - Completed current local readability regression review for the restored
+  story/stickers: six widths, 16px+ key labels, 48px controls, keyboard/no-JS and
+  200% text pass. Parent inspected actual page views. Workstream 09 records local
+  completion separately from representative-user/native-device/AT acceptance.
+- 2026-10-04 - Preserved 18px reading copy, 16px key labels, 48px principal controls
+  and direct contact while restoring the original story and adding white-contour
+  stickers. Workstream 09 supersedes only the former story exclusion/three-section
+  boundary; current local revalidation remains in progress.
+- 2026-10-04 - User requested less text and a three-section focus. Reduced main DOM
+  copy to 115 words, retained large text and all five cakes, and removed the helper
+  rather than making it another step. Long-page state is archived before this edit.
+- 2026-10-04 - User supplied two live sites/four visual references and emphasized
+  readable, accessible, intuitive presentation. Completed the studies and applied
+  the readability/direct-contact refinement while preserving the earlier prototype.

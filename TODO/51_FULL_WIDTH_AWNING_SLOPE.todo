@@ -1,0 +1,53 @@
+# Fill the Sloped Awning Side Gap
+
+Status: DONE
+Milestone: M46 Continuous sloped fabric across both side edges
+Dependencies: 50_ALIGNED_AWNING_SCALLOPS.todo
+
+## Purpose
+
+Fill the uncovered side strip marked by the owner without changing the internal
+stripe seams, aligned scallops, cloth motion, rigid supports or level camera.
+
+## Tasks
+
+- [x] Preserve existing sources and reproduce the transparent slope-side gap.
+- [x] Extend the slope clip and outermost rose stripe to the artboard edge.
+- [x] Add structural and actual raster edge-coverage regression checks.
+- [x] Run targeted asset/cloth and full local UI checks.
+- [x] Refresh affected launch images and publish only the scoped generated output.
+- [x] Record public evidence and update documentation/context.
+
+## Acceptance criteria
+
+- Both slope sides remain opaque between the top and front rails, with cream
+  on the left and rose on the right; no new wrong-colour outer strip.
+- Keep forty matching stripes/scallops, all inner seams and original hem depth.
+- Preserve fixed hardware, all runtime modules, product media and local4174.
+- No new image-tool views, social posting or inferred visual approval.
+
+## Completion evidence
+
+- Baseline:f313638c7168892b7c9462bba8588d196aeb4805.
+- Evidence:.local\awning-edge-fill-20261009\; original sources inbefore\.
+- Baseline actual raster regression:656of664side samples unfilled, minimum alpha0.
+- Corrected local/live:664of664samples alpha255, no wrong colours;40curvesaligned.
+- Exact raster difference:2,450pixels confined to the two outer13pxslope strips.
+- 131Node/nineasset/full localUI and public edges/fabric/entry pass.
+- Site58febcc649a68dcdcb097ba7453fb33ae3fa5681; Pages37896215170 succeeded.
+- Repository/docs8be7095995f5ad00676cf5fa3e16cd78a5c09ea6; identical site Git tree.
+- Version6f4e7c3ab5aa;175livefiles/currentrootdocs match. Sixpublicpaths overall.
+- Current kit:exports\website-launch-20261009-edge-fill\; docs\awning-side-gap.md.
+- Receipt:.local\awning-edge-fill-20261009\publication.json.
+
+## Completion log
+
+- 2026-10-09 - Published and checked both filled side strips; updated affected
+  showcase images, README/ABOUT, guides and own context. Preserved the initial
+  README-key review failure; corrected its13-character key to12. The subsequent
+  root-doc-only push has no Pages trigger; verified the already-deployed identical
+  site tree separately. Optional dispatch denied403, no workaround attempted.
+  No implementation/publication work remains; local4174andarchive47untouched.
+- 2026-10-09 12:13 IST - Owner supplies the marked left-slope gap. The source
+  trapezoid clip insets the upper edges by12px. Extended only the outer fabric
+  boundaries; internal perspective seams and existing curves stay unchanged.

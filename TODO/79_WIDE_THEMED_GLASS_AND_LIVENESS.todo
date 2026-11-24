@@ -1,0 +1,62 @@
+# Full-width themed glass and continuous visible cream
+
+Status: DONE PUBLIC
+Milestone: M74 Correct owner-marked glass coverage and2Xmotion
+Dependencies: 78_OFFICIAL_CREAM_INTEGRATION.todo
+
+## Purpose
+
+The owner rejects the narrow760pxpane and separate opaque text backplates.
+Use a full central1344px/viewport-bounded column below the awning, with themed
+cream/green glass around all reading content. Double all production blob motion
+and prove sustained live behavior rather than only initial render success.
+
+## Tasks
+
+- [x] Preserve the first production release and reproduce its visible-blur stop.
+- [x] Replace the fixed neutral pane with five document-bound, theme-inheriting panes.
+- [x] Remove individual reading backplates, weight/grid opaque wrappers and floating control overlap.
+- [x] Put Pause cream motion in the footer without making offscreen position stop animation.
+- [x] Double the production model sampling clock, retaining original model/material geometry.
+- [x] Check initial167Node cases and five-width/141text themed-glass contrast cases.
+- [x] Keep ambient motion behind open notebooks/photos, with native pointer and accessible Alt+Shift+P pause.
+- [x] Finish long visible-motion traces, extended zoom/coverage and full site/entry checks.
+- [x] Publish the reviewed correction and re-run geometry, contrast and liveness on the live site.
+- [x] Refresh matching current artwork and recheck any subsequent publication.
+- [x] Record final evidence; do not claim absolute browser-background rendering guarantees.
+
+## Acceptance criteria
+
+- The glass encloses all content columns; no unrelated dark text rectangles.
+- Parent cream/green colour changes carry through the pane without a fixed white wash.
+- No floating motion button covers reading text.
+- Visible-window blur/return and an offscreen footer control never stop ambient movement.
+- Open viewers retain continuous ambient motion and native pointers; shortcut Pause needs no viewer closure.
+- Explicit Pause, reduced motion, entrance, hidden tabs and resource safety are respected.
+- Every published change receives live checks; existing148photos and local study remain unchanged.
+
+## Completion evidence
+
+- .local\wide-theme-glass-20261010\engine-live-baseline\: old live blur froze
+  time at2.9374s and uploads178; focused timing otherwise tracked99.47%walltime.
+- glass-built-v1.json:1344pxorviewportminus32 width, five theme regions across
+  five widths,141actual text contrast measurements pass after removing plates.
+- Runtime agent owns final motion/liveness tests; parent owns glass/publication.
+- Final local:170Node, fullsite/entry,7viewport-text cases/194contrasts and14
+  actual composited movement samples. Cream tint30%retains mobile visibility;
+  existing-theme text colours maintain contrast. Mobile order joins Pause in footer.
+- Pushed bac5f936131504d1edc2dcacea4fae76c373e5cc, Pages38071939495 pending;
+  version811c79a1d781. Ten public paths,1246files/148photos. Live gates remain open.
+- Pages succeeded; all1246live files/rootdocs and360motion windows pass. Liveglass
+  320x568story sample36pixels failed >100. No completion claim or final receipt.
+- Follow-up CSS prototype:84%green and2-8pxviewport-scaled frost. Seven cases/
+  194contrasts/42motion samples(min773pixels), plus16tiny-phone samples(min401)
+  pass without lowering thresholds. Final built/live release is shared with80.
+
+## Completion log
+
+- 2026-10-11 - Completed with80 as220031efcc62b3db2f0adec55c38d33a8bdb991d,
+  Pages38077308464, versionead23634e316. Live7glass/194contrast/42motion samples
+  pass with minimum861changed pixels;360/360sustained windows advance, zero2X
+  GPU/model parity error. Current art iswebsite-launch-20261011-living-cursor.
+  Receipt: .local\living-cursor-20261010\publication.json. Earlier failures preserved.

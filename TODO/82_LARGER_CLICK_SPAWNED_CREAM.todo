@@ -1,0 +1,57 @@
+# Larger background groups and click-spawned strawberry cream
+
+Status: DONE PUBLIC
+Milestone: M77 Larger interactive cream without input regressions
+Dependencies: 80_LIVING_STRAWBERRY_CURSOR.todo, 81_LONGER_LIVING_CURSOR_TRAIL.todo
+
+## Purpose
+
+The owner revised the initial3Xrequest to2Xfor background and spawned blobs only,
+leaving the cursor size unchanged. The later individual-blob request confirms2X
+total, not an additional cumulative doubling. Add more grouped blobs and big
+strawberry blobs on clicks, without the cursor disappearing.
+The later02:39request moves the largest ambient groups to the outer edges,
+avoiding the central glass column except for a small edge overlap. Click-spawned
+blobs still originate at their click positions.
+
+## Tasks
+
+- [x] Preserve the verified prior release before changes.
+- [x] Confirm retention: newest8spawned blobs; each new click replaces the oldest.
+- [x] Increase background group and individual dimensions2X; increase seeded group count.
+- [x] Keep the largest ambient groups' complete moving envelopes at the outer edges.
+- [x] Spawn large strawberry blobs on primary clicks/taps without intercepting normal actions.
+- [x] Keep the mouse follower visible through primary press, movement and release.
+- [x] Preserve cursor morphing/colour/size and integrate81's longer trail.
+- [x] Prove bounded capacity, FIFO behavior, resize/pause/lifecycle safety and real GPU output locally.
+- [x] Build, review contrast/motion/input behavior, refresh matching images and publish.
+- [x] Repeat actual live checks and record an exact release receipt.
+
+## Acceptance criteria
+
+-2Xis measured relative to the prior release; it is not silently clamped back down.
+- Large ambient groups may extend offscreen rather than cover the center or shrink.
+- Edge placement holds through drift, breathing, split/rejoin and viewport changes.
+- The cursor is not enlarged. Plain clicks do not hide it; native viewers still use native pointers.
+- No unbounded accumulation: only the newest8spawns remain, with no persistent storage.
+- Touch scrolls and modified/secondary/keyboard clicks do not create accidental spawns.
+- Notebook, photo, navigation, keyboard and pause actions continue to work.
+- Reading contrast, full themed glass and current2Xmotion remain; originals/local study stay unchanged.
+
+## Evidence
+
+- .local\interactive-cream-20261011\before\ preserves the prior source.
+- Baseline220031efcc62b3db2f0adec55c38d33a8bdb991d/Pages38077308464.
+- Runtime agent owns controller/material/cream tests and interaction reviews.
+- Parent owns integration, glass/readability, publication, artwork and final records.
+
+## Completion log
+
+- 2026-10-11 - Scope confirmed; implementation active, no new publication yet.
+- 2026-10-11 02:39 - Largest ambient groups must avoid the central column, allowing
+  only a little edge overlap. Added to the same unpublished release.
+- 2026-10-11 - Completed27e82b6/Pages38094790715/a7f1fab52a19. Live259edgeGPU
+  states havezero centralalpha; maximumintrusion25.5px. Exact2Xgeometry,6-9groups,
+  newest8FIFO andpress/drag/release cursorcontinuity pass.14glass/388contrasts/
+  84motion samples and360max-loadwindows pass.189Node,148photos preserved.
+  Currentkitwebsite-launch-20261011-interactive-cream; finalpublication.json sealed.

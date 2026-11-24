@@ -1,0 +1,52 @@
+# Restore soft cursor and background contact
+
+Status: DONE PUBLIC
+Milestone: M78 Shared cream contact without obscuring the website
+Dependencies: 81_LONGER_LIVING_CURSOR_TRAIL.todo, 82_LARGER_CLICK_SPAWNED_CREAM.todo
+
+## Purpose
+
+The owner asks for the cursor/background interaction from the earlier prototype.
+Its saved source appends the cursor to the ambient primitives and renders both
+with a smooth-union distance field. This is soft joining and pulling apart,
+not simulated pushing or permanent movement of background anchors.
+
+## Tasks
+
+- [x] Verify the earlier prototype's actual shared-field implementation.
+- [x] Preserve the completed but unpublished81/82edge-placement source.
+- [x] Restore smooth contact for the cursor and trail with ivory/pink scene blobs.
+- [x] Keep background material beneath glass/text and the cursor visible above controls.
+- [x] Prove contact-neck formation, connected/separated states and clean withdrawal using GPU pixels locally.
+- [x] Preserve sizes, edge envelopes, FIFO click-spawns, click continuity and lifecycle fallbacks locally.
+- [x] Publish all pending requests together and repeat live checks.
+
+## Acceptance criteria
+
+- Approaching shapes form a soft neck, merge and separate naturally on withdrawal.
+- Cursor movement does not move the large groups into the center column.
+- No oversized ambient overlay is lifted above reading text or notebook paper.
+- Far-away and inactive-cursor rendering retain the existing scene.
+- Background2Xsizes, unchanged living head, longer trail and newest8spawns remain.
+- Evidence distinguishes synthetic GPU tests, actual page compositing and live deployment.
+
+## Evidence
+
+- .local\cream-massive-random-20261009\before\cream-metaballs\preview.mjs:
+  lines200-215 combine background/cursor/trail; lines52-55and71-79smoothly merge them.
+- The latest prototype instead has separate passes atpreview.mjs:223-281.
+-81/82edge proof: .local\interactive-cream-20261011\edge-placement\engine-final.json.
+- New source backup: .local\interactive-cream-20261011\before-contact\ (agent creates).
+- New evidence: .local\interactive-cream-20261011\contact\.
+
+## Completion log
+
+- 2026-10-11 03:11 - Request recorded; contact implementation delegated to current engine owner.
+- 2026-10-11 - Candidatea7f1fab52a19:39runtime/189fullNodepass,34contactGPU
+  cases; actualpagebridges536/546/556pixels,zeroambient/read-textlift. All prior
+  edge/size/click/trail safeguards retained. Parentcombinedpage/releasechecksactive.
+- 2026-10-11 - Delivered27e82b6/Pages38094790715/a7f1fab52a19. AllnineLIVE
+  reviews pass:34contactGPUcases andactualpage548/572/207pixelbridges, no
+  liftedreadingtext/ambientcrop. Existingedgegeometry andclick-spawns preserved;
+  360max8spawn plus30contact windows progress withzeroGPUparityerror.
+  Receipt .local\interactive-cream-20261011\publication.json. No pending work.

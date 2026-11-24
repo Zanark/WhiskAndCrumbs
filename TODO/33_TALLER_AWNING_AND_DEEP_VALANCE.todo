@@ -1,0 +1,58 @@
+# Taller Cloth Awning and Deeper Scalloped Hem
+
+Status: DONE
+Milestone: M28 Longer roof proportions with aligned fabric motion
+Dependencies: 26_FABRIC_AWNING_AND_SCALLOP_SEAM.todo; 32_CONTINUOUS_WOOD_AND_RAISED_SIGN.todo
+
+## Purpose
+
+The owner wants the whole cloth roof taller and its bottom curved hanging portion
+longer. Preserve its width, cream/blush palette, wooden sign and interactive fabric.
+
+## Tasks
+
+- [x] Preserve current SVG, motion model, CSS, tests, docs and context.
+- [x] Increase both page and entrance roof heights by50%.
+- [x] Extend the original24scallops from sourceY174to234on a240pxartboard.
+- [x] Lengthen both the hanging stems and curved ends, without clipping the hem.
+- [x] Expand the cloth mesh from15to17rows and retain exact rail/side anchors.
+- [x] Keep rigid rail paint native while the cloth mesh animates.
+- [x] Check actual lower-hem pixels,50%height ratio, pinning and responsive entry fitting.
+- [x] Finish site/entry checks and refresh affected launch images/portrait variants.
+- [x] Publish only the scoped roof/motion/artwork update.
+
+## Acceptance criteria
+
+- Full-width page roof120-270pxtall instead of80-180px.
+- Source hanging region128-234 instead of128-174; curved end181-234instead of151-174.
+- No stale180pxmotion coordinates, clipped scallops or moving rigid rails.
+- Pointer/scroll response, exactrest, reducedmotion, fallbacks and scene controls remain.
+- No source-photo changes, localcream changes or additional image-tool views.
+
+## Completion evidence
+
+- Published3ca782bf486ed99f161715a81666af048dbfee62 / Pages37809726551,
+  version51ee2b822d42.169livefiles/README/ABOUTmatch,9publicpaths.
+- Full LOCAL/PUBLICsite,entry,responsiveandfabricchecks pass. Measuredheight
+  ratio1.49993-1.5across16states, fixedrailinteriors0%change; localcreamhashesintact.
+- Welcome/entrancecampaignimagesupdated;newkitexports\website-launch-20261008-taller-awning\.
+- Receipt:.local\taller-awning-20261008\publication.json.
+- Full local site/entry/responsive suites pass with the new proportions.
+  Twelve real viewport captures were refreshed for the existing campaign compositor.
+- Campaign generation exposed a false-positive privacy scan: compressed JPEG
+  bytes happened to contain"C:\\". The validator now inspects actual APP/COM
+  metadata, retaining strict metadata rejection instead of scanning binary pixels
+  as text. Four regression cases cover valid nontext data and rejected comments/
+  unknown application metadata. This did not change the generated artwork.
+-110Node/9asset checks pass initially; final motion and responsive tests pass.
+- Native rail overlays preserve painted rail interiors during GPUmesh activation.
+  A first test included one antialiased header-border row above the SVG at a
+  fractional offset; the rail measurement now samples the actual interior.
+  No physical rail coordinate or movement tolerance was weakened.
+- Evidence:.local\taller-awning-20261008\; passinglocal-fabric-final andlocal-responsive.
+
+## Completion log
+
+- 2026-10-08 - Complete and live; source/media/oldkits preserved and no image views.
+- 2026-10-08 - Increased overall roof height and significantly deepened the
+  curved fabric hem. Updated motion coordinates and preserved the fixed rail paint.

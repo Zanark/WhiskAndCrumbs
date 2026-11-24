@@ -1,0 +1,56 @@
+# Current Editorial Campaign Refresh
+
+Status: DONE
+Milestone: M39 Current-site README and six-post launch presentation
+Dependencies: 38_REFRESH_EDITORIAL_LAUNCH_AND_DOCS.todo; 43_STRONGER_LINGERING_CLOTH.todo
+
+## Purpose
+
+The owner explicitly requests another full README/image/3:4 Instagram refresh
+after recent website changes, followed by documentation. Phone-and-website
+compositions belong only on the first and last Instagram posts. No questions.
+
+## Tasks
+
+- [x] Preserve existing public images, documents and all previous delivery folders.
+- [x] Capture twelve fresh full viewports and four genuine complete feature views.
+- [x] Assign the existing editorial compositor specialist the scoped refinement.
+- [x] Refine hierarchy, copy, spacing and feature-led middle posts without fake UI.
+- [x] Review actual source identity, geometry, native/thumbnail readability and packaging.
+- [x] Generate a new immutable six-wide/six-portrait kit with phones only on01/06.
+- [x] Update the six-image README and related documentation.
+- [x] Publish only changed showcase images/public documents; preserve application bytes.
+
+## Acceptance criteria
+
+- Six1600x1000README images and six1080x1440RGBInstagram JPEGs.
+- Portrait phone counts exactly01=1,06=1,02-05=0.
+- Genuine screenshots/components retain important content, aspect and provenance.
+- Existing brand/fonts/palette, readable editorial copy and uncluttered safe margins.
+- No invented products, physical-premises claims, account handles or social posting.
+- Existing image-view allowance remains exhausted; numerical review is not fresh
+  visual inspection, owner acceptance or proof of subjective "utmost quality".
+
+## Completion evidence
+
+- Baseline712238543f2db707604f581b54fdf1758aec6b80; applicationversion26dede947f25.
+- Captures:.local\launch-campaign-20261008\captures\studio-refresh-20261009\.
+- Art handoff/release guard:.local\studio-launch-refresh-20261009\.
+- Intended final kit:exports\website-launch-20261009-studio\.
+- readme-showcase owns compositor/package/tests; parent owns capture/release/docs.
+- Publishedb37df44690b0188cfd56ffad2ba473d7d59a1fca / Pages37862860587.
+-175livefiles/README/ABOUTmatch;8publicpaths,appversion26dede947f25unchanged.
+-31campaign/9asset/2targetNodecases;72actualJPEGnative/540glyphchecks.
+- All29artifactsrerenderbyte-identically;all12JPEGsnew. Fourgallerywidthsdecode12images.
+- ZIPdf3aa3f1a53c5cece253310954c4d7eec0ce6486cc704001a05048396f2969ac.
+- Finalrecord:..\docs\studio-launch-refresh.md.
+
+## Completion log
+
+- 2026-10-09 - Published and delivered the refined edition. Larger48pxwide/
+  32pxportraitsupportcopy,clearerbrand/URL,morefeatureheight/spacing. Runtime/
+  product/brandbytesunchanged;6READMEcacheURLsconfirmnewimages. Noquestions,
+  image-toolviews,Instagrampostingorclaimedvisualapproval.
+- 2026-10-09 05:05 IST - Owner repeats the complete refresh request. Fresh16captures
+  generated from current clean published source; artist notified to refine and
+  render only those inputs. No runtime code changes or image-tool views.

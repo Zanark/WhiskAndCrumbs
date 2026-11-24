@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#34483a">
+  <title>{{PAGE_TITLE}}</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{PAGE_TITLE}}">
+  <meta property="og:description" content="{{DESCRIPTION}}">
+  <meta property="og:site_name" content="{{NAME}}">
+  <meta name="twitter:card" content="summary_large_image">
+  {{SHARING_META}}
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" sizes="16x16 32x32 48x48">
+  <link rel="icon" href="assets/favicon-16.png" type="image/png" sizes="16x16">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" sizes="any">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
+  <link rel="preload" href="assets/fonts/courgette-regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css?v={{ASSET_VERSION}}">
+  <link rel="stylesheet" href="entrance-shop.css?v={{ASSET_VERSION}}">
+  <link rel="stylesheet" href="cozy-bakery.css?v={{ASSET_VERSION}}">
+  {{CREAM_STYLES}}
+  <link rel="stylesheet" href="readability.css?v={{ASSET_VERSION}}">
+  <link rel="modulepreload" href="entrance.mjs?v={{ASSET_VERSION}}">
+  <link rel="modulepreload" href="bell.mjs?v={{ASSET_VERSION}}">
+  <link rel="modulepreload" href="notebooks.mjs?v={{ASSET_VERSION}}">
+  <script type="module" src="main.mjs?v={{ASSET_VERSION}}"></script>
+</head>
+<body{{CREAM_ATTRIBUTE}}>
+  <a class="skip-link" href="#main">Skip to cakes and ordering</a>
+  <div id="bakery-entrance" class="bakery-entrance" data-state="pending" data-audio="waiting">
+    <div class="entrance-art" aria-hidden="true">
+      <div class="entrance-backdrop"></div>
+      <div class="entrance-shop" style="--facade-plaster:url('assets/bakery-facade-plaster.webp?v={{ASSET_VERSION}}');--sign-wood:url('assets/bakery-sign-wood.webp?v={{ASSET_VERSION}}')">
+        <div class="entrance-masonry"></div>
+        <picture class="entrance-upper-storey">
+          <source media="(max-width: 600px)" srcset="assets/bakery-facade-upper-mobile.svg?v={{ASSET_VERSION}}">
+          <img src="assets/bakery-facade-upper.svg?v={{ASSET_VERSION}}" width="1200" height="360" alt="" decoding="async">
+        </picture>
+        <div class="entrance-sign" data-brand="{{NAME}}">
+          <img class="entrance-sign-mark" src="assets/whisk-and-crumbs-mark.svg" width="128" height="128" alt="">
+          <span class="entrance-sign-copy"><span class="entrance-wordmark">{{WORDMARK}}</span><span class="entrance-descriptor">{{DESCRIPTOR}}</span></span>
+        </div>
+        <span class="entrance-cornice"></span>
+        <div class="entrance-awning"><img src="assets/bakery-awning.svg?v={{ASSET_VERSION}}" width="1200" height="300" alt="" decoding="async"><span class="awning-supports" style="background-image:url('assets/bakery-awning-supports.svg?v={{ASSET_VERSION}}')"></span></div>
+        <span class="entrance-pier entrance-pier-left"></span><span class="entrance-pier entrance-pier-right"></span>
+        <div class="entrance-doorway">
+          <div class="entrance-bell-mount"></div>
+          <svg class="entrance-bell" viewBox="0 0 64 68" width="64" height="68" fill="none" focusable="false">
+            <path d="M28 13V9a4 4 0 0 1 8 0v4" stroke="#34483a" stroke-width="3"/>
+            <path d="M15 43c4-8 2-18 6-25 5-8 17-8 22 0 4 7 2 17 6 25l4 6H11Z" fill="#e8baa2" stroke="#34483a" stroke-width="3" stroke-linejoin="round"/>
+            <path d="M22 24c0-4 2-6 4-7" stroke="#fffaf1" stroke-width="3" stroke-linecap="round"/>
+            <path d="M13 49h38" stroke="#76543d" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="32" cy="54" r="5" fill="#76543d"/>
+          </svg>
+          <div class="entrance-doorframe">
+            <div class="entrance-room">
+              <picture class="entrance-room-poster">
+                <source media="(max-aspect-ratio: 4/5)" srcset="assets/bakery-interior-portrait.webp?v={{ASSET_VERSION}}">
+                <source media="(max-height: 600px)" srcset="assets/bakery-interior-short.webp?v={{ASSET_VERSION}}">
+                <img src="assets/bakery-interior-wide.webp?v={{ASSET_VERSION}}" width="1600" height="1000" alt="" decoding="async">
+              </picture>
+            </div>
+            <div class="entrance-fixed-bay entrance-fixed-bay-left"><span class="entrance-display-glass"></span><span class="entrance-bay-panel"></span></div>
+            <div class="entrance-fixed-bay entrance-fixed-bay-right"><span class="entrance-display-glass"></span><span class="entrance-bay-panel"></span></div>
+            <div class="entrance-door entrance-door-left">
+              <div class="entrance-glass"><img src="assets/whisk-and-crumbs-mark.svg" width="82" height="82" alt=""></div>
+              <span class="entrance-door-panel"></span><span class="entrance-handle"></span>
+            </div>
+            <div class="entrance-door entrance-door-right">
+              <div class="entrance-glass">
+                <span class="entrance-open-sign">
+                  <svg class="open-sign-cord" viewBox="0 0 200 32" fill="none" focusable="false">
+                    <path d="M25 31 100 5 175 31" stroke="#76543d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="100" cy="5" r="3" fill="#e9c591" stroke="#76543d" stroke-width="1.5"/>
+                  </svg>
+                  <span class="open-sign-board">
+                    <span class="open-sign-greeting">We are</span>
+                    <strong>OPEN</strong>
+                    <span class="open-sign-heart" aria-hidden="true">&#9825;</span>
+                  </span>
+                </span>
+                <svg viewBox="0 0 64 64" width="74" height="74" fill="none" focusable="false"><path d="M32 21C17 1 0 22 16 37l16 15 16-15C64 22 47 1 32 21Z" stroke="#a45137" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <span class="entrance-door-panel"></span><span class="entrance-handle"></span>
+            </div>
+          </div>
+        </div>
+        <span class="entrance-threshold"></span>
+        <span class="entrance-step"></span>
+        <img class="entrance-pavement" src="assets/bakery-facade-ground.svg?v={{ASSET_VERSION}}" width="1200" height="140" alt="" decoding="async">
+      </div>
+    </div>
+    <a id="entrance-enter" class="entrance-enter" href="#home" aria-label="Open the bakery doors and enter">
+      <span>Click anywhere to enter</span>
+    </a>
+    <div class="entrance-tools">
+      <button id="entrance-motion" class="entrance-motion" type="button" aria-pressed="false" aria-describedby="entrance-motion-status" hidden>Phone tilt</button>
+      <a id="entrance-skip" class="entrance-skip" href="#home">Skip entrance</a>
+    </div>
+    <p id="entrance-motion-status" class="visually-hidden" role="status" aria-live="polite"></p>
+  </div>
+  <noscript><style>.bakery-entrance { display: none !important; }</style></noscript>
+  <header class="site-header">
+    <div class="shop-sign" style="--sign-wood:url('assets/bakery-sign-wood.webp?v={{ASSET_VERSION}}')">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="{{NAME}} - home">
+          <img src="assets/whisk-and-crumbs-mark.svg" width="128" height="128" alt="">
+          <span><span class="wordmark">{{WORDMARK}}</span><span class="brand-descriptor">{{DESCRIPTOR}}</span></span>
+        </a>
+      </div>
+      <nav id="site-nav" class="container" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#cakes">View cakes</a>
+        <a class="button nav-cta" href="#order">How to order</a>
+      </nav>
+    </div>
+  </header>
+  <div class="site-awning" aria-hidden="true"><img src="assets/bakery-awning.svg?v={{ASSET_VERSION}}" width="1200" height="300" alt="" decoding="async"><span class="awning-supports" style="background-image:url('assets/bakery-awning-supports.svg?v={{ASSET_VERSION}}')"></span></div>
+
+  <main id="main" tabindex="-1">
+    <section class="hero-section" id="home" aria-labelledby="hero-title">
+      {{CREAM_PANE}}
+      <div class="hero container">
+        <div class="hero-copy">
+          <h1 id="hero-title">Baked at home.<br>Made with <em>heart.</em></h1>
+          <p class="hero-description">Vegetarian cakes for your celebrations.</p>
+          <div class="hero-actions">
+            <a class="button" href="#cakes">View cakes <span aria-hidden="true">&#8594;</span></a>
+            <a class="button button-outline" href="#order">How to order</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <figure class="hero-photo">{{HERO_IMAGE}}</figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="story" aria-labelledby="story-title">
+      {{CREAM_PANE}}
+      <div class="container story-layout">
+        <div class="story-copy">
+          <p class="eyebrow">OUR LITTLE STORY</p>
+          <h2 id="story-title">Not a shopfront.<br>A kitchen with <em>heart.</em></h2>
+          <p>Behind these cakes is a mum who loves to bake. This little corner of the internet is a way to share her creations, one celebration at a time.</p>
+          <p>No grand storefront. Just real bakes, her own hands, and the joy of making something lovely.</p>
+          <a class="text-link light-link" href="{{INSTAGRAM_URL}}" target="_blank" rel="noopener noreferrer">Follow along in our kitchen <span aria-hidden="true">&#8599;</span></a>
+        </div>
+        <div class="recipe-note">
+          <span class="note-tape" aria-hidden="true"></span>
+          <p class="eyebrow">A NOTE FROM OUR KITCHEN</p>
+          <svg class="bowl-drawing" viewBox="0 0 220 130" fill="none" aria-hidden="true">
+            <path d="M32 63h142c-2 42-26 57-71 57S38 105 32 63ZM29 61c18-7 129-7 147 0M61 88c5 12 14 19 27 21M148 57l35-42c12-15 29 0 17 14l-37 36M159 56l26-34M54 125h98" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="m38 27 3-8 3 8 8 3-8 3-3 8-3-8-8-3ZM112 18l2-6 2 6 6 2-6 2-2 6-2-6-6-2Z" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+          <p class="note-quote">A little care<br>in every layer.</p>
+          <span class="note-signature">That's the homemade bit.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="cake-section container section-space" id="cakes" aria-labelledby="cakes-title">
+      {{CREAM_PANE}}
+      <div class="section-heading">
+        <h2 id="cakes-title">Cakes we've <em>made.</em></h2>
+        <p>Choose a category, then select a cake photo for a closer look.</p>
+      </div>
+      <div class="cake-weight-info" id="cake-weight-info">
+        <p class="cake-weight-heading" id="cake-weight-heading"><img src="assets/whisk-and-crumbs-mark.svg" width="32" height="32" alt="" aria-hidden="true">Cake weights</p>
+        <ul class="cake-weight-values" aria-labelledby="cake-weight-heading" role="list">{{CAKE_WEIGHT_ITEMS}}</ul>
+      </div>
+      <div class="category-notebooks" id="category-notebooks">{{CATEGORY_COVERS}}</div>
+      <div class="notebook-library" id="cake-gallery">{{CATEGORY_NOTEBOOKS}}</div>
+    </section>
+
+    <section class="order-section" id="order" aria-labelledby="order-title">
+      {{CREAM_PANE}}
+      <div class="container order-layout">
+        <div>
+          <h2 id="order-title">How to <em>order.</em></h2>
+          <p>Message us your cake, date and number of people.</p>
+          {{BUSINESS_DETAILS}}
+        </div>
+        <div class="order-action">
+          <a id="order-contact" class="button {{CONTACT_BUTTON_CLASS}}" href="{{CONTACT_URL}}" target="_blank" rel="noopener noreferrer" aria-describedby="order-contact-help">
+            {{CONTACT_LOGO}}
+            <span class="contact-button-label">{{CONTACT_LABEL}} <span aria-hidden="true">&#8599;</span></span>
+          </a>
+          <p id="order-contact-help" class="small-note">{{DIRECT_CONTACT_HELP}}</p>
+          <p class="small-note">We confirm the price and availability before your order is final.</p>
+        </div>
+      </div>
+    </section>
+    <div class="bakery-shelf" aria-hidden="true"><img src="assets/bakery-shelf.svg?v={{ASSET_VERSION}}" width="960" height="120" alt="" loading="lazy" decoding="async"></div>
+  </main>
+
+  <footer class="container site-footer">
+    {{CREAM_PANE}}
+    <span>&copy; <span id="year">{{YEAR}}</span> {{NAME}}</span>
+    <a href="#home">Back to top <span aria-hidden="true">&#8593;</span></a>
+    {{CREAM_CONTROL}}
+    <a class="mobile-enquire" href="#order">How to order <span aria-hidden="true">&#8594;</span></a>
+  </footer>
+  {{CREAM_EFFECTS}}
+
+  <dialog id="notebook-dialog" class="notebook-dialog" aria-labelledby="notebook-dialog-title" aria-describedby="notebook-keyboard-help">
+    <div class="notebook-dialog-toolbar">
+      <p id="notebook-dialog-title" tabindex="-1">Your notebook</p>
+      <button id="notebook-close" type="button" aria-label="Back to cake categories">Back</button>
+    </div>
+    <div id="notebook-mount"></div>
+    <p id="notebook-keyboard-help" class="notebook-keyboard-help visually-hidden">Select a cake image to view its photo. Use the arrow keys or right-hand page tags. You can also drag the next-page tag upwards.{{CREAM_SHORTCUT_HELP}}</p>
+  </dialog>
+
+  <dialog id="photo-dialog" aria-labelledby="photo-title"{{CREAM_PHOTO_DESCRIPTION}} class="photo-dialog">
+    <div class="photo-dialog-header"><span id="photo-title">A closer look</span><button id="photo-close" type="button" aria-label="Close larger photo">Close</button></div>
+    <img id="photo-image" alt="">
+    <p id="photo-error" role="alert" hidden>That photo couldn't be loaded. Please try again.</p>
+    <div class="photo-dialog-controls"><button id="photo-prev" type="button" aria-label="Back to previous photo">Back</button><p id="photo-counter" aria-live="polite"></p><button id="photo-next" type="button" aria-label="Next photo">Next</button></div>
+  </dialog>
+</body>
+</html>

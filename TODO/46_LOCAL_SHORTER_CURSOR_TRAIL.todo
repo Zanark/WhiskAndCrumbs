@@ -1,0 +1,38 @@
+# Local Cursor Trail at One-Third Length
+
+Status: DONE (LOCAL ONLY; OWNER REVIEW PENDING)
+Milestone: M41 Shorter cursor cream tail
+Dependencies: 45_LOCAL_FULL_PAGE_ETCHED_GLASS.todo
+
+## Purpose
+
+The owner asks to shorten the cursor blob's trail by /3, interpreted as one-third
+of the current length. This remains on the4174experiment only.
+
+## Tasks
+
+- [x] Preserve the previous trail model and rendering.
+- [x] Scale only rendered trail coordinates toward the current head by1/3.
+- [x] Keep head radius, eight links, taper, lag physics and ambient/glass unchanged.
+- [x] Check exact length ratio, real GPU effect, retained state and existing fallbacks.
+- [x] Record local receipt and keep the official site unchanged.
+
+## Acceptance criteria
+
+- Trail path length is one-third for identical underlying points and head position.
+- The head is not resized and the tail still smoothly catches up without fading.
+- No official build, commit, publication or automatic production integration.
+
+## Completion evidence
+
+- `.local\cream-short-trail-20261009\completion.json`
+-20model cases and full local browser suite pass.
+- GPU sampled path170.993px; expanded former path512.978px, ratio3.
+- Head radius32px,8segments; short/long/off pixel hashes differ and restore exactly.
+- Only model/preview and their tests/review changed in the experiment.
+- Official HEADb37df44 and tracked files unchanged.
+
+## Completion log
+
+- 2026-10-09 07:06 IST - Shortened the displayed trail to one third, retaining
+  underlying catch-up state. Local4174ready after refresh; owner review pending.

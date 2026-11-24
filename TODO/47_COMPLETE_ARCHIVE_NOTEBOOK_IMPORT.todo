@@ -1,0 +1,122 @@
+# Complete Food Archive Categorization and Notebook Import
+
+Status: DONE - REVIEWED CATALOGUE PUBLISHED AND LOCAL PREVIEW SYNCHRONIZED UNDER72
+Milestone: M42 Complete recursive food-photo classification and safe notebook import
+Dependencies: 15_BOUNDED_IMAGE_REVIEW.todo; an actual fresh review session
+
+## Purpose
+
+The owner now requests categorizing all eligible food photographs in the supplied
+posts directory and its subfolders, then adding reviewed derivatives to the six
+website notebooks. This expands the earlier shortlist-only request.
+
+## Owner category rules
+
+- Happy birthday written on a cake: Birthday Cakes.
+- Lots of visible cream/cherries: Cream cakes.
+- Character design or extensive decorative props: Decorated cakes.
+- Visually uniced cake: Tea cakes.
+- Doll cake: Doll cakes.
+- Remaining eligible food: Chocolates.
+- Ignore non-food images.
+
+These are appearance-based rules, not proof of ingredients or dietary properties.
+Record overlapping or unclear cues for focused review instead of guessing from
+filenames. Existing original photographs and provenance must remain unchanged.
+
+## Tasks
+
+- [x] Inventory the complete supplied tree:159images across15subfolders.
+- [x] Verify all original bytes/mtimes and all saved contact-sheet hashes.
+- [x] Reconcile153unique hashes and6exact duplicate entries without deleting originals.
+- [x] Preserve141unreviewed representatives on8existing sequential17-18tile sheets.
+- [x] Save the exact new owner rules and every source path in a new private request record.
+- [x] Audit the actual current session and attempt the pre-view reservation gate.
+- [x] Keep the failed reservation, no-view/no-import outcome and exact resume point honest.
+- [x] Make the large session-log audit streaming without changing any budget thresholds.
+- [x] In an actual fresh session, review each reserved sheet once and save all decisions.
+- [x] Resolve uncertain/overlapping food classifications with bounded focused sheets.
+- [x] Prepare provenance-bound derivatives without modifying source photos.
+- [x] Add approved food records to explicit notebook membership and exclude non-food.
+- [x] Update catalogue-dependent tests/counts/allowlists and check every image/page.
+- [x] Generate curved/irregular replacements for all90previously rejected masks.
+- [x] Review rounded sheets04-05 in a fresh session, then import the approved revision.
+- [x] Refresh relevant artwork/docs and publish only the reviewed public derivatives.
+
+## Acceptance criteria
+
+- Every159source path is accounted for; duplicate files map to one reviewed representative.
+- No image categories or food exclusions invented without visual evidence.
+- No individual/parallel/multi-agent image viewing or fake fresh-session counter.
+- Existing15photo records, real cutouts and uncommitted work are preserved.
+- Complete classification and actual import/publication remain distinct milestones.
+- No source archive, private manifests, personal details or unreviewed originals published.
+
+## Completion evidence
+
+- Delivery72:1936679c707dc8aa592bdbc767276429545339e9/Pages38006778064,
+  148photos/1241files. Two rejected masks remain excluded. Live78page states
+  coverall148photos; source-bound currentkitwebsite-launch-20261010-complete-catalogue.
+  All1241livefiles/rootdocs match; mainpreview synchronized andtrackedtreeclean.
+  Finalreceipt:.local\full-catalogue-20261010\publication.json.
+- Source:C:\Users\mishrad\Downloads\instagram-homemadevegcakes-2026-10-04-EUoajskJ\media\posts.
+- Current review queue:.local\image-review\posts-20261004-owner-v2\.
+- New request/rules:.local\archive-import-20261009\request-and-preflight.json.
+- Every-file queue:.local\archive-import-20261009\image-queue.json.
+- Actual audit:.local\archive-import-20261009\session-budget.json.
+- Session7fb2037d-b09c-4d86-87ae-64889392ea4c:118attempts/117successfulimageviews;
+  reservationstop16/hardlimitbelow20. No new image view/reservation was created.
+- First unreviewed sheet:batch-01;18tiles. Resume through the same gate in a real
+  new session with its own actualevents.jsonl. Compaction does not reset the budget.
+-11review-tool tests pass, including streaming audit and unchanged stopping behavior.
+- Preflight outcome at07:20: new classifications0/importedphotos0; later completion
+  entries below supersede that blocked-session snapshot.
+
+## Completion log
+
+- 2026-10-09 07:20 IST - Owner asks for complete categorization/import without
+  questions or memory issues. Recursive inventory verified; current session's
+  exhausted view gate prevents visual work. Saved exact rules/queue and stopped
+  rather than overriding the gate or falsely marking any images reviewed.
+- 2026-10-09 19:46 IST - Fresh session reviewed all eight existing contact sheets
+  sequentially: 141 previously unreviewed representatives are now classified, all
+  159 source paths are accounted for and source/sheet verification still passes.
+  Prepared 135 new private full-photo records under
+  `.local\archive-import-20261009\prepared-v1\`; website files remain untouched.
+  Candidate sticker inference is local and active. Straight/source-edge-cut masks
+  are rejected fail-closed; no sticker may repeat the flat bottom/right truncation
+  shown by the owner.
+- 2026-10-09 21:06 IST - Private handoff validated at
+  `.local\archive-import-20261009\prepared-v1\completion.json`. All159source paths
+  are accounted for;135new full-photo records are prepared. BiRefNet-lite produced
+  candidates for all135; automated four-side/all-angle checks plus five sequential
+  sticker sheets retained45curved/irregular candidates and rejected90straight-cut,
+  edge-contact or visibly poor masks. Retained stickers:Birthday15,Cream9,
+  Decorated19,Tea2. Doll/Chocolate use existing reviewed assets until rejected
+  masks receive separate refinement. Total image views13, below stop16.
+  No website data was modified by this workflow.
+- 2026-10-09 21:53 IST - Promoted only the45contact-sheet-reviewed stickers and
+  their full photographs into the website source catalogues. The90rejected masks
+  remain excluded. The six notebooks now contain60records total; generated output
+  contains533allowlisted files. Node, archive/sticker, full-site, entrance and
+  266-page/1200-photo fit reviews pass. Publication remains a separate milestone.
+  Receipt:`.local\archive-import-20261009\prepared-v1\website-import.json`.
+- 2026-10-09 23:50 IST - Owner explicitly asked to round rather than discard the
+  straight-cut candidates. Deterministic alpha-only refinement produced90/90
+  curved or irregular candidates in `.local\archive-import-20261009\rounded-v4\`;
+  source RGB remains unchanged. Five regression/package tests pass. Sheets01-03
+  were reviewed sequentially and all54candidates retained. The session reached
+  the16-view stop threshold, so sheets04-05/36candidates remain pending for a
+  fresh session. Nothing from rounded-v4 is imported yet.
+- 2026-10-10 01:05 IST - Fresh session reviewed sheets04-05 sequentially and
+  persisted each decision before continuing. It approved88rounded candidates and
+  rejected archive-p139-d4318fae (detached grey/background remnant) plus
+  archive-p032-d2ad0a0a (detached V-shaped debris). The owner chose the honest
+  148-record outcome rather than importing those defects merely to reach150.
+  Imported all88approved rounded stickers with matching full photographs and
+  explicit notebook membership. The website sources now contain148cakes,
+  148photos and148stickers; the two rejected IDs remain absent. The importer is
+  idempotent,12targeted Python tests and147Node tests pass, the build emits1241
+  allowlisted files, and notebook fitting passes562page states/2960photo views.
+  Receipt:`.local\archive-import-20261009\rounded-v4\website-import.json`.
+  Publication remains separate.

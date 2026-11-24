@@ -1,0 +1,32 @@
+# Longer living cursor trail
+
+Status: DONE PUBLIC
+Milestone: M76 Longer trail with unchanged living head
+Dependencies: 80_LIVING_STRAWBERRY_CURSOR.todo
+
+## Tasks
+
+- [x] Increase production rendered trail length1.5X, from.66to.99.
+- [x] Preserve the cursor's size, pale strawberry colour, shape animation and lag.
+- [x] Measure matched-state trail length and verify full crop, clicks and fallbacks locally.
+- [x] Publish with82 and repeat live cursor/interaction checks.
+
+## Acceptance criteria
+
+- The trail is visibly longer without enlarging or slowing the cursor head.
+- The local4174study and base model remain unchanged.
+- Full native/static and explicit-pause behavior remains available.
+
+## Evidence
+
+- Baseline:220031ef/Pages38077308464/ead23634e316.
+- Combined source/evidence: .local\interactive-cream-20261011\.
+
+## Completion log
+
+- 2026-10-11 - Pending request recorded; bundled with larger click-spawned cream.
+- 2026-10-11 - Local matched-state extent327->489pixels(1.495X), exact1.5X
+  centerline ratio, unchanged head/lag;19crop cases pass. Publication pending.
+- 2026-10-11 - Delivered27e82b612f1877f199e65dddc581bf261ee6a10f,
+  Pages38094790715, versiona7f1fab52a19. Final live cursor/interaction/contact
+  reviews pass. Receipt .local\interactive-cream-20261011\publication.json.

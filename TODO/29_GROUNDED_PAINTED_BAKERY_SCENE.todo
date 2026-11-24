@@ -1,0 +1,76 @@
+# Grounded Painterly Bakery and Strong Look-Around
+
+Status: DONE
+Milestone: M24 Coherent interior depth and natural-light composition
+Dependencies: 20_SHOP_AWNING_AND_WINDOW_INTERIOR.todo; 21_WARM_BAKERY_INTERIOR.todo
+
+## Purpose
+
+The owner rejects the floating cake display and weak mouse response, and requests
+a much richer hand-painted animated-film direction with coherent perspective,
+support and natural light. Aim for original painterly warmth, not copied film
+assets or an unsupported claim of absolute aesthetic/physical perfection.
+
+## Tasks
+
+- [x] Preserve the previous room artwork, runtime, tests and public showcase.
+- [x] Identify independent counter compression/lift as the floating-scene mechanism.
+- [x] Build one original3Droom with cabinet footings touching its actual floor.
+- [x] Add original painted material textures, left-window light and contact shadows.
+- [x] Use a strong bounded perspective camera while keeping the storefront fixed.
+- [x] Render static wide/portrait/short fallbacks from the same room geometry.
+- [x] Remove retired independently translated SVG layers and their upward lift.
+- [x] Preserve transparent doors, click/skip/audio/accessibility and resource fallbacks.
+- [x] Correct the now-tightly-coupled entrance focus handoff race without stealing focus.
+- [x] Check ground contacts, projection, light consistency, visible displacement and responsive behavior.
+- [x] Refresh entrance README image and publish only generated public files.
+
+## Acceptance criteria
+
+- Solid counter cabinet/footings meet floor atY0; no arbitrary display-only upward offset.
+- One camera projects all surfaces/shadows coherently; movement reveals true depth.
+- Strong mouse look-around without moving the outer frame or enabling touch parallax.
+- Original decorative scene only, not real premises/menu/products or copied movie imagery.
+- Static fallback remains complete and independent of WebGL availability.
+- No extra image-tool views or claim of owner visual acceptance.
+
+## Completion evidence
+
+- Published777e7d2df8bbf41136f9c74a302aacce76bd322d / Pages37779612182,
+  version6170092be017. All168sitefiles/README/ABOUTmatch;17public paths.
+- Full PUBLIC site/entrance/responsive/fabric checks also pass. All120product
+  variants, other5showcases, notebook/header styling and local4174sourcehashes intact.
+- Receipt:.local\painted-bakery-scene-20261008\publication.json. No image views.
+-109Node cases and8asset checks pass; full local site/entrance/responsive/fabric
+  checks pass.14meshcases verify52,008opaque/84transparent vertices, winding,
+  nineY0contacts and exact cake/plate support. Five camera cases verify projection.
+- Visible look-around changes32-37%ofroom pixels:desktop front327.8px/back216.6px,
+  short front140.4px/back92.8px. Actual shader matrices match the camera model.
+- Local final evidence:local-site-final,local-entrance-final,local-responsive-final,
+  local-fabric-final. Staticposters/texture provenance retained separately.
+- One full-suite static-background subtest initially took the native notebook
+  path; three isolated probes passed. Normal screen/explicit enhancement readiness
+  now declared, notebook code unchanged; scene imports also avoid bypassed entry.
+- One poster decode call failed transiently; exact HTTP bytes and four independent
+  decodes passed. Reviewer now waits for the selected image's completed dimensions
+  before decoding. No corrupt asset or production failure is inferred.
+- Baseline live4043eafb50e3d769b6d499fc5e7af789ab1d6292.
+- Snapshot/evidence:.local\painted-bakery-scene-20261008\.
+- No installed Blender/bpy located; original nativeWebGL2geometry/lighting pipeline chosen.
+- Geometry specialist owns scene mesh and pure tests; parent owns projection,
+  textures, renderer, integration, browser checks, docs and publication.
+
+## Completion log
+
+- 2026-10-08 20:39 - Later floating-display clarification reuses the exact earlier
+  screenshot(byte/pixelidentity confirmed). The currentlive3Dreplacement is served;
+  no additional geometry/runtime changes were made for this duplicate old report.
+- 2026-10-08 - Complete and live. The restored full entrance checks include the
+  corrected focus handoff and explicit outside-focus preservation. Art acceptance
+  remains the owner's; no copied movie art or perfect-physics claim.
+- Live fabric regression initially sampled one weak frame of its unchanged
+  damped scroll response. Reviewer now measures the same threshold over a bounded
+  short response window; both directions pass. Failed first evidence retained.
+- 2026-10-08 - User requests a complete interior revamp and much stronger mouse
+  sensitivity. Replacing independent flat layers with grounded geometry and a
+  single perspective camera; matte procedural painting and window-direction lighting.

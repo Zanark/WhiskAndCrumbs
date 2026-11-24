@@ -1,0 +1,52 @@
+# Awning Plane Depth and Coherent Shadows
+
+Status: DONE
+Milestone: M53 Readable projecting roof and foreground hanging valance
+Dependencies: 57_SHALLOW_AWNING_CURVES.todo
+
+## Purpose
+
+Use the owner's side-view explanation to distinguish the receding roof from the
+front hanging fabric. The blue/yellow annotations identify planes, not new colours.
+
+## Tasks
+
+- [x] Preserve existing shape and identify inconsistent or missing depth cues.
+- [x] Add rear contact shade, brighter roof/fold, rounded front edge and soft lip shadow.
+- [x] Keep both support shadows down-right under one upper-left light.
+- [x] Verify actual roof/front brightness, fold highlight, shadow falloff and fixed hardware.
+- [x] Complete full local UI/fabric checks and refresh affected current launch artwork.
+- [x] Publish scoped output and update docs/context.
+
+## Acceptance criteria
+
+- Brighter upward-facing roof, shaded vertical front and a visible projecting fold.
+- Rear attachment and front lip have localized shadows, not a generic dark overlay.
+- Both hardware shadows share a direction; shadow geometry is not mirrored with hardware.
+- Preserve40stripes/15pxcurves/91pxstraightvalance, canvas, sidefill, colours and motion.
+- No product media, notebook, website cream or local4174changes; no image-tool views.
+
+## Completion evidence
+
+- Baseline078067f8b831dbfd8668eb3d3bdb07ef970c3c08.
+- .local\awning-plane-depth-20261009\before\ andbaseline-lighting.log.
+- Baseline failed roof/front separation;17cloth/10asset checks now pass.
+- local-lighting-matched-stripes\review.json passes all brightness/shadow gates,
+  664opaqueedges, shallowhem/alignment and zero fixedhardwaremotion.
+- Updated edge-colour review compares equally lit same-row stripe references:
+  the bright fold desaturates rose and invalidates a fixed red-minus-green threshold.
+  Maxmatchingchannelerror3/allowed8; wrong-side-colour comparison remains required.
+- 132Node/full localUI/fabric andpubliclighting/fabric checks pass.
+- Commit9f51bc3cca618d35dbabb5c36bb571d02fd9d085; Pages37930956117success.
+- Version1825f6cd99c4;175livefiles/rootdocsmatch;sevenpublicpaths.
+- Currentkitexports\website-launch-20261009-awning-depth\;onlypublic01/02updated.
+- Receipt:.local\awning-plane-depth-20261009\publication.json.
+
+## Completion log
+
+- 2026-10-09 - Published two-plane lighting andconsistentcasts, retaining all
+  canopy/hardwaregeometry, shallowhem, colours andmotion. Updatedart/docs/context.
+  No58implementation/browser/art/publication work remains; no imageviews/posting.
+- 2026-10-09 - Source artwork now shades two connected planes and a rounded
+  front edge. Removed mirrored support shadows/highlights from the reused geometry;
+  their separate lighting paths now share one upper-left source.

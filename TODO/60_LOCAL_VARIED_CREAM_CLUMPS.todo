@@ -1,0 +1,54 @@
+# Persistent Small and Large Cream Clumps
+
+Status: DONE LOCAL
+Milestone: M55 Unequal joined lobes within separately drifting cream clumps
+Dependencies: 59_LOCAL_PATTERN_LAYERING.todo
+
+## Purpose
+
+The owner wants some cream to stay joined, with small and large clumps of varying
+size. Keep distinct clumps apart rather than restoring the rejected single mass.
+
+## Tasks
+
+- [x] Preserve the local side-pattern/glass revision and official website.
+- [x] Expand six existing motion envelopes into six unequal two/three-lobe clumps.
+- [x] Keep attached lobes on one parent transform through drift, breathing and resize.
+- [x] Preserve twelve user-placed slots and the existing cursor/trail behavior.
+- [x] Generate matching static fallback lobes from the same model profiles.
+- [x] Check actual connected silhouettes, visible protrusions and separate clumps.
+- [x] Complete local lifecycle/pattern/placement checks and offline export compatibility.
+- [x] Update docs/context and retain the unchanged official release.
+
+## Acceptance criteria
+
+- Six separate clumps, three per side, with15total unequal lobes.
+- Lobe connections persist; sizes include small/medium/large clumps.
+- Preserve quarter-speed drift, Pause, reduced motion, one-third cursor trail,
+  center etchings and side pattern behind the cream.
+- Eighteen logical scoop records still allow twelve additions; render capacity
+  is explicitly bounded to28primitives including attached lobes and cursor.
+- No live website/artwork publication or image-tool views.
+
+## Completion evidence
+
+- .local\cream-clumps-20261009\before\ andcoverage-review.json.
+- Initial25model/layer/fallback cases pass.
+-18actual coverage cases retain six separate visible clumps through glass.
+- Every joined native silhouette has at least1.296xits main-lobe area and stays
+  inside the original envelope. Main-only geometry is measured before blur;
+  visibility of the complete clumps is separately measured after canvas/glass blur.
+- Final25model/43campaign/fullbrowserchecks pass; same12user slots andcursor/
+  trail/lifecycle/patternfallthroughs retained.28old/newenvelopetrajectories exact.
+- Nativejoinedarearatios1.296-1.746; sixclumps stayvisible afterfrost in18cases.
+- All12offlineGaussianmateriallayers byte-identical; currentpublicsite/kitunchanged.
+- Receipt:.local\cream-clumps-20261009\completion.json.
+
+## Completion log
+
+- 2026-10-09 - Completed variablejoinedclumps at4174, matchingstaticfallbacks
+  andboundedGPUcapacity. No officialbuild/commit/publication/image-toolviews.
+  No60implementation/reviewwork remains; refresh4174forownerreview.
+- 2026-10-09 - Added fixed unequal lobe profiles under unchanged moving envelopes.
+  Refined the upper-right two-lobe profile after its first silhouette was only
+  1.20xthe main lobe. Final minimum is1.296x; no threshold was lowered.

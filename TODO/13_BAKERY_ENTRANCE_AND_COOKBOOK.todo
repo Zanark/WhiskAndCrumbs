@@ -1,0 +1,178 @@
+# Bakery Entrance and Cookbook Refinement
+
+Status: DONE
+Milestone: M8 Top-bound twelve-cake notebook published and verified live
+Dependencies: 08_READABILITY_AND_SIMPLE_ORDERING.todo, 09_STORY_AND_CAKE_STICKERS.todo, 12_WHISK_AND_CRUMBS_BRAND.todo
+
+## Purpose
+
+Continue the existing uncommitted revision with a padded, viewport-scale bakery
+entrance that waits for a click or keyboard activation, uses restrained parallax,
+opens paired doors and tries a ringing bell from the entry gesture.
+Strengthen the cookbook visual language around the real cake stickers, and keep
+background outlines extremely dim behind reading copy while preserving their
+normal subtle shade in open areas.
+The later request adds a cover that turns from bottom to top around the top spiral,
+with all twelve real cakes on one revealed sheet.
+
+## Tasks
+
+- [x] Preserve the current worktree and read the complete tracked diff before edits.
+- [x] Keep the entrance skippable and absent without JavaScript.
+- [x] Fill the viewport with the doorway while preserving generous responsive padding.
+- [x] Add restrained pointer parallax before the visitor enters.
+- [x] Open only after clicking anywhere or activating the entry link by keyboard.
+- [x] Open paired bakery doors and animate the hanging bell without trapping focus.
+- [x] Generate the bell locally with bounded Web Audio synthesis and no media file.
+- [x] Never resume, unlock or replay audio blocked by browser policy.
+- [x] Skip the entrance for reduced motion, forced colours, direct links, short
+  screens, hidden tabs and preference changes.
+- [x] Keep native entry and skip links when optional modules fail.
+- [x] Frame the home and cake sections as lightly ruled cookbook pages.
+- [x] Add layered paper edges, restrained depth and a small curled page corner.
+- [x] Add optional fine-pointer tilt/lift that resets and respects reduced motion.
+- [x] Preserve full transparent cake stickers rather than rectangular product cards.
+- [x] Keep the normal subtle SVG pattern in open space.
+- [x] Add near-solid cream/green local washes so patterns are extremely dim behind text.
+- [x] Add captioned brand and cake-sticker images to README.md.
+- [x] Run Node/build/browser entrance and full-site validation for this revision.
+- [x] Inspect entrance frames and updated desktop/mobile pages in small image batches.
+- [x] Publish the reviewed public files and record the exact release evidence.
+- [x] Curate seven additional real cakes from the supplied export in small batches.
+- [x] Prepare reviewed public photo and sticker derivatives without publishing the archive.
+- [x] Add an accessible cover that turns from bottom to top around the top spiral.
+- [x] Reveal all 12 cakes together on one physical notebook page.
+- [x] Preserve direct gallery access for no JavaScript and reduced motion.
+- [x] Validate the completed 12-cake page-turn revision locally.
+- [x] Publish the notebook revision and verify the deployed page.
+
+## Acceptance criteria
+
+- [x] The entrance cannot block core browsing, direct links, no-JavaScript use or
+  reduced-motion/forced-colour users.
+- [x] The visible doorway remains closed until intentional click/keyboard entry.
+- [x] Pointer parallax is restrained and does not crop the sign or doors.
+- [x] Audio starts only when the initial context is already running; a suspended,
+  interrupted, closed or unsupported context remains silent and is released.
+- [x] The bell voice is bounded, stops cleanly and releases its context.
+- [x] Cookbook decoration does not shrink text, crop stickers or add new product claims.
+- [x] Pattern opacity is locally suppressed around text instead of globally removed.
+- [x] README images use repository assets and explanatory captions.
+- [x] Current automated and browser checks pass.
+- [x] Actual local visual inspection is recorded separately from public deployment.
+- [x] Public deployment is recorded separately from local implementation evidence.
+- [x] The bottom-corner target and native control both reveal the same 12-cake page.
+- [x] Keyboard, reduced-motion and no-JavaScript paths expose the complete gallery.
+- [x] All 12 records use verified real media and descriptive, non-invented labels.
+
+## Completion evidence
+
+- Final release: be221e660422dad8e74a67a46526ab81f3391306; Pages run 37212121826
+  succeeded. Version e268ea148bb4, all 124 public files and GitHub README match.
+- Both live browser reviews pass at https://zanark.github.io/WhisksAndCrumbs/.
+  See ..\.local\notebook-release\public-site\review.json, public-entrance\review.json
+  and publication.json. Actual user visual acceptance remains unrecorded.
+- Current notebook: 51 Node tests, seven sticker cases, four branding cases,
+  deterministic twelve-sticker reproduction and 124 public files.
+- Current local browser evidence: ..\.local\notebook-release\local-site\review.json
+  and ..\.local\notebook-release\local-entrance\review.json.
+- Verified actual bottom-corner click/tap, Enter/Space, positive rotateX about
+  the top edge, four columns by three rows, all twelve photos/enquiry links,
+  back-to-cover, cancellation/lost completion, resize/preference changes,
+  no-JS/module/style failures, forced colours, print and focus preservation.
+- Closed cover reflows at 320/390/600/768/1024/1440px and 100%/200% text, with the
+  focused turn control visible above the mobile bar. The open layout preserves
+  16px key copy, 48px targets and the original 75-word story.
+- Reviewed desktop/all-twelve, mobile cover/new cake, enlarged-text control,
+  entrance, singular identity and sharing images in small batches.
+- The entries below are prior entrance-release evidence, not the new notebook's
+  deployment receipt.
+- Entrance markup: ..\web\index.template.html.
+- Entrance lifecycle and fallbacks: ..\web\entrance.mjs.
+- Original synthesized bell and cleanup policy: ..\web\bell.mjs.
+- Cookbook pages and localized pattern washes: ..\web\styles.css.
+- Bell unit coverage: ..\tests\bell.test.mjs.
+- Static-output/cookbook guards: ..\tests\site.test.mjs.
+- Browser entrance review: ..\scripts\review_entrance.py.
+- Captioned project images: ..\README.md.
+- Generated output belongs under ..\site\ only after `npm run build`.
+- Node/build: PASS - `npm test` passed 49 cases; `npm run build` produced 68 files.
+- Full-site browser review: PASS - ..\.local\website-review\review.json records
+  home/story/cakes/order, six widths, 200% text, 16px+ key copy, 48px controls,
+  transparent stickers, no-JavaScript/direct contact and no horizontal overflow.
+- Entrance browser review: PASS - ..\.local\entrance-review\review.json records
+  the waiting state, pointer parallax, click/keyboard entry, four-oscillator
+  allowed playback with closed context, blocked playback with zero oscillators/
+  resume calls, and all skip, preference, module and no-JavaScript fallbacks.
+- Generated muted waveform: 1.4 seconds, peak 0.107175 and RMS 0.014580. This
+  verifies bounded synthesis; it is not a claim that device playback was heard.
+- Visual inspection: desktop/mobile entrance stages and updated desktop hero,
+  cake scrapbook, mobile hero and full page were reviewed in batches of two.
+- Public commit: `f3761031b04fc1fe277988a3cb76ac642ccdb63f`.
+- First Pages run:
+  https://github.com/Zanark/WhisksAndCrumbs/actions/runs/37200032861.
+  This deployment was technically successful but unsafe because cached old CSS
+  could render the new entrance HTML without its styles.
+- Rollback commit: `6edf472d48ff7112e1180c961ec6abb230202bdb`;
+  successful run 37200198417 restored the previous live site.
+- Corrected public commit: `9be430e0df63478dd08ff24735bcccc13a10ba98`;
+  successful run 37200454931.
+- Corrected binding commit: `6325cad`; successful run 37203943996.
+- Click-to-enter parallax commit: `5c61fc3da79a8d84b0b25d5406eab4d1ba371ff9`;
+  successful run 37204518507; live asset version `dfb6d40074a5`.
+- Live verification: https://zanark.github.io/WhisksAndCrumbs/ serves versioned
+  entrance markup/styles/modules. Served HTML/CSS bytes match committed blobs, and
+  the full-site and click/parallax entrance reviews pass against the live URL.
+
+## Completion log
+
+- 2026-10-04 - Published and verified the twelve-cake notebook with singular
+  branding. Live corner click/tap, upward turn, keyboard, responsive/200% text,
+  failure/static exits, gallery/contact and entrance checks pass. All served
+  assets match be221e6. No additional implementation remains for this request.
+- 2026-10-04 - Completed the interrupted notebook and seven-photo curation.
+  The native folded corner turns the cover upward and exposes one twelve-cake
+  sheet. Fixed washed-out photo labels and strengthened real-browser image/focus
+  checks. Both local browser reviews pass after the singular branding correction.
+  Source photographs and earlier uncommitted work remain preserved.
+- 2026-10-04 - Rechecked the current state after the page-turn request. The rebuilt
+  local five-cake site passes 50 Node tests, the 68-file build and both browser
+  reviews. The live entrance also passes again and Pages run 37204518507 remains
+  successful. The bottom-to-top cover turn and 12-cake gallery are not yet
+  implemented or deployed, so this workstream remains IN PROGRESS.
+- 2026-10-04 - Strengthened the home and cakes notebook sheets with layered paper
+  thickness, sharper page corners, restrained shadows and a small lower-corner
+  curl. Added optional fine-pointer perspective tilt/lift with leave/blur reset;
+  touch and reduced-motion layouts remain static. 50 Node tests, the 68-file build
+  and both local browser reviews pass; desktop/mobile output was visually reviewed.
+- 2026-10-04 - Published the click-to-enter parallax doorway as 5c61fc3. Pages run
+  37204518507 succeeded; production serves asset version dfb6d40074a5. Live HTML
+  and CSS bytes match the commit, and both production browser reviews pass.
+- 2026-10-04 - Reworked the entrance from an automatic splash into an intentional
+  full-page doorway. The shop fills the viewport inside generous responsive
+  padding, applies layered pointer parallax while waiting, and opens/rings only
+  after clicking anywhere or pressing Enter. Native-link, skip, reduced-motion,
+  no-JavaScript and module-failure exits remain. 50 Node tests, the 68-file build,
+  full-site review and dedicated entrance review pass locally.
+- 2026-10-04 - Corrected the binding artwork from inaccurate oval-and-dot marks
+  to dark wire loops passing through rectangular punched slots, based on the
+  user's supplied notebook reference. Published 6325cad; run 37203943996 succeeded.
+  Live byte comparison and both browser reviews passed.
+- 2026-10-04 - Repaired the production cache mismatch reported with a screenshot.
+  Rolled back first, then added shared generated cache versions across CSS and all
+  entrance modules. Simplified the requested cookbook treatment: same cream as the
+  page, no rules behind text, and spiral binding without page-tab overlap. Published
+  9be430e; run 37200454931 succeeded and live file/browser verification passed.
+- 2026-10-04 - Published the five reviewed public files after confirming the live
+  site still lacked the entrance. Pages run 37200032861 succeeded for f3761031.
+  Verified the deployed markup/modules and passed the entrance browser review
+  against the canonical URL. Private authoring sources/evidence were not published.
+- 2026-10-04 - Marked DONE for local implementation and review after 49 Node
+  cases, the 68-file build and both browser review scripts passed. Inspected the
+  entrance and cookbook page output in small image batches. Audio-policy limits
+  remain explicit, and no public deployment or user visual acceptance is inferred.
+- 2026-10-04 - Continued the existing uncommitted entrance and bell implementation
+  without resetting or overwriting prior work. Added ruled cookbook surfaces,
+  restrained page tabs and localized 94% cream/95% green washes behind text while
+  leaving the original subtle pattern visible in open space. Added captioned README
+  images and project guidance. Validation and publication remain separate next steps.

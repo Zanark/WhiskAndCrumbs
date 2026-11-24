@@ -1,0 +1,46 @@
+# Fewer smooth background blobs with temporary grouping
+
+Status: DONE PUBLIC
+Milestone: M81 Half background population, no pointed peaks, richer grouping
+Dependencies: 85_SMALLER_RANDOM_SPAWN_SHAPES.todo
+
+## Purpose
+
+The owner requests half as many automatic background blobs, no pointed peaks,
+and more attraction/repulsion that brings blobs together into temporary groups.
+The owner explicitly keeps the newest-eight click-spawned limit.
+
+## Tasks
+
+- [x] Confirm background-only population reduction; click-spawn limit remains eight.
+- [x] Preserve the current published controller/material/model/tests.
+- [x] Reduce actual automatic pieces by half with explicit odd-count rounding.
+- [x] Remove pointed crowns from every automatic blob without changing the smooth material.
+- [x] Add seeded cross-parent grouping/separation involving remaining free blobs.
+- [x] Keep largest groups at the edges and preserve all current size categories.
+- [x] Prove actual population, peak-free GPU data, cross-parent topology and non-group preservation.
+- [x] Review, refresh matching artwork, publish and check the actual live site.
+
+## Acceptance criteria
+
+- Automatic pieces target ceil(previous automatic piece count/2), excluding cursor
+  and user-spawned blobs; retain whole chosen groups and truthful counts.
+- All automatically uploaded peak values are zero.
+- Remaining free blobs visibly form and leave groups, not only their old fixed-parent groups.
+- No teleporting, per-frame random jitter, large-group center intrusion or new clipping of controls.
+- Click-spawn sizes/shapes/FIFO, cursor/morph/trail/contact, individual sizes and active speed remain.
+- Original media, local study, palette and static accessibility fallbacks remain unchanged.
+
+## Evidence
+
+- Baselineabf0ae0305d1c6c32bffe4807a0eb520d0073a81/Pages38103687444/051d5117f212.
+- .local\smooth-grouping-20261011\before\ preserves the current source.
+- Engine owner: production-cream-engine. Parent owns integration/art/publication.
+
+## Completion log
+
+- 2026-10-11 - New background-only request confirmed and implementation started.
+- 2026-10-11 - Completedc7cd407/Pages38131807188/64d54db0dcef. CurrentLIVE
+  224population/108formationcases,peaks0,631visiblebridgepixels,360max8spawn
+  windows andfullsite/entry pass.204Node/54enginecases;148photos preserved.
+  Receipt .local\smooth-grouping-20261011\publication.json sealed16:27:30+05:30.

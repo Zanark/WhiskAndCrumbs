@@ -1,0 +1,74 @@
+{
+  "name": "Whisk & Crumbs",
+  "handle": "homemadevegcakes",
+  "generated_with": "Local Pillow and Edge, existing original mark and locally licensed fonts.",
+  "palette": {
+    "paper": "#f5ebdd",
+    "ink": "#34483a",
+    "accent": "#a45137"
+  },
+  "square_circle_geometry": {
+    "centre": [
+      540,
+      540
+    ],
+    "radius": 540,
+    "outer_border_px": 12,
+    "touches": [
+      "top",
+      "right",
+      "bottom",
+      "left"
+    ]
+  },
+  "essential_artwork_radius_px": 434.28,
+  "minimum_clearance_to_crop_px": 105.72,
+  "portrait_has_circular_frame": false,
+  "sources": [
+    {
+      "url": "https://blog.hootsuite.com/social-media-image-sizes-guide/",
+      "accessed": "2026-10-04",
+      "guidance": "Recommends at least 320x320 for the square source; profile photos display as circles, so important elements should be centred.",
+      "authority": "Third-party guidance, not an official Instagram upload limit."
+    },
+    {
+      "url": "https://sproutsocial.com/insights/social-media-image-sizes-guide/",
+      "accessed": "2026-10-04",
+      "guidance": "Recommends a 1:1 profile image and a clean logo recognisable at small sizes; lists 110x110 for profile imagery.",
+      "authority": "Third-party guidance; 110px is a small-size review target, not the export resolution."
+    }
+  ],
+  "files": [
+    {
+      "file": "whisk-and-crumbs-profile-square-1080.png",
+      "width": 1080,
+      "height": 1080,
+      "bytes": 124477,
+      "sha256": "1c498fc7130f6ef94ec8bf67bc8f6c3e4a6c867a88d08a7cf8494c6b7f41718c",
+      "mode": "RGB"
+    },
+    {
+      "file": "whisk-and-crumbs-profile-circle-1080.png",
+      "width": 1080,
+      "height": 1080,
+      "bytes": 218200,
+      "sha256": "b20a16110b424c09be9ca00cb9734940dc081da6cfc37be4090f8dfedad76828",
+      "mode": "RGB"
+    },
+    {
+      "file": "whisk-and-crumbs-portrait-1080x1440.png",
+      "width": 1080,
+      "height": 1440,
+      "bytes": 156679,
+      "sha256": "c5f8513e3dca4030e6eab4a84a83e21714482bfb71a4ee5bddd6194b04e6bccf",
+      "mode": "RGB"
+    }
+  ],
+  "limitations": [
+    "These are local exports, not an uploaded Instagram profile photo.",
+    "Sizing references are third-party recommendations, not official maximum or minimum limits.",
+    "Crop previews assume centred positioning without zoom; confirm the actual app crop when uploading.",
+    "The portrait is an alternate 3:4 asset, not the recommended profile-photo upload.",
+    "Small comment-thread avatars cannot be expected to show every letter; the large whisk remains the main identifier."
+  ]
+}

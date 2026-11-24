@@ -1,0 +1,56 @@
+# Architectural Bakery Facade and Illuminated Wooden Sign
+
+Status: DONE
+Milestone: M34 A complete grounded illustrated shopfront
+Dependencies: 36_PAINTERLY_WINDOWLIT_INTERIOR.todo; 37_HANGING_DOOR_OPEN_SIGN.todo
+
+## Purpose
+
+The owner rejects the entrance as a floating sign, canopy and oversized doors.
+They want a believable complete bakery building in a warm hand-painted animation
+direction, with the wooden board and raised glowing identity already used on the
+main header. References provide architectural inspiration only.
+
+## Tasks
+
+- [x] Preserve the completed b74acc7 release and all current local authoring work.
+- [x] Record the architectural direction and assign the facade implementation.
+- [x] Build a coherent roof/upper-storey, sign fascia, supported canopy and framed shopfront.
+- [x] Add a grounded plinth/threshold/pavement and restrained original planting/details.
+- [x] Use the original wood texture, mark and Courgette wordmark with warm raised lighting.
+- [x] Keep a single coherent interior behind glazing and door-local OPEN plaque.
+- [x] Fit desktop, portrait mobile and short screens without clipping controls or signage.
+- [x] Preserve click/keyboard entry, bell, skip, look-around and complete resource fallbacks.
+- [x] Review source, actual pixels/geometry, lighting, readability and viewport behavior.
+- [x] Refresh affected launch artwork and documentation, then publish scoped output.
+
+## Acceptance criteria
+
+- The entrance has a complete building silhouette, not disconnected floating UI shapes.
+- Cornices, columns, window recesses, awning, base and pavement have consistent support/depth.
+- Continuous wooden entrance fascia and static raised/backlit original identity are readable.
+- Original cream/deep-green/terracotta/blush accents; no global site palette change.
+- No copied reference pixels, stock watermarks, signs, characters or exact composition.
+- Interior camera, real media, notebooks, main header and page fabric behavior are preserved.
+- No questions, new image-tool views or unearned aesthetic/perfection claims.
+
+## Completion evidence
+
+- Baseline: b74acc753e4fd97f020872691608a06f03cffa1d.
+- Private evidence/snapshot: .local\architectural-facade-20261009\.
+- Facade agent returned ownership; parent completed integration and publication.
+- Release3d86ad16057016b2e0f5590c87ac5463064105a0 / Pages37841392015.
+-174live files plusREADME/ABOUT match;15public paths,120product variants preserved.
+-12local/public architecture layouts and13safety cases pass, with full site/entry/
+  cloth coverage and unchanged room/controller/notebook bytes.
+- Current kit:exports\website-launch-20261009-storefront\.
+- Details:..\docs\storefront-and-wooden-navigation.md.
+
+## Completion log
+
+- 2026-10-09 - Complete facade and illuminated wood identity published alongside
+  workstream40. Source/reference art remained original; no image-tool inspection
+  or inferred aesthetic approval. No build/browser/publication work remains.
+- 2026-10-09 01:11 IST - Owner supplies architecture references, calls the current
+  entrance unrealistic and specifically requests an illuminated wooden shopfront.
+  Current published room/notebook/campaign work remains preserved, not restarted.

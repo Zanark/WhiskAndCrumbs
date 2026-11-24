@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Whisk &amp; Crumbs - Cream material study</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="preview.css">
+  <link rel="stylesheet" href="static-clumps.css">
+</head>
+<body>
+  <div class="side-background" aria-hidden="true"></div>
+  <div class="static-material" aria-hidden="true"></div>
+  <canvas id="material" aria-hidden="true"></canvas>
+  <div class="glass-sheet" aria-hidden="true"></div>
+  <div class="butter-paper glass-etchings" aria-hidden="true"></div>
+  <header class="preview-container">
+    <a class="brand" href="https://zanark.github.io/WhiskAndCrumbs/">Whisk &amp; Crumbs</a>
+    <span class="preview-label">PRIVATE MATERIAL STUDY &middot; NOT LIVE</span>
+  </header>
+  <main class="preview-container">
+    <div class="reading-surface">
+      <p class="eyebrow"><span aria-hidden="true"></span> Frosted center, clear sides</p>
+      <h1>Soft cream.<br><em>A little flow.</em></h1>
+      <p class="description">Large cream clumps and smaller droplets drift around the page.
+        Some groups move together; others stretch apart and rejoin.
+        Etched bakery outlines sit on the center glass, while the side-column pattern stays behind the cream.</p>
+      <p class="hint">Your mouse becomes a little strawberry-cream blob with a trailing tail. Tap an open area to add a scoop.
+        Refresh for a different size and quantity mix. Reset shapes clears your scoops but keeps this mix.
+        Pause motion holds the whole composition still.</p>
+    </div>
+  </main>
+  <footer class="preview-container">
+    <div class="controls">
+      <button id="reset" type="button" disabled>Reset shapes</button>
+      <button id="pause" type="button" aria-pressed="false" disabled>Pause motion</button>
+      <button id="clean" type="button" aria-pressed="false" disabled>Material only</button>
+    </div>
+    <p id="status" role="status">Static material preview. Interactive controls need JavaScript.</p>
+  </footer>
+  <script type="module" src="preview.mjs"></script>
+</body>
+</html>

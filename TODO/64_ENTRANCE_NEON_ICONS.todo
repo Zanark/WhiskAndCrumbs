@@ -1,0 +1,52 @@
+# Neon emblems on the entrance glass
+
+Status: DONE
+Milestone: M59 Door-local neon tube cores and glass glow
+Dependencies: 62_CATALOGUE_ONLY_RIGHT_PAGE_TAGS.todo
+
+## Purpose
+
+Turn the existing whisk and heart emblems on the entrance doors into steady
+neon signs, with localized light on the glass.
+
+## Tasks
+
+- [x] Inspect existing pane artwork, layering and fallback behavior.
+- [x] Preserve source snapshots and original brand mark bytes.
+- [x] Add scoped bright cores, outline-following bloom and soft glass spill.
+- [x] Check actual bright core/halo pixels, responsive panes and door attachment.
+- [x] Run entrance safety and architecture coverage sequentially with website reviews.
+- [x] Refresh affected launch captures and publish only reviewed generated files.
+- [x] Record exact public release and live behavior.
+
+## Acceptance criteria
+
+- The two existing emblems glow without replacing or redrawing the approved mark.
+- Localized warm/rose halos, not opaque pane backgrounds or whole-door illumination.
+- Neon stays under glass reflections and moves with each door.
+- No flicker, new animation loop, interaction target or sound behavior.
+- OPEN plaque, cord, signboard, room geometry and all other artwork remain unchanged.
+- Skip, keyboard entry, blocked audio, reduced motion, forced colours and no-JS stay safe.
+- No image viewing or claim of owner visual acceptance.
+
+## Completion evidence
+
+- Snapshot: .local\entrance-neon-20261009\before\.
+- Source change: web\entrance-shop.css only; no markup/controller change.
+- Numerical coverage added to scripts\review_entrance_shop.py.
+- Published68d2aece95ffd26ed15f89be74d1baa16607b409,Pages37958797053,
+  version1016478169f5; all175livefiles/rootdocs match. Receipt:
+  .local\entrance-neon-20261009\publication.json.
+- Five local/public neon layouts,12architecture/text layouts,13safety cases,
+  full combinedlocal/public site-entry and134Node/43campaign/10assetcases pass.
+- Currentkitexports\website-launch-20261009-final-catalogue-neon\,12images/
+  72typographychecks/four-widthgallery. No imageviews or Instagram posting.
+
+## Completion log
+
+- 2026-10-09 -22:01 completed and published alongside the slower physical turn.
+  Refined small-pane spill and heart tube after numerical coverage/core failures.
+  Filter recomposition roundoff bounded to2RGBlevels, halo gate8; no visual
+  acceptance claimed. Originalmark/120productvariants/17local4174files unchanged.
+- 2026-10-09 - Owner requested glowing neon entrance icons at20:11. Scoped
+  source rules implemented; not yet built, browser-reviewed or published.

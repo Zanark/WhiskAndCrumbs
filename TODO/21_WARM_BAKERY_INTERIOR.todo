@@ -1,0 +1,53 @@
+# Warm Illustrated Bakery Interior
+
+Status: DONE
+Milestone: M16 Reference-informed interior refinement
+Dependencies: 20_SHOP_AWNING_AND_WINDOW_INTERIOR.todo
+
+## Purpose
+
+Use the owner's four additional interior references for warmth, material and
+depth, while drawing a distinct original room behind the existing entrance glass.
+Keep the reference pixels private and out of the website.
+
+## Tasks
+
+- [x] Preserve the current room SVGs, showcase and affected source files.
+- [x] Measure source-art coordinates visible through both panes on five viewports.
+- [x] Refine three original layers with timber, warm pendants, plants and cakes.
+- [x] Keep central cakes visible through both mobile panes and short-screen glass.
+- [x] Include storefront artwork bytes and image URLs in shared cache versioning.
+- [x] Refresh showcase as part of the later whole-site request in workstream22.
+- [x] Run existing asset, site, responsive entrance and entrance checks.
+- [x] Publish only changed generated files and the public-safe README/ABOUT.
+
+## Acceptance criteria
+
+- Coherent warm illustrated space, not copied reference artwork or a real-shop claim.
+- Cake detail remains in both panes at existing mobile/desktop crop coordinates.
+- Transparent windows and distinct parallax depths are preserved.
+- Bell, keyboard, skip, touch, reduced-motion and failed-resource behavior stays safe.
+- Real product assets, light-pink covers, sticky tabs and static backgrounds stay intact.
+- No new image-tool views; the existing allowance is exhausted.
+
+## Completion evidence
+
+- Combined release:b48ec94e098df13d5ae6ff93dd89650ed89db54d / Pages37704501432,
+  version5404ae813e89. All163live files/README/ABOUT match.
+  Receipt:.local\cozy-bakery-20261008\publication.json. Full local/public checks pass.
+- Baseline: 77745397e1b466de015582143f61fc7ca446b068.
+- Source snapshot: .local\warm-bakery-interior-20261008\before\.
+- Artwork and browser receipts will be recorded in the same private revision.
+- The initial warm interior passes74Node/7asset checks and5responsive cases.
+  Hiding each cake tier changes actual pixels in both panes in all20comparisons;
+  minimum changed area1.37%, above the0.3%visibility threshold.
+- Publication is combined with the later cozy whole-site workstream22.
+- References supplied inline: copilot-image-64dfb0.png, copilot-image-dbd2d9.png,
+  copilot-image-ac909f.png and copilot-image-0aeb8a.png.
+
+## Completion log
+
+- 2026-10-08 - Completed and published with workstream22; no new image-tool views.
+- 2026-10-08 - Owner supplies four warmer, more detailed bakery interiors.
+  Chose original wood/glass/amber-light/greenery treatment; no further questions.
+  Reference images are mood/material guidance, not copied scene layouts.

@@ -1,0 +1,42 @@
+{
+  "photos": [
+    {
+      "id": "rainbow-butterfly-cake",
+      "model": "birefnet-general",
+      "reason": "The detailed local mask retains the full butterfly and piped cake, without the partial board wing retained by the lite candidate."
+    },
+    {
+      "id": "purple-birthday-cake",
+      "model": "birefnet-general",
+      "reason": "The detailed mask retains the complete birthday topper, butterflies and cake; the source-clipped lower edge and a connected portion of the real board remain."
+    },
+    {
+      "id": "golden-drip-cake",
+      "model": "birefnet-general-lite",
+      "reason": "The lite mask retains all visible swirls, golden decorations and the round cake base; no manual correction."
+    },
+    {
+      "id": "cherry-curl-cake",
+      "model": "birefnet-general-lite",
+      "reason": "The lite mask retains every visible cherry, dark curl and cake base while excluding the surrounding turntable; no manual correction."
+    },
+    {
+      "id": "pink-swirl-cake",
+      "model": "birefnet-general",
+      "reason": "The detailed mask removes the placemat leaves retained by the lite mask and preserves the complete swirls and central decoration."
+    },
+    {
+      "id": "rose-topped-cake",
+      "model": "birefnet-general-lite",
+      "reason": "The lite mask retains the full rose and leaves; the already-clipped lower edge remains unchanged."
+    },
+    {
+      "id": "lavender-swirl-cake",
+      "model": "birefnet-general-lite",
+      "reason": "Clear the right-side placemat remnant outside the cake silhouette. Existing top clipping, icing, lettering and source RGB are unchanged.",
+      "clear_polygons": [
+        [[818, 300], [805, 340], [790, 380], [775, 420], [755, 470], [727, 526], [683, 585], [630, 633], [577, 668], [510, 699], [490, 716], [875, 716], [875, 300]]
+      ]
+    }
+  ]
+}

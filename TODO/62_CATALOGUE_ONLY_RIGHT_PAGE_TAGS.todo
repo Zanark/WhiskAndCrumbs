@@ -1,0 +1,107 @@
+# Catalogue-only photos and right-side page tags
+
+Status: DONE - catalogue and slower physical-turn follow-up published
+Milestone: M57 Direct-photo catalogue and attached right-side arrow navigation
+Dependencies: 52_LARGER_TITLES_OPAQUE_NOTEBOOK_TABS.todo, 61_BACK_CATEGORY_LABEL.todo
+
+## Purpose
+
+Remove per-photo Enlarge/Ask/Order controls. Open the existing photo viewer from
+the cake image itself. Put both previous/next arrow tags on the book's right edge.
+The later "remove the page turn button" request removes only a separate Turn
+control/label/handle, not the requested previous/next arrows.
+
+## Tasks
+
+- [x] Read the complete existing diff and current release instructions.
+- [x] Measure all fit/reflow cases before updating obsolete fallback expectations.
+- [x] Finish catalogue, arrow, keyboard/drag and static safety coverage.
+- [x] Run Node/build and sequential fit/site/entrance reviewers.
+- [x] Refresh affected six-landscape/six-portrait frosted launch artwork.
+- [x] Update directly relevant docs and publish only explicit reviewed public files.
+- [x] Verify exact Pages SHA, live Git blobs, public behavior and release receipt.
+- [x] Verify the later no-separate-Turn clarification against live/static/enhanced
+  markup and the source-bound current README captures.
+- [x] Publish the later slower top-spiral physical-turn follow-up after numerical
+  motion/safety checks and refreshed source-bound launch artwork.
+
+## Acceptance criteria
+
+- No per-photo action buttons, pseudo-labels or contact links in notebooks.
+- Cake image links remain native without JavaScript; plain click/Enter/Space
+  opens the existing viewer with exact full-photo URL and opener focus return.
+- Modified/middle clicks retain native image-link behavior.
+- Both opaque arrow tags attach16px/expose96px on the right, never left/bottom.
+- No standalone Turn/page-turn button, label or extra drag handle. Optional upward
+  dragging belongs to the Next arrow itself; keep both previous/next arrows.
+- Four photos per full page, honest final page, normal2x2/short-landscape4x1.
+- Preserve28px centered names,34px open titles,36px covers,24px description,
+  48px targets, shared weights and main How to order/contact.
+- No double advancement from the shared next/drag control; short/downward/
+  cancelled gestures do not turn. All existing loading/error/static cases remain.
+- No image viewing, archive import, Instagram posting, cream integration or edits
+  to experiments\cream-metaballs or .agent-context.
+
+## Completion evidence
+
+- Final combined follow-up68d2aece95ffd26ed15f89be74d1baa16607b409,
+  Pages37958797053,version1016478169f5. All175livefiles/README/ABOUTmatch.
+  Slower1800ms upward turn with synchronized shadows; neon entrance64included.
+  Currentkitexports\website-launch-20261009-final-catalogue-neon\.
+  Receipt.local\entrance-neon-20261009\publication.json; public site/motion,
+  neon and entry checks pass. No remaining62implementation/art/publication work.
+- Published afb18cbf22ce250bec7f7f1912fcec28c7dc582f / Pages37949350437,
+  version e582762c863a at https://zanark.github.io/WhiskAndCrumbs/.
+- All175live files and root README/ABOUT match the exact committed Git blobs.
+  Eight generated site files and the two approved root documents changed.
+- .local\catalog-right-tags-20261009\publication.json records exact live hashes,
+  workflow SHA, passed local/public reviews and unchanged protected-source hashes.
+- Local and public:134notebook states/300photo views, full site and entrance checks.
+  132Node/43campaign/10asset cases and72actual-JPEG typography checks pass.
+- Current kit: exports\website-launch-20261009-catalogue-right-tags\.
+  Six landscapes/six portraits; only landscape03/04/05and portrait05changed.
+- All17local4174files and120product variants are unchanged. Pending task64neon
+  source is preserved but excluded; normal root builds include that separate work.
+- .local\catalog-right-tags-20261009\no-separate-turn-control.json: six noJS and
+  48enhanced-page cases across local/live desktop/portrait/short-landscape pass.
+  All25capture-source hashes,16capture files,12kit images and six live README
+  images match. Targeted catalogue Node regression passes; no new public diff.
+- Baselinec12aa53d4f2bcef20ba99c8032be517f5ce2e265 / Pages37938241419.
+- .local\catalog-right-tags-20261009\before\ preserves incoming source snapshots.
+- .local\catalog-right-tags-20261009\local4174-before.json preserves17file hashes.
+- Initial measurement attempt timed out because identical navigation URLs retained
+  an open dialog; category-specific URLs correct the measurement fixture.
+
+## Completion log
+
+- 2026-10-09 -22:01 final physical-turn/neon release and source-bound README/
+  Instagram artwork delivered. Seven explicit public paths; local4174untouched.
+  Fresh12viewports/fourfeatures,72JPEGchecks and four-width12-image gallery pass.
+  Only current entrance wide/portrait artwork changes against the catalogue kit.
+- 2026-10-09 21:36 - FINAL INTEGRATION HANDED TO PARENT by explicit request.
+  Motion implementation and pre-neon checks pass; combined preview2ff00c90f2d7
+  includes parent's exact neon CSS but awaits parent's targeted/full review.
+  No follow-up push. Pre-neon captures/kit811a3101b80d must be refreshed against
+  final combined source. Gallery-only fixture696was stopped while waiting on
+  collapsed lazy images; no worker/pass remains. Parent now owns browser/build/
+  artwork/publication/index/ledger. Exact paths/results and draft-helper warning:
+  .local\physical-page-turn-20261009\parent-final-handoff.json.
+- 2026-10-09 - Owner's later no-separate-Turn clarification is ALREADY SATISFIED
+  by afb18cb. Rechecked actual DOM, accessible/title/pseudo labels and exact
+  next/drag identity; retained both right-side arrows. Current artwork is bound
+  to that same source and deployed JPEGs, not visually inspected. Added regression
+  assertions and54local/live cases; no redundant rebuild/recapture/commit/deploy.
+  Initial probe compared localCRLF HTML to anLF Git blob; corrected the fixture
+  to compare loopback to working bytes and public to Git bytes, preserving its log.
+- 2026-10-09 - COMPLETE: pushed only10explicit reviewed paths; exact-SHA Pages run
+  succeeded. All175live Git blobs/root documents and sequential public fit/site/
+  entrance reviews pass. Docs/catalogue/ledger updated, tracked tree clean.
+  No62work remains. No image views, visual-approval claim, social posting, archive
+  import, local4174changes or .agent-context edits; context handoff belongs to parent.
+- 2026-10-09 -132Node/134notebook/300photo/full site-entry/43campaign/10assets/
+  72JPEGchecks pass. Captured12viewports/fourfeatures; only landscape03/04/05and
+  portrait05change. Pending workstream64neon authoring rules appeared mid-task:
+  preserved unchanged, excluded via frozen reviewed source build. All25capture
+  hashes must match before publishing; no task64review/publication claim.
+- 2026-10-09 - Resumed the unfinished catalogue implementation without staging or
+  discarding any pre-existing work. No new image views.
